@@ -3,7 +3,7 @@ import json
 import pandas
 
 # Paths
-PATH_TO_SAMPLE_CONVERSATION = "data/log-01_22_2024, 06_22_56 PM.json"
+PATH_TO_SAMPLE_CONVERSATION = "data/new_log_format.json"
 # Constants
 NODE_SIZE_INCREMENT_BY = 0.25
 
@@ -133,7 +133,7 @@ def main():
 
     
     # Read sample conversation into a Pandas dataframe
-    df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION)
+    df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding='cp1252')
 
     # Remove empty rows
     # df = df.dropna()
@@ -163,32 +163,31 @@ def main():
 
     # Iterate through the list of conversations and create links as needed
     for index, row in df.iterrows():
-        response_intent = row["Intent"]
-        response_sentence = row['Sentence']
-        response_turn = row['Turn']
+        response_intent = row["intent"]
+        response_sentence = row['sentence']
+        response_turn = row['turn']
         response_node_name = f"{response_turn}: {response_intent}"  # ex. "HARU: Action-directive"
         response_node_id = mapped_conversation["nodes"][get_node_idx(response_node_name)]["id"]
         
         new_interaction = {
             "idx": row['idx'],
-            "index": row['Index'],
-            "highlighted": row['Highlighted'],
-            "intent": row['Intent'],
+            "index": row['index'],
             "prompt": prev_sentence,
-            "sentence": row['Sentence'],
-            "turn": row['Turn'],
-            "lastInteraction": row['LastInteraction'],
-            "app_name": row['app_name'],
+            "sentence": row['sentence'],
+            "turn": row['turn'],
+            "intent_category": "parent intent",
+            "intent": row['intent'],
             "emotion_label": row['emotion_label'],
             "emotion_score": row['emotion_score'],
             "sentiment_label": row['sentiment_label'],
             "sentiment_score": row['sentiment_score'],
-            "timestamp": row['timestamp'],
+            "highlighted": row['highlighted'],
+            "lastInteraction": row['lastInteraction'],
+            "app_name": row['app_name'],
+            "timestamp": "0000-00-00 00:00:00",
         }
         
-        # # If the same speaker speaking means new thread
-        # This program assumes that a speaker will not speak more
-        # than one time consecutively in the same thread
+        
         # if response_turn == prev_turn:
         #     prev_node_name = response_node_name
         #     prev_node_id = response_node_id
@@ -205,7 +204,7 @@ def main():
 
         # If this is the first node or in case of error where
         # last speaker is empty, no link will be created
-        if prev_turn == "":      
+        if (prev_turn == "" or prev_turn == response_turn):      
             prev_node_id = response_node_id
             prev_turn = response_turn
             prev_sentence = response_sentence
@@ -213,7 +212,7 @@ def main():
             continue
 
        
-        link_section = mapped_conversation["links"][new_interaction['turn']]
+        link_section = mapped_conversation["links"][prev_turn]
         link_name = f"{prev_node_name} to {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
 
         # If the link already exists, don't create another one
@@ -246,7 +245,6 @@ def main():
             mapped_conversation["nodes"][i]["show"] = "true"
 
     # Save the results as a JSON file
-    print(mapped_conversation)
     path = r"output/new_robot_data.json"
     try:
         with open(path, "x") as f:
