@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Arc Diagram Schema",
+  "description": "The required attributes for the Arc Diagram d3.js feature",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "description": "A unique node item is created for each speaker and dialogue tag combinatation",
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "description": "Follow the format of <speaker>: <dialogue_tag_group> (ex. HARU: Action-directive)",
+              "type": "string"
+            },
+            "id": {
+              "description": "Follow the format of <speaker>: <dialogue_tag_group> (ex. HARU: Action-directive)",
+              "type": "string"
+            },
+            "grp": {
+              "description": "This determines the colour of the node",
+              "type": "integer"
+            },
+            "n": {
+              "description": "size of node",
+              "type": "integer"
+            },
+            "conversations": {
+              "description": "List of conversation items that are associated with this node item. Each line of conversation represents a conversation item.",
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "description": "unique id for each conversation item",
+                      "type": "integer"
+                    },
+                    "thread_id": {
+                      "description": "unique id of the thread this conversation item belongs to",
+                      "type": "integer"
+                    },
+                    "request": {
+                      "description": "Text of the conversation item that precedes this one",
+                      "type": "string"
+                    },
+                    "response": {
+                      "description": "Text of this conversation item",
+                      "type": "string"
+                    },
+                    "sentiment": {
+                      "description": "a number between -1 to 1",
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "thread_id",
+                    "request",
+                    "response",
+                    "sentiment"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "id",
+            "grp",
+            "n",
+            "conversations"
+          ]
+        }
+      ]
+    },
+    "links": {
+      "description": "A link exists between two nodes with a request response relationship",
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "Follow the format of <request_node_name> to <response_node_name> (ex. CHILD: Greeting to HARU: Question)",
+              "type": "string"
+            },
+            "source": {
+              "description": "request node name (ex. CHILD: Greeting)",
+              "type": "string"
+            },
+            "target": {
+              "description": "response node name (ex. HARU: Question)",
+              "type": "string"
+            },
+            "value": {
+              "description": "size of the link",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "source",
+            "target",
+            "value"
+          ]
+        }
+      ]
+    },
+    "attributes": {
+      "description": "you can leave this empty",
+      "type": "object"
+    }
+  },
+  "required": [
+    "nodes",
+    "links",
+    "attributes"
+  ]
+}
