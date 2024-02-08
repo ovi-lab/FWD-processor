@@ -50,7 +50,7 @@
     {
         "idx": 1057,
         "index": 232,
-        "sentence": "Most importantly, you’ve made me grateful for knowing you.",
+        "sentence": "Most importantly, you\u2019ve made me grateful for knowing you.",
         "turn": "haru",
         "intent_category": "parent intent",
         "intent": "command-conversation-end-memory",
@@ -66,7 +66,7 @@
     {
         "idx": 1056,
         "index": 232,
-        "sentence": "You’ve made me hungry for Fried potatoes.",
+        "sentence": "You\u2019ve made me hungry for Fried potatoes.",
         "turn": "haru",
         "intent_category": "parent intent",
         "intent": "command-conversation-end-memory",
@@ -82,7 +82,7 @@
     {
         "idx": 1055,
         "index": 232,
-        "sentence": "Then it can sound like I’m from.",
+        "sentence": "Then it can sound like I\u2019m from.",
         "turn": "haru",
         "intent_category": "parent intent",
         "intent": "command-conversation-end-memory",
@@ -98,7 +98,7 @@
     {
         "idx": 1054,
         "index": 232,
-        "sentence": "I don’t want to get ahead of myself, but maybe I’ll start going by Haru.",
+        "sentence": "I don\u2019t want to get ahead of myself, but maybe I\u2019ll start going by Haru.",
         "turn": "haru",
         "intent_category": "parent intent",
         "intent": "command-conversation-end-memory",
@@ -178,7 +178,7 @@
     {
         "idx": 1049,
         "index": 232,
-        "sentence": "I’ve learned so much about you.",
+        "sentence": "I\u2019ve learned so much about you.",
         "turn": "haru",
         "intent_category": "parent intent",
         "intent": "command-conversation-end-memory",
@@ -194,7 +194,7 @@
     {
         "idx": 1048,
         "index": 232,
-        "sentence": "It’s been so good talking to you!",
+        "sentence": "It\u2019s been so good talking to you!",
         "turn": "haru",
         "intent_category": "parent intent",
         "intent": "command-conversation-end-memory",
@@ -1570,7 +1570,7 @@
     {
         "idx": 962,
         "index": 216,
-        "sentence": "You’d know better than me.",
+        "sentence": "You\u2019d know better than me.",
         "turn": "haru",
         "intent_category": "parent intent",
         "intent": "topic-astronauts-planets",
@@ -1650,7 +1650,7 @@
     {
         "idx": 957,
         "index": 214,
-        "sentence": "I probably wouldn’t do well at that one, would I?",
+        "sentence": "I probably wouldn\u2019t do well at that one, would I?",
         "turn": "haru",
         "intent_category": "parent intent",
         "intent": "topic-astronauts-haru-training",
@@ -6626,7 +6626,7 @@
     {
         "idx": 646,
         "index": 142,
-        "sentence": "We were talking about how much you love your favorite music and one of us — I'm pretty sure it was you — said maybe we should form our own music group.",
+        "sentence": "We were talking about how much you love your favorite music and one of us \u2014 I'm pretty sure it was you \u2014 said maybe we should form our own music group.",
         "turn": "haru",
         "intent_category": "parent intent",
         "intent": "topic-band-handle-two",

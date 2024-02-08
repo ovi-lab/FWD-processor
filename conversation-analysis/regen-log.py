@@ -31,9 +31,9 @@ for index, row in df.iterrows():
 path = r"data/new_log_format.json"
 try:
     with open(path, "x") as f:
-        json.dump(new_json_structure, f, ensure_ascii=False, indent=4)
+        json.dump(new_json_structure, f, ensure_ascii=True, indent=4)
 except FileExistsError:
     print("File exists, overwriting with new data")
     with open(path, "w") as f:
-        json.dump(new_json_structure, f, ensure_ascii=False, indent=4)
+        json.dump(new_json_structure, f, ensure_ascii=True, indent=4)
     

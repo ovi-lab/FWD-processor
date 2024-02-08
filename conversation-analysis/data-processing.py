@@ -1,5 +1,5 @@
 import json
-
+from itertools import pairwise
 import pandas
 
 # Paths
@@ -72,13 +72,10 @@ def main():
         """
         nodes = mapped_conversation["nodes"]
         new_id = 0
-        for i in range(len(nodes)):
-            if nodes[i]["name"] == node_name:
+        for i, node in enumerate(nodes):
+            if node["name"] == node_name:
                 return i
             new_id = i+1
-            if (len(nodes) < 3):
-                print(nodes[i]['name'])
-                print(i)
             
         # If no match for node name, create a new node with index
         nodes.append(
@@ -138,7 +135,7 @@ def main():
             return
 
     # Read sample conversation into a Pandas dataframe
-    df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="cp1252")
+    df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
 
     # Remove empty rows
     # df = df.dropna()
@@ -160,49 +157,47 @@ def main():
 
     # Track the last speaker. Links should only occur between two different speakers
     # i.e. If the last speaker and the current speaker is the same, no link will form
-    prev_turn = ""
+    # prompt["turn"] = ""
     # Track the id of the node that is requesting a response. Each link shows a
     # relationship between a request and a response.
-    prev_node_id = 0
-    prev_node_name = ""
+    # prompt_node_id = 0
+    # prompt_node_name = ""
 
     
     # Track the text of the request node
-    prev_sentence = ""
+    # prompt_sentence = ""
 
     # Iterate through the list of conversations and create links as needed
-    for index, row in df.iterrows():
-        response_intent = row["intent"]
-        response_sentence = row["sentence"]
-        response_turn = row["turn"]
+    row_iterator = df.iterrows()
+
+    for response, prompt in pairwise(row_iterator):
+        response_intent = response[1]["intent"]
+        response_sentence = response[1]["sentence"]
+        response_turn = response[1]["turn"]
         response_node_name = (
             f"{response_turn}: {response_intent}"  # ex. "HARU: Action-directive"
         )
+        prompt_node_name = f"{prompt[1]['turn']}: {prompt[1]['intent']}"
         response_node_id = mapped_conversation["nodes"][get_node_idx(response_node_name)]["id"]
+        prompt_node_id = mapped_conversation["nodes"][get_node_idx(prompt_node_name)]["id"]
 
         new_interaction = {
-            "idx": row["idx"],
-            "index": row["index"],
-            "prompt": prev_sentence,
-            "sentence": row["sentence"],
-            "turn": row["turn"],
+            "idx": response[1]["idx"],
+            "index": response[1]["index"],
+            "prompt": prompt[1]["sentence"],
+            "sentence": response[1]["sentence"],
+            "turn": response[1]["turn"],
             "intent_category": "parent intent",
-            "intent": row["intent"],
-            "emotion_label": row["emotion_label"],
-            "emotion_score": row["emotion_score"],
-            "sentiment_label": row["sentiment_label"],
-            "sentiment_score": row["sentiment_score"],
-            "highlighted": row["highlighted"],
-            "lastInteraction": row["lastInteraction"],
-            "app_name": row["app_name"],
+            "intent": response[1]["intent"],
+            "emotion_label": response[1]["emotion_label"],
+            "emotion_score": response[1]["emotion_score"],
+            "sentiment_label": response[1]["sentiment_label"],
+            "sentiment_score": response[1]["sentiment_score"],
+            "highlighted": response[1]["highlighted"],
+            "lastInteraction": response[1]["lastInteraction"],
+            "app_name": response[1]["app_name"],
             "timestamp": "0000-00-00 00:00:00",
         }
-
-        # if response_turn == prev_turn:
-        #     prev_node_name = response_node_name
-        #     prev_node_id = response_node_id
-        #     prev_sentence = response_sentence
-        #     continue
 
         # Adding more information to each node
         mapped_conversation["nodes"][get_node_idx(response_node_name)][
@@ -212,17 +207,18 @@ def main():
         # increase node size
         increase_node_size(response_node_id)
 
-        # If this is the first node or in case of error where
+        # If this is the first node in conversation or in case of error where
         # last speaker is empty, no link will be created
-        if prev_turn == "" or prev_turn == response_turn:
-            prev_node_id = response_node_id
-            prev_turn = response_turn
-            prev_sentence = response_sentence
-            prev_node_name = response_node_name
+        if  prompt[1]["turn"] == '' or prompt[1]["turn"] == response_turn:
+           
+            # prompt_node_id = response_node_id
+            # prompt["turn"] = response_turn
+            # prompt_sentence = response_sentence
+            # prompt_node_name = response_node_name
             continue
 
-        link_section = mapped_conversation["links"][prev_turn]
-        link_name = f"{prev_node_name} to {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
+        link_section = mapped_conversation["links"][prompt[1]["turn"]]
+        link_name = f"{prompt_node_name} to {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
 
         # If the link already exists, don't create another one
         if link_exists(link_name, link_section):
@@ -237,17 +233,19 @@ def main():
             link_section.append(
                 {
                     "name": link_name,
-                    "source": prev_node_id,
+                    "source": prompt_node_id,
                     "target": response_node_id,
                     "value": 1,
                     "interactions": [new_interaction],
                 }
             )
-            # Set the new values for the following flags
-        prev_node_name = response_node_name
-        prev_node_id = response_node_id
-        prev_sentence = response_sentence
-        prev_turn = response_turn
+         # Set the new values for the following flags
+
+       
+        # prompt_node_name = response_node_name
+        # prompt_node_id = response_node_id
+        # prompt_sentence = response_sentence
+        # prompt["turn"] = response_turn
 
     for i in range(len(mapped_conversation["nodes"])):
         if node_has_links(mapped_conversation["nodes"][i], link_section):
