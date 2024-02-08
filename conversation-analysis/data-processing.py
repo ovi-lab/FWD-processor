@@ -75,18 +75,24 @@ def main():
         for i in range(len(nodes)):
             if nodes[i]["name"] == node_name:
                 return i
-            new_id = i
+            new_id = i+1
+            if (len(nodes) < 3):
+                print(nodes[i]['name'])
+                print(i)
+            
         # If no match for node name, create a new node with index
-        nodes.append({
-                    "id": new_id,
-                    "name": node_name,
-                    "grp": 0,
-                    "n": 5,
-                    "interactions": [],
-                    "show": "false",
-                })
+        nodes.append(
+            {
+                "id": new_id,
+                "name": node_name,
+                "grp": 0,
+                "n": 5,
+                "interactions": [],
+                "show": "false",
+            }
+        )
+        print(new_id)
         return new_id
-
 
     def node_has_links(n, link_section):
         """
@@ -131,16 +137,16 @@ def main():
                 mapped_conversation["links"][i]["interactions"].append(conversation)
             return
 
-    
     # Read sample conversation into a Pandas dataframe
-    df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding='cp1252')
+    df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="cp1252")
 
     # Remove empty rows
     # df = df.dropna()
-    
-#     # Add a new column as needed
-    df["timestamp"] = '00:00:00'  # Each line of conversation belongs to a thread and each thread has an ID
 
+    #     # Add a new column as needed
+    df["timestamp"] = (
+        "00:00:00"  # Each line of conversation belongs to a thread and each thread has an ID
+    )
 
     # Create the JSON template for the results to feed into d3.js
     mapped_conversation = {
@@ -148,7 +154,9 @@ def main():
         "links": {"haru": [], "user": []},
         "attributes": {},
     }
-    print(mapped_conversation)
+
+    # Creates the iterator for generating an ID for each node
+    nodeId = 0
 
     # Track the last speaker. Links should only occur between two different speakers
     # i.e. If the last speaker and the current speaker is the same, no link will form
@@ -158,42 +166,44 @@ def main():
     prev_node_id = 0
     prev_node_name = ""
 
+    
     # Track the text of the request node
     prev_sentence = ""
 
     # Iterate through the list of conversations and create links as needed
     for index, row in df.iterrows():
         response_intent = row["intent"]
-        response_sentence = row['sentence']
-        response_turn = row['turn']
-        response_node_name = f"{response_turn}: {response_intent}"  # ex. "HARU: Action-directive"
+        response_sentence = row["sentence"]
+        response_turn = row["turn"]
+        response_node_name = (
+            f"{response_turn}: {response_intent}"  # ex. "HARU: Action-directive"
+        )
         response_node_id = mapped_conversation["nodes"][get_node_idx(response_node_name)]["id"]
-        
+
         new_interaction = {
-            "idx": row['idx'],
-            "index": row['index'],
+            "idx": row["idx"],
+            "index": row["index"],
             "prompt": prev_sentence,
-            "sentence": row['sentence'],
-            "turn": row['turn'],
+            "sentence": row["sentence"],
+            "turn": row["turn"],
             "intent_category": "parent intent",
-            "intent": row['intent'],
-            "emotion_label": row['emotion_label'],
-            "emotion_score": row['emotion_score'],
-            "sentiment_label": row['sentiment_label'],
-            "sentiment_score": row['sentiment_score'],
-            "highlighted": row['highlighted'],
-            "lastInteraction": row['lastInteraction'],
-            "app_name": row['app_name'],
+            "intent": row["intent"],
+            "emotion_label": row["emotion_label"],
+            "emotion_score": row["emotion_score"],
+            "sentiment_label": row["sentiment_label"],
+            "sentiment_score": row["sentiment_score"],
+            "highlighted": row["highlighted"],
+            "lastInteraction": row["lastInteraction"],
+            "app_name": row["app_name"],
             "timestamp": "0000-00-00 00:00:00",
         }
-        
-        
+
         # if response_turn == prev_turn:
         #     prev_node_name = response_node_name
         #     prev_node_id = response_node_id
         #     prev_sentence = response_sentence
         #     continue
-        
+
         # Adding more information to each node
         mapped_conversation["nodes"][get_node_idx(response_node_name)][
             "interactions"
@@ -204,14 +214,13 @@ def main():
 
         # If this is the first node or in case of error where
         # last speaker is empty, no link will be created
-        if (prev_turn == "" or prev_turn == response_turn):      
+        if prev_turn == "" or prev_turn == response_turn:
             prev_node_id = response_node_id
             prev_turn = response_turn
             prev_sentence = response_sentence
             prev_node_name = response_node_name
             continue
 
-       
         link_section = mapped_conversation["links"][prev_turn]
         link_name = f"{prev_node_name} to {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
 
