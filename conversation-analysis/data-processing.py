@@ -152,7 +152,10 @@ def main():
         "attributes": {},
     }
 
-    row_iterator = df.iterrows()
+    row_iterator = df.iterrows() # pylint: disable=E1101
+
+    # Exploratory variable for trying to count distict conversations, may need to do this in preprocessing instead
+    num_conversations = 1
 
     for response_tuple, prompt_tuple in pairwise(row_iterator):
         response = response_tuple[1]
@@ -165,6 +168,8 @@ def main():
         prompt_node_name = f"{prompt['turn']}: {prompt['intent']}"
         response_node_id = mapped_conversation["nodes"][get_node_idx(response_node_name)]["id"]
         prompt_node_id = mapped_conversation["nodes"][get_node_idx(prompt_node_name)]["id"]
+
+        
 
         new_interaction = {
             "idx": response["idx"],
@@ -191,6 +196,9 @@ def main():
 
         # increase node size
         increase_node_size(response_node_id)
+
+        if (response_node_name == prompt_node_name):
+            continue
 
         link_section = mapped_conversation["links"][prompt["turn"]]
         link_name = f"{prompt_node_name} to {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
@@ -222,11 +230,11 @@ def main():
     # Save the results as a JSON file
     path = r"output/new_robot_data.json"
     try:
-        with open(path, "x") as f:
+        with open(path, "x", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
     except FileExistsError:
         print("File exists, overwriting with new data")
-        with open(path, "w") as f:
+        with open(path, "w", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
 
 

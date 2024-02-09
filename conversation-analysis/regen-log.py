@@ -1,11 +1,11 @@
-import pandas
 import json
+import pandas
 
 df = pandas.read_json("data/log-01_22_2024, 06_22_56 PM.json")
 
 new_json_structure = []
 
-for index, row in df.iterrows():
+for index, row in df.iterrows(): # pylint: disable=E1101
     new_row = {
             "idx": row['idx'],
             "index": row['Index'],
@@ -28,12 +28,13 @@ for index, row in df.iterrows():
     
     new_json_structure.append(new_row)
 
-path = r"data/new_log_format.json"
+PATH = r"data/new_log_format.json"
+
 try:
-    with open(path, "x") as f:
+    with open(PATH, "x", encoding="utf8") as f:
         json.dump(new_json_structure, f, ensure_ascii=True, indent=4)
 except FileExistsError:
     print("File exists, overwriting with new data")
-    with open(path, "w") as f:
+    with open(PATH, "w", encoding="utf8") as f:
         json.dump(new_json_structure, f, ensure_ascii=True, indent=4)
     
