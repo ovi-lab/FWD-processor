@@ -3,7 +3,7 @@ from itertools import pairwise
 import pandas
 
 # Paths
-PATH_TO_SAMPLE_CONVERSATION = "data/new_log_format.json"
+PATH_TO_SAMPLE_CONVERSATION = "data/log-02-14.json"
 # Constants
 NODE_SIZE_INCREMENT_BY = 0.25
 
@@ -14,9 +14,6 @@ def main():
     predict the dialogue tag of each line of conversation and groups the conversation
     based on the dialogue tag functional groups. The information obtained are then
     organized into a dictionary and saved as a JSON file to feed into the d3.js script.
-
-    NOTE: DialogTag required Python 3.7 or higher, Tensorflow 2.0.0 or higher
-          and Transformers v3.0.0 or higher. (Recommended: run using Google Collab)
     """
 
     def increase_node_size(node_id):
@@ -160,12 +157,12 @@ def main():
     for response_tuple, prompt_tuple in pairwise(row_iterator):
         response = response_tuple[1]
         prompt = prompt_tuple[1]
-        response_intent = response["intent"]
-        response_turn = response["turn"]
+        response_intent = response["intent_category"]
+        response_turn = response["Turn"]
         response_node_name = (
             f"{response_turn}: {response_intent}"  # ex. "HARU: Action-directive"
         )
-        prompt_node_name = f"{prompt['turn']}: {prompt['intent']}"
+        prompt_node_name = f"{prompt['Turn']}: {prompt['Intent']}"
         response_node_id = mapped_conversation["nodes"][get_node_idx(response_node_name)]["id"]
         prompt_node_id = mapped_conversation["nodes"][get_node_idx(prompt_node_name)]["id"]
 
@@ -173,20 +170,20 @@ def main():
 
         new_interaction = {
             "idx": response["idx"],
-            "index": response["index"],
-            "prompt": prompt["sentence"],
-            "sentence": response["sentence"],
-            "turn": response["turn"],
-            "intent_category": "parent intent",
-            "intent": response["intent"],
+            "index": response["Index"],
+            "prompt": prompt["Sentence"],
+            "sentence": response["Sentence"],
+            "turn": response["Turn"],
+            "intent_category": response["intent_category"],
+            "intent": response["Intent"],
             "emotion_label": response["emotion_label"],
             "emotion_score": response["emotion_score"],
             "sentiment_label": response["sentiment_label"],
             "sentiment_score": response["sentiment_score"],
-            "highlighted": response["highlighted"],
-            "lastInteraction": response["lastInteraction"],
+            "highlighted": response["Highlighted"],
+            "lastInteraction": response["LastInteraction"],
             "app_name": response["app_name"],
-            "timestamp": "0000-00-00 00:00:00",
+            "timestamp": response["timestamp"],
         }
 
         # Adding more information to each node
@@ -200,7 +197,7 @@ def main():
         if (response_node_name == prompt_node_name):
             continue
 
-        link_section = mapped_conversation["links"][prompt["turn"]]
+        link_section = mapped_conversation["links"][prompt["Turn"]]
         link_name = f"{prompt_node_name} to {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
 
         # If the link already exists, don't create another one
@@ -228,7 +225,7 @@ def main():
             mapped_conversation["nodes"][i]["show"] = "true"
 
     # Save the results as a JSON file
-    path = r"output/new_robot_data.json"
+    path = r"output/new_robot_data_2_14.json"
     try:
         with open(path, "x", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
