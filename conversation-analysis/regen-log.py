@@ -1,40 +1,46 @@
 import json
-import pandas
 
-df = pandas.read_json("data/log-01_22_2024, 06_22_56 PM.json")
+key_map = {
+        "Highlighted": "highlighted",
+        "Index": "index",
+        "Intent": "intent",
+        "LastInteraction": "lastinteraction",
+        "Sentence": "sentence",
+        "Turn": "turn",
+        "app_name": "app_name",
+        "emotion_label": "emotion_label",
+        "emotion_score": "emotion_score",
+        "idx": "idx",
+        "intent_category": "intent_category",
+        "sentiment_label": "sentiment_label",
+        "sentiment_score": "sentiment_score",
+        "timestamp": "timestamp",
+        "topic_name": "topic_name"
+    }
 
-new_json_structure = []
+def replace_keys(original_dict):
+    new_dict = {}
+    for old_key, new_key in key_map.items():
+        if old_key in original_dict:
+            new_dict[new_key] = original_dict[old_key]
+    return new_dict
 
-for index, row in df.iterrows(): # pylint: disable=E1101
-    new_row = {
-            "idx": row['idx'],
-            "index": row['Index'],
-            "sentence": row['Sentence'],
-            "turn": row['Turn'],
-            "intent_category": "parent intent",
-            "intent": row['Intent'],
-            "emotion_label": row['emotion_label'],
-            "emotion_score": row['emotion_score'],
-            "sentiment_label": row['sentiment_label'],
-            "sentiment_score": row['sentiment_score'],
-            "highlighted": row['Highlighted'],
-            "lastInteraction": row['LastInteraction'],
-            "app_name": row['app_name'],
-            "timestamp": "0000-00-00 00:00:00",
-        }
-    
-    if (row['idx'] == 1054):
-        print(row)
-    
-    new_json_structure.append(new_row)
 
-PATH = r"data/new_log_format.json"
+# Open the JSON file
+with open('log1.json', encoding='utf8') as json_file:
+    # Load JSON data
+    data = json.load(json_file)
 
-try:
-    with open(PATH, "x", encoding="utf8") as f:
-        json.dump(new_json_structure, f, ensure_ascii=True, indent=4)
-except FileExistsError:
-    print("File exists, overwriting with new data")
-    with open(PATH, "w", encoding="utf8") as f:
-        json.dump(new_json_structure, f, ensure_ascii=True, indent=4)
-    
+# data.reverse()
+updated_list = []
+for dict_ in data :
+    new_dict = replace_keys(dict_)
+    updated_list.append(new_dict)
+
+
+# Specify the file path
+file_path = 'log1.json'
+
+# Dump data to JSON file
+with open(file_path, 'w') as json_file:
+    json.dump(updated_list, json_file)

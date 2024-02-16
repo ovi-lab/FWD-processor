@@ -3,7 +3,7 @@ from itertools import pairwise
 import pandas
 
 # Paths
-PATH_TO_SAMPLE_CONVERSATION = "data/log-02-14.json"
+PATH_TO_SAMPLE_CONVERSATION = "data/log-02_15_2024.json"
 # Constants
 NODE_SIZE_INCREMENT_BY = 0.25
 
@@ -53,19 +53,18 @@ def main():
 
     def get_node_idx(node_name):
         """
-        Iterate through the the global variable mapped_conversation
-        and return true if a node with the desired node_id is found,
-        else false.
+        Iterate through the the global variable mapped_conversation to find the specified node
+        and return the index if it is found. If not, create a new node with the name specified and return the index of the new node. 
 
         Parameters
         ----------
-        node_id : int
-            id of node to find
+        node_name : str
+            node to find
 
         Returns
         -------
         int
-            index of the node with the specified node_id
+            index of the node with the specified node_name
         """
         nodes = mapped_conversation["nodes"]
         new_id = 0
@@ -73,7 +72,7 @@ def main():
             if node["name"] == node_name:
                 return i
             new_id = i+1
-            
+
         # If no match for node name, create a new node with index
         nodes.append(
             {
@@ -85,7 +84,6 @@ def main():
                 "show": "false",
             }
         )
-        print(new_id)
         return new_id
 
     def node_has_links(n, link_section):
@@ -134,14 +132,6 @@ def main():
     # Read sample conversation into a Pandas dataframe
     df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
 
-    # Remove empty rows
-    # df = df.dropna()
-
-    #     # Add a new column as needed
-    df["timestamp"] = (
-        "00:00:00"  # Each line of conversation belongs to a thread and each thread has an ID
-    )
-
     # Create the JSON template for the results to feed into d3.js
     mapped_conversation = {
         "nodes": [],
@@ -157,10 +147,8 @@ def main():
     for response_tuple, prompt_tuple in pairwise(row_iterator):
         response = response_tuple[1]
         prompt = prompt_tuple[1]
-        response_intent = response["intent_category"]
-        response_turn = response["Turn"]
         response_node_name = (
-            f"{response_turn}: {response_intent}"  # ex. "HARU: Action-directive"
+            f"{response['Turn']}: {response['Intent']}"  # ex. "HARU: Action-directive"
         )
         prompt_node_name = f"{prompt['Turn']}: {prompt['Intent']}"
         response_node_id = mapped_conversation["nodes"][get_node_idx(response_node_name)]["id"]
@@ -174,6 +162,7 @@ def main():
             "prompt": prompt["Sentence"],
             "sentence": response["Sentence"],
             "turn": response["Turn"],
+            "topic": response['topic_name'],
             "intent_category": response["intent_category"],
             "intent": response["Intent"],
             "emotion_label": response["emotion_label"],
@@ -183,7 +172,7 @@ def main():
             "highlighted": response["Highlighted"],
             "lastInteraction": response["LastInteraction"],
             "app_name": response["app_name"],
-            "timestamp": response["timestamp"],
+            "timestamp": str(response["timestamp"]),
         }
 
         # Adding more information to each node
@@ -225,7 +214,7 @@ def main():
             mapped_conversation["nodes"][i]["show"] = "true"
 
     # Save the results as a JSON file
-    path = r"output/new_robot_data_2_14.json"
+    path = r"output/new_robot_data_2_15.json"
     try:
         with open(path, "x", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
@@ -233,6 +222,7 @@ def main():
         print("File exists, overwriting with new data")
         with open(path, "w", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
+    print('done')
 
 
 if __name__ == "__main__":
