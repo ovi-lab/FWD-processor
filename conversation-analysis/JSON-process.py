@@ -107,28 +107,6 @@ def main():
                 return True
         return False
 
-    def add_conversation(link_id, conversation):
-        """
-        Iterate through the list of all the links and appends the conversation to
-        the link with the specified link_id
-
-        Parameters
-        ----------
-        link_id : int
-            id of link to find
-        conversation: Object
-            conversation item with attributes id, thread_if, request, response, and sentiment
-            (see JSON schema for more information)
-
-        Returns
-        -------
-        None
-        """
-        for i in range(len(mapped_conversation["links"])):
-            if mapped_conversation["links"][i]["id"] == link_id:
-                mapped_conversation["links"][i]["interactions"].append(conversation)
-            return
-
     # Read sample conversation into a Pandas dataframe
     df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
 
