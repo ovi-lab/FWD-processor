@@ -1,9 +1,12 @@
 import json
+import utils
 from itertools import pairwise
 import pandas
 
 # Paths
-PATH_TO_SAMPLE_CONVERSATION = "data/log-02_15_2024.json"
+PATH_TO_SAMPLE_CONVERSATION = "data/log-02-20.json"
+
+PATH_TO_ONTOLOGY = 'data/Tiers-of-Friendship.xlsx'
 # Constants
 NODE_SIZE_INCREMENT_BY = 0.25
 
@@ -30,26 +33,7 @@ def main():
             if n["id"] == node_id:
                 n["n"] = n["n"] + NODE_SIZE_INCREMENT_BY
 
-    def link_exists(link_id, link_section):
-        """
-        Iterate through the global variable mapped_conversation
-        and return true if a link with the desired link_id is found,
-        else false.
-
-        Parameters
-        ----------
-        link_id : int
-            id of link to find
-
-        Returns
-        -------
-        boolean
-            true if link is found
-        """
-        for l in link_section:
-            if l["name"] == link_id:
-                return True
-        return False
+    
 
     def get_node_idx(node_name):
         """
@@ -81,31 +65,12 @@ def main():
                 "grp": 0,
                 "n": 5,
                 "interactions": [],
+                "timestamp": str(response["timestamp"]),
                 "show": "false",
             }
         )
         return new_id
 
-    def node_has_links(n, link_section):
-        """
-        Iterate through the global variable mapped_conversation
-        and return true if a link contains the specified node,
-        else false.
-
-        Parameters
-        ----------
-        n : Object
-            A node object with integer attribute 'id'
-
-        Returns
-        -------
-        boolean
-            true if link contains node n
-        """
-        for l in link_section:
-            if n["id"] in [l["source"], l["target"]]:
-                return True
-        return False
 
     # Read sample conversation into a Pandas dataframe
     df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
@@ -119,16 +84,14 @@ def main():
 
     row_iterator = df.iterrows() # pylint: disable=E1101
 
-    # Exploratory variable for trying to count distict conversations, may need to do this in preprocessing instead
-    num_conversations = 1
+    def create_node_name(line):
+        return f'{line['Turn']}: {line['topic_name']}'
 
     for response_tuple, prompt_tuple in pairwise(row_iterator):
         response = response_tuple[1]
         prompt = prompt_tuple[1]
-        response_node_name = (
-            f"{response['Turn']}: {response['Intent']}"  # ex. "HARU: Action-directive"
-        )
-        prompt_node_name = f"{prompt['Turn']}: {prompt['Intent']}"
+        response_node_name = create_node_name(response)
+        prompt_node_name = create_node_name(prompt)
         response_node_id = mapped_conversation["nodes"][get_node_idx(response_node_name)]["id"]
         prompt_node_id = mapped_conversation["nodes"][get_node_idx(prompt_node_name)]["id"]
 
@@ -136,7 +99,7 @@ def main():
 
         new_interaction = {
             "idx": response["idx"],
-            "index": response["Index"],
+            "index": response["index"],
             "prompt": prompt["Sentence"],
             "sentence": response["Sentence"],
             "turn": response["Turn"],
@@ -148,7 +111,7 @@ def main():
             "sentiment_label": response["sentiment_label"],
             "sentiment_score": response["sentiment_score"],
             "highlighted": response["Highlighted"],
-            "lastInteraction": response["LastInteraction"],
+            "lastInteraction": response["lastinteraction"],
             "app_name": response["app_name"],
             "timestamp": str(response["timestamp"]),
         }
@@ -165,13 +128,15 @@ def main():
             continue
 
         link_section = mapped_conversation["links"][prompt["Turn"]]
-        link_name = f"{prompt_node_name} to {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
+        print(link_section)
+        link_name = f"{prompt_node_name} -> {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
 
         # If the link already exists, don't create another one
-        if link_exists(link_name, link_section):
+        if utils.link_exists(link_name, link_section):
             for link in link_section:
                 if link["name"] == link_name:
-                    link["interactions"].append(new_interaction)
+                    link["timestamp"] = str(response["timestamp"])
+                    link["responseIDs"].append(new_interaction["idx"])
                     link["value"] += 1
 
         # If a link between the request and response node does not
@@ -183,16 +148,17 @@ def main():
                     "source": prompt_node_id,
                     "target": response_node_id,
                     "value": 1,
-                    "interactions": [new_interaction],
+                    "timestamp": str(response["timestamp"]),
+                    "responseIDs": [new_interaction["idx"]],
                 }
             )
 
     for i in range(len(mapped_conversation["nodes"])):
-        if node_has_links(mapped_conversation["nodes"][i], link_section):
+        if utils.node_has_links(mapped_conversation["nodes"][i], link_section):
             mapped_conversation["nodes"][i]["show"] = "true"
 
     # Save the results as a JSON file
-    path = r"output/new_robot_data_2_15.json"
+    path = r"output/new_robot_data_2_20.json"
     try:
         with open(path, "x", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)

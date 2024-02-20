@@ -27,20 +27,20 @@ def replace_keys(original_dict):
 
 
 # Open the JSON file
-with open('log1.json', encoding='utf8') as json_file:
+with open('data/log-02-20.json', encoding='utf8') as json_file:
     # Load JSON data
     data = json.load(json_file)
 
-# data.reverse()
-updated_list = []
-for dict_ in data :
-    new_dict = replace_keys(dict_)
-    updated_list.append(new_dict)
+data.reverse()
+# updated_list = []
+# for dict_ in data :
+#     new_dict = replace_keys(dict_)
+#     updated_list.append(new_dict)
 
 
 # Specify the file path
-file_path = 'log1.json'
+file_path = 'data/log-02-20.json'
 
 # Dump data to JSON file
 with open(file_path, 'w') as json_file:
-    json.dump(updated_list, json_file)
+    json.dump(data, json_file)
