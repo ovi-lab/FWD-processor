@@ -85,7 +85,7 @@ def main():
     row_iterator = df.iterrows() # pylint: disable=E1101
 
     def create_node_name(line):
-        return f'{line['Turn']}: {line['topic_name']}'
+        return f'{line['turn']}: {line['topic']}'
 
     for response_tuple, prompt_tuple in pairwise(row_iterator):
         response = response_tuple[1]
@@ -100,18 +100,19 @@ def main():
         new_interaction = {
             "idx": response["idx"],
             "index": response["index"],
-            "prompt": prompt["Sentence"],
-            "sentence": response["Sentence"],
-            "turn": response["Turn"],
-            "topic": response['topic_name'],
+            "prompt": prompt["sentence"],
+            "sentence": response["sentence"],
+            "turn": response["turn"],
+            "topic": response['topic'],
             "intent_category": response["intent_category"],
-            "intent": response["Intent"],
+            "intent": response["intent"],
             "emotion_label": response["emotion_label"],
             "emotion_score": response["emotion_score"],
             "sentiment_label": response["sentiment_label"],
             "sentiment_score": response["sentiment_score"],
-            "highlighted": response["Highlighted"],
-            "lastInteraction": response["lastinteraction"],
+            "highlighted": response["highlighted"],
+            "lastInteraction": response["lastInteraction"],
+            "dataCollection": response["entity_type_detection"],
             "app_name": response["app_name"],
             "timestamp": str(response["timestamp"]),
         }
@@ -121,13 +122,15 @@ def main():
             "interactions"
         ].append(new_interaction)
 
+        mapped_conversation["nodes"][get_node_idx(response_node_name)]["timestamp"] = str(response['timestamp'])
+
         # increase node size
         increase_node_size(response_node_id)
 
         if (response_node_name == prompt_node_name):
             continue
 
-        link_section = mapped_conversation["links"][prompt["Turn"]]
+        link_section = mapped_conversation["links"][prompt["turn"]]
         print(link_section)
         link_name = f"{prompt_node_name} -> {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
 
