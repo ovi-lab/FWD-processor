@@ -3929,7 +3929,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:10:47",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 7
     },
     {
@@ -3948,7 +3948,7 @@
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:10:47",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {
@@ -3967,7 +3967,7 @@
         "sentiment_label": "positive",
         "sentiment_score": 0.57,
         "timestamp": "2024-02-20 16:10:47",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {
@@ -3986,7 +3986,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": 0.88,
         "timestamp": "2024-02-20 16:10:47",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {
@@ -4005,7 +4005,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": 0.75,
         "timestamp": "2024-02-20 16:08:29",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 7
     },
     {
@@ -4024,7 +4024,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:08:16",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 7
     },
     {
@@ -4043,7 +4043,7 @@
         "sentiment_label": "positive",
         "sentiment_score": 0.8,
         "timestamp": "2024-02-20 16:08:16",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {
@@ -4062,7 +4062,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": 0.82,
         "timestamp": "2024-02-20 16:08:16",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {
@@ -4081,7 +4081,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": 0.87,
         "timestamp": "2024-02-20 16:08:16",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {
@@ -4100,7 +4100,7 @@
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:08:16",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {
@@ -4119,7 +4119,7 @@
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:08:16",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {
@@ -4138,7 +4138,7 @@
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:08:16",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {
@@ -4157,7 +4157,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": 0.7,
         "timestamp": "2024-02-20 16:08:09",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 7
     },
     {
@@ -4176,7 +4176,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:08:09",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 7
     },
     {
@@ -4195,7 +4195,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": 0.87,
         "timestamp": "2024-02-20 16:08:09",
-        "topic_name": "",
+        "topic_name": "invalid",
         "type": 6
     },
     {

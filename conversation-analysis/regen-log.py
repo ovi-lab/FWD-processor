@@ -31,12 +31,15 @@ with open('data/log-02-20.json', encoding='utf8') as json_file:
     # Load JSON data
     data = json.load(json_file)
 
-data.reverse()
+for line in data:
+    if not line["topic_name"]:
+        line["topic_name"] = line["topic_name"] + 'invalid'
 # updated_list = []
 # for dict_ in data :
 #     new_dict = replace_keys(dict_)
 #     updated_list.append(new_dict)
 
+data.reverse()
 
 # Specify the file path
 file_path = 'data/log-02-20.json'
