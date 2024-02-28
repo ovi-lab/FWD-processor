@@ -7,7 +7,7 @@
             "n": 6.25,
             "interactions": [
                 {
-                    "idx": 238,
+                    "idx": 205,
                     "index": 47,
                     "prompt": "See you later!",
                     "sentence": "Goodbye.",
@@ -20,13 +20,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.63,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:30"
                 },
                 {
-                    "idx": 237,
+                    "idx": 204,
                     "index": 47,
                     "prompt": "That's finishes our conversation.",
                     "sentence": "See you later!",
@@ -39,13 +39,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.5,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:30"
                 },
                 {
-                    "idx": 236,
+                    "idx": 203,
                     "index": 47,
                     "prompt": "Oof, that's a lot of lines I'm going to have to wait in.",
                     "sentence": "That's finishes our conversation.",
@@ -58,13 +58,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:30"
                 },
                 {
-                    "idx": 235,
+                    "idx": 202,
                     "index": 47,
                     "prompt": "There are around 2,400 roller coasters in the world!",
                     "sentence": "Oof, that's a lot of lines I'm going to have to wait in.",
@@ -77,13 +77,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.92,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:30"
                 },
                 {
-                    "idx": 234,
+                    "idx": 201,
                     "index": 47,
                     "prompt": "Npo",
                     "sentence": "There are around 2,400 roller coasters in the world!",
@@ -96,14 +96,14 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:30"
                 }
             ],
             "timestamp": "2024-02-20 16:26:30",
-            "show": "false"
+            "show": true
         },
         {
             "id": 1,
@@ -112,7 +112,7 @@
             "n": 5.25,
             "interactions": [
                 {
-                    "idx": 233,
+                    "idx": 200,
                     "index": 47,
                     "prompt": "Between all of the amusement parks, carnivals, and other random places, how many roller coasters do you think there are in the world?",
                     "sentence": "Npo",
@@ -125,14 +125,14 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.88,
                     "highlighted": false,
-                    "lastInteraction": 1.0,
+                    "lastInteraction": true,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:30"
                 }
             ],
             "timestamp": "2024-02-20 16:26:30",
-            "show": "true"
+            "show": true
         },
         {
             "id": 2,
@@ -141,7 +141,7 @@
             "n": 18.75,
             "interactions": [
                 {
-                    "idx": 232,
+                    "idx": 199,
                     "index": 46,
                     "prompt": "I can never win any of the prizes, since so many of the games involving throwing things!",
                     "sentence": "Between all of the amusement parks, carnivals, and other random places, how many roller coasters do you think there are in the world?",
@@ -154,13 +154,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.87,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
-                    "idx": 231,
+                    "idx": 198,
                     "index": 46,
                     "prompt": "They're certainly not for me.",
                     "sentence": "I can never win any of the prizes, since so many of the games involving throwing things!",
@@ -173,13 +173,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
-                    "idx": 230,
+                    "idx": 197,
                     "index": 46,
                     "prompt": "Carnivals aren't for everyone.",
                     "sentence": "They're certainly not for me.",
@@ -192,13 +192,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
-                    "idx": 229,
+                    "idx": 196,
                     "index": 46,
                     "prompt": "That's impossible!",
                     "sentence": "Carnivals aren't for everyone.",
@@ -211,13 +211,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.93,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
-                    "idx": 228,
+                    "idx": 195,
                     "index": 46,
                     "prompt": "I can never win a prize since so many of the games involve throwing things.",
                     "sentence": "That's impossible!",
@@ -230,13 +230,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.84,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
-                    "idx": 227,
+                    "idx": 194,
                     "index": 46,
                     "prompt": "They're not that fun anyway!",
                     "sentence": "I can never win a prize since so many of the games involve throwing things.",
@@ -249,13 +249,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
-                    "idx": 226,
+                    "idx": 193,
                     "index": 46,
                     "prompt": "That's okay.",
                     "sentence": "They're not that fun anyway!",
@@ -268,13 +268,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
-                    "idx": 225,
+                    "idx": 192,
                     "index": 46,
                     "prompt": "No",
                     "sentence": "That's okay.",
@@ -287,13 +287,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.5700000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
-                    "idx": 223,
+                    "idx": 190,
                     "index": 45,
                     "prompt": "Sometimes, roller coasters are at carnivals instead of amusement parks.",
                     "sentence": "Have you ever been to a carnival, Tony?",
@@ -306,13 +306,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
-                    "idx": 222,
+                    "idx": 189,
                     "index": 45,
                     "prompt": "But then again, what would I know?",
                     "sentence": "Sometimes, roller coasters are at carnivals instead of amusement parks.",
@@ -325,13 +325,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
-                    "idx": 221,
+                    "idx": 188,
                     "index": 45,
                     "prompt": "That sounds delicious!",
                     "sentence": "But then again, what would I know?",
@@ -344,13 +344,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.72,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
-                    "idx": 220,
+                    "idx": 187,
                     "index": 45,
                     "prompt": "?",
                     "sentence": "That sounds delicious!",
@@ -363,13 +363,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
-                    "idx": 219,
+                    "idx": 186,
                     "index": 45,
                     "prompt": "I don't know",
                     "sentence": "?",
@@ -382,13 +382,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.88,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
-                    "idx": 213,
+                    "idx": 180,
                     "index": 43,
                     "prompt": "According to my sources, Walt Disney World is the most popular amusement park in the world.",
                     "sentence": "Have you heard of Disney World?",
@@ -401,13 +401,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:15"
                 },
                 {
-                    "idx": 212,
+                    "idx": 179,
                     "index": 43,
                     "prompt": "I haven't been to one either, but they look really fun.",
                     "sentence": "According to my sources, Walt Disney World is the most popular amusement park in the world.",
@@ -420,13 +420,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:15"
                 },
                 {
-                    "idx": 211,
+                    "idx": 178,
                     "index": 43,
                     "prompt": "No",
                     "sentence": "I haven't been to one either, but they look really fun.",
@@ -439,13 +439,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:15"
                 },
                 {
-                    "idx": 209,
+                    "idx": 176,
                     "index": 42,
                     "prompt": "Roller coasters are often at amusement parks.",
                     "sentence": "Have you ever been to an amusement park?",
@@ -458,13 +458,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.75,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:11"
                 },
                 {
-                    "idx": 208,
+                    "idx": 175,
                     "index": 42,
                     "prompt": "Fascinating.",
                     "sentence": "Roller coasters are often at amusement parks.",
@@ -477,13 +477,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.79,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:11"
                 },
                 {
-                    "idx": 207,
+                    "idx": 174,
                     "index": 42,
                     "prompt": "Okay",
                     "sentence": "Fascinating.",
@@ -496,13 +496,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:11"
                 },
                 {
-                    "idx": 205,
+                    "idx": 172,
                     "index": 41,
                     "prompt": "You do?",
                     "sentence": "How do they work?",
@@ -515,13 +515,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:09"
                 },
                 {
-                    "idx": 204,
+                    "idx": 171,
                     "index": 41,
                     "prompt": "To go that fast, do you know how roller coasters work?",
                     "sentence": "You do?",
@@ -534,13 +534,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:09"
                 },
                 {
-                    "idx": 203,
+                    "idx": 170,
                     "index": 40,
                     "prompt": "I need to tell the other robots about this.",
                     "sentence": "To go that fast, do you know how roller coasters work?",
@@ -553,13 +553,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:08"
                 },
                 {
-                    "idx": 202,
+                    "idx": 169,
                     "index": 40,
                     "prompt": "Wow, Tony, humans are a lot faster than I thought!",
                     "sentence": "I need to tell the other robots about this.",
@@ -572,13 +572,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:08"
                 },
                 {
-                    "idx": 201,
+                    "idx": 168,
                     "index": 40,
                     "prompt": "You can?",
                     "sentence": "Wow, Tony, humans are a lot faster than I thought!",
@@ -591,13 +591,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:08"
                 },
                 {
-                    "idx": 200,
+                    "idx": 167,
                     "index": 40,
                     "prompt": "Can you go that fast?",
                     "sentence": "You can?",
@@ -610,13 +610,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:08"
                 },
                 {
-                    "idx": 199,
+                    "idx": 166,
                     "index": 39,
                     "prompt": "That's like... infinitely faster than me!",
                     "sentence": "Can you go that fast?",
@@ -629,13 +629,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:06"
                 },
                 {
-                    "idx": 198,
+                    "idx": 165,
                     "index": 39,
                     "prompt": "It goes 240 kilometers per hour!",
                     "sentence": "That's like... infinitely faster than me!",
@@ -648,13 +648,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.56,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:06"
                 },
                 {
-                    "idx": 197,
+                    "idx": 164,
                     "index": 39,
                     "prompt": "How fast do you think the fastest roller coaster is?",
                     "sentence": "It goes 240 kilometers per hour!",
@@ -667,13 +667,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:06"
                 },
                 {
-                    "idx": 196,
+                    "idx": 163,
                     "index": 38,
                     "prompt": "That's the tallest, but what about the fastest?",
                     "sentence": "How fast do you think the fastest roller coaster is?",
@@ -686,13 +686,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:05"
                 },
                 {
-                    "idx": 195,
+                    "idx": 162,
                     "index": 38,
                     "prompt": "That's over 200 times as tall as me!",
                     "sentence": "That's the tallest, but what about the fastest?",
@@ -705,13 +705,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.92,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:05"
                 },
                 {
-                    "idx": 194,
+                    "idx": 161,
                     "index": 38,
                     "prompt": "It's 140 meters tall.",
                     "sentence": "That's over 200 times as tall as me!",
@@ -724,13 +724,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.67,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:05"
                 },
                 {
-                    "idx": 193,
+                    "idx": 160,
                     "index": 38,
                     "prompt": "How tall do you think it is?",
                     "sentence": "It's 140 meters tall.",
@@ -743,13 +743,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:05"
                 },
                 {
-                    "idx": 192,
+                    "idx": 159,
                     "index": 37,
                     "prompt": "The tallest roller coaster in the world is in the United States.",
                     "sentence": "How tall do you think it is?",
@@ -762,13 +762,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
-                    "idx": 191,
+                    "idx": 158,
                     "index": 37,
                     "prompt": "When you're a social robot, life can get pretty bland, so I want to get out and live some thrills!",
                     "sentence": "The tallest roller coaster in the world is in the United States.",
@@ -781,13 +781,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.87,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
-                    "idx": 190,
+                    "idx": 157,
                     "index": 37,
                     "prompt": "In fact, I kind of live for the thrill!",
                     "sentence": "When you're a social robot, life can get pretty bland, so I want to get out and live some thrills!",
@@ -800,13 +800,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.85,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
-                    "idx": 189,
+                    "idx": 156,
                     "index": 37,
                     "prompt": "I don't mind that they're scary.",
                     "sentence": "In fact, I kind of live for the thrill!",
@@ -819,13 +819,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
-                    "idx": 188,
+                    "idx": 155,
                     "index": 37,
                     "prompt": "You do?",
                     "sentence": "I don't mind that they're scary.",
@@ -838,13 +838,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.8,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
-                    "idx": 187,
+                    "idx": 154,
                     "index": 37,
                     "prompt": "Yes",
                     "sentence": "You do?",
@@ -857,13 +857,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
-                    "idx": 185,
+                    "idx": 152,
                     "index": 36,
                     "prompt": "I've always wanted to go on one.",
                     "sentence": "Do you think roller coasters are scary?",
@@ -876,13 +876,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.92,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:02"
                 },
                 {
-                    "idx": 184,
+                    "idx": 151,
                     "index": 36,
                     "prompt": "I like roller coasters too!",
                     "sentence": "I've always wanted to go on one.",
@@ -895,13 +895,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:02"
                 },
                 {
-                    "idx": 183,
+                    "idx": 150,
                     "index": 36,
                     "prompt": "Okay",
                     "sentence": "I like roller coasters too!",
@@ -914,13 +914,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:02"
                 },
                 {
-                    "idx": 181,
+                    "idx": 148,
                     "index": 35,
                     "prompt": "Did you like it?",
                     "sentence": "Do you like roller coasters?",
@@ -933,13 +933,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.81,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
-                    "idx": 180,
+                    "idx": 147,
                     "index": 35,
                     "prompt": "Cool!",
                     "sentence": "Did you like it?",
@@ -952,13 +952,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.75,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
-                    "idx": 179,
+                    "idx": 146,
                     "index": 35,
                     "prompt": "You have?",
                     "sentence": "Cool!",
@@ -971,13 +971,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
-                    "idx": 178,
+                    "idx": 145,
                     "index": 35,
                     "prompt": "Yes",
                     "sentence": "You have?",
@@ -990,13 +990,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
-                    "idx": 176,
+                    "idx": 143,
                     "index": 34,
                     "prompt": "I've always wanted to go on a roller coaster, but for most of them I'm too short to ride!",
                     "sentence": "Have you ever been on a roller coaster?",
@@ -1009,13 +1009,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:59"
                 },
                 {
-                    "idx": 175,
+                    "idx": 142,
                     "index": 34,
                     "prompt": "Sweet, let's talk!",
                     "sentence": "I've always wanted to go on a roller coaster, but for most of them I'm too short to ride!",
@@ -1028,13 +1028,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.52,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:59"
                 },
                 {
-                    "idx": 174,
+                    "idx": 141,
                     "index": 34,
                     "prompt": "Okay",
                     "sentence": "Sweet, let's talk!",
@@ -1047,13 +1047,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.93,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:59"
                 },
                 {
-                    "idx": 172,
+                    "idx": 139,
                     "index": 33,
                     "prompt": "I've been really curious about something humans tells me is really fun: roller coasters!",
                     "sentence": "Would you like to talk about roller coasters with me?",
@@ -1066,13 +1066,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.87,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
-                    "idx": 171,
+                    "idx": 138,
                     "index": 33,
                     "prompt": "Next, Let's talk about roller coasters!",
                     "sentence": "I've been really curious about something humans tells me is really fun: roller coasters!",
@@ -1085,13 +1085,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
-                    "idx": 170,
+                    "idx": 137,
                     "index": 33,
                     "prompt": "Anyway, I think that covers lemurs.",
                     "sentence": "Next, Let's talk about roller coasters!",
@@ -1104,13 +1104,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.62,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
-                    "idx": 169,
+                    "idx": 136,
                     "index": 33,
                     "prompt": "Lastly, they live in trees.",
                     "sentence": "Anyway, I think that covers lemurs.",
@@ -1123,13 +1123,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
-                    "idx": 168,
+                    "idx": 135,
                     "index": 33,
                     "prompt": "I can tell you're getting bored of talking about lemurs.",
                     "sentence": "Lastly, they live in trees.",
@@ -1142,13 +1142,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
-                    "idx": 167,
+                    "idx": 134,
                     "index": 33,
                     "prompt": "Okay, Tony.",
                     "sentence": "I can tell you're getting bored of talking about lemurs.",
@@ -1161,13 +1161,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.9,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
-                    "idx": 166,
+                    "idx": 133,
                     "index": 33,
                     "prompt": "Can I tell you one more lemur fact before we move on?",
                     "sentence": "Okay, Tony.",
@@ -1180,14 +1180,14 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.81,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:57"
                 }
             ],
             "timestamp": "2024-02-20 16:25:57",
-            "show": "true"
+            "show": true
         },
         {
             "id": 3,
@@ -1196,7 +1196,7 @@
             "n": 7.0,
             "interactions": [
                 {
-                    "idx": 224,
+                    "idx": 191,
                     "index": 46,
                     "prompt": "Have you ever been to a carnival, Tony?",
                     "sentence": "No",
@@ -1209,13 +1209,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.71,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
-                    "idx": 218,
+                    "idx": 185,
                     "index": 45,
                     "prompt": "What's a food that you would want to eat at an amusement park?",
                     "sentence": "I don't know",
@@ -1228,13 +1228,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.68,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
-                    "idx": 210,
+                    "idx": 177,
                     "index": 43,
                     "prompt": "Have you ever been to an amusement park?",
                     "sentence": "No",
@@ -1247,13 +1247,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.71,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:15"
                 },
                 {
-                    "idx": 206,
+                    "idx": 173,
                     "index": 42,
                     "prompt": "How do they work?",
                     "sentence": "Okay",
@@ -1266,13 +1266,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:11"
                 },
                 {
-                    "idx": 186,
+                    "idx": 153,
                     "index": 37,
                     "prompt": "Do you think roller coasters are scary?",
                     "sentence": "Yes",
@@ -1285,13 +1285,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
-                    "idx": 182,
+                    "idx": 149,
                     "index": 36,
                     "prompt": "Do you like roller coasters?",
                     "sentence": "Okay",
@@ -1304,13 +1304,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:02"
                 },
                 {
-                    "idx": 177,
+                    "idx": 144,
                     "index": 35,
                     "prompt": "Have you ever been on a roller coaster?",
                     "sentence": "Yes",
@@ -1323,13 +1323,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
-                    "idx": 173,
+                    "idx": 140,
                     "index": 34,
                     "prompt": "Would you like to talk about roller coasters with me?",
                     "sentence": "Okay",
@@ -1342,14 +1342,14 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:59"
                 }
             ],
             "timestamp": "2024-02-20 16:25:59",
-            "show": "true"
+            "show": true
         },
         {
             "id": 4,
@@ -1358,7 +1358,7 @@
             "n": 7.75,
             "interactions": [
                 {
-                    "idx": 217,
+                    "idx": 184,
                     "index": 44,
                     "prompt": "Some amusement parks have special foods, like deep-fried Oreos or cotton candy.",
                     "sentence": "What's a food that you would want to eat at an amusement park?",
@@ -1371,13 +1371,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.85,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:17"
                 },
                 {
-                    "idx": 216,
+                    "idx": 183,
                     "index": 44,
                     "prompt": "Disney World is a huge amusement park in the United States based around Disney characters like Mickey Mouse.",
                     "sentence": "Some amusement parks have special foods, like deep-fried Oreos or cotton candy.",
@@ -1390,13 +1390,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.73,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:17"
                 },
                 {
-                    "idx": 215,
+                    "idx": 182,
                     "index": 44,
                     "prompt": "That's OK!",
                     "sentence": "Disney World is a huge amusement park in the United States based around Disney characters like Mickey Mouse.",
@@ -1409,13 +1409,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.91,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:17"
                 },
                 {
-                    "idx": 214,
+                    "idx": 181,
                     "index": 44,
                     "prompt": "Have you heard of Disney World?",
                     "sentence": "That's OK!",
@@ -1428,13 +1428,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.75,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:26:17"
                 },
                 {
-                    "idx": 131,
+                    "idx": 98,
                     "index": 22,
                     "prompt": "What does that animal eat?",
                     "sentence": "I hope they don't eat robots, do they?",
@@ -1447,13 +1447,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.5,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
-                    "idx": 130,
+                    "idx": 97,
                     "index": 22,
                     "prompt": "Speaking of taste.",
                     "sentence": "What does that animal eat?",
@@ -1466,13 +1466,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
-                    "idx": 129,
+                    "idx": 96,
                     "index": 22,
                     "prompt": "You have good taste.",
                     "sentence": "Speaking of taste.",
@@ -1485,13 +1485,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
-                    "idx": 128,
+                    "idx": 95,
                     "index": 22,
                     "prompt": "They are my favorite animal too.",
                     "sentence": "You have good taste.",
@@ -1504,13 +1504,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
-                    "idx": 127,
+                    "idx": 94,
                     "index": 22,
                     "prompt": "Cats.",
                     "sentence": "They are my favorite animal too.",
@@ -1523,13 +1523,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
-                    "idx": 126,
+                    "idx": 93,
                     "index": 22,
                     "prompt": "Oh my goodness!",
                     "sentence": "Cats.",
@@ -1542,13 +1542,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
-                    "idx": 125,
+                    "idx": 92,
                     "index": 22,
                     "prompt": "Cats",
                     "sentence": "Oh my goodness!",
@@ -1561,14 +1561,14 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:17"
                 }
             ],
             "timestamp": "2024-02-20 16:25:17",
-            "show": "true"
+            "show": true
         },
         {
             "id": 5,
@@ -1577,7 +1577,7 @@
             "n": 10.5,
             "interactions": [
                 {
-                    "idx": 165,
+                    "idx": 132,
                     "index": 32,
                     "prompt": "Oh.",
                     "sentence": "Can I tell you one more lemur fact before we move on?",
@@ -1590,13 +1590,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:54"
                 },
                 {
-                    "idx": 164,
+                    "idx": 131,
                     "index": 32,
                     "prompt": "Are Cats native to where you're from?",
                     "sentence": "Oh.",
@@ -1609,13 +1609,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.88,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:54"
                 },
                 {
-                    "idx": 163,
+                    "idx": 130,
                     "index": 31,
                     "prompt": "Lemurs are native to Madagascar.",
                     "sentence": "Are Cats native to where you're from?",
@@ -1628,13 +1628,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:52"
                 },
                 {
-                    "idx": 162,
+                    "idx": 129,
                     "index": 31,
                     "prompt": "Oh, really?",
                     "sentence": "Lemurs are native to Madagascar.",
@@ -1647,13 +1647,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:52"
                 },
                 {
-                    "idx": 161,
+                    "idx": 128,
                     "index": 31,
                     "prompt": "No",
                     "sentence": "Oh, really?",
@@ -1666,13 +1666,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.64,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:52"
                 },
                 {
-                    "idx": 159,
+                    "idx": 126,
                     "index": 30,
                     "prompt": "Good.",
                     "sentence": "Do you know if they have Cats in Madagascar?",
@@ -1685,13 +1685,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:50"
                 },
                 {
-                    "idx": 158,
+                    "idx": 125,
                     "index": 30,
                     "prompt": "I mentioned that's where lemurs are from, right?",
                     "sentence": "Good.",
@@ -1704,13 +1704,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:50"
                 },
                 {
-                    "idx": 157,
+                    "idx": 124,
                     "index": 29,
                     "prompt": "Madagascar has more lemurs than anywhere else in the world!",
                     "sentence": "I mentioned that's where lemurs are from, right?",
@@ -1723,13 +1723,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:47"
                 },
                 {
-                    "idx": 156,
+                    "idx": 123,
                     "index": 29,
                     "prompt": "I was hoping you'd say that!",
                     "sentence": "Madagascar has more lemurs than anywhere else in the world!",
@@ -1742,13 +1742,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.73,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:47"
                 },
                 {
-                    "idx": 155,
+                    "idx": 122,
                     "index": 29,
                     "prompt": "Yes",
                     "sentence": "I was hoping you'd say that!",
@@ -1761,13 +1761,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:47"
                 },
                 {
-                    "idx": 153,
+                    "idx": 120,
                     "index": 28,
                     "prompt": "So here's what I'm thinking: I've been looking up flights to Antananarivo, and they're very cheap right now.",
                     "sentence": "What do you say you and me spend a week in Madagascar?",
@@ -1780,13 +1780,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:39"
                 },
                 {
-                    "idx": 152,
+                    "idx": 119,
                     "index": 28,
                     "prompt": "Yep!",
                     "sentence": "So here's what I'm thinking: I've been looking up flights to Antananarivo, and they're very cheap right now.",
@@ -1799,13 +1799,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.78,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:39"
                 },
                 {
-                    "idx": 151,
+                    "idx": 118,
                     "index": 28,
                     "prompt": "They live in madagascar",
                     "sentence": "Yep!",
@@ -1818,13 +1818,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:39"
                 },
                 {
-                    "idx": 149,
+                    "idx": 116,
                     "index": 27,
                     "prompt": "They're primates - like you - and they have the biggest eyes!",
                     "sentence": "Guess where they live?",
@@ -1837,13 +1837,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:28"
                 },
                 {
-                    "idx": 148,
+                    "idx": 115,
                     "index": 27,
                     "prompt": "Aren't they the best?",
                     "sentence": "They're primates - like you - and they have the biggest eyes!",
@@ -1856,13 +1856,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.73,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:28"
                 },
                 {
-                    "idx": 147,
+                    "idx": 114,
                     "index": 27,
                     "prompt": "Are you familiar with that animal?",
                     "sentence": "Aren't they the best?",
@@ -1875,13 +1875,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:28"
                 },
                 {
-                    "idx": 146,
+                    "idx": 113,
                     "index": 26,
                     "prompt": "I just found out about lemurs, and I'm obsessed!",
                     "sentence": "Are you familiar with that animal?",
@@ -1894,13 +1894,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
-                    "idx": 145,
+                    "idx": 112,
                     "index": 26,
                     "prompt": "Next, Let's talk about Lemurs.",
                     "sentence": "I just found out about lemurs, and I'm obsessed!",
@@ -1913,13 +1913,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
-                    "idx": 144,
+                    "idx": 111,
                     "index": 26,
                     "prompt": "Well, Tony, I think that covers everything that could possibly have to do with pets.",
                     "sentence": "Next, Let's talk about Lemurs.",
@@ -1932,13 +1932,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
-                    "idx": 143,
+                    "idx": 110,
                     "index": 26,
                     "prompt": "Now that I'm really thinking about it.",
                     "sentence": "Well, Tony, I think that covers everything that could possibly have to do with pets.",
@@ -1951,13 +1951,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.51,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
-                    "idx": 142,
+                    "idx": 109,
                     "index": 26,
                     "prompt": "Good point!",
                     "sentence": "Now that I'm really thinking about it.",
@@ -1970,13 +1970,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
-                    "idx": 141,
+                    "idx": 108,
                     "index": 26,
                     "prompt": "Which sounds harder to raise, a dog or a cat?",
                     "sentence": "Good point!",
@@ -1989,14 +1989,14 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:26"
                 }
             ],
             "timestamp": "2024-02-20 16:25:26",
-            "show": "true"
+            "show": true
         },
         {
             "id": 6,
@@ -2005,7 +2005,7 @@
             "n": 5.75,
             "interactions": [
                 {
-                    "idx": 160,
+                    "idx": 127,
                     "index": 31,
                     "prompt": "Do you know if they have Cats in Madagascar?",
                     "sentence": "No",
@@ -2018,13 +2018,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.71,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:52"
                 },
                 {
-                    "idx": 154,
+                    "idx": 121,
                     "index": 29,
                     "prompt": "What do you say you and me spend a week in Madagascar?",
                     "sentence": "Yes",
@@ -2037,13 +2037,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:47"
                 },
                 {
-                    "idx": 150,
+                    "idx": 117,
                     "index": 28,
                     "prompt": "Guess where they live?",
                     "sentence": "They live in madagascar",
@@ -2056,14 +2056,14 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.65,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:39"
                 }
             ],
             "timestamp": "2024-02-20 16:25:39",
-            "show": "true"
+            "show": true
         },
         {
             "id": 7,
@@ -2072,7 +2072,7 @@
             "n": 9.25,
             "interactions": [
                 {
-                    "idx": 140,
+                    "idx": 107,
                     "index": 25,
                     "prompt": "Well, it's fun to think about having pets without having to actually take care of them.",
                     "sentence": "Which sounds harder to raise, a dog or a cat?",
@@ -2085,13 +2085,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.85,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:23"
                 },
                 {
-                    "idx": 139,
+                    "idx": 106,
                     "index": 25,
                     "prompt": "How wonderful!",
                     "sentence": "Well, it's fun to think about having pets without having to actually take care of them.",
@@ -2104,13 +2104,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:23"
                 },
                 {
-                    "idx": 138,
+                    "idx": 105,
                     "index": 25,
                     "prompt": "I'm just learning human naming conventions.",
                     "sentence": "How wonderful!",
@@ -2123,13 +2123,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:23"
                 },
                 {
-                    "idx": 137,
+                    "idx": 104,
                     "index": 24,
                     "prompt": "How did you think of that?",
                     "sentence": "I'm just learning human naming conventions.",
@@ -2142,13 +2142,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:22"
                 },
                 {
-                    "idx": 136,
+                    "idx": 103,
                     "index": 24,
                     "prompt": "Beautiful.",
                     "sentence": "How did you think of that?",
@@ -2161,13 +2161,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:22"
                 },
                 {
-                    "idx": 135,
+                    "idx": 102,
                     "index": 24,
                     "prompt": "So if you had to have a pet, what would you name it?",
                     "sentence": "Beautiful.",
@@ -2180,13 +2180,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:22"
                 },
                 {
-                    "idx": 134,
+                    "idx": 101,
                     "index": 23,
                     "prompt": "Well, you'd better keep them away from me!",
                     "sentence": "So if you had to have a pet, what would you name it?",
@@ -2199,13 +2199,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:20"
                 },
                 {
-                    "idx": 133,
+                    "idx": 100,
                     "index": 23,
                     "prompt": "Yes",
                     "sentence": "Well, you'd better keep them away from me!",
@@ -2218,13 +2218,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.73,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:20"
                 },
                 {
-                    "idx": 123,
+                    "idx": 90,
                     "index": 21,
                     "prompt": "I love animals.",
                     "sentence": "Which is your favorite?",
@@ -2237,13 +2237,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:14"
                 },
                 {
-                    "idx": 122,
+                    "idx": 89,
                     "index": 21,
                     "prompt": "Yes cat",
                     "sentence": "I love animals.",
@@ -2256,13 +2256,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:14"
                 },
                 {
-                    "idx": 120,
+                    "idx": 87,
                     "index": 20,
                     "prompt": "Next, Let's talk about pets",
                     "sentence": "Do you have a pet?",
@@ -2275,13 +2275,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
-                    "idx": 119,
+                    "idx": 86,
                     "index": 20,
                     "prompt": "So keep up the good work with your favorite sport.",
                     "sentence": "Next, Let's talk about pets",
@@ -2294,13 +2294,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.72,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
-                    "idx": 118,
+                    "idx": 85,
                     "index": 20,
                     "prompt": "99% of Olympic athletes are under 40!",
                     "sentence": "So keep up the good work with your favorite sport.",
@@ -2313,13 +2313,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
-                    "idx": 117,
+                    "idx": 84,
                     "index": 20,
                     "prompt": "Maybe you can compete some day, But it better be soon.",
                     "sentence": "99% of Olympic athletes are under 40!",
@@ -2332,13 +2332,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.72,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
-                    "idx": 116,
+                    "idx": 83,
                     "index": 20,
                     "prompt": "Well,",
                     "sentence": "Maybe you can compete some day, But it better be soon.",
@@ -2351,13 +2351,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.68,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
-                    "idx": 115,
+                    "idx": 82,
                     "index": 20,
                     "prompt": "Yeah, I think you're right.",
                     "sentence": "Well,",
@@ -2370,13 +2370,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
-                    "idx": 114,
+                    "idx": 81,
                     "index": 20,
                     "prompt": "Don't you have to be 15 years old to be in the Olympics?",
                     "sentence": "Yeah, I think you're right.",
@@ -2389,14 +2389,14 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:09"
                 }
             ],
             "timestamp": "2024-02-20 16:25:09",
-            "show": "true"
+            "show": true
         },
         {
             "id": 8,
@@ -2405,7 +2405,7 @@
             "n": 5.5,
             "interactions": [
                 {
-                    "idx": 132,
+                    "idx": 99,
                     "index": 23,
                     "prompt": "I hope they don't eat robots, do they?",
                     "sentence": "Yes",
@@ -2418,13 +2418,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:20"
                 },
                 {
-                    "idx": 121,
+                    "idx": 88,
                     "index": 21,
                     "prompt": "Do you have a pet?",
                     "sentence": "Yes cat",
@@ -2437,14 +2437,14 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.5,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:14"
                 }
             ],
             "timestamp": "2024-02-20 16:25:14",
-            "show": "true"
+            "show": true
         },
         {
             "id": 9,
@@ -2453,7 +2453,7 @@
             "n": 5.25,
             "interactions": [
                 {
-                    "idx": 124,
+                    "idx": 91,
                     "index": 22,
                     "prompt": "Which is your favorite?",
                     "sentence": "Cats",
@@ -2466,14 +2466,14 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.86,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:17"
                 }
             ],
             "timestamp": "2024-02-20 16:25:17",
-            "show": "true"
+            "show": true
         },
         {
             "id": 10,
@@ -2482,7 +2482,7 @@
             "n": 14.5,
             "interactions": [
                 {
-                    "idx": 113,
+                    "idx": 80,
                     "index": 19,
                     "prompt": "Well I guess it doesn't matter anyway.",
                     "sentence": "Don't you have to be 15 years old to be in the Olympics?",
@@ -2495,13 +2495,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:07"
                 },
                 {
-                    "idx": 112,
+                    "idx": 79,
                     "index": 19,
                     "prompt": "Really?",
                     "sentence": "Well I guess it doesn't matter anyway.",
@@ -2514,13 +2514,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.86,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:07"
                 },
                 {
-                    "idx": 111,
+                    "idx": 78,
                     "index": 19,
                     "prompt": "Yes",
                     "sentence": "Really?",
@@ -2533,13 +2533,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:07"
                 },
                 {
-                    "idx": 109,
+                    "idx": 76,
                     "index": 18,
                     "prompt": "That makes me taller than the world's shortest human who was only 54 centimeters tall!",
                     "sentence": "Does that seem tall for a robot to you?",
@@ -2552,13 +2552,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:04"
                 },
                 {
-                    "idx": 108,
+                    "idx": 75,
                     "index": 18,
                     "prompt": "Wow!",
                     "sentence": "That makes me taller than the world's shortest human who was only 54 centimeters tall!",
@@ -2571,13 +2571,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.85,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:04"
                 },
                 {
-                    "idx": 107,
+                    "idx": 74,
                     "index": 18,
                     "prompt": "5",
                     "sentence": "Wow!",
@@ -2590,13 +2590,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:04"
                 },
                 {
-                    "idx": 105,
+                    "idx": 72,
                     "index": 17,
                     "prompt": "How many centimeters tall am I?",
                     "sentence": "Tony?",
@@ -2609,13 +2609,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
-                    "idx": 104,
+                    "idx": 71,
                     "index": 17,
                     "prompt": "I can't really check my own height.",
                     "sentence": "How many centimeters tall am I?",
@@ -2628,13 +2628,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
-                    "idx": 103,
+                    "idx": 70,
                     "index": 17,
                     "prompt": "Well, you look pretty tall to me.",
                     "sentence": "I can't really check my own height.",
@@ -2647,13 +2647,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.6900000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
-                    "idx": 102,
+                    "idx": 69,
                     "index": 17,
                     "prompt": "4",
                     "sentence": "Well, you look pretty tall to me.",
@@ -2666,13 +2666,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.92,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
-                    "idx": 100,
+                    "idx": 67,
                     "index": 16,
                     "prompt": "I love your confidence, but let me calculate what sport you would be best at.",
                     "sentence": "First answer me this, how tall are you in centimeters, Tony?",
@@ -2685,13 +2685,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:58"
                 },
                 {
-                    "idx": 99,
+                    "idx": 66,
                     "index": 16,
                     "prompt": "Yes",
                     "sentence": "I love your confidence, but let me calculate what sport you would be best at.",
@@ -2704,13 +2704,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.92,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:58"
                 },
                 {
-                    "idx": 97,
+                    "idx": 64,
                     "index": 15,
                     "prompt": "I love wheels!",
                     "sentence": "Do you think you'd be any good at it?",
@@ -2723,13 +2723,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:54"
                 },
                 {
-                    "idx": 96,
+                    "idx": 63,
                     "index": 15,
                     "prompt": "Well I think my favorite sport to watch would have to be skateboarding.",
                     "sentence": "I love wheels!",
@@ -2742,13 +2742,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:54"
                 },
                 {
-                    "idx": 95,
+                    "idx": 62,
                     "index": 15,
                     "prompt": "Skateboarding",
                     "sentence": "Well I think my favorite sport to watch would have to be skateboarding.",
@@ -2761,13 +2761,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:54"
                 },
                 {
-                    "idx": 93,
+                    "idx": 60,
                     "index": 14,
                     "prompt": "Volleyball?",
                     "sentence": "Tony.",
@@ -2780,13 +2780,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.88,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 92,
+                    "idx": 59,
                     "index": 14,
                     "prompt": "Tennis?",
                     "sentence": "Volleyball?",
@@ -2799,13 +2799,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 91,
+                    "idx": 58,
                     "index": 14,
                     "prompt": "Skateboarding?",
                     "sentence": "Tennis?",
@@ -2818,13 +2818,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 90,
+                    "idx": 57,
                     "index": 14,
                     "prompt": "Diving?",
                     "sentence": "Skateboarding?",
@@ -2837,13 +2837,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 89,
+                    "idx": 56,
                     "index": 14,
                     "prompt": "So what event would you compete best in if you had to compete at the Olympic level?",
                     "sentence": "Diving?",
@@ -2856,13 +2856,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 88,
+                    "idx": 55,
                     "index": 14,
                     "prompt": "Cause I'm excellent at gravity!",
                     "sentence": "So what event would you compete best in if you had to compete at the Olympic level?",
@@ -2875,13 +2875,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.92,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 87,
+                    "idx": 54,
                     "index": 14,
                     "prompt": "Well, Tony, If it wasn't for all the water, I think my favorite Olympic event would be diving.",
                     "sentence": "Cause I'm excellent at gravity!",
@@ -2894,13 +2894,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 86,
+                    "idx": 53,
                     "index": 14,
                     "prompt": "Really?",
                     "sentence": "Well, Tony, If it wasn't for all the water, I think my favorite Olympic event would be diving.",
@@ -2913,13 +2913,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 85,
+                    "idx": 52,
                     "index": 14,
                     "prompt": "I too",
                     "sentence": "Really?",
@@ -2932,13 +2932,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 83,
+                    "idx": 50,
                     "index": 13,
                     "prompt": "Okay",
                     "sentence": "Do you think you could compete well in your favorite sport, Tony?",
@@ -2951,13 +2951,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:35"
                 },
                 {
-                    "idx": 81,
+                    "idx": 48,
                     "index": 12,
                     "prompt": "I am glad that we are on the same page.",
                     "sentence": "Is there an Olympic Event for?",
@@ -2970,13 +2970,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:30"
                 },
                 {
-                    "idx": 80,
+                    "idx": 47,
                     "index": 12,
                     "prompt": "Yes it is",
                     "sentence": "I am glad that we are on the same page.",
@@ -2989,13 +2989,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:30"
                 },
                 {
-                    "idx": 78,
+                    "idx": 45,
                     "index": 11,
                     "prompt": "Not competing to show who can use the most.",
                     "sentence": "Don't you think?",
@@ -3008,13 +3008,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
-                    "idx": 77,
+                    "idx": 44,
                     "index": 11,
                     "prompt": "You should be conserving energy.",
                     "sentence": "Not competing to show who can use the most.",
@@ -3027,13 +3027,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
-                    "idx": 76,
+                    "idx": 43,
                     "index": 11,
                     "prompt": "You humans are crazy.",
                     "sentence": "You should be conserving energy.",
@@ -3046,13 +3046,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
-                    "idx": 75,
+                    "idx": 42,
                     "index": 11,
                     "prompt": "Great!",
                     "sentence": "You humans are crazy.",
@@ -3065,13 +3065,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
-                    "idx": 74,
+                    "idx": 41,
                     "index": 11,
                     "prompt": "You have?",
                     "sentence": "Great!",
@@ -3084,13 +3084,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
-                    "idx": 73,
+                    "idx": 40,
                     "index": 11,
                     "prompt": "Like the human sports competition?",
                     "sentence": "You have?",
@@ -3103,13 +3103,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
-                    "idx": 72,
+                    "idx": 39,
                     "index": 10,
                     "prompt": "Okay, So have you ever heard of this World Olympics thing?",
                     "sentence": "Like the human sports competition?",
@@ -3122,13 +3122,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:20"
                 },
                 {
-                    "idx": 71,
+                    "idx": 38,
                     "index": 10,
                     "prompt": "Next, Let's talk about Olympics.",
                     "sentence": "Okay, So have you ever heard of this World Olympics thing?",
@@ -3141,13 +3141,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:20"
                 },
                 {
-                    "idx": 70,
+                    "idx": 37,
                     "index": 10,
                     "prompt": "I'll bring snacks, and you can describe what they taste like.",
                     "sentence": "Next, Let's talk about Olympics.",
@@ -3160,13 +3160,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.81,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:20"
                 },
                 {
-                    "idx": 69,
+                    "idx": 36,
                     "index": 10,
                     "prompt": "Awesome!",
                     "sentence": "I'll bring snacks, and you can describe what they taste like.",
@@ -3179,13 +3179,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.64,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:20"
                 },
                 {
-                    "idx": 68,
+                    "idx": 35,
                     "index": 10,
                     "prompt": "Okay",
                     "sentence": "Awesome!",
@@ -3198,14 +3198,14 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:20"
                 }
             ],
             "timestamp": "2024-02-20 16:24:20",
-            "show": "true"
+            "show": true
         },
         {
             "id": 11,
@@ -3214,7 +3214,7 @@
             "n": 7.25,
             "interactions": [
                 {
-                    "idx": 110,
+                    "idx": 77,
                     "index": 19,
                     "prompt": "Does that seem tall for a robot to you?",
                     "sentence": "Yes",
@@ -3227,13 +3227,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:07"
                 },
                 {
-                    "idx": 106,
+                    "idx": 73,
                     "index": 18,
                     "prompt": "Tony?",
                     "sentence": "5",
@@ -3246,13 +3246,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:04"
                 },
                 {
-                    "idx": 101,
+                    "idx": 68,
                     "index": 17,
                     "prompt": "First answer me this, how tall are you in centimeters, Tony?",
                     "sentence": "4",
@@ -3265,13 +3265,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
-                    "idx": 98,
+                    "idx": 65,
                     "index": 16,
                     "prompt": "Do you think you'd be any good at it?",
                     "sentence": "Yes",
@@ -3284,13 +3284,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:58"
                 },
                 {
-                    "idx": 94,
+                    "idx": 61,
                     "index": 15,
                     "prompt": "Tony.",
                     "sentence": "Skateboarding",
@@ -3303,13 +3303,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:54"
                 },
                 {
-                    "idx": 84,
+                    "idx": 51,
                     "index": 14,
                     "prompt": "Do you think you could compete well in your favorite sport, Tony?",
                     "sentence": "I too",
@@ -3322,13 +3322,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.86,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
-                    "idx": 82,
+                    "idx": 49,
                     "index": 13,
                     "prompt": "Is there an Olympic Event for?",
                     "sentence": "Okay",
@@ -3341,13 +3341,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:35"
                 },
                 {
-                    "idx": 79,
+                    "idx": 46,
                     "index": 12,
                     "prompt": "Don't you think?",
                     "sentence": "Yes it is",
@@ -3360,13 +3360,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.75,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:30"
                 },
                 {
-                    "idx": 67,
+                    "idx": 34,
                     "index": 10,
                     "prompt": "What do you say?",
                     "sentence": "Okay",
@@ -3379,23 +3379,23 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:20"
                 }
             ],
             "timestamp": "2024-02-20 16:24:20",
-            "show": "true"
+            "show": true
         },
         {
             "id": 12,
             "name": "haru: sports",
             "grp": 0,
-            "n": 12.5,
+            "n": 9.0,
             "interactions": [
                 {
-                    "idx": 66,
+                    "idx": 33,
                     "index": 9,
                     "prompt": "I can tell you more sports facts.",
                     "sentence": "What do you say?",
@@ -3408,13 +3408,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
-                    "idx": 65,
+                    "idx": 32,
                     "index": 9,
                     "prompt": "Maybe we should catch a sports game together some time.",
                     "sentence": "I can tell you more sports facts.",
@@ -3427,13 +3427,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
-                    "idx": 64,
+                    "idx": 31,
                     "index": 9,
                     "prompt": "I like the way you think.",
                     "sentence": "Maybe we should catch a sports game together some time.",
@@ -3446,13 +3446,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.51,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
-                    "idx": 63,
+                    "idx": 30,
                     "index": 9,
                     "prompt": "Play",
                     "sentence": "I like the way you think.",
@@ -3465,13 +3465,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.97,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
-                    "idx": 61,
+                    "idx": 28,
                     "index": 8,
                     "prompt": "I'd much rather listen to stats than be a statistic.",
                     "sentence": "Are you happy watching the game on TV or do you like to be where the action is?",
@@ -3484,13 +3484,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:11"
                 },
                 {
-                    "idx": 60,
+                    "idx": 27,
                     "index": 8,
                     "prompt": "For sure!",
                     "sentence": "I'd much rather listen to stats than be a statistic.",
@@ -3503,13 +3503,13 @@
                     "sentiment_label": "negative",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:11"
                 },
                 {
-                    "idx": 59,
+                    "idx": 26,
                     "index": 8,
                     "prompt": "I like to watch",
                     "sentence": "For sure!",
@@ -3522,13 +3522,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.62,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:11"
                 },
                 {
-                    "idx": 57,
+                    "idx": 24,
                     "index": 7,
                     "prompt": "Me too!",
                     "sentence": "Do you play sports or do you just like to watch?",
@@ -3541,13 +3541,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:04"
                 },
                 {
-                    "idx": 56,
+                    "idx": 23,
                     "index": 7,
                     "prompt": "Okay",
                     "sentence": "Me too!",
@@ -3560,13 +3560,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.62,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:04"
                 },
                 {
-                    "idx": 47,
+                    "idx": 14,
                     "index": 4,
                     "prompt": "Do you like sports?",
                     "sentence": "If you had to pick one, what would your favorite sport be?",
@@ -3579,13 +3579,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.75,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:26"
                 },
                 {
-                    "idx": 46,
+                    "idx": 13,
                     "index": 3,
                     "prompt": "Let's get started!",
                     "sentence": "Do you like sports?",
@@ -3598,13 +3598,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:24"
                 },
                 {
-                    "idx": 45,
+                    "idx": 12,
                     "index": 3,
                     "prompt": "Let's talk about sports.",
                     "sentence": "Let's get started!",
@@ -3617,13 +3617,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.8,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:24"
                 },
                 {
-                    "idx": 44,
+                    "idx": 11,
                     "index": 3,
                     "prompt": "So, Tony.",
                     "sentence": "Let's talk about sports.",
@@ -3636,13 +3636,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.8200000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:24"
                 },
                 {
-                    "idx": 43,
+                    "idx": 10,
                     "index": 3,
                     "prompt": "What a great name!",
                     "sentence": "So, Tony.",
@@ -3655,280 +3655,14 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:24"
-                },
-                {
-                    "idx": 42,
-                    "index": 3,
-                    "prompt": "Wow!",
-                    "sentence": "What a great name!",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.97,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.99,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:23:24"
-                },
-                {
-                    "idx": 41,
-                    "index": 3,
-                    "prompt": "Yes",
-                    "sentence": "Wow!",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.56,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.98,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:23:24"
-                },
-                {
-                    "idx": 28,
-                    "index": 4,
-                    "prompt": "Do you like sports?",
-                    "sentence": "If you had to pick one, what would your favorite sport be?",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Like",
-                    "intent": "like-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.89,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.75,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:29"
-                },
-                {
-                    "idx": 27,
-                    "index": 3,
-                    "prompt": "Let's get started!",
-                    "sentence": "Do you like sports?",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.87,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9400000000000001,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:16"
-                },
-                {
-                    "idx": 26,
-                    "index": 3,
-                    "prompt": "Let's talk about sports.",
-                    "sentence": "Let's get started!",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.68,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.8,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:16"
-                },
-                {
-                    "idx": 25,
-                    "index": 3,
-                    "prompt": "So, Timmy.",
-                    "sentence": "Let's talk about sports.",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.87,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.8200000000000001,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:16"
-                },
-                {
-                    "idx": 24,
-                    "index": 3,
-                    "prompt": "What a great name!",
-                    "sentence": "So, Timmy.",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.8,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.87,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:16"
-                },
-                {
-                    "idx": 23,
-                    "index": 3,
-                    "prompt": "Wow!",
-                    "sentence": "What a great name!",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.97,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.99,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:16"
-                },
-                {
-                    "idx": 22,
-                    "index": 3,
-                    "prompt": "Yes",
-                    "sentence": "Wow!",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.56,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.98,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:16"
-                },
-                {
-                    "idx": 13,
-                    "index": 4,
-                    "prompt": "Do you like sports?",
-                    "sentence": "If you had to pick one, what would your favorite sport be?",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Like",
-                    "intent": "like-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.89,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.75,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:18"
-                },
-                {
-                    "idx": 12,
-                    "index": 3,
-                    "prompt": "Let's get started!",
-                    "sentence": "Do you like sports?",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.87,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9400000000000001,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:08"
-                },
-                {
-                    "idx": 11,
-                    "index": 3,
-                    "prompt": "Let's talk about sports.",
-                    "sentence": "Let's get started!",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.68,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.8,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:08"
-                },
-                {
-                    "idx": 10,
-                    "index": 3,
-                    "prompt": "So, Timmy.",
-                    "sentence": "Let's talk about sports.",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.87,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.8200000000000001,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:08"
                 },
                 {
                     "idx": 9,
                     "index": 3,
-                    "prompt": "What a great name!",
-                    "sentence": "So, Timmy.",
-                    "turn": "haru",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.8,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.87,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:08"
-                },
-                {
-                    "idx": 8,
-                    "index": 3,
                     "prompt": "Wow!",
                     "sentence": "What a great name!",
                     "turn": "haru",
@@ -3940,13 +3674,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:08"
+                    "timestamp": "2024-02-20 16:23:24"
                 },
                 {
-                    "idx": 7,
+                    "idx": 8,
                     "index": 3,
                     "prompt": "Yes",
                     "sentence": "Wow!",
@@ -3959,23 +3693,23 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:08"
+                    "timestamp": "2024-02-20 16:23:24"
                 }
             ],
-            "timestamp": "2024-02-20 16:01:08",
-            "show": "true"
+            "timestamp": "2024-02-20 16:23:24",
+            "show": true
         },
         {
             "id": 13,
             "name": "user: sports",
             "grp": 0,
-            "n": 6.5,
+            "n": 6.0,
             "interactions": [
                 {
-                    "idx": 62,
+                    "idx": 29,
                     "index": 9,
                     "prompt": "Are you happy watching the game on TV or do you like to be where the action is?",
                     "sentence": "Play",
@@ -3988,13 +3722,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
-                    "idx": 58,
+                    "idx": 25,
                     "index": 8,
                     "prompt": "Do you play sports or do you just like to watch?",
                     "sentence": "I like to watch",
@@ -4007,13 +3741,13 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.92,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:11"
                 },
                 {
-                    "idx": 55,
+                    "idx": 22,
                     "index": 7,
                     "prompt": "Did you know Basketball has been played at every Olympic Games since 1936?",
                     "sentence": "Okay",
@@ -4026,13 +3760,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:24:04"
                 },
                 {
-                    "idx": 40,
+                    "idx": 7,
                     "index": 3,
                     "prompt": "Am I saying that right?",
                     "sentence": "Yes",
@@ -4045,290 +3779,176 @@
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:24"
-                },
-                {
-                    "idx": 21,
-                    "index": 3,
-                    "prompt": "Am I saying that right?",
-                    "sentence": "Yes",
-                    "turn": "user",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.63,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.74,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:16"
-                },
-                {
-                    "idx": 6,
-                    "index": 3,
-                    "prompt": "Am I saying that right?",
-                    "sentence": "Yes",
-                    "turn": "user",
-                    "topic": "sports",
-                    "intent_category": "Sports",
-                    "intent": "topic-sports",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.63,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.74,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:08"
                 }
             ],
-            "timestamp": "2024-02-20 16:01:08",
-            "show": "true"
+            "timestamp": "2024-02-20 16:23:24",
+            "show": true
         },
         {
             "id": 14,
             "name": "haru: None",
             "grp": 0,
-            "n": 7.0,
+            "n": 6.25,
             "interactions": [
                 {
-                    "idx": 54,
+                    "idx": 21,
                     "index": 6,
                     "prompt": "Yes",
                     "sentence": "Did you know Basketball has been played at every Olympic Games since 1936?",
                     "turn": "haru",
                     "topic": null,
-                    "intent_category": "Basketball",
+                    "intent_category": "Sports",
                     "intent": "basketball-fact-yes",
                     "emotion_label": "neutral",
                     "emotion_score": 0.64,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:58"
                 },
                 {
-                    "idx": 52,
+                    "idx": 19,
                     "index": 5,
                     "prompt": "My favorite is basketball.",
                     "sentence": "Would you like to hear a basketball fact?",
                     "turn": "haru",
                     "topic": null,
-                    "intent_category": "Basketball",
+                    "intent_category": "Sports",
                     "intent": "basketball-fact-question",
                     "emotion_label": "neutral",
                     "emotion_score": 0.84,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:48"
                 },
                 {
-                    "idx": 51,
+                    "idx": 18,
                     "index": 5,
                     "prompt": "Really?",
                     "sentence": "My favorite is basketball.",
                     "turn": "haru",
                     "topic": null,
-                    "intent_category": "Basketball",
+                    "intent_category": "Sports",
                     "intent": "basketball-fact-question",
                     "emotion_label": "joy",
                     "emotion_score": 0.7000000000000001,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:48"
                 },
                 {
-                    "idx": 50,
+                    "idx": 17,
                     "index": 5,
                     "prompt": "Football?",
                     "sentence": "Really?",
                     "turn": "haru",
                     "topic": null,
-                    "intent_category": "Basketball",
+                    "intent_category": "Sports",
                     "intent": "basketball-fact-question",
                     "emotion_label": "surprise",
                     "emotion_score": 0.6000000000000001,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:48"
                 },
                 {
-                    "idx": 49,
+                    "idx": 16,
                     "index": 5,
                     "prompt": "Football",
                     "sentence": "Football?",
                     "turn": "haru",
                     "topic": null,
-                    "intent_category": "Basketball",
+                    "intent_category": "Sports",
                     "intent": "basketball-fact-question",
                     "emotion_label": "neutral",
                     "emotion_score": 0.64,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:48"
-                },
-                {
-                    "idx": 32,
-                    "index": 5,
-                    "prompt": "My favorite is basketball.",
-                    "sentence": "Would you like to hear a basketball fact?",
-                    "turn": "haru",
-                    "topic": null,
-                    "intent_category": "Basketball",
-                    "intent": "basketball-fact-question",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.84,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.96,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:10:47"
-                },
-                {
-                    "idx": 31,
-                    "index": 5,
-                    "prompt": "I know all about basketball!",
-                    "sentence": "My favorite is basketball.",
-                    "turn": "haru",
-                    "topic": null,
-                    "intent_category": "Basketball",
-                    "intent": "basketball-fact-question",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.7000000000000001,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.99,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:10:47"
-                },
-                {
-                    "idx": 30,
-                    "index": 5,
-                    "prompt": "Basketball",
-                    "sentence": "I know all about basketball!",
-                    "turn": "haru",
-                    "topic": null,
-                    "intent_category": "Basketball",
-                    "intent": "basketball-fact-question",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.5,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.5700000000000001,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:10:47"
                 }
             ],
-            "timestamp": "2024-02-20 16:10:47",
-            "show": "true"
+            "timestamp": "2024-02-20 16:23:48",
+            "show": true
         },
         {
             "id": 15,
             "name": "user: None",
             "grp": 0,
-            "n": 5.75,
+            "n": 5.5,
             "interactions": [
                 {
-                    "idx": 53,
+                    "idx": 20,
                     "index": 6,
                     "prompt": "Would you like to hear a basketball fact?",
                     "sentence": "Yes",
                     "turn": "user",
                     "topic": null,
-                    "intent_category": "Basketball",
+                    "intent_category": "Sports",
                     "intent": "basketball-fact-yes",
                     "emotion_label": "neutral",
                     "emotion_score": 0.63,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:58"
                 },
                 {
-                    "idx": 48,
+                    "idx": 15,
                     "index": 5,
                     "prompt": "If you had to pick one, what would your favorite sport be?",
                     "sentence": "Football",
                     "turn": "user",
                     "topic": null,
-                    "intent_category": "Basketball",
+                    "intent_category": "Sports",
                     "intent": "basketball-fact-question",
                     "emotion_label": "neutral",
                     "emotion_score": 0.89,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.8200000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:48"
-                },
-                {
-                    "idx": 29,
-                    "index": 5,
-                    "prompt": "If you had to pick one, what would your favorite sport be?",
-                    "sentence": "Basketball",
-                    "turn": "user",
-                    "topic": null,
-                    "intent_category": "Basketball",
-                    "intent": "basketball-fact-question",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.9400000000000001,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.88,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:10:47"
                 }
             ],
-            "timestamp": "2024-02-20 16:10:47",
-            "show": "true"
+            "timestamp": "2024-02-20 16:23:48",
+            "show": true
         },
         {
             "id": 16,
             "name": "haru: intro",
             "grp": 0,
-            "n": 8.5,
+            "n": 6.25,
             "interactions": [
                 {
-                    "idx": 39,
+                    "idx": 6,
                     "index": 2,
                     "prompt": "Your name is Tony?",
                     "sentence": "Am I saying that right?",
@@ -4341,13 +3961,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.7000000000000001,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:17"
                 },
                 {
-                    "idx": 38,
+                    "idx": 5,
                     "index": 2,
                     "prompt": "Tony",
                     "sentence": "Your name is Tony?",
@@ -4360,13 +3980,13 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:17"
                 },
                 {
-                    "idx": 36,
+                    "idx": 3,
                     "index": 1,
                     "prompt": "My name is Haru.",
                     "sentence": "What's your name?",
@@ -4379,204 +3999,14 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:14"
-                },
-                {
-                    "idx": 35,
-                    "index": 1,
-                    "prompt": "Hello human child!",
-                    "sentence": "My name is Haru.",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.97,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.89,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:23:14"
-                },
-                {
-                    "idx": 34,
-                    "index": 1,
-                    "prompt": "",
-                    "sentence": "Hello human child!",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.7000000000000001,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.81,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:23:14"
-                },
-                {
-                    "idx": 20,
-                    "index": 2,
-                    "prompt": "Your name is Timmy?",
-                    "sentence": "Am I saying that right?",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro-name-double-check",
-                    "emotion_label": "fear",
-                    "emotion_score": 0.59,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.7000000000000001,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:09"
-                },
-                {
-                    "idx": 19,
-                    "index": 2,
-                    "prompt": "Timmy",
-                    "sentence": "Your name is Timmy?",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro-name-double-check",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.81,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9500000000000001,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:09"
-                },
-                {
-                    "idx": 17,
-                    "index": 1,
-                    "prompt": "My name is Haru.",
-                    "sentence": "What's your name?",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.73,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.96,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:05"
-                },
-                {
-                    "idx": 16,
-                    "index": 1,
-                    "prompt": "Hello human child!",
-                    "sentence": "My name is Haru.",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.97,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.89,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:05"
-                },
-                {
-                    "idx": 15,
-                    "index": 1,
-                    "prompt": "",
-                    "sentence": "Hello human child!",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.7000000000000001,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.81,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:05"
-                },
-                {
-                    "idx": 5,
-                    "index": 2,
-                    "prompt": "Your name is Timmy?",
-                    "sentence": "Am I saying that right?",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro-name-double-check",
-                    "emotion_label": "fear",
-                    "emotion_score": 0.59,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.7000000000000001,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:06"
-                },
-                {
-                    "idx": 4,
-                    "index": 2,
-                    "prompt": "Timmy",
-                    "sentence": "Your name is Timmy?",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro-name-double-check",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.81,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9500000000000001,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:06"
                 },
                 {
                     "idx": 2,
                     "index": 1,
-                    "prompt": "My name is Haru.",
-                    "sentence": "What's your name?",
-                    "turn": "haru",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.73,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.96,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:04"
-                },
-                {
-                    "idx": 1,
-                    "index": 1,
                     "prompt": "Hello human child!",
                     "sentence": "My name is Haru.",
                     "turn": "haru",
@@ -4588,23 +4018,42 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": true,
                     "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:04"
+                    "timestamp": "2024-02-20 16:23:14"
+                },
+                {
+                    "idx": 1,
+                    "index": 1,
+                    "prompt": "",
+                    "sentence": "Hello human child!",
+                    "turn": "haru",
+                    "topic": "intro",
+                    "intent_category": "Intro",
+                    "intent": "topic-intro",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.7000000000000001,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.81,
+                    "highlighted": false,
+                    "lastInteraction": false,
+                    "dataCollection": true,
+                    "app_name": "smalltalk",
+                    "timestamp": "2024-02-20 16:23:14"
                 }
             ],
-            "timestamp": "2024-02-20 16:01:04",
-            "show": "true"
+            "timestamp": "2024-02-20 16:23:14",
+            "show": true
         },
         {
             "id": 17,
             "name": "user: intro",
             "grp": 0,
-            "n": 6.25,
+            "n": 5.25,
             "interactions": [
                 {
-                    "idx": 37,
+                    "idx": 4,
                     "index": 2,
                     "prompt": "What's your name?",
                     "sentence": "Tony",
@@ -4617,90 +4066,14 @@
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
                     "highlighted": false,
-                    "lastInteraction": 0.0,
+                    "lastInteraction": false,
                     "dataCollection": false,
                     "app_name": "smalltalk",
                     "timestamp": "2024-02-20 16:23:17"
-                },
-                {
-                    "idx": 33,
-                    "index": 1,
-                    "prompt": "Would you like to hear a basketball fact?",
-                    "sentence": "",
-                    "turn": "user",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro",
-                    "emotion_label": "neutral",
-                    "emotion_score": -9.0,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": -9.0,
-                    "highlighted": false,
-                    "lastInteraction": 1,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:23:14"
-                },
-                {
-                    "idx": 18,
-                    "index": 2,
-                    "prompt": "What's your name?",
-                    "sentence": "Timmy",
-                    "turn": "user",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro-name-double-check",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.9,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.87,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:09"
-                },
-                {
-                    "idx": 14,
-                    "index": 1,
-                    "prompt": "If you had to pick one, what would your favorite sport be?",
-                    "sentence": "",
-                    "turn": "user",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro",
-                    "emotion_label": "neutral",
-                    "emotion_score": -9.0,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": -9.0,
-                    "highlighted": false,
-                    "lastInteraction": 1,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:08:05"
-                },
-                {
-                    "idx": 3,
-                    "index": 2,
-                    "prompt": "What's your name?",
-                    "sentence": "Timmy",
-                    "turn": "user",
-                    "topic": "intro",
-                    "intent_category": "Intro",
-                    "intent": "topic-intro-name-double-check",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.9,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.87,
-                    "highlighted": false,
-                    "lastInteraction": 0.0,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
-                    "timestamp": "2024-02-20 16:01:06"
                 }
             ],
-            "timestamp": "2024-02-20 16:01:06",
-            "show": "true"
+            "timestamp": "2024-02-20 16:23:17",
+            "show": true
         }
     ],
     "links": {
@@ -4712,7 +4085,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:26:30",
                 "responseIDs": [
-                    233
+                    200
                 ]
             },
             {
@@ -4722,13 +4095,13 @@
                 "value": 7,
                 "timestamp": "2024-02-20 16:25:59",
                 "responseIDs": [
-                    224,
-                    210,
-                    206,
-                    186,
-                    182,
+                    191,
                     177,
-                    173
+                    173,
+                    153,
+                    149,
+                    144,
+                    140
                 ]
             },
             {
@@ -4738,7 +4111,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:26:25",
                 "responseIDs": [
-                    218
+                    185
                 ]
             },
             {
@@ -4748,7 +4121,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:26:17",
                 "responseIDs": [
-                    214
+                    181
                 ]
             },
             {
@@ -4758,7 +4131,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:25:57",
                 "responseIDs": [
-                    166
+                    133
                 ]
             },
             {
@@ -4768,9 +4141,9 @@
                 "value": 3,
                 "timestamp": "2024-02-20 16:25:39",
                 "responseIDs": [
-                    160,
-                    154,
-                    150
+                    127,
+                    121,
+                    117
                 ]
             },
             {
@@ -4780,7 +4153,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:25:26",
                 "responseIDs": [
-                    141
+                    108
                 ]
             },
             {
@@ -4790,7 +4163,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:25:20",
                 "responseIDs": [
-                    132
+                    99
                 ]
             },
             {
@@ -4800,7 +4173,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:25:17",
                 "responseIDs": [
-                    124
+                    91
                 ]
             },
             {
@@ -4810,7 +4183,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:25:14",
                 "responseIDs": [
-                    121
+                    88
                 ]
             },
             {
@@ -4820,7 +4193,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:25:09",
                 "responseIDs": [
-                    114
+                    81
                 ]
             },
             {
@@ -4830,14 +4203,14 @@
                 "value": 8,
                 "timestamp": "2024-02-20 16:24:30",
                 "responseIDs": [
-                    110,
-                    106,
-                    101,
-                    98,
-                    94,
-                    84,
-                    82,
-                    79
+                    77,
+                    73,
+                    68,
+                    65,
+                    61,
+                    51,
+                    49,
+                    46
                 ]
             },
             {
@@ -4847,7 +4220,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:24:20",
                 "responseIDs": [
-                    67
+                    34
                 ]
             },
             {
@@ -4857,8 +4230,8 @@
                 "value": 2,
                 "timestamp": "2024-02-20 16:24:11",
                 "responseIDs": [
-                    62,
-                    58
+                    29,
+                    25
                 ]
             },
             {
@@ -4868,7 +4241,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:24:04",
                 "responseIDs": [
-                    55
+                    22
                 ]
             },
             {
@@ -4878,62 +4251,37 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:23:58",
                 "responseIDs": [
-                    53
+                    20
                 ]
             },
             {
                 "name": "haru: sports -> user: None",
                 "source": 12,
                 "target": 15,
-                "value": 2,
-                "timestamp": "2024-02-20 16:10:47",
+                "value": 1,
+                "timestamp": "2024-02-20 16:23:48",
                 "responseIDs": [
-                    48,
-                    29
+                    15
                 ]
             },
             {
                 "name": "haru: intro -> user: sports",
                 "source": 16,
                 "target": 13,
-                "value": 3,
-                "timestamp": "2024-02-20 16:01:08",
+                "value": 1,
+                "timestamp": "2024-02-20 16:23:24",
                 "responseIDs": [
-                    40,
-                    21,
-                    6
+                    7
                 ]
             },
             {
                 "name": "haru: intro -> user: intro",
                 "source": 16,
                 "target": 17,
-                "value": 3,
-                "timestamp": "2024-02-20 16:01:06",
-                "responseIDs": [
-                    37,
-                    18,
-                    3
-                ]
-            },
-            {
-                "name": "haru: None -> user: intro",
-                "source": 14,
-                "target": 17,
                 "value": 1,
-                "timestamp": "2024-02-20 16:23:14",
+                "timestamp": "2024-02-20 16:23:17",
                 "responseIDs": [
-                    33
-                ]
-            },
-            {
-                "name": "haru: sports -> user: intro",
-                "source": 12,
-                "target": 17,
-                "value": 1,
-                "timestamp": "2024-02-20 16:08:05",
-                "responseIDs": [
-                    14
+                    4
                 ]
             }
         ],
@@ -4945,7 +4293,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:26:30",
                 "responseIDs": [
-                    234
+                    201
                 ]
             },
             {
@@ -4955,14 +4303,14 @@
                 "value": 8,
                 "timestamp": "2024-02-20 16:25:59",
                 "responseIDs": [
-                    225,
-                    219,
-                    211,
-                    207,
-                    187,
-                    183,
+                    192,
+                    186,
                     178,
-                    174
+                    174,
+                    154,
+                    150,
+                    145,
+                    141
                 ]
             },
             {
@@ -4972,9 +4320,9 @@
                 "value": 3,
                 "timestamp": "2024-02-20 16:25:39",
                 "responseIDs": [
-                    161,
-                    155,
-                    151
+                    128,
+                    122,
+                    118
                 ]
             },
             {
@@ -4984,8 +4332,8 @@
                 "value": 2,
                 "timestamp": "2024-02-20 16:25:14",
                 "responseIDs": [
-                    133,
-                    122
+                    100,
+                    89
                 ]
             },
             {
@@ -4995,7 +4343,7 @@
                 "value": 1,
                 "timestamp": "2024-02-20 16:25:17",
                 "responseIDs": [
-                    125
+                    92
                 ]
             },
             {
@@ -5005,56 +4353,50 @@
                 "value": 9,
                 "timestamp": "2024-02-20 16:24:20",
                 "responseIDs": [
-                    111,
-                    107,
-                    102,
-                    99,
-                    95,
-                    85,
-                    83,
-                    80,
-                    68
+                    78,
+                    74,
+                    69,
+                    66,
+                    62,
+                    52,
+                    50,
+                    47,
+                    35
                 ]
             },
             {
                 "name": "user: sports -> haru: sports",
                 "source": 13,
                 "target": 12,
-                "value": 6,
-                "timestamp": "2024-02-20 16:01:08",
+                "value": 4,
+                "timestamp": "2024-02-20 16:23:24",
                 "responseIDs": [
-                    63,
-                    59,
-                    56,
-                    41,
-                    22,
-                    7
+                    30,
+                    26,
+                    23,
+                    8
                 ]
             },
             {
                 "name": "user: None -> haru: None",
                 "source": 15,
                 "target": 14,
-                "value": 3,
-                "timestamp": "2024-02-20 16:10:47",
+                "value": 2,
+                "timestamp": "2024-02-20 16:23:48",
                 "responseIDs": [
-                    54,
-                    49,
-                    30
+                    21,
+                    16
                 ]
             },
             {
                 "name": "user: intro -> haru: intro",
                 "source": 17,
                 "target": 16,
-                "value": 5,
-                "timestamp": "2024-02-20 16:01:06",
+                "value": 2,
+                "timestamp": "2024-02-20 16:23:14",
                 "responseIDs": [
-                    38,
-                    34,
-                    19,
-                    15,
-                    4
+                    5,
+                    1
                 ]
             }
         ]

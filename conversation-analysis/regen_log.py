@@ -81,21 +81,30 @@ def generate_topic(dialog_line):
     for topic in topic_list:
         if topic in dialog_line["intent"]:
             return topic
+        
+def fix_index(line, idx):
+    newline = line
+    newline["idx"] = idx
+    return newline
 
 
 # Open the JSON file
-with open("data/log-02_20_2024, 04_27_07 PM.json", encoding="utf8") as json_file:
+with open("data/log-02-20.json", encoding="utf8") as json_file:
     # Load JSON data
     data = json.load(json_file)
 
 
 updated_list = []
+idx = 0
 for line in data:
-    updated_line = replace_keys(line)
-    updated_line["topic"] = generate_topic(updated_line)
+    # updated_line = replace_keys(line)
+    updated_line = fix_index(line, idx)
+    # updated_line["topic"] = generate_topic(updated_line)
     updated_list.append(updated_line)
+    idx += 1
 
-# updated_list.reverse()
+    
+updated_list.reverse()
 
 # Specify the file path
 FILE_PATH = "data/log-02-20.json"

@@ -66,7 +66,7 @@ def main():
                 "n": 5,
                 "interactions": [],
                 "timestamp": str(response["timestamp"]),
-                "show": "false",
+                "show": False,
             }
         )
         return new_id
@@ -111,7 +111,7 @@ def main():
             "sentiment_label": response["sentiment_label"],
             "sentiment_score": response["sentiment_score"],
             "highlighted": response["highlighted"],
-            "lastInteraction": response["lastInteraction"],
+            "lastInteraction": bool(response["lastInteraction"]),
             "dataCollection": response["entity_type_detection"],
             "app_name": response["app_name"],
             "timestamp": str(response["timestamp"]),
@@ -158,7 +158,7 @@ def main():
 
     for i in range(len(mapped_conversation["nodes"])):
         if utils.node_has_links(mapped_conversation["nodes"][i], link_section):
-            mapped_conversation["nodes"][i]["show"] = "true"
+            mapped_conversation["nodes"][i]["show"] = True
 
     # Save the results as a JSON file
     path = r"output/new_robot_data_2_20.json"
