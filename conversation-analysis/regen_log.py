@@ -22,51 +22,7 @@ interaction_key_map = {
     "type": "type",
 }
 
-topic_list = [
-    "age",
-    "astronauts",
-    "band",
-    "birthday",
-    "books",
-    "clothing",
-    "dinosaurs",
-    "fears",
-    "food",
-    "hobbies",
-    "hometown",
-    "language",
-    "lemurs",
-    "marriage",
-    "movies",
-    "weather",
-    "music",
-    "olympics",
-    "parents",
-    "pet",
-    "profession",
-    "rollercoasters",
-    "sports",
-    "travel-homecountry",
-    "travel",
-    "names-origins",
-    "conversation-end",
-    "generic-yes-no",
-    "good-bye",
-    "no-action",
-    "command-nudge",
-    "nudge-to-speak",
-    "resume-conversation-no-name",
-    "resume-conversation-with-name",
-    "robot-cancel",
-    "thank-you",
-    "game-would-you-rather",
-    "humor-protocol",
-    "intro",
-    "generic-transition",
-    "prompt",
-    "unknown-language",
-    "trivia-protocol",
-]
+
 
 
 def replace_keys(original_dict):
@@ -103,7 +59,7 @@ for line in data:
     updated_list.append(updated_line)
     idx += 1
 
-    
+
 updated_list.reverse()
 
 # Specify the file path
