@@ -9,15 +9,15 @@ topic_list = []
 
 def add_to_topic(current_topic, current_intent):
     if (len(topic_list) < 1):
-        topic_list.append({"topic": current_topic,
+        topic_list.append({"topic_name": current_topic,
                            "intents": [current_intent]})
         return
     for t in topic_list:
-        if t['topic'] == current_topic:
+        if t['topic_name'] == current_topic:
             if (current_intent != t['intents'][-1]):
                 t['intents'].append(current_intent)
             return
-    topic_list.append({"topic": current_topic, "intents": [current_intent]})
+    topic_list.append({"topic_name": current_topic, "intents": [current_intent]})
 
 for sheet in wb:
     topic = sheet['A'][1].value

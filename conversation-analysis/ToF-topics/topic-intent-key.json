@@ -1,6 +1,6 @@
 [
     {
-        "topic": "topic-age",
+        "topic_name": "topic-age",
         "intents": [
             "topic-age",
             "topic-speaker-age-question",
@@ -28,7 +28,7 @@
         ]
     },
     {
-        "topic": "topic-astronauts",
+        "topic_name": "topic-astronauts",
         "intents": [
             "topic-astronauts",
             "topic-astronauts-planets",
@@ -99,7 +99,7 @@
         ]
     },
     {
-        "topic": "topic-band",
+        "topic_name": "topic-band",
         "intents": [
             "topic-band",
             "topic-band-fav-music-not-collected",
@@ -151,7 +151,7 @@
         ]
     },
     {
-        "topic": "topic-birthday",
+        "topic_name": "topic-birthday",
         "intents": [
             "topic-birthday-age-not-collected",
             "topic-birthday-age-not-collected-fallback",
@@ -187,7 +187,7 @@
         ]
     },
     {
-        "topic": "topic-books",
+        "topic_name": "topic-books",
         "intents": [
             "topic-books",
             "topic-books-poetry-reset",
@@ -236,7 +236,7 @@
         ]
     },
     {
-        "topic": "topic-clothing",
+        "topic_name": "topic-clothing",
         "intents": [
             "topic-clothing",
             "topic-clothing-fallback",
@@ -260,63 +260,63 @@
         ]
     },
     {
-        "topic": "command-conversation-end",
+        "topic_name": "command-conversation-end",
         "intents": [
             "command-conversation-end-no-memory",
             "command-conversation-end-memory"
         ]
     },
     {
-        "topic": "command-generic-yes-no",
+        "topic_name": "command-generic-yes-no",
         "intents": [
             "command-generic-yes-no"
         ]
     },
     {
-        "topic": "command-good-bye",
+        "topic_name": "command-good-bye",
         "intents": [
             "command-good-bye"
         ]
     },
     {
-        "topic": "command-no-action",
+        "topic_name": "command-no-action",
         "intents": [
             "command-no-action"
         ]
     },
     {
-        "topic": "command-nudge-give-up",
+        "topic_name": "command-nudge-give-up",
         "intents": [
             "command-nudge-give-up"
         ]
     },
     {
-        "topic": "command-nudge-long",
+        "topic_name": "command-nudge-long",
         "intents": [
             "command-nudge-long"
         ]
     },
     {
-        "topic": "command-nudge-short",
+        "topic_name": "command-nudge-short",
         "intents": [
             "command-nudge-short"
         ]
     },
     {
-        "topic": "command-nudge-to-speak",
+        "topic_name": "command-nudge-to-speak",
         "intents": [
             "command-nudge-to-speak"
         ]
     },
     {
-        "topic": "command-resume-conversation-no-name",
+        "topic_name": "command-resume-conversation-no-name",
         "intents": [
             "command-resume-conversation-no-name",
             "speaker-tells-name"
         ]
     },
     {
-        "topic": "command-resume-conversation-with-name",
+        "topic_name": "command-resume-conversation-with-name",
         "intents": [
             "command-resume-conversation-with-name",
             "speaker-tells-haru-nickname",
@@ -325,31 +325,31 @@
         ]
     },
     {
-        "topic": "command-robot-cancel",
+        "topic_name": "command-robot-cancel",
         "intents": [
             "command-robot-cancel"
         ]
     },
     {
-        "topic": "command-thank-you",
+        "topic_name": "command-thank-you",
         "intents": [
             "command-thank-you"
         ]
     },
     {
-        "topic": "commands.robot.cancel",
+        "topic_name": "commands.robot.cancel",
         "intents": [
             "commands.robot.cancel"
         ]
     },
     {
-        "topic": "Default Fallback Intent",
+        "topic_name": "Default Fallback Intent",
         "intents": [
             "Default Fallback Intent"
         ]
     },
     {
-        "topic": "topic-dinosaurs",
+        "topic_name": "topic-dinosaurs",
         "intents": [
             "topic-dinosaurs",
             "topic-dinosaurs-yes",
@@ -452,7 +452,7 @@
         ]
     },
     {
-        "topic": "topic-fears",
+        "topic_name": "topic-fears",
         "intents": [
             "topic-fears",
             "topic-fears-neither-sibling-nor-hobby-collected",
@@ -501,7 +501,7 @@
         ]
     },
     {
-        "topic": "topic-food",
+        "topic_name": "topic-food",
         "intents": [
             "topic-food",
             "topic-food-favorite-kind",
@@ -530,7 +530,7 @@
         ]
     },
     {
-        "topic": "game-would-you-rather",
+        "topic_name": "game-would-you-rather",
         "intents": [
             "would-you-rather-fallback",
             "would-you-rather-option-b",
@@ -542,7 +542,7 @@
         ]
     },
     {
-        "topic": "topic-hobbies",
+        "topic_name": "topic-hobbies",
         "intents": [
             "topic-hobbies",
             "gardening",
@@ -579,7 +579,7 @@
         ]
     },
     {
-        "topic": "topic-hometown",
+        "topic_name": "topic-hometown",
         "intents": [
             "topic-hometown",
             "topic-hometown-fallback",
@@ -608,7 +608,7 @@
         ]
     },
     {
-        "topic": "humor-protocol",
+        "topic_name": "humor-protocol",
         "intents": [
             "humor-protocol",
             "humor-protocol-prompt",
@@ -616,7 +616,7 @@
         ]
     },
     {
-        "topic": "topic-intro",
+        "topic_name": "topic-intro",
         "intents": [
             "topic-intro",
             "name-fallback",
@@ -637,7 +637,7 @@
         ]
     },
     {
-        "topic": "topic-intro-short",
+        "topic_name": "topic-intro-short",
         "intents": [
             "topic-intro-short",
             "topic-intro-short-smalltalk-yes",
@@ -645,13 +645,13 @@
         ]
     },
     {
-        "topic": "topic-introduction-end",
+        "topic_name": "topic-introduction-end",
         "intents": [
             "topic-introduction-end"
         ]
     },
     {
-        "topic": "topic-language",
+        "topic_name": "topic-language",
         "intents": [
             "topic-language",
             "topic-language-check-carrier-is-collected-or-not",
@@ -687,7 +687,7 @@
         ]
     },
     {
-        "topic": "topic-lemurs",
+        "topic_name": "topic-lemurs",
         "intents": [
             "topic-lemurs",
             "topic-lemurs-no",
@@ -753,7 +753,7 @@
         ]
     },
     {
-        "topic": "topic-marriage",
+        "topic_name": "topic-marriage",
         "intents": [
             "topic-marriage",
             "topic-marriage-lastname-is-married-name",
@@ -789,7 +789,7 @@
         ]
     },
     {
-        "topic": "topic-movies",
+        "topic_name": "topic-movies",
         "intents": [
             "topic-movies",
             "topic-movies-last-movie-title",
@@ -856,7 +856,7 @@
         ]
     },
     {
-        "topic": "topic-music",
+        "topic_name": "topic-music",
         "intents": [
             "topic-music",
             "topic-music-no",
@@ -905,7 +905,7 @@
         ]
     },
     {
-        "topic": "topic-names-origins",
+        "topic_name": "topic-names-origins",
         "intents": [
             "topic-names-origins",
             "spells-out-name",
@@ -934,14 +934,14 @@
         ]
     },
     {
-        "topic": "topic-olympics",
+        "topic_name": "topic-olympics",
         "intents": [
             "topic-olympics",
             "topic-olympics-fallback"
         ]
     },
     {
-        "topic": "topic-parents",
+        "topic_name": "topic-parents",
         "intents": [
             "topic-parents",
             "topic-parents-fallback",
@@ -973,7 +973,7 @@
         ]
     },
     {
-        "topic": "topic-pet",
+        "topic_name": "topic-pet",
         "intents": [
             "topic-pet",
             "topic-has-topic-pet-yes",
@@ -1058,7 +1058,7 @@
         ]
     },
     {
-        "topic": "topic-pet-new",
+        "topic_name": "topic-pet-new",
         "intents": [
             "topic-pet-new",
             "topic-pet-answer-yes",
@@ -1091,7 +1091,7 @@
         ]
     },
     {
-        "topic": "topic-profession",
+        "topic_name": "topic-profession",
         "intents": [
             "topic-profession",
             "topic-profession-no",
@@ -1118,7 +1118,7 @@
         ]
     },
     {
-        "topic": "topic-rollercoasters",
+        "topic_name": "topic-rollercoasters",
         "intents": [
             "topic-rollercoasters",
             "topic-rollercoasters-like",
@@ -1195,7 +1195,7 @@
         ]
     },
     {
-        "topic": "topic-sports",
+        "topic_name": "topic-sports",
         "intents": [
             "topic-sports",
             "like-sports",
@@ -1239,7 +1239,7 @@
         ]
     },
     {
-        "topic": "system-generic-topic-transition",
+        "topic_name": "system-generic-topic-transition",
         "intents": [
             "system-generic-topic-transition",
             "system-generic-topic-transition-no",
@@ -1247,19 +1247,19 @@
         ]
     },
     {
-        "topic": "system-prompt",
+        "topic_name": "system-prompt",
         "intents": [
             "system-prompt"
         ]
     },
     {
-        "topic": "system-unknown-language-code",
+        "topic_name": "system-unknown-language-code",
         "intents": [
             "system-unknown-language-code"
         ]
     },
     {
-        "topic": "topic-travel",
+        "topic_name": "topic-travel",
         "intents": [
             "topic-travel",
             "favorite-continent-question",
@@ -1316,7 +1316,7 @@
         ]
     },
     {
-        "topic": "topic-travel-homecountry",
+        "topic_name": "topic-travel-homecountry",
         "intents": [
             "topic-travel-homecountry",
             "topic-travel-homecountry-what-is-your-home-country-question",
@@ -1354,7 +1354,7 @@
         ]
     },
     {
-        "topic": "trivia-protocol",
+        "topic_name": "trivia-protocol",
         "intents": [
             "trivia-protocol",
             "trivia-protocol-more-prompt",
@@ -1363,7 +1363,7 @@
         ]
     },
     {
-        "topic": "topic-weather",
+        "topic_name": "topic-weather",
         "intents": [
             "topic-weather",
             "do-you-think-season-is-getting-warmer-question",
