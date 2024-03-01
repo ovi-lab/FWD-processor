@@ -1199,7 +1199,7 @@
         "intents": [
             "topic-sports",
             "like-sports",
-            "play-or-watch-sports-question",
+            "topic-play-or-watch-sports-question-handler",
             "likes-to-watch-sports-or-fallback",
             "more-sports-facts-question",
             "more-sports-facts-question - yes",

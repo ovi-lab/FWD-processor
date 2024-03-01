@@ -11,11 +11,11 @@
         "idx": 205,
         "index": 47,
         "intent_category": "Command",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.63,
         "timestamp": "2024-02-20 16:26:30",
-        "topic": "conversation-end",
+        "topic": "command-conversation-end",
         "type": 6
     },
     {
@@ -30,11 +30,11 @@
         "idx": 204,
         "index": 47,
         "intent_category": "Command",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.5,
         "timestamp": "2024-02-20 16:26:30",
-        "topic": "conversation-end",
+        "topic": "command-conversation-end",
         "type": 6
     },
     {
@@ -49,11 +49,11 @@
         "idx": 203,
         "index": 47,
         "intent_category": "Command",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:26:30",
-        "topic": "conversation-end",
+        "topic": "command-conversation-end",
         "type": 6
     },
     {
@@ -68,11 +68,11 @@
         "idx": 202,
         "index": 47,
         "intent_category": "Command",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.92,
         "timestamp": "2024-02-20 16:26:30",
-        "topic": "conversation-end",
+        "topic": "command-conversation-end",
         "type": 6
     },
     {
@@ -87,11 +87,11 @@
         "idx": 201,
         "index": 47,
         "intent_category": "Command",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:26:30",
-        "topic": "conversation-end",
+        "topic": "command-conversation-end",
         "type": 6
     },
     {
@@ -106,11 +106,11 @@
         "idx": 200,
         "index": 47,
         "intent_category": "Command",
-        "lastInteraction": true,
+        "last_interaction": true,
         "sentiment_label": "neutral",
         "sentiment_score": 0.88,
         "timestamp": "2024-02-20 16:26:30",
-        "topic": "conversation-end",
+        "topic": "command-conversation-end",
         "type": 6
     },
     {
@@ -125,11 +125,11 @@
         "idx": 199,
         "index": 46,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.87,
         "timestamp": "2024-02-20 16:26:27",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -144,11 +144,11 @@
         "idx": 198,
         "index": 46,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:26:27",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -163,11 +163,11 @@
         "idx": 197,
         "index": 46,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:26:27",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -182,11 +182,11 @@
         "idx": 196,
         "index": 46,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.93,
         "timestamp": "2024-02-20 16:26:27",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -201,11 +201,11 @@
         "idx": 195,
         "index": 46,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.84,
         "timestamp": "2024-02-20 16:26:27",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -220,11 +220,11 @@
         "idx": 194,
         "index": 46,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:26:27",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -239,11 +239,11 @@
         "idx": 193,
         "index": 46,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:26:27",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -258,11 +258,11 @@
         "idx": 192,
         "index": 46,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.57,
         "timestamp": "2024-02-20 16:26:27",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -277,11 +277,11 @@
         "idx": 191,
         "index": 46,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.71,
         "timestamp": "2024-02-20 16:26:27",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -296,11 +296,11 @@
         "idx": 190,
         "index": 45,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:26:25",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -315,11 +315,11 @@
         "idx": 189,
         "index": 45,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.89,
         "timestamp": "2024-02-20 16:26:25",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -334,11 +334,11 @@
         "idx": 188,
         "index": 45,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.72,
         "timestamp": "2024-02-20 16:26:25",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -353,11 +353,11 @@
         "idx": 187,
         "index": 45,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:26:25",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -372,11 +372,11 @@
         "idx": 186,
         "index": 45,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.88,
         "timestamp": "2024-02-20 16:26:25",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -391,11 +391,11 @@
         "idx": 185,
         "index": 45,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.68,
         "timestamp": "2024-02-20 16:26:25",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -410,11 +410,11 @@
         "idx": 184,
         "index": 44,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.85,
         "timestamp": "2024-02-20 16:26:17",
-        "topic": "food",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -429,11 +429,11 @@
         "idx": 183,
         "index": 44,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.73,
         "timestamp": "2024-02-20 16:26:17",
-        "topic": "food",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -448,11 +448,11 @@
         "idx": 182,
         "index": 44,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.91,
         "timestamp": "2024-02-20 16:26:17",
-        "topic": "food",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -467,11 +467,11 @@
         "idx": 181,
         "index": 44,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.75,
         "timestamp": "2024-02-20 16:26:17",
-        "topic": "food",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -486,11 +486,11 @@
         "idx": 180,
         "index": 43,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.9,
         "timestamp": "2024-02-20 16:26:15",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -505,11 +505,11 @@
         "idx": 179,
         "index": 43,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:26:15",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -524,11 +524,11 @@
         "idx": 178,
         "index": 43,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:26:15",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -543,11 +543,11 @@
         "idx": 177,
         "index": 43,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.71,
         "timestamp": "2024-02-20 16:26:15",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -562,11 +562,11 @@
         "idx": 176,
         "index": 42,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.75,
         "timestamp": "2024-02-20 16:26:11",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -581,11 +581,11 @@
         "idx": 175,
         "index": 42,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.79,
         "timestamp": "2024-02-20 16:26:11",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -600,11 +600,11 @@
         "idx": 174,
         "index": 42,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:26:11",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -619,11 +619,11 @@
         "idx": 173,
         "index": 42,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.84,
         "timestamp": "2024-02-20 16:26:11",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -638,11 +638,11 @@
         "idx": 172,
         "index": 41,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:26:09",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -657,11 +657,11 @@
         "idx": 171,
         "index": 41,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:26:09",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -676,11 +676,11 @@
         "idx": 170,
         "index": 40,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:26:08",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -695,11 +695,11 @@
         "idx": 169,
         "index": 40,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:26:08",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -714,11 +714,11 @@
         "idx": 168,
         "index": 40,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:26:08",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -733,11 +733,11 @@
         "idx": 167,
         "index": 40,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.91,
         "timestamp": "2024-02-20 16:26:08",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -752,11 +752,11 @@
         "idx": 166,
         "index": 39,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:26:06",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -771,11 +771,11 @@
         "idx": 165,
         "index": 39,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.56,
         "timestamp": "2024-02-20 16:26:06",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -790,11 +790,11 @@
         "idx": 164,
         "index": 39,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:26:06",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -809,11 +809,11 @@
         "idx": 163,
         "index": 38,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:26:05",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -828,11 +828,11 @@
         "idx": 162,
         "index": 38,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.92,
         "timestamp": "2024-02-20 16:26:05",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -847,11 +847,11 @@
         "idx": 161,
         "index": 38,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.67,
         "timestamp": "2024-02-20 16:26:05",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -866,11 +866,11 @@
         "idx": 160,
         "index": 38,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:26:05",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -885,11 +885,11 @@
         "idx": 159,
         "index": 37,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:26:04",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -904,11 +904,11 @@
         "idx": 158,
         "index": 37,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.87,
         "timestamp": "2024-02-20 16:26:04",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -923,11 +923,11 @@
         "idx": 157,
         "index": 37,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.85,
         "timestamp": "2024-02-20 16:26:04",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -942,11 +942,11 @@
         "idx": 156,
         "index": 37,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:26:04",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -961,11 +961,11 @@
         "idx": 155,
         "index": 37,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.8,
         "timestamp": "2024-02-20 16:26:04",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -980,11 +980,11 @@
         "idx": 154,
         "index": 37,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:26:04",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -999,11 +999,11 @@
         "idx": 153,
         "index": 37,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:26:04",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1018,11 +1018,11 @@
         "idx": 152,
         "index": 36,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.92,
         "timestamp": "2024-02-20 16:26:02",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -1037,11 +1037,11 @@
         "idx": 151,
         "index": 36,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:26:02",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1056,11 +1056,11 @@
         "idx": 150,
         "index": 36,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:26:02",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1075,11 +1075,11 @@
         "idx": 149,
         "index": 36,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.84,
         "timestamp": "2024-02-20 16:26:02",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1094,11 +1094,11 @@
         "idx": 148,
         "index": 35,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.81,
         "timestamp": "2024-02-20 16:26:01",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -1113,11 +1113,11 @@
         "idx": 147,
         "index": 35,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.75,
         "timestamp": "2024-02-20 16:26:01",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -1132,11 +1132,11 @@
         "idx": 146,
         "index": 35,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:26:01",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1151,11 +1151,11 @@
         "idx": 145,
         "index": 35,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:26:01",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -1170,11 +1170,11 @@
         "idx": 144,
         "index": 35,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:26:01",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1189,11 +1189,11 @@
         "idx": 143,
         "index": 34,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.9,
         "timestamp": "2024-02-20 16:25:59",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -1208,11 +1208,11 @@
         "idx": 142,
         "index": 34,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.52,
         "timestamp": "2024-02-20 16:25:59",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1227,11 +1227,11 @@
         "idx": 141,
         "index": 34,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.93,
         "timestamp": "2024-02-20 16:25:59",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1246,11 +1246,11 @@
         "idx": 140,
         "index": 34,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.84,
         "timestamp": "2024-02-20 16:25:59",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1265,11 +1265,11 @@
         "idx": 139,
         "index": 33,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.87,
         "timestamp": "2024-02-20 16:25:57",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 7
     },
     {
@@ -1284,11 +1284,11 @@
         "idx": 138,
         "index": 33,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:25:57",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1303,11 +1303,11 @@
         "idx": 137,
         "index": 33,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.62,
         "timestamp": "2024-02-20 16:25:57",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1322,11 +1322,11 @@
         "idx": 136,
         "index": 33,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.89,
         "timestamp": "2024-02-20 16:25:57",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1341,11 +1341,11 @@
         "idx": 135,
         "index": 33,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:25:57",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1360,11 +1360,11 @@
         "idx": 134,
         "index": 33,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.9,
         "timestamp": "2024-02-20 16:25:57",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1379,11 +1379,11 @@
         "idx": 133,
         "index": 33,
         "intent_category": "Rollercoasters",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.81,
         "timestamp": "2024-02-20 16:25:57",
-        "topic": "rollercoasters",
+        "topic": "topic-rollercoasters",
         "type": 6
     },
     {
@@ -1398,11 +1398,11 @@
         "idx": 132,
         "index": 32,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:25:54",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 7
     },
     {
@@ -1417,11 +1417,11 @@
         "idx": 131,
         "index": 32,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.88,
         "timestamp": "2024-02-20 16:25:54",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1436,11 +1436,11 @@
         "idx": 130,
         "index": 31,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:25:52",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 7
     },
     {
@@ -1455,11 +1455,11 @@
         "idx": 129,
         "index": 31,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.93,
         "timestamp": "2024-02-20 16:25:52",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1474,11 +1474,11 @@
         "idx": 128,
         "index": 31,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.64,
         "timestamp": "2024-02-20 16:25:52",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 7
     },
     {
@@ -1493,11 +1493,11 @@
         "idx": 127,
         "index": 31,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.71,
         "timestamp": "2024-02-20 16:25:52",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1512,11 +1512,11 @@
         "idx": 126,
         "index": 30,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:25:50",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 7
     },
     {
@@ -1531,11 +1531,11 @@
         "idx": 125,
         "index": 30,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:25:50",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1550,11 +1550,11 @@
         "idx": 124,
         "index": 29,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:25:47",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 7
     },
     {
@@ -1569,11 +1569,11 @@
         "idx": 123,
         "index": 29,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.73,
         "timestamp": "2024-02-20 16:25:47",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1588,11 +1588,11 @@
         "idx": 122,
         "index": 29,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:25:47",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1607,11 +1607,11 @@
         "idx": 121,
         "index": 29,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:25:47",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1626,11 +1626,11 @@
         "idx": 120,
         "index": 28,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:25:39",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 7
     },
     {
@@ -1645,11 +1645,11 @@
         "idx": 119,
         "index": 28,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.78,
         "timestamp": "2024-02-20 16:25:39",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1664,11 +1664,11 @@
         "idx": 118,
         "index": 28,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.83,
         "timestamp": "2024-02-20 16:25:39",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1683,11 +1683,11 @@
         "idx": 117,
         "index": 28,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.65,
         "timestamp": "2024-02-20 16:25:39",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1702,11 +1702,11 @@
         "idx": 116,
         "index": 27,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:25:28",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 7
     },
     {
@@ -1721,11 +1721,11 @@
         "idx": 115,
         "index": 27,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.73,
         "timestamp": "2024-02-20 16:25:28",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1740,11 +1740,11 @@
         "idx": 114,
         "index": 27,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:25:28",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 7
     },
     {
@@ -1759,11 +1759,11 @@
         "idx": 113,
         "index": 26,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:25:26",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 7
     },
     {
@@ -1778,11 +1778,11 @@
         "idx": 112,
         "index": 26,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:25:26",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1797,11 +1797,11 @@
         "idx": 111,
         "index": 26,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.91,
         "timestamp": "2024-02-20 16:25:26",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1816,11 +1816,11 @@
         "idx": 110,
         "index": 26,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.51,
         "timestamp": "2024-02-20 16:25:26",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1835,11 +1835,11 @@
         "idx": 109,
         "index": 26,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:25:26",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1854,11 +1854,11 @@
         "idx": 108,
         "index": 26,
         "intent_category": "Lemurs",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:25:26",
-        "topic": "lemurs",
+        "topic": "topic-lemurs",
         "type": 6
     },
     {
@@ -1873,11 +1873,11 @@
         "idx": 107,
         "index": 25,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.85,
         "timestamp": "2024-02-20 16:25:23",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 7
     },
     {
@@ -1892,11 +1892,11 @@
         "idx": 106,
         "index": 25,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:25:23",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -1911,11 +1911,11 @@
         "idx": 105,
         "index": 25,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:25:23",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -1930,11 +1930,11 @@
         "idx": 104,
         "index": 24,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:25:22",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -1949,11 +1949,11 @@
         "idx": 103,
         "index": 24,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:25:22",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 7
     },
     {
@@ -1968,11 +1968,11 @@
         "idx": 102,
         "index": 24,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:25:22",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -1987,11 +1987,11 @@
         "idx": 101,
         "index": 23,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.91,
         "timestamp": "2024-02-20 16:25:20",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 7
     },
     {
@@ -2006,11 +2006,11 @@
         "idx": 100,
         "index": 23,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.73,
         "timestamp": "2024-02-20 16:25:20",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2025,11 +2025,11 @@
         "idx": 99,
         "index": 23,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:25:20",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2044,11 +2044,11 @@
         "idx": 98,
         "index": 22,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.5,
         "timestamp": "2024-02-20 16:25:17",
-        "topic": "food",
+        "topic": "topic-pet",
         "type": 7
     },
     {
@@ -2063,11 +2063,11 @@
         "idx": 97,
         "index": 22,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.9,
         "timestamp": "2024-02-20 16:25:17",
-        "topic": "food",
+        "topic": "topic-pet",
         "type": 7
     },
     {
@@ -2082,11 +2082,11 @@
         "idx": 96,
         "index": 22,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:25:17",
-        "topic": "food",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2101,11 +2101,11 @@
         "idx": 95,
         "index": 22,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:25:17",
-        "topic": "food",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2120,11 +2120,11 @@
         "idx": 94,
         "index": 22,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:25:17",
-        "topic": "food",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2139,11 +2139,11 @@
         "idx": 93,
         "index": 22,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.9,
         "timestamp": "2024-02-20 16:25:17",
-        "topic": "food",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2158,11 +2158,11 @@
         "idx": 92,
         "index": 22,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.83,
         "timestamp": "2024-02-20 16:25:17",
-        "topic": "food",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2177,11 +2177,11 @@
         "idx": 91,
         "index": 22,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.86,
         "timestamp": "2024-02-20 16:25:17",
-        "topic": "food",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2196,11 +2196,11 @@
         "idx": 90,
         "index": 21,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.93,
         "timestamp": "2024-02-20 16:25:14",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 7
     },
     {
@@ -2215,11 +2215,11 @@
         "idx": 89,
         "index": 21,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:25:14",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2234,11 +2234,11 @@
         "idx": 88,
         "index": 21,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.5,
         "timestamp": "2024-02-20 16:25:14",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2253,11 +2253,11 @@
         "idx": 87,
         "index": 20,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:25:09",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 7
     },
     {
@@ -2272,11 +2272,11 @@
         "idx": 86,
         "index": 20,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.72,
         "timestamp": "2024-02-20 16:25:09",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2291,11 +2291,11 @@
         "idx": 85,
         "index": 20,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:25:09",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2310,11 +2310,11 @@
         "idx": 84,
         "index": 20,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.72,
         "timestamp": "2024-02-20 16:25:09",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2329,11 +2329,11 @@
         "idx": 83,
         "index": 20,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.68,
         "timestamp": "2024-02-20 16:25:09",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2348,11 +2348,11 @@
         "idx": 82,
         "index": 20,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.93,
         "timestamp": "2024-02-20 16:25:09",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2367,11 +2367,11 @@
         "idx": 81,
         "index": 20,
         "intent_category": "Pet",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:25:09",
-        "topic": "pet",
+        "topic": "topic-pet",
         "type": 6
     },
     {
@@ -2386,11 +2386,11 @@
         "idx": 80,
         "index": 19,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.91,
         "timestamp": "2024-02-20 16:25:07",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2405,11 +2405,11 @@
         "idx": 79,
         "index": 19,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.86,
         "timestamp": "2024-02-20 16:25:07",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2424,11 +2424,11 @@
         "idx": 78,
         "index": 19,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.83,
         "timestamp": "2024-02-20 16:25:07",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2443,11 +2443,11 @@
         "idx": 77,
         "index": 19,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:25:07",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2462,11 +2462,11 @@
         "idx": 76,
         "index": 18,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:25:04",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2481,11 +2481,11 @@
         "idx": 75,
         "index": 18,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.85,
         "timestamp": "2024-02-20 16:25:04",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2500,11 +2500,11 @@
         "idx": 74,
         "index": 18,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:25:04",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2519,11 +2519,11 @@
         "idx": 73,
         "index": 18,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.89,
         "timestamp": "2024-02-20 16:25:04",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2538,11 +2538,11 @@
         "idx": 72,
         "index": 17,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:25:01",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2557,11 +2557,11 @@
         "idx": 71,
         "index": 17,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:25:01",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2576,11 +2576,11 @@
         "idx": 70,
         "index": 17,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.69,
         "timestamp": "2024-02-20 16:25:01",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2595,11 +2595,11 @@
         "idx": 69,
         "index": 17,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.92,
         "timestamp": "2024-02-20 16:25:01",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2614,11 +2614,11 @@
         "idx": 68,
         "index": 17,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.9,
         "timestamp": "2024-02-20 16:25:01",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2633,11 +2633,11 @@
         "idx": 67,
         "index": 16,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:24:58",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2652,11 +2652,11 @@
         "idx": 66,
         "index": 16,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.92,
         "timestamp": "2024-02-20 16:24:58",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2671,11 +2671,11 @@
         "idx": 65,
         "index": 16,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:24:58",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2690,11 +2690,11 @@
         "idx": 64,
         "index": 15,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:24:54",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2709,11 +2709,11 @@
         "idx": 63,
         "index": 15,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:24:54",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2728,11 +2728,11 @@
         "idx": 62,
         "index": 15,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:24:54",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2747,11 +2747,11 @@
         "idx": 61,
         "index": 15,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.89,
         "timestamp": "2024-02-20 16:24:54",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2766,11 +2766,11 @@
         "idx": 60,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.88,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2785,11 +2785,11 @@
         "idx": 59,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2804,11 +2804,11 @@
         "idx": 58,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.91,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2823,11 +2823,11 @@
         "idx": 57,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2842,11 +2842,11 @@
         "idx": 56,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2861,11 +2861,11 @@
         "idx": 55,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.92,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2880,11 +2880,11 @@
         "idx": 54,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2899,11 +2899,11 @@
         "idx": 53,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2918,11 +2918,11 @@
         "idx": 52,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.83,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2937,11 +2937,11 @@
         "idx": 51,
         "index": 14,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.86,
         "timestamp": "2024-02-20 16:24:44",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2956,11 +2956,11 @@
         "idx": 50,
         "index": 13,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.91,
         "timestamp": "2024-02-20 16:24:35",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -2975,11 +2975,11 @@
         "idx": 49,
         "index": 13,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.84,
         "timestamp": "2024-02-20 16:24:35",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -2994,11 +2994,11 @@
         "idx": 48,
         "index": 12,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:24:30",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -3013,11 +3013,11 @@
         "idx": 47,
         "index": 12,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:24:30",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -3032,11 +3032,11 @@
         "idx": 46,
         "index": 12,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.75,
         "timestamp": "2024-02-20 16:24:30",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -3051,11 +3051,11 @@
         "idx": 45,
         "index": 11,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:24:25",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -3070,11 +3070,11 @@
         "idx": 44,
         "index": 11,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:24:25",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -3089,11 +3089,11 @@
         "idx": 43,
         "index": 11,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.89,
         "timestamp": "2024-02-20 16:24:25",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -3108,11 +3108,11 @@
         "idx": 42,
         "index": 11,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:24:25",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -3127,11 +3127,11 @@
         "idx": 41,
         "index": 11,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:24:25",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -3146,11 +3146,11 @@
         "idx": 40,
         "index": 11,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:24:25",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -3165,11 +3165,11 @@
         "idx": 39,
         "index": 10,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:24:20",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -3184,11 +3184,11 @@
         "idx": 38,
         "index": 10,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:24:20",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 7
     },
     {
@@ -3203,11 +3203,11 @@
         "idx": 37,
         "index": 10,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.81,
         "timestamp": "2024-02-20 16:24:20",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -3222,11 +3222,11 @@
         "idx": 36,
         "index": 10,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.64,
         "timestamp": "2024-02-20 16:24:20",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -3241,11 +3241,11 @@
         "idx": 35,
         "index": 10,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:24:20",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -3260,11 +3260,11 @@
         "idx": 34,
         "index": 10,
         "intent_category": "Olympics",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.84,
         "timestamp": "2024-02-20 16:24:20",
-        "topic": "olympics",
+        "topic": "topic-olympics",
         "type": 6
     },
     {
@@ -3279,11 +3279,11 @@
         "idx": 33,
         "index": 9,
         "intent_category": "More",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:24:17",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 7
     },
     {
@@ -3298,11 +3298,11 @@
         "idx": 32,
         "index": 9,
         "intent_category": "More",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.93,
         "timestamp": "2024-02-20 16:24:17",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3317,11 +3317,11 @@
         "idx": 31,
         "index": 9,
         "intent_category": "More",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.51,
         "timestamp": "2024-02-20 16:24:17",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3336,11 +3336,11 @@
         "idx": 30,
         "index": 9,
         "intent_category": "More",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.97,
         "timestamp": "2024-02-20 16:24:17",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3355,11 +3355,11 @@
         "idx": 29,
         "index": 9,
         "intent_category": "More",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.89,
         "timestamp": "2024-02-20 16:24:17",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3374,11 +3374,11 @@
         "idx": 28,
         "index": 8,
         "intent_category": "Likes",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.95,
         "timestamp": "2024-02-20 16:24:11",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 7
     },
     {
@@ -3393,11 +3393,11 @@
         "idx": 27,
         "index": 8,
         "intent_category": "Likes",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "negative",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:24:11",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3412,11 +3412,11 @@
         "idx": 26,
         "index": 8,
         "intent_category": "Likes",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.62,
         "timestamp": "2024-02-20 16:24:11",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3431,11 +3431,11 @@
         "idx": 25,
         "index": 8,
         "intent_category": "Likes",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.92,
         "timestamp": "2024-02-20 16:24:11",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3450,11 +3450,11 @@
         "idx": 24,
         "index": 7,
         "intent_category": "Play",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.93,
         "timestamp": "2024-02-20 16:24:04",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 7
     },
     {
@@ -3469,11 +3469,11 @@
         "idx": 23,
         "index": 7,
         "intent_category": "Play",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.62,
         "timestamp": "2024-02-20 16:24:04",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3488,11 +3488,11 @@
         "idx": 22,
         "index": 7,
         "intent_category": "Play",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.84,
         "timestamp": "2024-02-20 16:24:04",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3506,12 +3506,12 @@
         "entity_type_detection": false,
         "idx": 21,
         "index": 6,
-        "intent_category": "Sports",
-        "lastInteraction": false,
+        "intent_category": "Basketball",
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:23:58",
-        "topic": null,
+        "topic": "topic-sports",
         "type": 7
     },
     {
@@ -3525,12 +3525,12 @@
         "entity_type_detection": false,
         "idx": 20,
         "index": 6,
-        "intent_category": "Sports",
-        "lastInteraction": false,
+        "intent_category": "Basketball",
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:23:58",
-        "topic": null,
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3544,12 +3544,12 @@
         "entity_type_detection": false,
         "idx": 19,
         "index": 5,
-        "intent_category": "Sports",
-        "lastInteraction": false,
+        "intent_category": "Basketball",
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:23:48",
-        "topic": null,
+        "topic": "topic-sports",
         "type": 7
     },
     {
@@ -3563,12 +3563,12 @@
         "entity_type_detection": false,
         "idx": 18,
         "index": 5,
-        "intent_category": "Sports",
-        "lastInteraction": false,
+        "intent_category": "Basketball",
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:23:48",
-        "topic": null,
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3582,12 +3582,12 @@
         "entity_type_detection": false,
         "idx": 17,
         "index": 5,
-        "intent_category": "Sports",
-        "lastInteraction": false,
+        "intent_category": "Basketball",
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.83,
         "timestamp": "2024-02-20 16:23:48",
-        "topic": null,
+        "topic": "topic-sports",
         "type": 7
     },
     {
@@ -3601,12 +3601,12 @@
         "entity_type_detection": false,
         "idx": 16,
         "index": 5,
-        "intent_category": "Sports",
-        "lastInteraction": false,
+        "intent_category": "Basketball",
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.93,
         "timestamp": "2024-02-20 16:23:48",
-        "topic": null,
+        "topic": "topic-sports",
         "type": 7
     },
     {
@@ -3620,12 +3620,12 @@
         "entity_type_detection": false,
         "idx": 15,
         "index": 5,
-        "intent_category": "Sports",
-        "lastInteraction": false,
+        "intent_category": "Basketball",
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.82,
         "timestamp": "2024-02-20 16:23:48",
-        "topic": null,
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3640,11 +3640,11 @@
         "idx": 14,
         "index": 4,
         "intent_category": "Like",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.75,
         "timestamp": "2024-02-20 16:23:26",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 7
     },
     {
@@ -3659,11 +3659,11 @@
         "idx": 13,
         "index": 3,
         "intent_category": "Sports",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.94,
         "timestamp": "2024-02-20 16:23:24",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 7
     },
     {
@@ -3678,11 +3678,11 @@
         "idx": 12,
         "index": 3,
         "intent_category": "Sports",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.8,
         "timestamp": "2024-02-20 16:23:24",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3697,11 +3697,11 @@
         "idx": 11,
         "index": 3,
         "intent_category": "Sports",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.82,
         "timestamp": "2024-02-20 16:23:24",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3716,11 +3716,11 @@
         "idx": 10,
         "index": 3,
         "intent_category": "Sports",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.89,
         "timestamp": "2024-02-20 16:23:24",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3735,11 +3735,11 @@
         "idx": 9,
         "index": 3,
         "intent_category": "Sports",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.99,
         "timestamp": "2024-02-20 16:23:24",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3754,11 +3754,11 @@
         "idx": 8,
         "index": 3,
         "intent_category": "Sports",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.98,
         "timestamp": "2024-02-20 16:23:24",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3773,11 +3773,11 @@
         "idx": 7,
         "index": 3,
         "intent_category": "Sports",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "positive",
         "sentiment_score": 0.74,
         "timestamp": "2024-02-20 16:23:24",
-        "topic": "sports",
+        "topic": "topic-sports",
         "type": 6
     },
     {
@@ -3792,11 +3792,11 @@
         "idx": 6,
         "index": 2,
         "intent_category": "Intro",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.7,
         "timestamp": "2024-02-20 16:23:17",
-        "topic": "intro",
+        "topic": "topic-intro",
         "type": 7
     },
     {
@@ -3811,11 +3811,11 @@
         "idx": 5,
         "index": 2,
         "intent_category": "Intro",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:23:17",
-        "topic": "intro",
+        "topic": "topic-intro",
         "type": 7
     },
     {
@@ -3830,11 +3830,11 @@
         "idx": 4,
         "index": 2,
         "intent_category": "Intro",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.91,
         "timestamp": "2024-02-20 16:23:17",
-        "topic": "intro",
+        "topic": "topic-intro",
         "type": 6
     },
     {
@@ -3849,11 +3849,11 @@
         "idx": 3,
         "index": 1,
         "intent_category": "Intro",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.96,
         "timestamp": "2024-02-20 16:23:14",
-        "topic": "intro",
+        "topic": "topic-intro",
         "type": 7
     },
     {
@@ -3868,11 +3868,11 @@
         "idx": 2,
         "index": 1,
         "intent_category": "Intro",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.89,
         "timestamp": "2024-02-20 16:23:14",
-        "topic": "intro",
+        "topic": "topic-intro",
         "type": 6
     },
     {
@@ -3887,11 +3887,11 @@
         "idx": 1,
         "index": 1,
         "intent_category": "Intro",
-        "lastInteraction": false,
+        "last_interaction": false,
         "sentiment_label": "neutral",
         "sentiment_score": 0.81,
         "timestamp": "2024-02-20 16:23:14",
-        "topic": "intro",
+        "topic": "topic-intro",
         "type": 6
     },
     {
@@ -3909,7 +3909,7 @@
         "sentiment_label": "neutral",
         "sentiment_score": -9,
         "timestamp": "2024-02-20 16:23:14",
-        "topic": "intro",
+        "topic": "topic-intro",
         "type": ""
     }
 ]

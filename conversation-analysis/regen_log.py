@@ -40,37 +40,25 @@ def replace_keys(original_dict):
 
 def generate_topic(dialog_line, last_topic_group):
     """use the intents from the data to make sure the correct topic is assigned to each line"""
-    
-    def not_last_topic(topic, last_topic_check):
-        try:
-            if last_topic_check["topic_name"] == topic["topic_name"]:
-                print(f"SKIPPING {last_topic_check["topic_name"]} --------- {topic["topic_name"]}")
-                return False
-        except TypeError:
-            return True
-        return True
 
     topic_name_output = ""
     if last_topic_group:
         for intent in last_topic_group["intents"]:
             if intent == dialog_line["intent"]:
                 topic_name_output = last_topic_group["topic_name"]
-                print(last_topic_group)
                 return topic_name_output, last_topic_group
 
     for topic in topic_list:
-        if not_last_topic(topic, last_topic_group):
-            if topic["topic_name"] in dialog_line["intent"]:
-                topic_name_output = topic["topic_name"]
-                print(f"{topic["topic_name"]} ------> {dialog_line["intent"]}")
-                return topic_name_output, topic
+        if topic["topic_name"] in dialog_line["intent"]:
+            topic_name_output = topic["topic_name"]
+            return topic_name_output, topic
 
     for topic in topic_list:
-        if not_last_topic(topic, last_topic_group):
-            for intent in topic["intents"]:
-                if intent == dialog_line["intent"]:
-                    topic_name_output = topic["topic_name"]
-                    return topic_name_output, topic
+        for intent in topic["intents"]:
+            if intent == dialog_line["intent"]:
+                topic_name_output = topic["topic_name"]
+                return topic_name_output, topic
+            
     
     print(f"TOPIC FOR *{dialog_line['intent']}* NOT FOUND \n")
     return topic_name_output, last_topic_group
@@ -107,11 +95,12 @@ for utterance in data:
     updated_line = replace_keys(utterance)
     updated_line["topic"], last_topic = generate_topic(updated_line, last_topic)
     updated_list.append(updated_line)
-end = datetime.now()
-print(end - start)
+
 
 # Dump data to JSON file
-# with open(OUTPUT_FILE_PATH, "w", encoding="utf8") as json_file:
-#     print('writing...')
-#     json.dump(updated_list, json_file)
-#     print('done.')
+with open(OUTPUT_FILE_PATH, "w", encoding="utf8") as json_file:
+    print('writing...')
+    json.dump(updated_list, json_file)
+    print('done.')
+    end = datetime.now()
+    print(end - start)

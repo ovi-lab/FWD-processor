@@ -111,7 +111,7 @@ def main():
             "sentiment_label": response["sentiment_label"],
             "sentiment_score": response["sentiment_score"],
             "highlighted": response["highlighted"],
-            "lastInteraction": bool(response["lastInteraction"]),
+            "last_interaction": bool(response["last_interaction"]),
             "dataCollection": response["entity_type_detection"],
             "app_name": response["app_name"],
             "timestamp": str(response["timestamp"]),
