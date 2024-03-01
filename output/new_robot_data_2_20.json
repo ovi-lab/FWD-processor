@@ -5,7 +5,6 @@
             "name": "haru: command-conversation-end",
             "turn": "haru",
             "topic": "command-conversation-end",
-            "grp": 0,
             "n": 6.25,
             "interactions": [
                 {
@@ -23,8 +22,7 @@
                     "sentiment_score": 0.63,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
                 },
                 {
@@ -42,8 +40,7 @@
                     "sentiment_score": 0.5,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
                 },
                 {
@@ -61,8 +58,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
                 },
                 {
@@ -80,8 +76,7 @@
                     "sentiment_score": 0.92,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
                 },
                 {
@@ -99,8 +94,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
                 }
             ],
@@ -112,8 +106,7 @@
             "name": "user: command-conversation-end",
             "turn": "user",
             "topic": "command-conversation-end",
-            "grp": 0,
-            "n": 5.25,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 200,
@@ -130,8 +123,7 @@
                     "sentiment_score": 0.88,
                     "highlighted": false,
                     "last_interaction": true,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
                 }
             ],
@@ -143,8 +135,7 @@
             "name": "haru: topic-rollercoasters",
             "turn": "haru",
             "topic": "topic-rollercoasters",
-            "grp": 0,
-            "n": 19.75,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 199,
@@ -161,8 +152,7 @@
                     "sentiment_score": 0.87,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
@@ -180,8 +170,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
@@ -199,8 +188,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
@@ -218,8 +206,7 @@
                     "sentiment_score": 0.93,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
@@ -237,8 +224,7 @@
                     "sentiment_score": 0.84,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
@@ -256,8 +242,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
@@ -275,8 +260,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
@@ -294,8 +278,7 @@
                     "sentiment_score": 0.5700000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
@@ -313,8 +296,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
@@ -332,8 +314,7 @@
                     "sentiment_score": 0.89,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
@@ -351,8 +332,7 @@
                     "sentiment_score": 0.72,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
@@ -370,8 +350,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
@@ -389,8 +368,7 @@
                     "sentiment_score": 0.88,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
@@ -408,8 +386,7 @@
                     "sentiment_score": 0.85,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:26:17"
                 },
                 {
@@ -427,8 +404,7 @@
                     "sentiment_score": 0.73,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:26:17"
                 },
                 {
@@ -446,8 +422,7 @@
                     "sentiment_score": 0.91,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:26:17"
                 },
                 {
@@ -465,8 +440,7 @@
                     "sentiment_score": 0.75,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:26:17"
                 },
                 {
@@ -484,8 +458,7 @@
                     "sentiment_score": 0.9,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:15"
                 },
                 {
@@ -503,8 +476,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:15"
                 },
                 {
@@ -522,8 +494,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:15"
                 },
                 {
@@ -541,8 +512,7 @@
                     "sentiment_score": 0.75,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:11"
                 },
                 {
@@ -560,8 +530,7 @@
                     "sentiment_score": 0.79,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:11"
                 },
                 {
@@ -579,8 +548,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:11"
                 },
                 {
@@ -598,8 +566,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:09"
                 },
                 {
@@ -617,8 +584,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:09"
                 },
                 {
@@ -636,8 +602,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:08"
                 },
                 {
@@ -655,8 +620,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:08"
                 },
                 {
@@ -674,8 +638,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:08"
                 },
                 {
@@ -693,8 +656,7 @@
                     "sentiment_score": 0.91,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:08"
                 },
                 {
@@ -712,8 +674,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:06"
                 },
                 {
@@ -731,8 +692,7 @@
                     "sentiment_score": 0.56,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:06"
                 },
                 {
@@ -750,8 +710,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:06"
                 },
                 {
@@ -769,8 +728,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:05"
                 },
                 {
@@ -788,8 +746,7 @@
                     "sentiment_score": 0.92,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:05"
                 },
                 {
@@ -807,8 +764,7 @@
                     "sentiment_score": 0.67,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:05"
                 },
                 {
@@ -826,8 +782,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:05"
                 },
                 {
@@ -845,8 +800,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
@@ -864,8 +818,7 @@
                     "sentiment_score": 0.87,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
@@ -883,8 +836,7 @@
                     "sentiment_score": 0.85,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
@@ -902,8 +854,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
@@ -921,8 +872,7 @@
                     "sentiment_score": 0.8,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
@@ -940,8 +890,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
@@ -959,8 +908,7 @@
                     "sentiment_score": 0.92,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:02"
                 },
                 {
@@ -978,8 +926,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:02"
                 },
                 {
@@ -997,8 +944,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:02"
                 },
                 {
@@ -1016,8 +962,7 @@
                     "sentiment_score": 0.81,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
@@ -1035,8 +980,7 @@
                     "sentiment_score": 0.75,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
@@ -1054,8 +998,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
@@ -1073,8 +1016,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
@@ -1092,8 +1034,7 @@
                     "sentiment_score": 0.9,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:59"
                 },
                 {
@@ -1111,8 +1052,7 @@
                     "sentiment_score": 0.52,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:59"
                 },
                 {
@@ -1130,8 +1070,7 @@
                     "sentiment_score": 0.93,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:59"
                 },
                 {
@@ -1149,8 +1088,7 @@
                     "sentiment_score": 0.87,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
@@ -1168,8 +1106,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
@@ -1187,8 +1124,7 @@
                     "sentiment_score": 0.62,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
@@ -1206,8 +1142,7 @@
                     "sentiment_score": 0.89,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
@@ -1225,8 +1160,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
@@ -1244,8 +1178,7 @@
                     "sentiment_score": 0.9,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
                 },
                 {
@@ -1263,8 +1196,7 @@
                     "sentiment_score": 0.81,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
                 }
             ],
@@ -1276,8 +1208,7 @@
             "name": "user: topic-rollercoasters",
             "turn": "user",
             "topic": "topic-rollercoasters",
-            "grp": 0,
-            "n": 7.0,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 191,
@@ -1294,8 +1225,7 @@
                     "sentiment_score": 0.71,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
                 },
                 {
@@ -1313,8 +1243,7 @@
                     "sentiment_score": 0.68,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
                 },
                 {
@@ -1332,8 +1261,7 @@
                     "sentiment_score": 0.71,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:15"
                 },
                 {
@@ -1351,8 +1279,7 @@
                     "sentiment_score": 0.84,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:11"
                 },
                 {
@@ -1370,8 +1297,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
                 },
                 {
@@ -1389,8 +1315,7 @@
                     "sentiment_score": 0.84,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:02"
                 },
                 {
@@ -1408,8 +1333,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
                 },
                 {
@@ -1427,8 +1351,7 @@
                     "sentiment_score": 0.84,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:59"
                 }
             ],
@@ -1440,8 +1363,7 @@
             "name": "haru: topic-lemurs",
             "turn": "haru",
             "topic": "topic-lemurs",
-            "grp": 0,
-            "n": 10.5,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 132,
@@ -1458,8 +1380,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:54"
                 },
                 {
@@ -1477,8 +1398,7 @@
                     "sentiment_score": 0.88,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:54"
                 },
                 {
@@ -1496,8 +1416,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:52"
                 },
                 {
@@ -1515,8 +1434,7 @@
                     "sentiment_score": 0.93,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:52"
                 },
                 {
@@ -1534,8 +1452,7 @@
                     "sentiment_score": 0.64,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:52"
                 },
                 {
@@ -1553,8 +1470,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:50"
                 },
                 {
@@ -1572,8 +1488,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:50"
                 },
                 {
@@ -1591,8 +1506,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:47"
                 },
                 {
@@ -1610,8 +1524,7 @@
                     "sentiment_score": 0.73,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:47"
                 },
                 {
@@ -1629,8 +1542,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:47"
                 },
                 {
@@ -1648,8 +1560,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:39"
                 },
                 {
@@ -1667,8 +1578,7 @@
                     "sentiment_score": 0.78,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:39"
                 },
                 {
@@ -1686,8 +1596,7 @@
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:39"
                 },
                 {
@@ -1705,8 +1614,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:28"
                 },
                 {
@@ -1724,8 +1632,7 @@
                     "sentiment_score": 0.73,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:28"
                 },
                 {
@@ -1743,8 +1650,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:28"
                 },
                 {
@@ -1762,8 +1668,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
@@ -1781,8 +1686,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
@@ -1800,8 +1704,7 @@
                     "sentiment_score": 0.91,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
@@ -1819,8 +1722,7 @@
                     "sentiment_score": 0.51,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
@@ -1838,8 +1740,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
                 },
                 {
@@ -1857,8 +1758,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
                 }
             ],
@@ -1870,8 +1770,7 @@
             "name": "user: topic-lemurs",
             "turn": "user",
             "topic": "topic-lemurs",
-            "grp": 0,
-            "n": 5.75,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 127,
@@ -1888,8 +1787,7 @@
                     "sentiment_score": 0.71,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:52"
                 },
                 {
@@ -1907,8 +1805,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:47"
                 },
                 {
@@ -1926,8 +1823,7 @@
                     "sentiment_score": 0.65,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:39"
                 }
             ],
@@ -1939,8 +1835,7 @@
             "name": "haru: topic-pet",
             "turn": "haru",
             "topic": "topic-pet",
-            "grp": 0,
-            "n": 11.0,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 107,
@@ -1957,8 +1852,7 @@
                     "sentiment_score": 0.85,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:23"
                 },
                 {
@@ -1976,8 +1870,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:23"
                 },
                 {
@@ -1995,8 +1888,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:23"
                 },
                 {
@@ -2014,8 +1906,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:22"
                 },
                 {
@@ -2033,8 +1924,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:22"
                 },
                 {
@@ -2052,8 +1942,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:22"
                 },
                 {
@@ -2071,8 +1960,7 @@
                     "sentiment_score": 0.91,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:20"
                 },
                 {
@@ -2090,8 +1978,7 @@
                     "sentiment_score": 0.73,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:20"
                 },
                 {
@@ -2109,8 +1996,7 @@
                     "sentiment_score": 0.5,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
@@ -2128,8 +2014,7 @@
                     "sentiment_score": 0.9,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
@@ -2147,8 +2032,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
@@ -2166,8 +2050,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
@@ -2185,8 +2068,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
@@ -2204,8 +2086,7 @@
                     "sentiment_score": 0.9,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
@@ -2223,8 +2104,7 @@
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
@@ -2242,8 +2122,7 @@
                     "sentiment_score": 0.93,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:14"
                 },
                 {
@@ -2261,8 +2140,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:14"
                 },
                 {
@@ -2280,8 +2158,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
@@ -2299,8 +2176,7 @@
                     "sentiment_score": 0.72,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
@@ -2318,8 +2194,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
@@ -2337,8 +2212,7 @@
                     "sentiment_score": 0.72,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
@@ -2356,8 +2230,7 @@
                     "sentiment_score": 0.68,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
@@ -2375,8 +2248,7 @@
                     "sentiment_score": 0.93,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
                 },
                 {
@@ -2394,8 +2266,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
                 }
             ],
@@ -2407,8 +2278,7 @@
             "name": "user: topic-pet",
             "turn": "user",
             "topic": "topic-pet",
-            "grp": 0,
-            "n": 5.75,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 99,
@@ -2425,8 +2295,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:20"
                 },
                 {
@@ -2444,8 +2313,7 @@
                     "sentiment_score": 0.86,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
                 },
                 {
@@ -2463,8 +2331,7 @@
                     "sentiment_score": 0.5,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:14"
                 }
             ],
@@ -2476,8 +2343,7 @@
             "name": "haru: topic-olympics",
             "turn": "haru",
             "topic": "topic-olympics",
-            "grp": 0,
-            "n": 14.5,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 80,
@@ -2494,8 +2360,7 @@
                     "sentiment_score": 0.91,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:07"
                 },
                 {
@@ -2513,8 +2378,7 @@
                     "sentiment_score": 0.86,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:07"
                 },
                 {
@@ -2532,8 +2396,7 @@
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:07"
                 },
                 {
@@ -2551,8 +2414,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:04"
                 },
                 {
@@ -2570,8 +2432,7 @@
                     "sentiment_score": 0.85,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:04"
                 },
                 {
@@ -2589,8 +2450,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:04"
                 },
                 {
@@ -2608,8 +2468,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
@@ -2627,8 +2486,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
@@ -2646,8 +2504,7 @@
                     "sentiment_score": 0.6900000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
@@ -2665,8 +2522,7 @@
                     "sentiment_score": 0.92,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
@@ -2684,8 +2540,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:58"
                 },
                 {
@@ -2703,8 +2558,7 @@
                     "sentiment_score": 0.92,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:58"
                 },
                 {
@@ -2722,8 +2576,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:54"
                 },
                 {
@@ -2741,8 +2594,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:54"
                 },
                 {
@@ -2760,8 +2612,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:54"
                 },
                 {
@@ -2779,8 +2630,7 @@
                     "sentiment_score": 0.88,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -2798,8 +2648,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -2817,8 +2666,7 @@
                     "sentiment_score": 0.91,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -2836,8 +2684,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -2855,8 +2702,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -2874,8 +2720,7 @@
                     "sentiment_score": 0.92,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -2893,8 +2738,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -2912,8 +2756,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -2931,8 +2774,7 @@
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -2950,8 +2792,7 @@
                     "sentiment_score": 0.91,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:35"
                 },
                 {
@@ -2969,8 +2810,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:30"
                 },
                 {
@@ -2988,8 +2828,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:30"
                 },
                 {
@@ -3007,8 +2846,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
@@ -3026,8 +2864,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
@@ -3045,8 +2882,7 @@
                     "sentiment_score": 0.89,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
@@ -3064,8 +2900,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
@@ -3083,8 +2918,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
@@ -3102,8 +2936,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
                 },
                 {
@@ -3121,8 +2954,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
                 },
                 {
@@ -3140,8 +2972,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
                 },
                 {
@@ -3159,8 +2990,7 @@
                     "sentiment_score": 0.81,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
                 },
                 {
@@ -3178,8 +3008,7 @@
                     "sentiment_score": 0.64,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
                 },
                 {
@@ -3197,8 +3026,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
                 }
             ],
@@ -3210,8 +3038,7 @@
             "name": "user: topic-olympics",
             "turn": "user",
             "topic": "topic-olympics",
-            "grp": 0,
-            "n": 7.25,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 77,
@@ -3228,8 +3055,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:07"
                 },
                 {
@@ -3247,8 +3073,7 @@
                     "sentiment_score": 0.89,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:25:04"
                 },
                 {
@@ -3266,8 +3091,7 @@
                     "sentiment_score": 0.9,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
                 },
                 {
@@ -3285,8 +3109,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:58"
                 },
                 {
@@ -3304,8 +3127,7 @@
                     "sentiment_score": 0.89,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:54"
                 },
                 {
@@ -3323,8 +3145,7 @@
                     "sentiment_score": 0.86,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
                 },
                 {
@@ -3342,8 +3163,7 @@
                     "sentiment_score": 0.84,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:35"
                 },
                 {
@@ -3361,8 +3181,7 @@
                     "sentiment_score": 0.75,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:30"
                 },
                 {
@@ -3380,8 +3199,7 @@
                     "sentiment_score": 0.84,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
                 }
             ],
@@ -3393,8 +3211,7 @@
             "name": "haru: topic-sports",
             "turn": "haru",
             "topic": "topic-sports",
-            "grp": 0,
-            "n": 10.25,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 33,
@@ -3411,8 +3228,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
@@ -3430,8 +3246,7 @@
                     "sentiment_score": 0.93,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
@@ -3449,8 +3264,7 @@
                     "sentiment_score": 0.51,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
@@ -3468,8 +3282,7 @@
                     "sentiment_score": 0.97,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
@@ -3487,8 +3300,7 @@
                     "sentiment_score": 0.9500000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:11"
                 },
                 {
@@ -3506,8 +3318,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:11"
                 },
                 {
@@ -3525,8 +3336,7 @@
                     "sentiment_score": 0.62,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:11"
                 },
                 {
@@ -3544,8 +3354,7 @@
                     "sentiment_score": 0.93,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:04"
                 },
                 {
@@ -3563,8 +3372,7 @@
                     "sentiment_score": 0.62,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:04"
                 },
                 {
@@ -3582,8 +3390,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:58"
                 },
                 {
@@ -3601,8 +3408,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
                 },
                 {
@@ -3620,8 +3426,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
                 },
                 {
@@ -3639,8 +3444,7 @@
                     "sentiment_score": 0.8300000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
                 },
                 {
@@ -3658,8 +3462,7 @@
                     "sentiment_score": 0.93,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
                 },
                 {
@@ -3677,8 +3480,7 @@
                     "sentiment_score": 0.75,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:23:26"
                 },
                 {
@@ -3696,8 +3498,7 @@
                     "sentiment_score": 0.9400000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
                 },
                 {
@@ -3715,8 +3516,7 @@
                     "sentiment_score": 0.8,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
                 },
                 {
@@ -3734,8 +3534,7 @@
                     "sentiment_score": 0.8200000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
                 },
                 {
@@ -3753,8 +3552,7 @@
                     "sentiment_score": 0.89,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
                 },
                 {
@@ -3772,8 +3570,7 @@
                     "sentiment_score": 0.99,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
                 },
                 {
@@ -3791,8 +3588,7 @@
                     "sentiment_score": 0.98,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
                 }
             ],
@@ -3804,8 +3600,7 @@
             "name": "user: topic-sports",
             "turn": "user",
             "topic": "topic-sports",
-            "grp": 0,
-            "n": 6.5,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 29,
@@ -3822,8 +3617,7 @@
                     "sentiment_score": 0.89,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
                 },
                 {
@@ -3841,8 +3635,7 @@
                     "sentiment_score": 0.92,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:11"
                 },
                 {
@@ -3860,8 +3653,7 @@
                     "sentiment_score": 0.84,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:24:04"
                 },
                 {
@@ -3879,8 +3671,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:58"
                 },
                 {
@@ -3898,8 +3689,7 @@
                     "sentiment_score": 0.8200000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
                 },
                 {
@@ -3917,8 +3707,7 @@
                     "sentiment_score": 0.74,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
                 }
             ],
@@ -3930,7 +3719,6 @@
             "name": "haru: topic-intro",
             "turn": "haru",
             "topic": "topic-intro",
-            "grp": 0,
             "n": 6.25,
             "interactions": [
                 {
@@ -3948,8 +3736,7 @@
                     "sentiment_score": 0.7000000000000001,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:17"
                 },
                 {
@@ -3967,8 +3754,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:17"
                 },
                 {
@@ -3986,8 +3772,7 @@
                     "sentiment_score": 0.96,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:23:14"
                 },
                 {
@@ -4005,8 +3790,7 @@
                     "sentiment_score": 0.89,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:23:14"
                 },
                 {
@@ -4024,8 +3808,7 @@
                     "sentiment_score": 0.81,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": true,
-                    "app_name": "smalltalk",
+                    "data_collection": true,
                     "timestamp": "2024-02-20 16:23:14"
                 }
             ],
@@ -4037,8 +3820,7 @@
             "name": "user: topic-intro",
             "turn": "user",
             "topic": "topic-intro",
-            "grp": 0,
-            "n": 5.25,
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 4,
@@ -4055,8 +3837,7 @@
                     "sentiment_score": 0.91,
                     "highlighted": false,
                     "last_interaction": false,
-                    "dataCollection": false,
-                    "app_name": "smalltalk",
+                    "data_collection": false,
                     "timestamp": "2024-02-20 16:23:17"
                 }
             ],

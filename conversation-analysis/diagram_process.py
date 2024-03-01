@@ -1,6 +1,6 @@
 import json
-import utils
 from itertools import pairwise
+import utils
 import pandas
 
 # Paths
@@ -19,61 +19,6 @@ def main():
     organized into a dictionary and saved as a JSON file to feed into the d3.js script.
     """
 
-    def increase_node_size(node_id):
-        """
-        Iterate through global variable mapped_conversation to find the
-        node with the desired node_id and increase the node size.
-
-        Parameters
-        ----------
-        node_id : int
-            id of node to enlarge
-        """
-        for n in mapped_conversation["nodes"]:
-            if n["id"] == node_id:
-                n["n"] = n["n"] + NODE_SIZE_INCREMENT_BY
-
-    
-
-    def get_node_idx(node_topic, node_turn):
-        """
-        Iterate through the the global variable mapped_conversation to find the specified node
-        and return the index if it is found. If not, create a new node with the name specified and return the index of the new node. 
-
-        Parameters
-        ----------
-        node_name : str
-            node to find
-
-        Returns
-        -------
-        int
-            index of the node with the specified node_name
-        """
-        nodes = mapped_conversation["nodes"]
-        new_id = 0
-        for i, node in enumerate(nodes):
-            if node["topic"] == node_topic and node["turn"] == node_turn:
-                return i
-            new_id = i+1
-
-        # If no match for node name, create a new node with index
-        nodes.append(
-            {
-                "id": new_id,
-                "name": f'{node_turn}: {node_topic}',
-                "turn": node_turn,
-                "topic": node_topic,
-                "grp": 0,
-                "n": 5,
-                "interactions": [],
-                "timestamp": str(response["timestamp"]),
-                "show": False,
-            }
-        )
-        return new_id
-
-
     # Read sample conversation into a Pandas dataframe
     df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
 
@@ -83,6 +28,8 @@ def main():
         "links": {"haru": [], "user": []},
         "attributes": {},
     }
+    mapped_nodes = mapped_conversation["nodes"]
+    mapped_links = mapped_conversation["links"]
 
     row_iterator = df.iterrows() # pylint: disable=E1101
 
@@ -92,13 +39,14 @@ def main():
     for response_tuple, prompt_tuple in pairwise(row_iterator):
         response = response_tuple[1]
         prompt = prompt_tuple[1]
+        response_timestamp = str(response["timestamp"])
         response_node_name = create_node_name(response)
         prompt_node_name = create_node_name(prompt)
-        response_generated_idx = get_node_idx(response["topic"], response["turn"])
-        prompt_generated_idx = get_node_idx(prompt["topic"], prompt["turn"])
+        response_generated_idx = utils.get_node_idx(mapped_nodes, response["topic"], response["turn"], response_timestamp)
+        prompt_generated_idx = utils.get_node_idx(mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp)
         
-        response_node_id = mapped_conversation["nodes"][response_generated_idx]["id"]
-        prompt_node_id = mapped_conversation["nodes"][prompt_generated_idx]["id"]
+        response_node = mapped_nodes[response_generated_idx]
+        prompt_node = mapped_nodes[prompt_generated_idx]
 
         new_interaction = {
             "idx": response["idx"],
@@ -115,31 +63,29 @@ def main():
             "sentiment_score": response["sentiment_score"],
             "highlighted": response["highlighted"],
             "last_interaction": bool(response["last_interaction"]),
-            "dataCollection": response["entity_type_detection"],
-            "app_name": response["app_name"],
-            "timestamp": str(response["timestamp"]),
+            "data_collection": response["entity_type_detection"],
+            "timestamp": response_timestamp,
         }
 
         # Adding more information to each node
-        mapped_conversation["nodes"][response_generated_idx][
+        mapped_nodes[response_generated_idx][
             "interactions"
         ].append(new_interaction)
 
-        mapped_conversation["nodes"][response_generated_idx]["timestamp"] = str(response['timestamp'])
+        mapped_nodes[response_generated_idx]["timestamp"] = str(response['timestamp'])
 
         # increase node size
-        increase_node_size(response_node_id)
+        response_node["n"] = utils.increase_node_size(mapped_nodes, response_node["id"], NODE_SIZE_INCREMENT_BY)
 
         if (response_node_name == prompt_node_name):
             continue
 
-        link_section = mapped_conversation["links"][prompt["turn"]]
-        print(link_section)
+        link_turn_section = mapped_links[prompt["turn"]]
         link_name = f"{prompt_node_name} -> {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
 
         # If the link already exists, don't create another one
-        if utils.link_exists(link_name, link_section):
-            for link in link_section:
+        if utils.link_exists(link_name, link_turn_section):
+            for link in link_turn_section:
                 if link["name"] == link_name:
                     link["timestamp"] = str(response["timestamp"])
                     link["responseIDs"].append(new_interaction["idx"])
@@ -148,20 +94,19 @@ def main():
         # If a link between the request and response node does not
         # exist yet, create a new link with value 1
         else:
-            link_section.append(
+            link_turn_section.append(
                 {
                     "name": link_name,
-                    "source": prompt_node_id,
-                    "target": response_node_id,
+                    "source": prompt_node["id"],
+                    "target": response_node["id"],
                     "value": 1,
                     "timestamp": str(response["timestamp"]),
                     "responseIDs": [new_interaction["idx"]],
                 }
             )
 
-    for i in range(len(mapped_conversation["nodes"])):
-        if utils.node_has_links(mapped_conversation["nodes"][i], link_section):
-            mapped_conversation["nodes"][i]["show"] = True
+    for node in mapped_nodes:
+            node["show"] = utils.node_has_links(node, link_turn_section)
 
     # Save the results as a JSON file
     path = r"output/new_robot_data_2_20.json"

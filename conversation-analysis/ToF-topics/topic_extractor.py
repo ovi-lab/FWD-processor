@@ -1,3 +1,4 @@
+"""Extracts the topics and intents from the excel repository to JSON"""
 from openpyxl import load_workbook
 import json
 
