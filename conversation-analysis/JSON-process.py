@@ -35,7 +35,7 @@ def main():
 
     
 
-    def get_node_idx(node_name):
+    def get_node_idx(node_topic, node_turn):
         """
         Iterate through the the global variable mapped_conversation to find the specified node
         and return the index if it is found. If not, create a new node with the name specified and return the index of the new node. 
@@ -53,7 +53,7 @@ def main():
         nodes = mapped_conversation["nodes"]
         new_id = 0
         for i, node in enumerate(nodes):
-            if node["name"] == node_name:
+            if node["topic"] == node_topic and node["turn"] == node_turn:
                 return i
             new_id = i+1
 
@@ -61,7 +61,9 @@ def main():
         nodes.append(
             {
                 "id": new_id,
-                "name": node_name,
+                "name": f'{node_turn}: {node_topic}',
+                "turn": node_turn,
+                "topic": node_topic,
                 "grp": 0,
                 "n": 5,
                 "interactions": [],
@@ -92,10 +94,11 @@ def main():
         prompt = prompt_tuple[1]
         response_node_name = create_node_name(response)
         prompt_node_name = create_node_name(prompt)
-        response_node_id = mapped_conversation["nodes"][get_node_idx(response_node_name)]["id"]
-        prompt_node_id = mapped_conversation["nodes"][get_node_idx(prompt_node_name)]["id"]
-
+        response_generated_idx = get_node_idx(response["topic"], response["turn"])
+        prompt_generated_idx = get_node_idx(prompt["topic"], prompt["turn"])
         
+        response_node_id = mapped_conversation["nodes"][response_generated_idx]["id"]
+        prompt_node_id = mapped_conversation["nodes"][prompt_generated_idx]["id"]
 
         new_interaction = {
             "idx": response["idx"],
@@ -118,11 +121,11 @@ def main():
         }
 
         # Adding more information to each node
-        mapped_conversation["nodes"][get_node_idx(response_node_name)][
+        mapped_conversation["nodes"][response_generated_idx][
             "interactions"
         ].append(new_interaction)
 
-        mapped_conversation["nodes"][get_node_idx(response_node_name)]["timestamp"] = str(response['timestamp'])
+        mapped_conversation["nodes"][response_generated_idx]["timestamp"] = str(response['timestamp'])
 
         # increase node size
         increase_node_size(response_node_id)

@@ -3,6 +3,8 @@
         {
             "id": 0,
             "name": "haru: command-conversation-end",
+            "turn": "haru",
+            "topic": "command-conversation-end",
             "grp": 0,
             "n": 6.25,
             "interactions": [
@@ -108,6 +110,8 @@
         {
             "id": 1,
             "name": "user: command-conversation-end",
+            "turn": "user",
+            "topic": "command-conversation-end",
             "grp": 0,
             "n": 5.25,
             "interactions": [
@@ -137,6 +141,8 @@
         {
             "id": 2,
             "name": "haru: topic-rollercoasters",
+            "turn": "haru",
+            "topic": "topic-rollercoasters",
             "grp": 0,
             "n": 19.75,
             "interactions": [
@@ -1268,6 +1274,8 @@
         {
             "id": 3,
             "name": "user: topic-rollercoasters",
+            "turn": "user",
+            "topic": "topic-rollercoasters",
             "grp": 0,
             "n": 7.0,
             "interactions": [
@@ -1430,6 +1438,8 @@
         {
             "id": 4,
             "name": "haru: topic-lemurs",
+            "turn": "haru",
+            "topic": "topic-lemurs",
             "grp": 0,
             "n": 10.5,
             "interactions": [
@@ -1858,6 +1868,8 @@
         {
             "id": 5,
             "name": "user: topic-lemurs",
+            "turn": "user",
+            "topic": "topic-lemurs",
             "grp": 0,
             "n": 5.75,
             "interactions": [
@@ -1925,6 +1937,8 @@
         {
             "id": 6,
             "name": "haru: topic-pet",
+            "turn": "haru",
+            "topic": "topic-pet",
             "grp": 0,
             "n": 11.0,
             "interactions": [
@@ -2391,6 +2405,8 @@
         {
             "id": 7,
             "name": "user: topic-pet",
+            "turn": "user",
+            "topic": "topic-pet",
             "grp": 0,
             "n": 5.75,
             "interactions": [
@@ -2458,6 +2474,8 @@
         {
             "id": 8,
             "name": "haru: topic-olympics",
+            "turn": "haru",
+            "topic": "topic-olympics",
             "grp": 0,
             "n": 14.5,
             "interactions": [
@@ -3190,6 +3208,8 @@
         {
             "id": 9,
             "name": "user: topic-olympics",
+            "turn": "user",
+            "topic": "topic-olympics",
             "grp": 0,
             "n": 7.25,
             "interactions": [
@@ -3371,6 +3391,8 @@
         {
             "id": 10,
             "name": "haru: topic-sports",
+            "turn": "haru",
+            "topic": "topic-sports",
             "grp": 0,
             "n": 10.25,
             "interactions": [
@@ -3780,6 +3802,8 @@
         {
             "id": 11,
             "name": "user: topic-sports",
+            "turn": "user",
+            "topic": "topic-sports",
             "grp": 0,
             "n": 6.5,
             "interactions": [
@@ -3904,6 +3928,8 @@
         {
             "id": 12,
             "name": "haru: topic-intro",
+            "turn": "haru",
+            "topic": "topic-intro",
             "grp": 0,
             "n": 6.25,
             "interactions": [
@@ -4009,6 +4035,8 @@
         {
             "id": 13,
             "name": "user: topic-intro",
+            "turn": "user",
+            "topic": "topic-intro",
             "grp": 0,
             "n": 5.25,
             "interactions": [
