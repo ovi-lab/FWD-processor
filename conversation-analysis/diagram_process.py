@@ -1,7 +1,8 @@
 import json
+from datetime import datetime
 from itertools import pairwise
+import ijson
 import utils
-import pandas
 
 # Paths
 PATH_TO_SAMPLE_CONVERSATION = "data/log-02-20.json"
@@ -11,7 +12,7 @@ PATH_TO_ONTOLOGY = 'data/Tiers-of-Friendship.xlsx'
 NODE_SIZE_INCREMENT_BY = 0.25
 
 
-def main():
+def diagram_process():
     """
     Reads a file with a list of conversation and uses the DialogTag Python tool to
     predict the dialogue tag of each line of conversation and groups the conversation
@@ -20,7 +21,8 @@ def main():
     """
 
     # Read sample conversation into a Pandas dataframe
-    df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
+    # df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
+    # row_iterator = df.iterrows() # pylint: disable=E1101
 
     # Create the JSON template for the results to feed into d3.js
     mapped_conversation = {
@@ -31,79 +33,79 @@ def main():
     mapped_nodes = mapped_conversation["nodes"]
     mapped_links = mapped_conversation["links"]
 
-    row_iterator = df.iterrows() # pylint: disable=E1101
 
     def create_node_name(line):
         return f'{line['turn']}: {line['topic']}'
 
-    for response_tuple, prompt_tuple in pairwise(row_iterator):
-        response = response_tuple[1]
-        prompt = prompt_tuple[1]
-        response_timestamp = str(response["timestamp"])
-        response_node_name = create_node_name(response)
-        prompt_node_name = create_node_name(prompt)
-        response_generated_idx = utils.get_node_idx(mapped_nodes, response["topic"], response["turn"], response_timestamp)
-        prompt_generated_idx = utils.get_node_idx(mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp)
-        
-        response_node = mapped_nodes[response_generated_idx]
-        prompt_node = mapped_nodes[prompt_generated_idx]
+    with open(PATH_TO_SAMPLE_CONVERSATION, 'rb') as f:
+        row_iterator = ijson.items(f, 'item')
 
-        new_interaction = {
-            "idx": response["idx"],
-            "index": response["index"],
-            "prompt": prompt["sentence"],
-            "sentence": response["sentence"],
-            "turn": response["turn"],
-            "topic": response['topic'],
-            "intent_category": response["intent_category"],
-            "intent": response["intent"],
-            "emotion_label": response["emotion_label"],
-            "emotion_score": response["emotion_score"],
-            "sentiment_label": response["sentiment_label"],
-            "sentiment_score": response["sentiment_score"],
-            "highlighted": response["highlighted"],
-            "last_interaction": bool(response["last_interaction"]),
-            "data_collection": response["entity_type_detection"],
-            "timestamp": response_timestamp,
-        }
+        for response, prompt in pairwise(row_iterator):
+            response_timestamp = str(response["timestamp"])
+            response_node_name = create_node_name(response)
+            prompt_node_name = create_node_name(prompt)
+            response_generated_idx = utils.get_node_idx(mapped_nodes, response["topic"], response["turn"], response_timestamp)
+            prompt_generated_idx = utils.get_node_idx(mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp)
+            
+            response_node = mapped_nodes[response_generated_idx]
+            prompt_node = mapped_nodes[prompt_generated_idx]
 
-        # Adding more information to each node
-        mapped_nodes[response_generated_idx][
-            "interactions"
-        ].append(new_interaction)
+            new_interaction = {
+                "idx": response["idx"],
+                "index": response["index"],
+                "prompt": prompt["sentence"],
+                "sentence": response["sentence"],
+                "turn": response["turn"],
+                "topic": response['topic'],
+                "intent_category": response["intent_category"],
+                "intent": response["intent"],
+                "emotion_label": response["emotion_label"],
+                "emotion_score": float(response["emotion_score"]),
+                "sentiment_label": response["sentiment_label"],
+                "sentiment_score": float(response["sentiment_score"]),
+                "highlighted": response["highlighted"],
+                "last_interaction": bool(response["last_interaction"]),
+                "data_collection": response["entity_type_detection"],
+                "timestamp": response_timestamp,
+            }
 
-        mapped_nodes[response_generated_idx]["timestamp"] = str(response['timestamp'])
+            # Adding more information to each node
+            mapped_nodes[response_generated_idx][
+                "interactions"
+            ].append(new_interaction)
 
-        # increase node size
-        response_node["n"] = utils.increase_node_size(mapped_nodes, response_node["id"], NODE_SIZE_INCREMENT_BY)
+            mapped_nodes[response_generated_idx]["timestamp"] = str(response['timestamp'])
 
-        if (response_node_name == prompt_node_name):
-            continue
+            # increase node size
+            response_node["n"] = utils.increase_node_size(mapped_nodes, response_node["id"], NODE_SIZE_INCREMENT_BY)
 
-        link_turn_section = mapped_links[prompt["turn"]]
-        link_name = f"{prompt_node_name} -> {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
+            if (response_node_name == prompt_node_name):
+                continue
 
-        # If the link already exists, don't create another one
-        if utils.link_exists(link_name, link_turn_section):
-            for link in link_turn_section:
-                if link["name"] == link_name:
-                    link["timestamp"] = str(response["timestamp"])
-                    link["responseIDs"].append(new_interaction["idx"])
-                    link["value"] += 1
+            link_turn_section = mapped_links[prompt["turn"]]
+            link_name = f"{prompt_node_name} -> {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
 
-        # If a link between the request and response node does not
-        # exist yet, create a new link with value 1
-        else:
-            link_turn_section.append(
-                {
-                    "name": link_name,
-                    "source": prompt_node["id"],
-                    "target": response_node["id"],
-                    "value": 1,
-                    "timestamp": str(response["timestamp"]),
-                    "responseIDs": [new_interaction["idx"]],
-                }
-            )
+            # If the link already exists, don't create another one
+            if utils.link_exists(link_name, link_turn_section):
+                for link in link_turn_section:
+                    if link["name"] == link_name:
+                        link["timestamp"] = str(response["timestamp"])
+                        link["responseIDs"].append(new_interaction["idx"])
+                        link["value"] += 1
+
+            # If a link between the request and response node does not
+            # exist yet, create a new link with value 1
+            else:
+                link_turn_section.append(
+                    {
+                        "name": link_name,
+                        "source": prompt_node["id"],
+                        "target": response_node["id"],
+                        "value": 1,
+                        "timestamp": str(response["timestamp"]),
+                        "responseIDs": [new_interaction["idx"]],
+                    }
+                )
 
     for node in mapped_nodes:
             node["show"] = utils.node_has_links(node, link_turn_section)
@@ -121,4 +123,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    start = datetime.now()
+    diagram_process()
+    end = datetime.now()
+    print(end-start)

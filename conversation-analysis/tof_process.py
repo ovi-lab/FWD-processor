@@ -1,8 +1,8 @@
-import json
+from datetime import datetime
 from itertools import pairwise
+import json
+import ijson
 import utils
-import pandas
-
 # Paths
 PATH_TO_SAMPLE_CONVERSATION = "data/log-02-20.json"
 
@@ -22,58 +22,58 @@ def main():
     """
 
     # Read sample conversation into a Pandas dataframe
-    df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
+    # df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
+    # row_iterator = df.iterrows() # pylint: disable=E1101
 
     # Create the JSON template for the results to feed into d3.js
     mapped_nodes = []
 
-    row_iterator = df.iterrows() # pylint: disable=E1101
-
     def create_node_name(line):
         return f'{line['turn']}: {line['topic']}'
 
-    for response_tuple, prompt_tuple in pairwise(row_iterator):
-        response = response_tuple[1]
-        prompt = prompt_tuple[1]
-        response_timestamp = str(response["timestamp"])
-        response_node_name = create_node_name(response)
-        prompt_node_name = create_node_name(prompt)
-        response_generated_idx = utils.get_node_idx(mapped_nodes, response["topic"], response["turn"], response_timestamp)
-        
-        response_node = mapped_nodes[response_generated_idx]
+    with open(PATH_TO_SAMPLE_CONVERSATION, 'rb') as f:
+        row_iterator = ijson.items(f, 'item')
 
-        new_interaction = {
-            "idx": response["idx"],
-            "index": response["index"],
-            "prompt": prompt["sentence"],
-            "sentence": response["sentence"],
-            "turn": response["turn"],
-            "topic": response['topic'],
-            "intent_category": response["intent_category"],
-            "intent": response["intent"],
-            "emotion_label": response["emotion_label"],
-            "emotion_score": response["emotion_score"],
-            "sentiment_label": response["sentiment_label"],
-            "sentiment_score": response["sentiment_score"],
-            "highlighted": response["highlighted"],
-            "last_interaction": bool(response["last_interaction"]),
-            "data_collection": response["entity_type_detection"],
-            "timestamp": response_timestamp,
-        }
+        for response, prompt in pairwise(row_iterator):
+            response_timestamp = str(response["timestamp"])
+            response_node_name = create_node_name(response)
+            prompt_node_name = create_node_name(prompt)
+            response_generated_idx = utils.get_node_idx(mapped_nodes, response["topic"], response["turn"], response_timestamp)
+            
+            response_node = mapped_nodes[response_generated_idx]
 
-        # Adding more information to each node
-        mapped_nodes[response_generated_idx][
-            "interactions"
-        ].append(new_interaction)
+            new_interaction = {
+                "idx": response["idx"],
+                "index": response["index"],
+                "prompt": prompt["sentence"],
+                "sentence": response["sentence"],
+                "turn": response["turn"],
+                "topic": response['topic'],
+                "intent_category": response["intent_category"],
+                "intent": response["intent"],
+                "emotion_label": response["emotion_label"],
+                "emotion_score": float(response["emotion_score"]),
+                "sentiment_label": response["sentiment_label"],
+                "sentiment_score": float(response["sentiment_score"]),
+                "highlighted": response["highlighted"],
+                "last_interaction": bool(response["last_interaction"]),
+                "data_collection": response["entity_type_detection"],
+                "timestamp": response_timestamp,
+            }
 
-        mapped_nodes[response_generated_idx]["timestamp"] = str(response['timestamp'])
+            # Adding more information to each node
+            mapped_nodes[response_generated_idx][
+                "interactions"
+            ].append(new_interaction)
 
-        # increase node size
-        response_node["n"] = utils.increase_node_size(mapped_nodes, response_node["id"], NODE_SIZE_INCREMENT_BY)
+            mapped_nodes[response_generated_idx]["timestamp"] = str(response['timestamp'])
 
-        if (response_node_name == prompt_node_name):
-            continue
+            # increase node size
+            response_node["n"] = utils.increase_node_size(mapped_nodes, response_node["id"], NODE_SIZE_INCREMENT_BY)
 
+            if (response_node_name == prompt_node_name):
+                continue
+    # print(mapped_nodes)
     # Save the results as a JSON file
     try:
         with open(PATH_TO_OUTPUT, "x", encoding="utf8") as f:
@@ -86,4 +86,7 @@ def main():
 
 
 if __name__ == "__main__":
+    start = datetime.now()
     main()
+    end = datetime.now()
+    print(end-start)
