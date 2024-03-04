@@ -55,7 +55,6 @@ def main():
                 "emotion_score": float(response["emotion_score"]),
                 "sentiment_label": response["sentiment_label"],
                 "sentiment_score": float(response["sentiment_score"]),
-                "highlighted": response["highlighted"],
                 "last_interaction": bool(response["last_interaction"]),
                 "data_collection": response["entity_type_detection"],
                 "timestamp": response_timestamp,
