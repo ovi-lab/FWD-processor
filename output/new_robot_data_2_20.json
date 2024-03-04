@@ -20,7 +20,6 @@
                     "emotion_score": 0.75,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.63,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
@@ -38,7 +37,6 @@
                     "emotion_score": 0.57,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.5,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
@@ -56,7 +54,6 @@
                     "emotion_score": 0.71,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
@@ -74,7 +71,6 @@
                     "emotion_score": 0.35,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.92,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
@@ -92,7 +88,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
@@ -121,7 +116,6 @@
                     "emotion_score": 0.51,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.88,
-                    "highlighted": false,
                     "last_interaction": true,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:30"
@@ -150,7 +144,6 @@
                     "emotion_score": 0.78,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.87,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
@@ -168,7 +161,6 @@
                     "emotion_score": 0.56,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
@@ -186,7 +178,6 @@
                     "emotion_score": 0.6,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
@@ -204,7 +195,6 @@
                     "emotion_score": 0.48,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.93,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
@@ -222,7 +212,6 @@
                     "emotion_score": 0.36,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.84,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
@@ -240,7 +229,6 @@
                     "emotion_score": 0.62,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
@@ -258,7 +246,6 @@
                     "emotion_score": 0.5,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
@@ -276,7 +263,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.57,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
@@ -294,7 +280,6 @@
                     "emotion_score": 0.77,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
@@ -312,7 +297,6 @@
                     "emotion_score": 0.83,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
@@ -330,7 +314,6 @@
                     "emotion_score": 0.48,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.72,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
@@ -348,7 +331,6 @@
                     "emotion_score": 0.97,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
@@ -366,7 +348,6 @@
                     "emotion_score": 0.68,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.88,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
@@ -384,7 +365,6 @@
                     "emotion_score": 0.9,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.85,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:26:17"
@@ -402,7 +382,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.73,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:26:17"
@@ -420,7 +399,6 @@
                     "emotion_score": 0.51,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.91,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:26:17"
@@ -438,7 +416,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.75,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:26:17"
@@ -456,7 +433,6 @@
                     "emotion_score": 0.57,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:15"
@@ -474,7 +450,6 @@
                     "emotion_score": 0.68,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:15"
@@ -492,7 +467,6 @@
                     "emotion_score": 0.98,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:15"
@@ -510,7 +484,6 @@
                     "emotion_score": 0.79,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.75,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:11"
@@ -528,7 +501,6 @@
                     "emotion_score": 0.81,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.79,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:11"
@@ -546,7 +518,6 @@
                     "emotion_score": 0.93,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:11"
@@ -564,7 +535,6 @@
                     "emotion_score": 0.75,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:09"
@@ -582,7 +552,6 @@
                     "emotion_score": 0.43,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:09"
@@ -600,7 +569,6 @@
                     "emotion_score": 0.6,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:08"
@@ -618,7 +586,6 @@
                     "emotion_score": 0.8,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:08"
@@ -636,7 +603,6 @@
                     "emotion_score": 0.73,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:08"
@@ -654,7 +620,6 @@
                     "emotion_score": 0.51,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:08"
@@ -672,7 +637,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:06"
@@ -690,7 +654,6 @@
                     "emotion_score": 0.52,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.56,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:06"
@@ -708,7 +671,6 @@
                     "emotion_score": 0.5,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:06"
@@ -726,7 +688,6 @@
                     "emotion_score": 0.79,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:05"
@@ -744,7 +705,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.92,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:05"
@@ -762,7 +722,6 @@
                     "emotion_score": 0.51,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.67,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:05"
@@ -780,7 +739,6 @@
                     "emotion_score": 0.73,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:05"
@@ -798,7 +756,6 @@
                     "emotion_score": 0.61,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
@@ -816,7 +773,6 @@
                     "emotion_score": 0.72,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.87,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
@@ -834,7 +790,6 @@
                     "emotion_score": 0.37,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.85,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
@@ -852,7 +807,6 @@
                     "emotion_score": 0.91,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
@@ -870,7 +824,6 @@
                     "emotion_score": 0.83,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.8,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
@@ -888,7 +841,6 @@
                     "emotion_score": 0.43,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
@@ -906,7 +858,6 @@
                     "emotion_score": 0.59,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.92,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:02"
@@ -924,7 +875,6 @@
                     "emotion_score": 0.59,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:02"
@@ -942,7 +892,6 @@
                     "emotion_score": 0.96,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:02"
@@ -960,7 +909,6 @@
                     "emotion_score": 0.59,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.81,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
@@ -978,7 +926,6 @@
                     "emotion_score": 0.55,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.75,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
@@ -996,7 +943,6 @@
                     "emotion_score": 0.95,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
@@ -1014,7 +960,6 @@
                     "emotion_score": 0.59,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
@@ -1032,7 +977,6 @@
                     "emotion_score": 0.45,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:59"
@@ -1050,7 +994,6 @@
                     "emotion_score": 0.6,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.52,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:59"
@@ -1068,7 +1011,6 @@
                     "emotion_score": 0.78,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.93,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:59"
@@ -1086,7 +1028,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.87,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
@@ -1104,7 +1045,6 @@
                     "emotion_score": 0.84,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
@@ -1122,7 +1062,6 @@
                     "emotion_score": 0.69,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.62,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
@@ -1140,7 +1079,6 @@
                     "emotion_score": 0.88,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
@@ -1158,7 +1096,6 @@
                     "emotion_score": 0.92,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
@@ -1176,7 +1113,6 @@
                     "emotion_score": 0.46,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.9,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
@@ -1194,7 +1130,6 @@
                     "emotion_score": 0.86,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.81,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:57"
@@ -1223,7 +1158,6 @@
                     "emotion_score": 0.46,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.71,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:27"
@@ -1241,7 +1175,6 @@
                     "emotion_score": 0.77,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.68,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:25"
@@ -1259,7 +1192,6 @@
                     "emotion_score": 0.46,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.71,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:15"
@@ -1277,7 +1209,6 @@
                     "emotion_score": 0.81,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:11"
@@ -1295,7 +1226,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:04"
@@ -1313,7 +1243,6 @@
                     "emotion_score": 0.81,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:02"
@@ -1331,7 +1260,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:26:01"
@@ -1349,7 +1277,6 @@
                     "emotion_score": 0.81,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:59"
@@ -1378,7 +1305,6 @@
                     "emotion_score": 0.82,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:54"
@@ -1396,7 +1322,6 @@
                     "emotion_score": 0.49,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.88,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:54"
@@ -1414,7 +1339,6 @@
                     "emotion_score": 0.97,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:52"
@@ -1432,7 +1356,6 @@
                     "emotion_score": 0.65,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:52"
@@ -1450,7 +1373,6 @@
                     "emotion_score": 0.64,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.64,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:52"
@@ -1468,7 +1390,6 @@
                     "emotion_score": 0.91,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:50"
@@ -1486,7 +1407,6 @@
                     "emotion_score": 0.49,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:50"
@@ -1504,7 +1424,6 @@
                     "emotion_score": 0.79,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:47"
@@ -1522,7 +1441,6 @@
                     "emotion_score": 0.37,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.73,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:47"
@@ -1540,7 +1458,6 @@
                     "emotion_score": 0.74,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:47"
@@ -1558,7 +1475,6 @@
                     "emotion_score": 0.74,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:39"
@@ -1576,7 +1492,6 @@
                     "emotion_score": 0.6,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.78,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:39"
@@ -1594,7 +1509,6 @@
                     "emotion_score": 0.79,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.83,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:39"
@@ -1612,7 +1526,6 @@
                     "emotion_score": 0.66,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:28"
@@ -1630,7 +1543,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.73,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:28"
@@ -1648,7 +1560,6 @@
                     "emotion_score": 0.93,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:28"
@@ -1666,7 +1577,6 @@
                     "emotion_score": 0.94,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
@@ -1684,7 +1594,6 @@
                     "emotion_score": 0.71,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
@@ -1702,7 +1611,6 @@
                     "emotion_score": 0.93,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
@@ -1720,7 +1628,6 @@
                     "emotion_score": 0.9,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.51,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
@@ -1738,7 +1645,6 @@
                     "emotion_score": 0.77,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
@@ -1756,7 +1662,6 @@
                     "emotion_score": 0.98,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:26"
@@ -1785,7 +1690,6 @@
                     "emotion_score": 0.46,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.71,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:52"
@@ -1803,7 +1707,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:47"
@@ -1821,7 +1724,6 @@
                     "emotion_score": 0.96,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.65,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:39"
@@ -1850,7 +1752,6 @@
                     "emotion_score": 0.8,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.85,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:23"
@@ -1868,7 +1769,6 @@
                     "emotion_score": 0.73,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:23"
@@ -1886,7 +1786,6 @@
                     "emotion_score": 0.96,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:23"
@@ -1904,7 +1803,6 @@
                     "emotion_score": 0.75,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:22"
@@ -1922,7 +1820,6 @@
                     "emotion_score": 0.44,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:22"
@@ -1940,7 +1837,6 @@
                     "emotion_score": 0.92,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:22"
@@ -1958,7 +1854,6 @@
                     "emotion_score": 0.9,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:20"
@@ -1976,7 +1871,6 @@
                     "emotion_score": 0.66,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.73,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:20"
@@ -1994,7 +1888,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.5,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
@@ -2012,7 +1905,6 @@
                     "emotion_score": 0.88,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
@@ -2030,7 +1922,6 @@
                     "emotion_score": 0.88,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
@@ -2048,7 +1939,6 @@
                     "emotion_score": 0.99,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
@@ -2066,7 +1956,6 @@
                     "emotion_score": 0.98,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
@@ -2084,7 +1973,6 @@
                     "emotion_score": 0.9,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
@@ -2102,7 +1990,6 @@
                     "emotion_score": 0.64,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.83,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
@@ -2120,7 +2007,6 @@
                     "emotion_score": 0.67,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:14"
@@ -2138,7 +2024,6 @@
                     "emotion_score": 0.94,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:14"
@@ -2156,7 +2041,6 @@
                     "emotion_score": 0.92,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
@@ -2174,7 +2058,6 @@
                     "emotion_score": 0.93,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.72,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
@@ -2192,7 +2075,6 @@
                     "emotion_score": 0.99,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
@@ -2210,7 +2092,6 @@
                     "emotion_score": 0.57,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.72,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
@@ -2228,7 +2109,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.68,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
@@ -2246,7 +2126,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
@@ -2264,7 +2143,6 @@
                     "emotion_score": 0.57,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:09"
@@ -2293,7 +2171,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:20"
@@ -2311,7 +2188,6 @@
                     "emotion_score": 0.96,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.86,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:17"
@@ -2329,7 +2205,6 @@
                     "emotion_score": 0.58,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.5,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:14"
@@ -2358,7 +2233,6 @@
                     "emotion_score": 0.52,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:07"
@@ -2376,7 +2250,6 @@
                     "emotion_score": 0.56,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.86,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:07"
@@ -2394,7 +2267,6 @@
                     "emotion_score": 0.6,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.83,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:07"
@@ -2412,7 +2284,6 @@
                     "emotion_score": 0.93,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:04"
@@ -2430,7 +2301,6 @@
                     "emotion_score": 0.67,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.85,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:04"
@@ -2448,7 +2318,6 @@
                     "emotion_score": 0.56,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:04"
@@ -2466,7 +2335,6 @@
                     "emotion_score": 0.71,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
@@ -2484,7 +2352,6 @@
                     "emotion_score": 0.69,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
@@ -2502,7 +2369,6 @@
                     "emotion_score": 0.6,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.69,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
@@ -2520,7 +2386,6 @@
                     "emotion_score": 0.53,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.92,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
@@ -2538,7 +2403,6 @@
                     "emotion_score": 0.88,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:58"
@@ -2556,7 +2420,6 @@
                     "emotion_score": 0.88,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.92,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:58"
@@ -2574,7 +2437,6 @@
                     "emotion_score": 0.72,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:54"
@@ -2592,7 +2454,6 @@
                     "emotion_score": 0.94,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:54"
@@ -2610,7 +2471,6 @@
                     "emotion_score": 0.89,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:54"
@@ -2628,7 +2488,6 @@
                     "emotion_score": 0.85,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.88,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -2646,7 +2505,6 @@
                     "emotion_score": 0.68,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -2664,7 +2522,6 @@
                     "emotion_score": 0.66,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -2682,7 +2539,6 @@
                     "emotion_score": 0.62,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -2700,7 +2556,6 @@
                     "emotion_score": 0.41,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -2718,7 +2573,6 @@
                     "emotion_score": 0.94,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.92,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -2736,7 +2590,6 @@
                     "emotion_score": 0.9,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -2754,7 +2607,6 @@
                     "emotion_score": 0.68,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -2772,7 +2624,6 @@
                     "emotion_score": 0.6,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.83,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -2790,7 +2641,6 @@
                     "emotion_score": 0.84,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:35"
@@ -2808,7 +2658,6 @@
                     "emotion_score": 0.9,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:30"
@@ -2826,7 +2675,6 @@
                     "emotion_score": 0.99,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:30"
@@ -2844,7 +2692,6 @@
                     "emotion_score": 0.57,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
@@ -2862,7 +2709,6 @@
                     "emotion_score": 0.55,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
@@ -2880,7 +2726,6 @@
                     "emotion_score": 0.9,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
@@ -2898,7 +2743,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
@@ -2916,7 +2760,6 @@
                     "emotion_score": 0.91,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
@@ -2934,7 +2777,6 @@
                     "emotion_score": 0.59,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:25"
@@ -2952,7 +2794,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
@@ -2970,7 +2811,6 @@
                     "emotion_score": 0.81,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
@@ -2988,7 +2828,6 @@
                     "emotion_score": 0.91,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.81,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
@@ -3006,7 +2845,6 @@
                     "emotion_score": 0.77,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.64,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
@@ -3024,7 +2862,6 @@
                     "emotion_score": 0.97,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
@@ -3053,7 +2890,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:07"
@@ -3071,7 +2907,6 @@
                     "emotion_score": 0.93,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:25:04"
@@ -3089,7 +2924,6 @@
                     "emotion_score": 0.93,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.9,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:25:01"
@@ -3107,7 +2941,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:58"
@@ -3125,7 +2958,6 @@
                     "emotion_score": 0.55,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:54"
@@ -3143,7 +2975,6 @@
                     "emotion_score": 0.64,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.86,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:44"
@@ -3161,7 +2992,6 @@
                     "emotion_score": 0.81,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:35"
@@ -3179,7 +3009,6 @@
                     "emotion_score": 0.58,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.75,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:30"
@@ -3197,7 +3026,6 @@
                     "emotion_score": 0.81,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:20"
@@ -3226,7 +3054,6 @@
                     "emotion_score": 0.73,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
@@ -3244,7 +3071,6 @@
                     "emotion_score": 0.72,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
@@ -3262,7 +3088,6 @@
                     "emotion_score": 0.75,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.51,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
@@ -3280,7 +3105,6 @@
                     "emotion_score": 0.97,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.97,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
@@ -3298,7 +3122,6 @@
                     "emotion_score": 0.9,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.95,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:11"
@@ -3316,7 +3139,6 @@
                     "emotion_score": 0.54,
                     "sentiment_label": "negative",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:11"
@@ -3334,7 +3156,6 @@
                     "emotion_score": 0.73,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.62,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:11"
@@ -3352,7 +3173,6 @@
                     "emotion_score": 0.94,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:04"
@@ -3370,7 +3190,6 @@
                     "emotion_score": 0.54,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.62,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:04"
@@ -3388,7 +3207,6 @@
                     "emotion_score": 0.64,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:58"
@@ -3406,7 +3224,6 @@
                     "emotion_score": 0.84,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
@@ -3424,7 +3241,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
@@ -3442,7 +3258,6 @@
                     "emotion_score": 0.6,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.83,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
@@ -3460,7 +3275,6 @@
                     "emotion_score": 0.64,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.93,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
@@ -3478,7 +3292,6 @@
                     "emotion_score": 0.89,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.75,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:23:26"
@@ -3496,7 +3309,6 @@
                     "emotion_score": 0.87,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.94,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
@@ -3514,7 +3326,6 @@
                     "emotion_score": 0.68,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.8,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
@@ -3532,7 +3343,6 @@
                     "emotion_score": 0.87,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.82,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
@@ -3550,7 +3360,6 @@
                     "emotion_score": 0.85,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
@@ -3568,7 +3377,6 @@
                     "emotion_score": 0.97,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.99,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
@@ -3586,7 +3394,6 @@
                     "emotion_score": 0.56,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.98,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
@@ -3615,7 +3422,6 @@
                     "emotion_score": 0.9,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:17"
@@ -3633,7 +3439,6 @@
                     "emotion_score": 0.56,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.92,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:11"
@@ -3651,7 +3456,6 @@
                     "emotion_score": 0.81,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.84,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:24:04"
@@ -3669,7 +3473,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:58"
@@ -3687,7 +3490,6 @@
                     "emotion_score": 0.89,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.82,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:48"
@@ -3705,7 +3507,6 @@
                     "emotion_score": 0.63,
                     "sentiment_label": "positive",
                     "sentiment_score": 0.74,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:24"
@@ -3734,7 +3535,6 @@
                     "emotion_score": 0.59,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.7,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:17"
@@ -3752,7 +3552,6 @@
                     "emotion_score": 0.8,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:17"
@@ -3770,7 +3569,6 @@
                     "emotion_score": 0.73,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.96,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:23:14"
@@ -3788,7 +3586,6 @@
                     "emotion_score": 0.97,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.89,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:23:14"
@@ -3806,7 +3603,6 @@
                     "emotion_score": 0.7,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.81,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": true,
                     "timestamp": "2024-02-20 16:23:14"
@@ -3835,7 +3631,6 @@
                     "emotion_score": 0.89,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
-                    "highlighted": false,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-02-20 16:23:17"

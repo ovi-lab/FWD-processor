@@ -5,4 +5,4 @@ def process_static_transcript(ROS_output):
 
 if __name__ == '__main__':
     
-    process_static_transcript()
+    process_static_transcript('b')

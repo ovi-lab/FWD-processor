@@ -21,11 +21,8 @@ def main():
     to traverse that conversation topic. 
     """
 
-    # Read sample conversation into a Pandas dataframe
-    # df = pandas.read_json(PATH_TO_SAMPLE_CONVERSATION, encoding="utf8")
-    # row_iterator = df.iterrows() # pylint: disable=E1101
-
-    # Create the JSON template for the results to feed into d3.js
+  
+    # Create the JSON template
     mapped_nodes = []
 
     def create_node_name(line):
