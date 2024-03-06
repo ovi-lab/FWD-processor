@@ -2,14 +2,13 @@ import json
 from datetime import datetime
 from itertools import pairwise
 import ijson
-import utils
+import diagram_utils as utils
 
 # Paths
 PATH_TO_SAMPLE_CONVERSATION = "data/log-02-20.json"
 
 PATH_TO_ONTOLOGY = 'data/Tiers-of-Friendship.xlsx'
-# Constants
-NODE_SIZE_INCREMENT_BY = 0.25
+
 
 
 def diagram_process():
@@ -33,20 +32,13 @@ def diagram_process():
     mapped_nodes = mapped_conversation["nodes"]
     mapped_links = mapped_conversation["links"]
 
-
-    def create_node_name(line):
-        return f'{line['turn']}: {line['topic']}'
-
     with open(PATH_TO_SAMPLE_CONVERSATION, 'rb') as f:
         row_iterator = ijson.items(f, 'item')
 
         for response, prompt in pairwise(row_iterator):
             response_timestamp = str(response["timestamp"])
-            response_node_name = create_node_name(response)
-            prompt_node_name = create_node_name(prompt)
-            response_generated_idx = utils.get_node_idx(mapped_nodes, response["topic"], response["turn"], response_timestamp)
-            prompt_generated_idx = utils.get_node_idx(mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp)
-            
+            response_generated_idx = utils.select_node(mapped_nodes, response["topic"], response["turn"], response_timestamp)
+            prompt_generated_idx = utils.select_node(mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp)
             response_node = mapped_nodes[response_generated_idx]
             prompt_node = mapped_nodes[prompt_generated_idx]
 
@@ -75,14 +67,11 @@ def diagram_process():
 
             mapped_nodes[response_generated_idx]["timestamp"] = str(response['timestamp'])
 
-            # increase node size
-            response_node["n"] = utils.increase_node_size(mapped_nodes, response_node["id"], NODE_SIZE_INCREMENT_BY)
-
-            if (response_node_name == prompt_node_name):
+            if (response_node['name'] == prompt_node['name']):
                 continue
 
             link_turn_section = mapped_links[prompt["turn"]]
-            link_name = f"{prompt_node_name} -> {response_node_name}"  # ex. "HARU: Action-directive to CHILD: Question"
+            link_name = f"{prompt_node['name']} -> {response_node['name']}"  # ex. "HARU: Action-directive to CHILD: Question"
 
             # If the link already exists, don't create another one
             if utils.link_exists(link_name, link_turn_section):

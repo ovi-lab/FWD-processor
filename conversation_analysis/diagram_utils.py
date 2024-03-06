@@ -51,7 +51,7 @@ def node_has_links(n, link_section):
     return False
 
 
-def get_node_idx(nodes, node_topic, node_turn, timestamp):
+def select_node(existing_nodes, node_topic, node_turn, timestamp):
     """
     Iterate through the the global variable mapped_conversation to find the specified node
     and return the index if it is found. If not, create a new node with the name specified and return the index of the new node.
@@ -67,16 +67,18 @@ def get_node_idx(nodes, node_topic, node_turn, timestamp):
         index of the node with the specified node_name
     """
     new_id = 0
-    for i, node in enumerate(nodes):
-        if node["topic"] == node_topic and node["turn"] == node_turn:
-            return i
-        new_id = i + 1
+    node_name = f"{node_turn}: {node_topic}"
+    for index, node in enumerate(existing_nodes):
+        if node["name"] == node_name:
+            node["n"] += 0.25
+            return index
+        new_id = index + 1
 
     # If no match for node name, create a new node with index
-    nodes.append(
+    existing_nodes.append(
         {
             "id": new_id,
-            "name": f"{node_turn}: {node_topic}",
+            "name": node_name,
             "turn": node_turn,
             "topic": node_topic,
             "n": 5,
@@ -86,18 +88,3 @@ def get_node_idx(nodes, node_topic, node_turn, timestamp):
         }
     )
     return new_id
-
-def increase_node_size(nodes, node_id, increment):
-        """
-        Iterate through global variable mapped_conversation to find the
-        node with the desired node_id and increase the node size.
-
-        Parameters
-        ----------
-        node_id : int
-            id of node to enlarge
-        """
-        for n in nodes:
-            if n["id"] == node_id:
-                return n["n"] + increment
-            return n["n"]
