@@ -11,11 +11,17 @@ CORS(app)
 
 @app.route("/api/health", methods=["GET"])
 def healthchecker():
+    """
+    Standard health checker for the server
+    """
     return {"status": "success"}
 
 
 @app.route("/api/rawjson", methods=["GET"])
-def return_static_json():
+def return_raw_json():
+    """
+    returns a json file containing the sequential lines of dialogue and their relevant data in a single json object array
+    """
     with open(SEQUENTIAL_PATH, "r", encoding="utf8") as file:
         payload = json.load(file)
         return jsonify(payload)
@@ -23,12 +29,18 @@ def return_static_json():
 
 @app.route("/api/diagramFormat", methods=["GET"])
 def return_diagram_json():
+    """
+    Returns a json file processed to contain a list of nodes and links for the diagrams to use in their rendering
+    """
     selection = request.args.get('selection')
     with open(DIAGRAM_PATH, "r", encoding="utf8") as file:
         json_data = json.load(file)
+        
         if selection == 'nodes':
-            payload = json_data['nodes']
-        return jsonify(payload)
+            return jsonify(json_data['nodes'])
+        else:
+            return jsonify(json_data)
+        
 
 
 if __name__ == "__main__":
