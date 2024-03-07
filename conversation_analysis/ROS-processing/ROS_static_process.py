@@ -1,20 +1,243 @@
-import json
+from threading import Lock
+
 import yaml
-def process_static_smalltalk_dialog(PATH):
-    conversation = []
-    with open(PATH, 'r', encoding='utf8') as file:
-        data = yaml.safe_load_all(file)
-        for doc in data:
-            print(doc)
+
+from datetime import datetime
+
+
+
+from time import time
+import json
+
+EMOTIONS = ["anger", "disgust", "fear",
+            "joy", "neutral", "sadness", "surprise"]
+GENRE_MAPPING = {
+    "anger": "whiny",
+    "disgust": "whiny",
+    "fear": "serious",
+    "joy": "highnrg",
+    "neutral": "neutral",
+    "sadness": "sad",
+    "surprise": "highnrg"}
+SENTIMENT_MAPPING = {
+    "neg": "negative",
+    "neu": "neutral",
+    "pos": "positive",
+    }
+
+
+class Timer:
+    def __init__(self) -> None:
+        self._start_time = 0
+        self._stop_time = 0
+
+    def start_timer(self):
+        self._start_time = time()
+
+    def stop_timer(self):
+        self._stop_time = time()
+
+    def duration(self):
+        return self._stop_time - self._start_time
+    
+
+
+class HaruChatCLI:
+    def __init__(self, data) -> None:
+        self._data = data
+        self.index = 0
+        self.last_user_utterance = ''
+        self.app_name = "smalltalk"
+        self.conversation = []
+        # Set Parameters
+        self.data_type_list = ['sentence_list', 'sentence_id', 'Sentence', 'emotion_name', 'emotion_score', 'sentiment_name', 'sentiment_score',
+                               'emotion_frequency', 'probability_emote', 'random_value', 'react', 'reaction_text', 'sentence_processed', 'sentence_processed_list']
+        self.data_keys = {key2: {key: None for key in self.data_type_list}
+                     for key2 in ['user', 'haru']}
+        self.data_keys['index'] = None
+        self._lastinteraction = None
+
+
+        self._topics = {
+            "dialog_result": "/strawberry/dialog_result"
+        }
+
+        self.mutex = Lock()
+
+        self._current_record = None
+
+        self.output = self.parse_raw_dialog(data)
         
-            
-    
-    
 
-    # Write the list to a JSON file
-    # file_path = 'log-03-07.json'
-    # with open(file_path, 'a') as f:
-    #     json.dump(conversation, f)
 
-if __name__ == '__main__':
-    process_static_smalltalk_dialog("data/dialog_result.yml")
+    def parse_raw_dialog(self, passed_data):
+        with self.mutex:
+            for doc in passed_data:
+                self.data_keys['index'] = doc.header.seq
+                self.data_keys['haru']['sentence_list'] = doc.fulfillment_sentences
+
+                self.combined_haru_emotion_label = doc.fulfillment_emotion.emotions.results.best_match.label
+                self.combined_haru_emotion_score = doc.fulfillment_emotion.emotions.results.best_match.score
+                self.combined_user_emotion_label = doc.utterance_emotion.emotions.results.best_match.label
+                self.combined_user_emotion_score = doc.utterance_emotion.emotions.results.best_match.score
+                self.slu_intent = doc.slu_result.intent
+                self.slu_topic_ = doc.topic
+                self.timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                split_parts = self.slu_topic_.split("-")
+                self.generic_entity_type_detection = False
+                if doc.slots :
+                    for slots in doc.slots :
+                        print("slot_name :",slots.name)
+                        if slots.name == "enable_intent_classification" :
+                            self.generic_entity_type_detection = True
+                        else :
+                            self.generic_entity_type_detection = False
+
+
+                
+                if len(split_parts) >= 2:
+                    self.topic_name = " ".join(split_parts[1:])
+                    self.slu_topic = split_parts[0]
+                else :
+                    self.topic_name = self.slu_topic_
+                    self.slu_topic = self.slu_topic_
+
+
+                
+                if self.last_user_utterance != doc.utterance :
+                    self.last_user_utterance = doc.utterance
+
+                    # self.combined_haru_sentiment_label = data.sentiment_results.fulfillment_sentiment.sentiment.results.best_match.label
+                    # self.combined_haru_sentiment_score = data.sentiment_results.fulfillment_sentiment.sentiment.results.best_match.score
+                    # self.combined_user_sentiment_label = data.sentiment_results.utterance_sentiment.sentiment.results.best_match.label
+                    # self.combined_user_sentiment_score = data.sentiment_results.utterance_sentiment.sentiment.results.best_match.score
+                    if len(doc.utterance_sentences) == 0:
+                        if self._lastinteraction is not None and self.conversation != []:
+                            self.conversation[self._lastinteraction]['lastinteraction'] = False
+                        if self.data_keys['user']['sentence_list'] is not None:
+                            self.conversation.append({
+                                'idx': self.index,
+                                'Sentence': doc.utterance,
+                                'emotion_label': "neutral",
+                                'emotion_score': -9,
+                                'sentiment_label': "neutral",
+                                'sentiment_score': -9,
+                                'index': doc.header.seq,
+                                'app_name': self.app_name,
+                                'Turn': 'user',
+                                'LastInteraction': True,
+                                'Highlighted': False,
+                                'Intent': self.slu_intent,
+                                'intent_category':self.slu_topic,
+                                'timestamp' : self.timestamp,
+                                'topic_name' : self.topic_name,
+                                'type' : '',
+                                'entity_type_detection':self.generic_entity_type_detection,
+                            })
+                            self.index += 1
+                            self._lastinteraction = 0
+                    else:
+                        self.data_keys['user']['sentence_list'] = doc.utterance_sentences
+                        if self._lastinteraction is not None and self.conversation != []:
+                            self.conversation[self._lastinteraction]['lastinteraction'] = False
+                        if self.data_keys['user']['sentence_list'] is not None:
+                            for sentence_id, user in enumerate(self.data_keys['user']['sentence_list']):
+                                try:
+                                    user_emotion_label = user.emotion_results.emotions.results.best_match.label
+                                    user_emotion_score = user.emotion_results.emotions.results.best_match.score
+                                except Exception:
+                                    if user.emotion != "":
+                                        user_emotion_label = user.emotion
+                                        user_emotion_score = 1.0
+                                    elif user.auto_emotion != "":
+                                        user_emotion_label = user.auto_emotion
+                                        user_emotion_score = float(
+                                            user.auto_score) if user.auto_score != "" else 0.0
+                                    else:
+                                        user_emotion_label = self.combined_user_emotion_label
+                                        user_emotion_score = self.combined_user_emotion_score
+
+                                sentiment_score = user.sentiment_results.sentiment.results.best_match.score
+                                sentiment_label = SENTIMENT_MAPPING.get(
+                                    user.sentiment_results.sentiment.results.best_match.label, "None")
+                                self.conversation.append({
+                                    'idx': self.index,
+                                    'Sentence': user.text,
+                                    'emotion_label': user_emotion_label,
+                                    'emotion_score': round(user_emotion_score, 2),
+                                    'sentiment_label': sentiment_label,
+                                    'sentiment_score': round(sentiment_score, 2),
+                                    'index': doc.header.seq,
+                                    'app_name': self.app_name,
+                                    'Turn': 'user',
+                                    'lastinteraction': sentence_id == 0,
+                                    'Highlighted': False,
+                                    'Intent': self.slu_intent,
+                                    'intent_category':self.slu_topic,
+                                    'timestamp' : self.timestamp,
+                                    'topic_name' : self.topic_name,
+                                    'type' : user.type,
+                                    'entity_type_detection':self.generic_entity_type_detection,
+                                })
+                                self.index += 1
+                                if sentence_id == 0:
+                                    self._lastinteraction = len(self.conversation)-1
+                if self.data_keys['haru']['sentence_list'] is not None:
+                    for sentence_id, haru in enumerate(self.data_keys['haru']['sentence_list']):
+                        if '|' in haru.text:
+                            continue
+                        try:    
+                            haru_emotion_label = haru.emotion_results.emotions.results.best_match.label
+                            haru_emotion_score = haru.emotion_results.emotions.results.best_match.score
+                        except Exception:
+                            if haru.emotion != "":
+                                haru_emotion_label = haru.emotion
+                                haru_emotion_score = 1.0
+                            elif haru.auto_emotion != "":
+                                haru_emotion_label = haru.auto_emotion
+                                haru_emotion_score = float(
+                                    haru.auto_score) if haru.auto_score != "" else 0.0
+                            else:
+                                haru_emotion_label = self.combined_haru_emotion_label
+                                haru_emotion_score = self.combined_haru_emotion_score
+                        sentiment_score = haru.sentiment_results.sentiment.results.best_match.score
+                        sentiment_label = SENTIMENT_MAPPING.get(
+                            haru.sentiment_results.sentiment.results.best_match.label, "None")
+                        self.conversation.append({
+                            'idx': self.index,
+                            'Sentence': haru.text,
+                            'emotion_label': haru_emotion_label,
+                            'emotion_score': round(haru_emotion_score, 2),
+                            'sentiment_label': sentiment_label,
+                            'sentiment_score': round(sentiment_score, 2),
+                            'index': doc.header.seq,
+                            'app_name': self.app_name,
+                            'Turn': 'haru',
+                            'lastinteraction': False,
+                            'Highlighted': False,
+                            'Intent': self.slu_intent,
+                            'intent_category':self.slu_topic,
+                            'timestamp' : self.timestamp,
+                            'topic_name' : self.topic_name,
+                            'type' : haru.type,
+                            'entity_type_detection':self.generic_entity_type_detection,
+                        })
+                        self.index += 1
+                self._data_is_ready = True
+
+        # Write the list to a JSON file
+        return self.conversation   
+
+
+if __name__ == "__main__":
+    ROS_YML_PATH = 'data/dialog_result.yml'
+
+    try:
+        with open(ROS_YML_PATH, 'r', encoding='utf8') as file:
+            data = yaml.safe_load_all(file)
+            cli = HaruChatCLI(data)
+            print(cli.output)
+
+    except Exception as e:
+        print(e)
+
