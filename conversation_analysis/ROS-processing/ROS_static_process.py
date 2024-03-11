@@ -41,7 +41,7 @@ class Timer:
         return self._stop_time - self._start_time
 
 
-class Data_Struct:
+class DataStruct:
     def __init__(self, **entries):
         self.__dict__.update(entries)
 
@@ -112,7 +112,6 @@ class HaruChatCLI:
             self.generic_entity_type_detection = False
             if doc['slots']:
                 for slots in doc['slots']:
-                    print("slot_name :", slots['name'])
                     if slots['name'] == "enable_intent_classification":
                         self.generic_entity_type_detection = True
                     else:
@@ -129,7 +128,7 @@ class HaruChatCLI:
                 self.last_user_utterance = doc['utterance']
 
             if len(doc['utterance_sentences']) == 0:
-                if self._lastinteraction is not None and self.conversation != []:
+                if self._lastinteraction is not None and self.conversation:
                     self.conversation[self._lastinteraction]["lastinteraction"] = False
                 if self.data_keys["user"]["sentence_list"] is not None:
                     self.conversation.append(
@@ -151,6 +150,7 @@ class HaruChatCLI:
                             "topic": self.topic_name,
                             "type": "",
                             "entity_type_detection": self.generic_entity_type_detection,
+                            "slots": doc["slots"]
                         }
                     )
                     self.index += 1
