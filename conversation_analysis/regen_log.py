@@ -23,7 +23,7 @@ interaction_key_map = {
     "type": "type",
 }
 
-TOPIC_KEY_PATH = "conversation-analysis/ToF-topics/topic-intent-key.json"
+TOPIC_KEY_PATH = "conversation_analysis/ToF-topics/topic-intent-key.json"
 topic_list = []
 with open(TOPIC_KEY_PATH, "r", encoding="utf8") as topic_file:
     topic_list = json.load(topic_file)
@@ -76,7 +76,8 @@ def fix_index(input_list):
 
 
 # Specify the file paths
-INPUT_FILE_PATH = "data/log-02_20_2024, 04_27_07 PM.json"
+# INPUT_FILE_PATH = "data/log-02_20_2024, 04_27_07 PM.json"
+INPUT_FILE_PATH = "output/dialog_output.json"
 OUTPUT_FILE_PATH = "data/log-02-20.json"
 
 # Open the JSON file
@@ -92,7 +93,7 @@ last_topic = ""
 
 start = datetime.now()
 for utterance in data:
-    updated_line = replace_keys(utterance)
+    updated_line = utterance
     updated_line["topic"], last_topic = generate_topic(updated_line, last_topic)
     updated_list.append(updated_line)
 

@@ -14,7 +14,7 @@
         "intent": "topic-intro",
         "intent_category": "Intro",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "",
         "type": 6,
         "entity_type_detection": true
     },
@@ -33,7 +33,7 @@
         "intent": "topic-intro",
         "intent_category": "Intro",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "",
         "type": 7,
         "entity_type_detection": true
     },
@@ -52,7 +52,7 @@
         "intent": "haru-chat-name-collected",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Haru",
         "type": 7,
         "entity_type_detection": false
     },
@@ -71,7 +71,7 @@
         "intent": "haru-chat-name-collected",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Haru",
         "type": 7,
         "entity_type_detection": false
     },
@@ -90,7 +90,7 @@
         "intent": "haru-chat-name-collected",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Haru",
         "type": 7,
         "entity_type_detection": false
     },
@@ -109,7 +109,7 @@
         "intent": "name-react",
         "intent_category": "Name",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Name",
         "type": 6,
         "entity_type_detection": false
     },
@@ -128,7 +128,7 @@
         "intent": "name-react",
         "intent_category": "Name",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Name",
         "type": 7,
         "entity_type_detection": false
     },
@@ -147,7 +147,7 @@
         "intent": "nickname-reaction-fallback",
         "intent_category": "Nickname",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Name",
         "type": 6,
         "entity_type_detection": false
     },
@@ -166,7 +166,7 @@
         "intent": "nickname-reaction-fallback",
         "intent_category": "Nickname",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Name",
         "type": 6,
         "entity_type_detection": false
     },
@@ -185,7 +185,7 @@
         "intent": "nickname-reaction-fallback",
         "intent_category": "Nickname",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Name",
         "type": 6,
         "entity_type_detection": false
     },
@@ -204,7 +204,7 @@
         "intent": "nickname-reaction-fallback",
         "intent_category": "Nickname",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Name",
         "type": 6,
         "entity_type_detection": false
     },
@@ -223,7 +223,7 @@
         "intent": "nickname-reaction-fallback",
         "intent_category": "Nickname",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Name",
         "type": 7,
         "entity_type_detection": false
     },
@@ -242,7 +242,7 @@
         "intent": "have-we-met-before-yes",
         "intent_category": "Have",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Have",
         "type": 6,
         "entity_type_detection": false
     },
@@ -261,7 +261,7 @@
         "intent": "have-we-met-before-yes",
         "intent_category": "Have",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Have",
         "type": 6,
         "entity_type_detection": false
     },
@@ -280,7 +280,7 @@
         "intent": "have-we-met-before-yes",
         "intent_category": "Have",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Have",
         "type": 7,
         "entity_type_detection": false
     },
@@ -299,7 +299,7 @@
         "intent": "engaged-in-small-talk-yes",
         "intent_category": "Engaged",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Engaged",
         "type": 6,
         "entity_type_detection": false
     },
@@ -318,7 +318,7 @@
         "intent": "engaged-in-small-talk-yes",
         "intent_category": "Engaged",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Engaged",
         "type": 6,
         "entity_type_detection": false
     },
@@ -337,7 +337,7 @@
         "intent": "engaged-in-small-talk-yes",
         "intent_category": "Engaged",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Engaged",
         "type": 6,
         "entity_type_detection": false
     },
@@ -356,7 +356,7 @@
         "intent": "engaged-in-small-talk-yes",
         "intent_category": "Engaged",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-intro",
+        "topic": "Engaged",
         "type": 7,
         "entity_type_detection": false
     },
@@ -375,7 +375,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -394,7 +394,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -413,7 +413,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -432,7 +432,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -451,7 +451,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -470,7 +470,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 7,
         "entity_type_detection": false
     },
@@ -489,7 +489,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 7,
         "entity_type_detection": false
     },
@@ -508,7 +508,7 @@
         "intent": "topic-lemurs",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "topic lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -527,7 +527,7 @@
         "intent": "topic-lemurs",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "topic lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -546,7 +546,7 @@
         "intent": "topic-lemurs-guess",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -565,7 +565,7 @@
         "intent": "topic-lemurs-guess",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -584,7 +584,7 @@
         "intent": "topic-lemurs-guess",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -603,7 +603,7 @@
         "intent": "topic-lemurs-destination-merge",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -622,7 +622,7 @@
         "intent": "topic-lemurs-destination-merge",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -641,7 +641,7 @@
         "intent": "topic-lemurs-destination-merge",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -660,7 +660,7 @@
         "intent": "topic-lemurs-are-from",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -679,7 +679,7 @@
         "intent": "topic-lemurs-are-from",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -698,7 +698,7 @@
         "intent": "topic-lemurs-are-from",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -717,7 +717,7 @@
         "intent": "topic-lemurs-are-from",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -736,7 +736,7 @@
         "intent": "topic-lemurs-no-animal-collected",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -755,7 +755,7 @@
         "intent": "topic-lemurs-no-animal-home-country-not-collected",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -774,7 +774,7 @@
         "intent": "topic-lemurs-no-animal-home-country-not-collected",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -793,7 +793,7 @@
         "intent": "topic-lemurs-no-animal-not-native",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -812,7 +812,7 @@
         "intent": "topic-lemurs-no-animal-not-native",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -831,7 +831,7 @@
         "intent": "topic-lemurs-last-fact",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -850,7 +850,7 @@
         "intent": "topic-lemurs-last-fact",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -869,7 +869,7 @@
         "intent": "topic-lemurs-last-fact",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -888,7 +888,7 @@
         "intent": "topic-lemurs-last-fact-handle",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -907,7 +907,7 @@
         "intent": "topic-lemurs-last-fact-handle",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -926,7 +926,7 @@
         "intent": "topic-lemurs-last-fact-handle",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 6,
         "entity_type_detection": false
     },
@@ -945,7 +945,7 @@
         "intent": "topic-lemurs-last-fact-handle",
         "intent_category": "Lemurs",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-lemurs",
+        "topic": "Lemurs",
         "type": 7,
         "entity_type_detection": false
     },
@@ -964,7 +964,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -983,7 +983,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1002,7 +1002,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1021,7 +1021,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1040,7 +1040,7 @@
         "intent": "topic-age",
         "intent_category": "Age",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "topic age",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1059,7 +1059,7 @@
         "intent": "topic-haru-age-answer-yes",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1078,7 +1078,7 @@
         "intent": "topic-haru-age-answer-yes",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1097,7 +1097,7 @@
         "intent": "topic-haru-age-answer-yes",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1116,7 +1116,7 @@
         "intent": "topic-haru-age-answer-yes",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1135,7 +1135,7 @@
         "intent": "topic-haru-age-answer-yes",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1154,7 +1154,7 @@
         "intent": "topic-haru-age-answer-yes",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1173,7 +1173,7 @@
         "intent": "topic-haru-age-answer-yes",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1192,7 +1192,7 @@
         "intent": "topic-speaker-age-follow-up-question",
         "intent_category": "Speaker",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Speaker",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1211,7 +1211,7 @@
         "intent": "topic-speaker-age-follow-up-question",
         "intent_category": "Speaker",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Speaker",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1230,7 +1230,7 @@
         "intent": "topic-speaker-age-follow-up-question",
         "intent_category": "Speaker",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Speaker",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1249,7 +1249,7 @@
         "intent": "topic-speaker-age-follow-up-answer-yes",
         "intent_category": "Speaker",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Speaker",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1268,7 +1268,7 @@
         "intent": "topic-speaker-age-follow-up-answer-yes",
         "intent_category": "Speaker",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Speaker",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1287,7 +1287,7 @@
         "intent": "topic-haru-car-question",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1306,7 +1306,7 @@
         "intent": "topic-haru-car-answer-no",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1325,7 +1325,7 @@
         "intent": "topic-haru-car-answer-no",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1344,7 +1344,7 @@
         "intent": "topic-haru-car-answer-no",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1363,7 +1363,7 @@
         "intent": "topic-haru-car-answer-no",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1382,7 +1382,7 @@
         "intent": "topic-haru-car-what-kind-question",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1401,7 +1401,7 @@
         "intent": "topic-haru-car-what-kind-question",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1420,7 +1420,7 @@
         "intent": "topic-haru-car-what-kind-honda-answer",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1439,7 +1439,7 @@
         "intent": "topic-haru-car-what-kind-honda-answer",
         "intent_category": "Haru",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "topic-age",
+        "topic": "Haru",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1458,7 +1458,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1477,7 +1477,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1496,7 +1496,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1515,7 +1515,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1534,7 +1534,7 @@
         "intent": "system-generic-topic-transition",
         "intent_category": "System",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "system-generic-topic-transition",
+        "topic": "System",
         "type": 7,
         "entity_type_detection": false
     },
@@ -1553,7 +1553,7 @@
         "intent": "command-conversation-end-no-memory",
         "intent_category": "Command",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "command-conversation-end",
+        "topic": "Command",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1572,7 +1572,7 @@
         "intent": "command-conversation-end-no-memory",
         "intent_category": "Command",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "command-conversation-end",
+        "topic": "Command",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1591,7 +1591,7 @@
         "intent": "command-conversation-end-no-memory",
         "intent_category": "Command",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "command-conversation-end",
+        "topic": "Command",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1610,7 +1610,7 @@
         "intent": "command-conversation-end-no-memory",
         "intent_category": "Command",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "command-conversation-end",
+        "topic": "Command",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1629,7 +1629,7 @@
         "intent": "command-conversation-end-no-memory",
         "intent_category": "Command",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "command-conversation-end",
+        "topic": "Command",
         "type": 6,
         "entity_type_detection": false
     },
@@ -1648,7 +1648,7 @@
         "intent": "command-conversation-end-no-memory",
         "intent_category": "Command",
         "timestamp": "2024-03-11 16:30:33",
-        "topic": "command-conversation-end",
+        "topic": "Command",
         "type": 6,
         "entity_type_detection": false
     }
