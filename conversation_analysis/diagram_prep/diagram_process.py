@@ -2,15 +2,10 @@ import json
 from datetime import datetime
 from itertools import pairwise
 import ijson
-import diagram_utils as utils
-
-# Paths
-PATH_TO_SAMPLE_CONVERSATION = "data/log-02-20.json"
-
-OUT_PATH = r"output/new_robot_data_3_12.json"
+import diagram_prep.diagram_utils as utils
 
 
-def diagram_process():
+def diagram_process(chat_json, diagram_json_output):
     """
     Reads a file with a list of conversation and uses the DialogTag Python tool to
     predict the dialogue tag of each line of conversation and groups the conversation
@@ -31,13 +26,17 @@ def diagram_process():
     mapped_nodes = mapped_conversation["nodes"]
     mapped_links = mapped_conversation["links"]
 
-    with open(PATH_TO_SAMPLE_CONVERSATION, 'rb') as f:
-        row_iterator = ijson.items(f, 'item')
+    with open(chat_json, "rb") as f:
+        row_iterator = ijson.items(f, "item")
 
         for response, prompt in pairwise(row_iterator):
             response_timestamp = str(response["timestamp"])
-            response_generated_idx = utils.select_node(mapped_nodes, response["topic"], response["turn"], response_timestamp)
-            prompt_generated_idx = utils.select_node(mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp)
+            response_generated_idx = utils.select_node(
+                mapped_nodes, response["topic"], response["turn"], response_timestamp
+            )
+            prompt_generated_idx = utils.select_node(
+                mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp
+            )
             response_node = mapped_nodes[response_generated_idx]
             prompt_node = mapped_nodes[prompt_generated_idx]
 
@@ -47,7 +46,7 @@ def diagram_process():
                 "prompt": prompt["sentence"],
                 "sentence": response["sentence"],
                 "turn": response["turn"],
-                "topic": response['topic'],
+                "topic": response["topic"],
                 "intent_category": response["intent_category"],
                 "intent": response["intent"],
                 "emotion_label": response["emotion_label"],
@@ -57,16 +56,17 @@ def diagram_process():
                 "last_interaction": bool(response["last_interaction"]),
                 "data_collection": response["entity_type_detection"],
                 "timestamp": response_timestamp,
+                "slots": response["slots"]
             }
 
             # Adding more information to each node
-            mapped_nodes[response_generated_idx][
-                "interactions"
-            ].append(new_interaction)
+            mapped_nodes[response_generated_idx]["interactions"].append(new_interaction)
 
-            mapped_nodes[response_generated_idx]["timestamp"] = str(response['timestamp'])
+            mapped_nodes[response_generated_idx]["timestamp"] = str(
+                response["timestamp"]
+            )
 
-            if (response_node['name'] == prompt_node['name']):
+            if response_node["name"] == prompt_node["name"]:
                 continue
 
             link_turn_section = mapped_links[prompt["turn"]]
@@ -95,22 +95,26 @@ def diagram_process():
                 )
 
     for node in mapped_nodes:
-            node["show"] = utils.node_has_links(node, link_turn_section)
+        node["show"] = utils.node_has_links(node, link_turn_section)
 
     # Save the results as a JSON file
-    
+
     try:
-        with open(OUT_PATH, "x", encoding="utf8") as f:
+        with open(diagram_json_output, "x", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
     except FileExistsError:
         print("File exists, overwriting with new data")
-        with open(OUT_PATH, "w", encoding="utf8") as f:
+        with open(diagram_json_output, "w", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
-    print('done')
+    print("done")
 
 
 if __name__ == "__main__":
+    # Paths
+    PATH_TO_SAMPLE_CONVERSATION = "data/prepped_for_chats/log-02-20.json"
+    OUT_PATH = r"data/prepped_for_diagrams/new_robot_data_2_20.json"
+
     start = datetime.now()
-    diagram_process()
+    diagram_process(PATH_TO_SAMPLE_CONVERSATION, OUT_PATH)
     end = datetime.now()
-    print(end-start)
+    print(end - start)
