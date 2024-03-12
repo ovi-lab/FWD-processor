@@ -66,42 +66,64 @@ def generate_topic(dialog_line, last_topic_group):
 
 def fix_index(input_list):
     """Fix the index of an original (unprocessed) log in the case that the index is cut off"""
-    input_list.reverse()
     idx = 0
     for line in input_list:
         line["idx"] = idx
         idx += 1
-    input_list.reverse()
+    input_list.reverse()    
     return input_list
 
+def clean_JSON_from_file(input_file, output_file):
+    # Specify the file paths
+    input_file = "data/dialog_output.json"
+    output_file = "data/log-03-12.json"
 
-# Specify the file paths
-# INPUT_FILE_PATH = "data/log-02_20_2024, 04_27_07 PM.json"
-INPUT_FILE_PATH = "output/dialog_output.json"
-OUTPUT_FILE_PATH = "data/log-02-20.json"
+    # Open the JSON file
 
-# Open the JSON file
-data = []
-with open(INPUT_FILE_PATH, "r", encoding="utf8") as json_file:
-    # Load JSON data
-    data = json.load(json_file)
+    with open(input_file, "r", encoding="utf8") as json_file:
+        # Load JSON data
+        data = json.load(json_file)
 
+    updated_list = []
+    last_topic = ''
 
-# updated_list = fix_index(data)
-updated_list = []
-last_topic = ""
+    start = datetime.now()
 
-start = datetime.now()
-for utterance in data:
-    updated_line = utterance
-    updated_line["topic"], last_topic = generate_topic(updated_line, last_topic)
-    updated_list.append(updated_line)
+    for utterance in data:
+        updated_line = utterance
+        updated_line["topic"], last_topic = generate_topic(updated_line, last_topic)
+        updated_list.append(updated_line)
+    updated_list = fix_index(updated_list)
 
+    # Dump data to JSON file
+    with open(output_file, "w", encoding="utf8") as json_file:
+        print('writing...')
+        json.dump(updated_list, json_file, indent=4)
+        print('done.')
+        end = datetime.now()
+        print(end - start)
 
-# Dump data to JSON file
-with open(OUTPUT_FILE_PATH, "w", encoding="utf8") as json_file:
-    print('writing...')
-    json.dump(updated_list, json_file)
-    print('done.')
-    end = datetime.now()
-    print(end - start)
+def clean_JSON_from_data(data, output_file):
+    updated_list = []
+    last_topic = ''
+
+    start = datetime.now()
+
+    for utterance in data:
+        updated_line = utterance
+        updated_line["topic"], last_topic = generate_topic(updated_line, last_topic)
+        updated_list.append(updated_line)
+    updated_list = fix_index(updated_list)
+
+    # Dump data to JSON file
+    with open(output_file, "w", encoding="utf8") as json_file:
+        print('writing...')
+        json.dump(updated_list, json_file, indent=4)
+        print('done.')
+        end = datetime.now()
+        print(end - start)
+
+if __name__ == '__main__':
+    INPUT_FILE_PATH = "data/dialog_output.json"
+    OUTPUT_FILE_PATH = "data/log-03-12.json"
+    clean_JSON_from_file(INPUT_FILE_PATH, OUTPUT_FILE_PATH)

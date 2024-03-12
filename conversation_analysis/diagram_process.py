@@ -7,8 +7,7 @@ import diagram_utils as utils
 # Paths
 PATH_TO_SAMPLE_CONVERSATION = "data/log-02-20.json"
 
-PATH_TO_ONTOLOGY = 'data/Tiers-of-Friendship.xlsx'
-
+OUT_PATH = r"output/new_robot_data_3_12.json"
 
 
 def diagram_process():
@@ -99,13 +98,13 @@ def diagram_process():
             node["show"] = utils.node_has_links(node, link_turn_section)
 
     # Save the results as a JSON file
-    path = r"output/new_robot_data_2_20.json"
+    
     try:
-        with open(path, "x", encoding="utf8") as f:
+        with open(OUT_PATH, "x", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
     except FileExistsError:
         print("File exists, overwriting with new data")
-        with open(path, "w", encoding="utf8") as f:
+        with open(OUT_PATH, "w", encoding="utf8") as f:
             json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
     print('done')
 

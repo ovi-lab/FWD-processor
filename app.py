@@ -2,8 +2,8 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import json
 
-SEQUENTIAL_PATH = "data/log-02-20.json"
-DIAGRAM_PATH = "output/new_robot_data_2_20.json"
+SEQUENTIAL_PATH = "data/log-03-12.json"
+DIAGRAM_PATH = "output/new_robot_data_3_12.json"
 
 app = Flask(__name__)
 CORS(app)
