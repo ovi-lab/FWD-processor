@@ -44,7 +44,7 @@ def return_diagram_json():
     with open(DIAGRAM_PATH, "r", encoding="utf8") as file:
         json_data = json.load(file)
         
-        if selection == 'nodes':
+        if selection in 'nodes':
             return jsonify(json_data['nodes'])
         else:
             return jsonify(json_data)

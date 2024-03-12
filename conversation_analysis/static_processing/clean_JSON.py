@@ -73,39 +73,7 @@ def fix_index(input_list):
     input_list.reverse()    
     return input_list
 
-def clean_json_from_file(input_file, output_file, save=False):
-    # Specify the file paths
-    input_file = "data/dialog_output.json"
-    output_file = "data/log-03-12.json"
-
-    # Open the JSON file
-
-    with open(input_file, "r", encoding="utf8") as json_file:
-        # Load JSON data
-        data = json.load(json_file)
-
-    updated_list = []
-    last_topic = ''
-
-    start = datetime.now()
-
-    for utterance in data:
-        updated_line = utterance
-        updated_line["topic"], last_topic = generate_topic(updated_line, last_topic)
-        updated_list.append(updated_line)
-    updated_list = fix_index(updated_list)
-
-    if save:
-        # Dump data to JSON file
-        with open(output_file, "w", encoding="utf8") as json_file:
-            print('writing...')
-            json.dump(updated_list, json_file, indent=4)
-            print('done.')
-            end = datetime.now()
-            print(end - start)
-    return updated_list
-
-def clean_json_from_data(data, output_file=''):
+def process_conversation(data, output_file=''):
     updated_list = []
     last_topic = ''
 
@@ -118,7 +86,7 @@ def clean_json_from_data(data, output_file=''):
     updated_list = fix_index(updated_list)
 
     if output_file:
-    # Dump data to JSON file
+        # Dump data to JSON file
         with open(output_file, "w", encoding="utf8") as json_file:
             print('writing...')
             json.dump(updated_list, json_file, indent=4)
@@ -127,7 +95,14 @@ def clean_json_from_data(data, output_file=''):
             print(end - start)
     return updated_list
 
+def process_from_file(input_file, output_file=''):
+    # Open the JSON file
+    with open(input_file, "r", encoding="utf8") as json_file:
+        # Load JSON data
+        data = json.load(json_file)
+    return process_conversation(data, output_file)
+
 if __name__ == '__main__':
     INPUT_FILE_PATH = "data/dialog_output.json"
     OUTPUT_FILE_PATH = "data/log-03-12.json"
-    clean_json_from_file(INPUT_FILE_PATH, OUTPUT_FILE_PATH)
+    process_from_file(INPUT_FILE_PATH, OUTPUT_FILE_PATH)
