@@ -50,7 +50,7 @@ def node_has_links(n, link_section):
     return False
 
 
-def select_node(existing_nodes, node_topic, node_turn, timestamp):
+def select_or_create_node(existing_nodes, node_topic, node_turn, timestamp):
     """
     Iterate through the the global variable mapped_conversation to find the specified node
     and return the index if it is found. If not, create a new node with the name specified and return the index of the new node.
@@ -83,7 +83,15 @@ def select_node(existing_nodes, node_topic, node_turn, timestamp):
             "n": 5,
             "interactions": [],
             "timestamp": timestamp,
+            "slots": [],
             "show": False,
         }
     )
     return new_id
+
+def add_node_slots(node, response_slots):
+    node_slots = node['slots']
+    for slot in response_slots:
+        if slot not in node_slots and slot['value']:
+            node_slots.append(slot)
+    return node_slots

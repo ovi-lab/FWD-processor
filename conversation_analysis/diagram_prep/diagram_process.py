@@ -31,10 +31,10 @@ def diagram_process(chat_json, diagram_json_output):
 
         for response, prompt in pairwise(row_iterator):
             response_timestamp = str(response["timestamp"])
-            response_generated_idx = utils.select_node(
+            response_generated_idx = utils.select_or_create_node(
                 mapped_nodes, response["topic"], response["turn"], response_timestamp
             )
-            prompt_generated_idx = utils.select_node(
+            prompt_generated_idx = utils.select_or_create_node(
                 mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp
             )
             response_node = mapped_nodes[response_generated_idx]
@@ -61,6 +61,8 @@ def diagram_process(chat_json, diagram_json_output):
 
             # Adding more information to each node
             mapped_nodes[response_generated_idx]["interactions"].append(new_interaction)
+
+            response_node['slots'] = utils.add_node_slots(response_node, response['slots'])
 
             mapped_nodes[response_generated_idx]["timestamp"] = str(
                 response["timestamp"]
