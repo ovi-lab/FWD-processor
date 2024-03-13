@@ -6,6 +6,7 @@ authors = ["fperellaholfeld <fperellaholfeld@gmail.com>"]
 readme = "README.md"
 classifiers = ["Private :: Do not Upload"]
 exclude = ["**"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
