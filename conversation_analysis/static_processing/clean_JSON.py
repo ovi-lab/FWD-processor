@@ -23,7 +23,7 @@ interaction_key_map = {
     "type": "type",
 }
 
-TOPIC_KEY_PATH = "conversation_analysis/ToF-topics/topic-intent-key.json"
+TOPIC_KEY_PATH = "ToF-topics/topic-intent-key.json"
 topic_list = []
 with open(TOPIC_KEY_PATH, "r", encoding="utf8") as topic_file:
     topic_list = json.load(topic_file)

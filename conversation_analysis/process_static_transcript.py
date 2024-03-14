@@ -1,6 +1,7 @@
 from  static_processing.parse_ros_output import parse_ros_output
 from static_processing.clean_JSON import process_conversation
 from diagram_prep.diagram_process import diagram_process
+import time
 
 def process_static_transcript(ros_transcript, json_output_name):
     """
@@ -19,5 +20,7 @@ def process_static_transcript(ros_transcript, json_output_name):
     
 
 if __name__ == '__main__':
-    
-    process_static_transcript('data/raw_uploads/dialog_result.yml', 'log-03-12.json')
+    for i in range(0,10):
+        process_static_transcript('data/raw_uploads/dialog_result.yml', 'log-03-12.json')
+        print('eeping')
+        time.sleep(10)
