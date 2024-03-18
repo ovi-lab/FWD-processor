@@ -10,7 +10,7 @@ CHAT_PATH = "data/prepped_for_chats/chat-log-03-12.json"
 DIAGRAM_PATH = "data/prepped_for_diagrams/diagram-log-03-12.json"
 processed_file_suffix = 'transcript-log.json'
 
-data_emission = 'static'
+data_emission_mode = 'static'
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'data/tmp/'
@@ -18,12 +18,12 @@ socketio = SocketIO(app, cors_allowed_origins='*')
 
 @socketio.on('initSubscriber')
 def init_subscriber():
-    data_emission = 'dynamic'
+    data_emission_mode = 'dynamic'
     pass
 
 @socketio.on('uploadFile')
 def processIncomingFile(file_data):
-    data_emission = 'static'
+    data_emission_mode = 'static'
     print(file_data)
     
     if file_data:
@@ -55,31 +55,6 @@ def getDiagramData(query=''):
         flash(payload)
     socketio.emit(emission_ID, payload)
 
-
-
-# @app.route("/api/chatjson", methods=["GET"])
-# def return_raw_json():
-#     """
-#     returns a json file containing the sequential lines of dialogue and their relevant data in a single json object array
-#     """
-#     with open(CHAT_PATH, "r", encoding="utf8") as file:
-#         payload = json.load(file)
-#         return jsonify(payload)
-
-
-# @app.route("/api/diagramjson", methods=["GET"])
-# def return_diagram_json():
-#     """
-#     Returns a json file processed to contain a list of nodes and links for the diagrams to use in their rendering
-#     """
-#     selection = request.args.get('selection')
-#     with open(DIAGRAM_PATH, "r", encoding="utf8") as file:
-#         json_data = json.load(file)
-        
-#         if selection in 'nodes':
-#             return jsonify(json_data['nodes'])
-#         else:
-#             return jsonify(json_data)
         
 @socketio.on('connect')
 def handle_connect():
