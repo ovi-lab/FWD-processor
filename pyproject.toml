@@ -9,13 +9,14 @@ exclude = ["**"]
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 openpyxl = "^3.1.2"
 ijson = "^3.2.3"
 flask = "^3.0.2"
 flask-cors = "^4.0.0"
 pyyaml = "^6.0.1"
 flask-socketio = "^5.3.6"
+rich = "^13.7.1"
 
 
 [build-system]

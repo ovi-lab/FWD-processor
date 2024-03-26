@@ -1,0 +1,273 @@
+{
+    "nodes": [
+        {
+            "id": 0,
+            "name": "user: topic-intro",
+            "turn": "user",
+            "topic": "topic-intro",
+            "n": 5.5,
+            "interactions": [
+                {
+                    "idx": 0,
+                    "index": 1,
+                    "response": "Hello there, human!",
+                    "sentence": "Hi",
+                    "turn": "user",
+                    "topic": "topic-intro",
+                    "intent": "topic-intro",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.9,
+                    "sentiment_label": "None",
+                    "sentiment_score": 0.92,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-26 14:48:54",
+                    "slots": []
+                }
+            ],
+            "timestamp": "2024-03-26 14:48:54",
+            "slots": [],
+            "show": true
+        },
+        {
+            "id": 1,
+            "name": "haru: topic-intro",
+            "turn": "haru",
+            "topic": "topic-intro",
+            "n": 8.5,
+            "interactions": [
+                {
+                    "idx": 2,
+                    "index": 1,
+                    "response": "Zoop",
+                    "sentence": "Is there a better name, other than human, that I should call you by?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "topic-intro",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.38,
+                    "sentiment_label": "None",
+                    "sentiment_score": 0.75,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-26 14:48:54",
+                    "slots": []
+                },
+                {
+                    "idx": 4,
+                    "index": 2,
+                    "response": "Your name is?",
+                    "sentence": "Your name is Zoop?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "haru-chat-name-collected",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.71,
+                    "sentiment_label": "None",
+                    "sentiment_score": 0.96,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-26 14:49:05",
+                    "slots": [
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Zoop"
+                        }
+                    ]
+                },
+                {
+                    "idx": 6,
+                    "index": 2,
+                    "response": "Yes",
+                    "sentence": "Did I get that right?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "haru-chat-name-collected",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.55,
+                    "sentiment_label": "None",
+                    "sentiment_score": 0.89,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-26 14:49:05",
+                    "slots": [
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Zoop"
+                        }
+                    ]
+                },
+                {
+                    "idx": 8,
+                    "index": 3,
+                    "response": "What do you think of my nicknames?",
+                    "sentence": "Zoop McZoop face.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "name-react",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.79,
+                    "sentiment_label": "None",
+                    "sentiment_score": 0.78,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-26 14:49:10",
+                    "slots": [
+                        {
+                            "name": "person_name",
+                            "value": "Zoop"
+                        }
+                    ]
+                },
+                {
+                    "idx": 10,
+                    "index": 4,
+                    "response": "I'm Haru.",
+                    "sentence": "Well for now I'll call you.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "nickname-reaction-fallback",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.88,
+                    "sentiment_label": "None",
+                    "sentiment_score": 0.91,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-26 14:49:14",
+                    "slots": [
+                        {
+                            "name": "person_name",
+                            "value": "Zoop"
+                        }
+                    ]
+                },
+                {
+                    "idx": 12,
+                    "index": 4,
+                    "response": "You seem familiar.",
+                    "sentence": "I'm a companion robot.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "nickname-reaction-fallback",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.75,
+                    "sentiment_label": "None",
+                    "sentiment_score": 0.69,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-26 14:49:14",
+                    "slots": [
+                        {
+                            "name": "person_name",
+                            "value": "Zoop"
+                        }
+                    ]
+                },
+                {
+                    "idx": 14,
+                    "index": 4,
+                    "response": "Oh I thought it was you!",
+                    "sentence": "Have we met before?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "nickname-reaction-fallback",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.8,
+                    "sentiment_label": "None",
+                    "sentiment_score": 0.95,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-26 14:49:14",
+                    "slots": [
+                        {
+                            "name": "person_name",
+                            "value": "Zoop"
+                        }
+                    ]
+                },
+                {
+                    "idx": 16,
+                    "index": 5,
+                    "response": "Remind me, have we engaged in Small Talk before?",
+                    "sentence": "Hello, my old friend!",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "have-we-met-before-yes",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.92,
+                    "sentiment_label": "None",
+                    "sentiment_score": 0.96,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-26 14:49:24",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Zoop"
+                        }
+                    ]
+                }
+            ],
+            "timestamp": "2024-03-26 14:49:24",
+            "slots": [
+                {
+                    "name": "person_name",
+                    "value": "Zoop"
+                },
+                {
+                    "name": "agreement_patterns",
+                    "value": "Yes"
+                }
+            ],
+            "show": true
+        }
+    ],
+    "links": {
+        "haru": [
+            {
+                "name": "haru: topic-intro -> user: topic-intro",
+                "source": 1,
+                "target": 0,
+                "value": 1,
+                "timestamp": "2024-03-26 14:48:54",
+                "responseIDs": [
+                    0
+                ]
+            }
+        ],
+        "user": [
+            {
+                "name": "user: topic-intro -> haru: topic-intro",
+                "source": 0,
+                "target": 1,
+                "value": 2,
+                "timestamp": "2024-03-26 14:49:05",
+                "responseIDs": [
+                    2,
+                    6
+                ]
+            }
+        ]
+    },
+    "attributes": {}
+}

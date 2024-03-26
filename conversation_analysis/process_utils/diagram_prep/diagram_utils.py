@@ -28,7 +28,7 @@ def link_exists(link_id, link_section):
 
 def node_has_links(n, link_section):
     """
-    Iterate through the global variable mapped_conversation
+    Iterate through a link section of the mapped_conversation
     and return true if a link contains the specified node,
     else false.
 
@@ -43,8 +43,8 @@ def node_has_links(n, link_section):
         true if link contains node n
     """
     for l in link_section:
-        if n['id'] == 0:
-            return False
+        # if n['id'] == 0:
+        #     return False
         if n["id"] == l["source"] or n['id'] == l["target"]:
             return True
     return False

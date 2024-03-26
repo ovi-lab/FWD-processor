@@ -23,8 +23,7 @@ interaction_key_map = {
     "type": "type",
 }
 
-TOPIC_KEY_PATH = "ToF-topics/topic-intent-key.json"
-topic_list = []
+TOPIC_KEY_PATH = "../ToF-topics/topic-intent-key.json"
 with open(TOPIC_KEY_PATH, "r", encoding="utf8") as topic_file:
     topic_list = json.load(topic_file)
 
@@ -38,30 +37,30 @@ def replace_keys(original_dict):
     return new_dict
 
 
-def generate_topic(dialog_line, last_topic_group):
+def generate_topic(dialog_line_intent):
     """use the intents from the data to make sure the correct topic is assigned to each line"""
 
     topic_name_output = ""
-    if last_topic_group:
-        for intent in last_topic_group["intents"]:
-            if intent == dialog_line["intent"]:
-                topic_name_output = last_topic_group["topic_name"]
-                return topic_name_output, last_topic_group
+    # if last_topic_group:
+    #     for intent in last_topic_group["intents"]:
+    #         if intent == dialog_line_intent:
+    #             topic_name_output = last_topic_group["topic_name"]
+    #             return topic_name_output, last_topic_group
 
     for topic in topic_list:
-        if topic["topic_name"] in dialog_line["intent"]:
+        if topic["topic_name"] in dialog_line_intent:
             topic_name_output = topic["topic_name"]
-            return topic_name_output, topic
+            return topic_name_output
 
     for topic in topic_list:
         for intent in topic["intents"]:
-            if intent == dialog_line["intent"]:
+            if intent == dialog_line_intent:
                 topic_name_output = topic["topic_name"]
-                return topic_name_output, topic
+                return topic_name_output
             
     
-    print(f"TOPIC FOR *{dialog_line['intent']}* NOT FOUND \n")
-    return topic_name_output, last_topic_group
+    print(f"TOPIC FOR *{dialog_line_intent}* NOT FOUND \n")
+    return topic_name_output
 
 
 def fix_index(input_list):
@@ -81,7 +80,7 @@ def process_conversation(data, output_file=''):
 
     for utterance in data:
         updated_line = utterance
-        updated_line["topic"], last_topic = generate_topic(updated_line, last_topic)
+        # updated_line["topic"], last_topic = generate_topic(updated_line['intent'], last_topic)
         updated_list.append(updated_line)
     updated_list = fix_index(updated_list)
 
@@ -97,7 +96,7 @@ def process_conversation(data, output_file=''):
 
 def process_from_file(input_file, output_file=''):
     # Open the JSON file
-    with open(input_file, "r", encoding="utf8") as json_file:
+    with open(input_file, "r", encoding='utf8') as json_file:
         # Load JSON data
         data = json.load(json_file)
     return process_conversation(data, output_file)

@@ -6,8 +6,8 @@ the code has been modified from Lithin's dynamic ROS subscriber
 
 from time import time
 from datetime import datetime
-import json
 import yaml
+from process_utils.clean_JSON import generate_topic
 
 
 EMOTIONS = ["anger", "disgust", "fear", "joy", "neutral", "sadness", "surprise"]
@@ -95,9 +95,8 @@ class HaruChatObject:
                 "results"
             ]["best_match"]["score"]
             self.slu_intent = doc["slu_result"]["intent"]
-            self.slu_topic_ = doc["topic"]
+            self.topic_name = generate_topic(doc["slu_result"]["intent"])
             self.timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            split_parts = self.slu_topic_.split("-")
             self.generic_entity_type_detection = False
             if doc["slots"]:
                 for slots in doc["slots"]:
@@ -106,13 +105,26 @@ class HaruChatObject:
                     else:
                         self.generic_entity_type_detection = False
 
-            if len(split_parts) >= 2:
-                self.topic_name = " ".join(split_parts[1:])
-                self.slu_topic = split_parts[0]
-            else:
-                self.topic_name = self.slu_topic_
-                self.slu_topic = self.slu_topic_
-
+            new_dialog_node = {
+                "idx": self.index, # const
+                "sentence": doc["utterance"],
+                "emotion_label": "neutral", # var with default value
+                "emotion_score": -9, # var with default value
+                "sentiment_label": "neutral", # var with default value
+                "sentiment_score": -9, # var with default value
+                "index": doc["header"]["seq"], # const
+                "app_name": self.app_name, # const
+                "turn": "user", # var with default value
+                "last_interaction": False, # default value
+                "highlighted": False, # var with default value
+                "intent": self.slu_intent, # const
+                "topic": self.topic_name,  # const
+                "timestamp": self.timestamp, # const
+                "type": "", # var
+                "entity_type_detection": self.generic_entity_type_detection, # const
+                "slots": doc["slots"], # const
+            }
+            
             if self.last_user_utterance != doc["utterance"]:
                 self.last_user_utterance = doc["utterance"]
 
@@ -133,12 +145,11 @@ class HaruChatObject:
                                 "index": doc["header"]["seq"],
                                 "app_name": self.app_name,
                                 "turn": "user",
-                                "Last_interaction": True,
+                                "last_interaction": True,
                                 "highlighted": False,
                                 "intent": self.slu_intent,
-                                "intent_category": self.slu_topic,
-                                "timestamp": self.timestamp,
                                 "topic": self.topic_name,
+                                "timestamp": self.timestamp,
                                 "type": "",
                                 "entity_type_detection": self.generic_entity_type_detection,
                                 "slots": doc["slots"],
@@ -206,9 +217,8 @@ class HaruChatObject:
                                     "last_interaction": sentence_id == 0,
                                     "highlighted": False,
                                     "intent": self.slu_intent,
-                                    "intent_category": self.slu_topic,
-                                    "timestamp": self.timestamp,
                                     "topic": self.topic_name,
+                                    "timestamp": self.timestamp,
                                     "type": user["type"],
                                     "entity_type_detection": self.generic_entity_type_detection,
                                     "slots": doc["slots"],
@@ -267,9 +277,8 @@ class HaruChatObject:
                             "last_interaction": False,
                             "highlighted": False,
                             "intent": self.slu_intent,
-                            "intent_category": self.slu_topic,
-                            "timestamp": self.timestamp,
                             "topic": self.topic_name,
+                            "timestamp": self.timestamp,
                             "type": haru["type"],
                             "entity_type_detection": self.generic_entity_type_detection,
                             "slots": doc["slots"],
@@ -278,20 +287,9 @@ class HaruChatObject:
                     self.index += 1
             self._data_is_ready = True
 
-        # # Write the list to a JSON file
-        #     JSON_OUTPUT_PATH = "output/dialog_output.json"
-        #     try:
-        #         with open(JSON_OUTPUT_PATH, "x", encoding="utf8") as out_file:
-        #             json.dump(self.conversation, out_file, ensure_ascii=False, indent=4)
-        #     except FileExistsError:
-        #         print("File exists, overwriting with new data")
-        #         with open(JSON_OUTPUT_PATH, "a", encoding="utf8") as out_file:
-        #             json.dump(self.conversation, out_file, ensure_ascii=False, indent=4)
-        # print("done")
-
         return self.conversation
     
-def parse_ros_output(ros_yml_path):
+def parse_yml_output(ros_yml_path):
     try:
         with open(ros_yml_path, "r", encoding="utf8") as file:
             print(f'converting the static YML file at "{ros_yml_path}" to JSON...')
@@ -306,4 +304,4 @@ def parse_ros_output(ros_yml_path):
 if __name__ == "__main__":
     YML_PATH = "data/dialog_result.yml"
     OUTPUT_PATH = "output/dialog_output.json"
-    parse_ros_output(YML_PATH)
+    parse_yml_output(YML_PATH)

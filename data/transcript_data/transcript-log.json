@@ -1,0 +1,471 @@
+[
+    {
+        "idx": 0,
+        "sentence": "Hi",
+        "emotion_label": "neutral",
+        "emotion_score": 0.9,
+        "sentiment_label": "None",
+        "sentiment_score": 0.92,
+        "index": 1,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-intro",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:48:54",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": []
+    },
+    {
+        "idx": 1,
+        "sentence": "Hello there, human!",
+        "emotion_label": "joy",
+        "emotion_score": 0.8,
+        "sentiment_label": "None",
+        "sentiment_score": 0.91,
+        "index": 1,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-intro",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:48:54",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": []
+    },
+    {
+        "idx": 2,
+        "sentence": "Is there a better name, other than human, that I should call you by?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.38,
+        "sentiment_label": "None",
+        "sentiment_score": 0.75,
+        "index": 1,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-intro",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:48:54",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": []
+    },
+    {
+        "idx": 3,
+        "sentence": "Zoop",
+        "emotion_label": "neutral",
+        "emotion_score": 0.85,
+        "sentiment_label": "None",
+        "sentiment_score": 0.66,
+        "index": 2,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "haru-chat-name-collected",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:05",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 4,
+        "sentence": "Your name is Zoop?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.71,
+        "sentiment_label": "None",
+        "sentiment_score": 0.96,
+        "index": 2,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "haru-chat-name-collected",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:05",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 5,
+        "sentence": "Your name is?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.85,
+        "sentiment_label": "None",
+        "sentiment_score": 0.97,
+        "index": 2,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "haru-chat-name-collected",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:05",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 6,
+        "sentence": "Did I get that right?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.55,
+        "sentiment_label": "None",
+        "sentiment_score": 0.89,
+        "index": 2,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "haru-chat-name-collected",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:05",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 7,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 3,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "name-react",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:10",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 8,
+        "sentence": "Zoop McZoop face.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.79,
+        "sentiment_label": "None",
+        "sentiment_score": 0.78,
+        "index": 3,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "name-react",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:10",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 9,
+        "sentence": "What do you think of my nicknames?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.47,
+        "sentiment_label": "None",
+        "sentiment_score": 0.97,
+        "index": 3,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "name-react",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:10",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 10,
+        "sentence": "Well for now I'll call you.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.88,
+        "sentiment_label": "None",
+        "sentiment_score": 0.91,
+        "index": 4,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "nickname-reaction-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 11,
+        "sentence": "I'm Haru.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.86,
+        "sentiment_label": "None",
+        "sentiment_score": 0.98,
+        "index": 4,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "nickname-reaction-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 12,
+        "sentence": "I'm a companion robot.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.75,
+        "sentiment_label": "None",
+        "sentiment_score": 0.69,
+        "index": 4,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "nickname-reaction-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 13,
+        "sentence": "You seem familiar.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.66,
+        "sentiment_label": "None",
+        "sentiment_score": 0.83,
+        "index": 4,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "nickname-reaction-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 14,
+        "sentence": "Have we met before?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.8,
+        "sentiment_label": "None",
+        "sentiment_score": 0.95,
+        "index": 4,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "nickname-reaction-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:14",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 15,
+        "sentence": "Oh I thought it was you!",
+        "emotion_label": "surprise",
+        "emotion_score": 0.63,
+        "sentiment_label": "None",
+        "sentiment_score": 0.63,
+        "index": 5,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "have-we-met-before-yes",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:24",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 16,
+        "sentence": "Hello, my old friend!",
+        "emotion_label": "joy",
+        "emotion_score": 0.92,
+        "sentiment_label": "None",
+        "sentiment_score": 0.96,
+        "index": 5,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "have-we-met-before-yes",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:24",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    },
+    {
+        "idx": 17,
+        "sentence": "Remind me, have we engaged in Small Talk before?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.86,
+        "sentiment_label": "None",
+        "sentiment_score": 0.92,
+        "index": 5,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "have-we-met-before-yes",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 14:49:24",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Zoop"
+            }
+        ]
+    }
+]

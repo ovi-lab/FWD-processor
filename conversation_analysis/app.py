@@ -1,61 +1,76 @@
 import os
-from flask import Flask, flash
+from flask import Flask
 from werkzeug.utils import secure_filename
-from flask_socketio import SocketIO, emit, send
+from flask_socketio import SocketIO
 import json
 import time
-from process_static_transcript import process_static_transcript
+from process_uploaded_transcript import process_uploaded_transcript
+from process_utils.diagram_prep.diagram_process import generate_diagram_from_file
 
-CHAT_PATH = "data/prepped_for_chats/chat-log-03-12.json"
-DIAGRAM_PATH = "data/prepped_for_diagrams/diagram-log-03-12.json"
-processed_file_suffix = 'transcript-log.json'
+CHAT_PATH = "data/transcript_data/chat-log-03-12.json"
+DIAGRAM_PATH = "data/diagram_data/diagram-log-03-12.json"
 
-data_emission_mode = 'static'
+data_emission_mode = 'dynamic'
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'data/tmp/'
+app.config['DATA_FOLDER'] = '../data/'
 socketio = SocketIO(app, cors_allowed_origins='*')
+
+uploaded_file_path = os.path.join(app.config['DATA_FOLDER'], 'tmp/upload.yml')
+processed_file_suffix = 'log.json'
 
 @socketio.on('initSubscriber')
 def init_subscriber():
     data_emission_mode = 'dynamic'
     pass
 
-@socketio.on('uploadFile')
-def processIncomingFile(file_data):
+@socketio.event
+def writeUpload(file_data):
     data_emission_mode = 'static'
-    print(file_data)
-    
     if file_data:
-        file_path = os.path.join(app.config['UPLOAD_FOLDER'], 'upload.yml')
-        
+
         # Write the file data to the file
-        with open(file_path, 'wb') as f:
+        with open(uploaded_file_path, 'wb') as f:
             f.write(file_data)
-        process_static_transcript(file_path, processed_file_suffix)
+        process_uploaded_transcript(uploaded_file_path, processed_file_suffix)
 
 @socketio.on('static-linear-request')
-def getLinearDialogue():
-    file_path = f'data/prepped_for_chats/chat-{processed_file_suffix}'
-    with open(file_path, 'r', encoding='utf8') as file:
-        payload = json.load(file)
-    socketio.emit('static-linear-response', payload)
+def getLinearDialogue(retried=0):
+    file_path = f'../data/transcript_data/transcript-{processed_file_suffix}'
+    try:
+        with open(file_path, 'r', encoding='utf8') as file:
+            payload = json.load(file)
+        socketio.emit('linear-response', payload)
+        retried = 0
+    except FileNotFoundError:
+        if retried==2:
+            socketio.emit('unable-to-open', file_path)
+            return
+        process_uploaded_transcript(uploaded_file_path, processed_file_suffix)
+        getLinearDialogue(retried=(retried+1))
 
 @socketio.on('static-diagram-request')
-def getDiagramData(query=''):
-    file_path = f'data/prepped_for_diagrams/diagram-{processed_file_suffix}'
-    with open(file_path, 'r', encoding='utf8') as file:
-        data = json.load(file)
-        if query == 'nodes' or query == 'links':
-            payload = data[query]
-            emission_ID = f'static-diagram-response-{query}'
-        else:
-            payload = data
-            emission_ID = f'static-diagram-response-all'
-        flash(payload)
-    socketio.emit(emission_ID, payload)
+def getDiagramData(query='', retried=0):
+    file_path = f'../data/diagram_data/diagram-{processed_file_suffix}'
+    try:
+        with open(file_path, 'r', encoding='utf8') as file:
+            data = json.load(file)
+            if query == 'nodes' or query == 'links':
+                payload = data[query]
+                emission_ID = f'static-diagram-response-{query}'
+            else:
+                payload = data
+                emission_ID = f'static-diagram-response-all'
+        socketio.emit(emission_ID, payload)
+        retried = 0
+    except FileNotFoundError:
+        if retried == 2:
+            socketio.emit('unable-to-open', file_path)
+            return
+        process_uploaded_transcript(uploaded_file_path, processed_file_suffix)
+        getDiagramData(query, retried=(retried+1))
 
-        
+
 @socketio.on('connect')
 def handle_connect():
     print('Client connected')
@@ -63,22 +78,29 @@ def handle_connect():
 @socketio.on('disconnect')
 def handle_disconnect():
     print('Client disconnected')
-        
-def send_data_updates():
-    while True:
-        # Fetch data from your Flask application
-        with open(CHAT_PATH, "r", encoding="utf8") as file:
-            payload = json.load(file)
-        # Send data updates to connected clients
-        socketio.emit('linear_updates', payload)
 
-        # Adjust the sleep time as needed
-        socketio.sleep(1)
         
+def realtime_ROS_emission():
+    transcript_path = f'../data/transcript_data/transcript-{processed_file_suffix}'
+    diagram_path = f'../data/diagram_data/diagram-{processed_file_suffix}'
+    transcript_payload = []
+    while True:
+        try:
+            with open(transcript_path, 'r', encoding='utf8') as transcript_file:
+                transcript_payload = json.load(transcript_file)
+                # print(transcript_payload)
+                socketio.emit('linear-response', transcript_payload)
+        
+                diagram_payload = generate_diagram_from_file(transcript_payload, diagram_path)
+                socketio.emit('diagram-response-all', diagram_payload)
+        except Exception as e:
+            print(f'Exception on emission: {e}')
+            socketio.emit('fatal-emission', e)
+            break
+        socketio.sleep(2) 
 
 
 if __name__ == "__main__":
     # Start the WebSocket server
-    if data_emission == 'dynamic':
-        socketio.start_background_task(send_data_updates)
+    socketio.start_background_task(realtime_ROS_emission)
     socketio.run(app, debug=False, port=6400)
