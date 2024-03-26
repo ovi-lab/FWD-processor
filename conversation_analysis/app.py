@@ -2,67 +2,109 @@ import os
 from flask import Flask
 from flask_socketio import SocketIO
 import json
-import time
+from threading import Event, Lock
 from process_uploaded_transcript import process_uploaded_transcript
 from process_utils.diagram_prep.diagram_process import generate_diagram_from_file
 
-CHAT_PATH = "data/transcript_data/chat-log-03-12.json"
-DIAGRAM_PATH = "data/diagram_data/diagram-log-03-12.json"
+
+thread_event = Event()
+thread_lock = Lock()
+thread = None
 
 data_emission_mode = 'dynamic'
 
 app = Flask(__name__)
-app.config['DATA_FOLDER'] = '../data/'
 socketio = SocketIO(app, cors_allowed_origins='*')
 
-uploaded_file_path = os.path.join(app.config['DATA_FOLDER'], 'tmp/upload.yml')
-processed_file_suffix = 'log.json'
+# Setting up the paths needed for the application
+dirname = os.path.dirname
+DATA_DIRECTORY = os.path.join(dirname(dirname(__file__)), 'data')
+app.config['UPLOAD_FOLDER'] = os.path.join(DATA_DIRECTORY, 'tmp')
+UPLOADED_FILE_PATH = os.path.join(app.config['UPLOAD_FOLDER'], 'upload.yml')
+TRANSCRIPT_FILE_PATH = os.path.join(DATA_DIRECTORY, 'transcript_data/transcript-log.json')
+DIAGRAM_FILE_PATH = os.path.join(DATA_DIRECTORY, 'diagram_data/diagram-log.json')
 
-@socketio.on('initSubscriber')
-def init_subscriber():
-    data_emission_mode = 'dynamic'
+@socketio.event
+def initRosFeed():
+    print('bruh')
+    global thread
+    with thread_lock:
+        if thread is None:
+            thread_event.set()
+            thread = socketio.start_background_task(receiveSubscriberFeed, thread_event)
+
     pass
 
 @socketio.event
-def writeUpload(file_data):
-    data_emission_mode = 'static'
-    if file_data:
+def killRosFeed():
+    global thread
+    thread_event.clear()
+    with thread_lock:
+        if thread is not None:
+            thread.join()
+            thread = None
+            print('kachow')
 
-        # Write the file data to the file
-        with open(uploaded_file_path, 'wb') as f:
+def receiveSubscriberFeed(event):
+    transcript_last_idx = -1
+    global thread
+    try:
+        while event.is_set():
+            with open(TRANSCRIPT_FILE_PATH, 'r', encoding='utf8') as transcript_file:
+                transcript_payload = json.load(transcript_file)
+                if (transcript_payload[-1]['idx'] != transcript_last_idx):
+                    print(transcript_payload[-1]['idx'])
+                    print('updating...')
+                    transcript_last_idx = transcript_payload[-1]['idx']
+                    socketio.emit('linear-response', transcript_payload)
+                    diagram_payload = generate_diagram_from_file(transcript_payload, DIAGRAM_FILE_PATH)
+                    socketio.emit('diagram-response-all', diagram_payload)
+                socketio.sleep(2) 
+            print('waiting')
+    except Exception as e:
+        print(f'Exception on emission: {e}')
+        socketio.emit('fatal-emission', e)
+    finally:
+        event.clear()
+        thread = None
+
+
+
+@socketio.event
+def upload_file(file_data):
+    data_emission_mode = 'static'
+    uploaded_file = ''
+    if file_data:
+        with open(UPLOADED_FILE_PATH, 'wb') as f:
             f.write(file_data)
-        process_uploaded_transcript(uploaded_file_path, processed_file_suffix)
+        process_uploaded_transcript(UPLOADED_FILE_PATH)
 
 @socketio.on('static-linear-request')
 def getLinearDialogue(retried=0):
-    file_path = f'../data/transcript_data/transcript-{processed_file_suffix}'
     try:
-        with open(file_path, 'r', encoding='utf8') as file:
+        with open(TRANSCRIPT_FILE_PATH, 'r', encoding='utf8') as file:
             payload = json.load(file)
         socketio.emit('linear-response', payload)
         retried = 0
     except FileNotFoundError:
         if retried==2:
-            socketio.emit('unable-to-open', file_path)
+            socketio.emit('unable-to-open', TRANSCRIPT_FILE_PATH)
             return
-        process_uploaded_transcript(uploaded_file_path, processed_file_suffix)
+        process_uploaded_transcript(UPLOADED_FILE_PATH)
         getLinearDialogue(retried=(retried+1))
 
 @socketio.on('static-diagram-request')
 def getDiagramData(query='', retried=0):
-    file_path = f'../data/diagram_data/diagram-{processed_file_suffix}'
     try:
-        with open(file_path, 'r', encoding='utf8') as file:
+        with open(DIAGRAM_FILE_PATH, 'r', encoding='utf8') as file:
             data = json.load(file)
-            
-            emission_ID = f'diagram-response-all'
-        socketio.emit(emission_ID, data)
+        socketio.emit('diagram-response-all', data)
         retried = 0
     except FileNotFoundError:
         if retried == 2:
-            socketio.emit('unable-to-open', file_path)
+            socketio.emit('unable-to-open', DIAGRAM_FILE_PATH)
             return
-        process_uploaded_transcript(uploaded_file_path, processed_file_suffix)
+        process_uploaded_transcript(UPLOADED_FILE_PATH)
         getDiagramData(query, retried=(retried+1))
 
 
@@ -74,32 +116,8 @@ def handle_connect():
 def handle_disconnect():
     print('Client disconnected')
 
-        
-def realtime_ROS_emission():
-    transcript_path = f'../data/transcript_data/transcript-{processed_file_suffix}'
-    diagram_path = f'../data/diagram_data/diagram-{processed_file_suffix}'
-    transcript_last_idx = -1
-    while True:
-        try:
-            with open(transcript_path, 'r', encoding='utf8') as transcript_file:
-                transcript_payload = json.load(transcript_file)
-                if (transcript_payload[-1]['idx'] != transcript_last_idx):
-                    print(transcript_payload[-1]['idx'])
-                    print('updating...')
-                    transcript_last_idx = transcript_payload[-1]['idx']
-                    # print(transcript_payload)
-                    socketio.emit('linear-response', transcript_payload)
-            
-                    diagram_payload = generate_diagram_from_file(transcript_payload, diagram_path)
-                    socketio.emit('diagram-response-all', diagram_payload)
-        except Exception as e:
-            print(f'Exception on emission: {e}')
-            socketio.emit('fatal-emission', e)
-            break
-        socketio.sleep(2) 
 
 
 if __name__ == "__main__":
     # Start the WebSocket server
-    socketio.start_background_task(realtime_ROS_emission)
     socketio.run(app, debug=False, port=6400)

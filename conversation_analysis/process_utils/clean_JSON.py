@@ -1,7 +1,10 @@
 """rebuilds the JSON file with the values actually needed for the visualizations and reverses"""
 
+import os
 import json
 from datetime import datetime
+
+current_directory = os.path.dirname(os.path.abspath(__file__))
 
 interaction_key_map = {
     "Highlighted": "highlighted",
@@ -23,7 +26,7 @@ interaction_key_map = {
     "type": "type",
 }
 
-TOPIC_KEY_PATH = "../ToF-topics/topic-intent-key.json"
+TOPIC_KEY_PATH = os.path.join(current_directory, "ToF-topics/topic-intent-key.json")
 with open(TOPIC_KEY_PATH, "r", encoding="utf8") as topic_file:
     topic_list = json.load(topic_file)
 
