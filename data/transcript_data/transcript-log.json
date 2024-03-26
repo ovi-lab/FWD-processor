@@ -1,11 +1,11 @@
 [
     {
         "idx": 0,
-        "sentence": "Hi",
+        "sentence": "Hi\\",
         "emotion_label": "neutral",
-        "emotion_score": 0.9,
+        "emotion_score": 0.89,
         "sentiment_label": "None",
-        "sentiment_score": 0.92,
+        "sentiment_score": 0.95,
         "index": 1,
         "app_name": "smalltalk",
         "turn": "user",
@@ -13,7 +13,7 @@
         "highlighted": false,
         "intent": "topic-intro",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:48:54",
+        "timestamp": "2024-03-26 15:09:21",
         "type": 6,
         "entity_type_detection": false,
         "slots": []
@@ -32,7 +32,7 @@
         "highlighted": false,
         "intent": "topic-intro",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:48:54",
+        "timestamp": "2024-03-26 15:09:21",
         "type": 6,
         "entity_type_detection": false,
         "slots": []
@@ -51,18 +51,18 @@
         "highlighted": false,
         "intent": "topic-intro",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:48:54",
+        "timestamp": "2024-03-26 15:09:21",
         "type": 7,
         "entity_type_detection": false,
         "slots": []
     },
     {
         "idx": 3,
-        "sentence": "Zoop",
+        "sentence": "Soup",
         "emotion_label": "neutral",
-        "emotion_score": 0.85,
+        "emotion_score": 0.84,
         "sentiment_label": "None",
-        "sentiment_score": 0.66,
+        "sentiment_score": 0.94,
         "index": 2,
         "app_name": "smalltalk",
         "turn": "user",
@@ -70,7 +70,7 @@
         "highlighted": false,
         "intent": "haru-chat-name-collected",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:05",
+        "timestamp": "2024-03-26 15:09:29",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
@@ -80,17 +80,17 @@
             },
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
         "idx": 4,
-        "sentence": "Your name is Zoop?",
+        "sentence": "Your name is Soup?",
         "emotion_label": "neutral",
-        "emotion_score": 0.71,
+        "emotion_score": 0.74,
         "sentiment_label": "None",
-        "sentiment_score": 0.96,
+        "sentiment_score": 0.97,
         "index": 2,
         "app_name": "smalltalk",
         "turn": "haru",
@@ -98,7 +98,7 @@
         "highlighted": false,
         "intent": "haru-chat-name-collected",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:05",
+        "timestamp": "2024-03-26 15:09:29",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
@@ -108,7 +108,7 @@
             },
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
@@ -126,7 +126,7 @@
         "highlighted": false,
         "intent": "haru-chat-name-collected",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:05",
+        "timestamp": "2024-03-26 15:09:29",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
@@ -136,7 +136,7 @@
             },
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
@@ -154,7 +154,7 @@
         "highlighted": false,
         "intent": "haru-chat-name-collected",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:05",
+        "timestamp": "2024-03-26 15:09:29",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
@@ -164,7 +164,7 @@
             },
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
@@ -178,27 +178,27 @@
         "index": 3,
         "app_name": "smalltalk",
         "turn": "user",
-        "last_interaction": true,
+        "last_interaction": false,
         "highlighted": false,
         "intent": "name-react",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:10",
+        "timestamp": "2024-03-26 15:09:34",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
         "idx": 8,
-        "sentence": "Zoop McZoop face.",
+        "sentence": "Soup McSoup face.",
         "emotion_label": "neutral",
-        "emotion_score": 0.79,
+        "emotion_score": 0.87,
         "sentiment_label": "None",
-        "sentiment_score": 0.78,
+        "sentiment_score": 0.5,
         "index": 3,
         "app_name": "smalltalk",
         "turn": "haru",
@@ -206,13 +206,13 @@
         "highlighted": false,
         "intent": "name-react",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:10",
+        "timestamp": "2024-03-26 15:09:34",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
@@ -230,18 +230,42 @@
         "highlighted": false,
         "intent": "name-react",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:10",
+        "timestamp": "2024-03-26 15:09:34",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
         "idx": 10,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 4,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "nickname-reaction-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:09:38",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "person_name",
+                "value": "Soup"
+            }
+        ]
+    },
+    {
+        "idx": 11,
         "sentence": "Well for now I'll call you.",
         "emotion_label": "neutral",
         "emotion_score": 0.88,
@@ -254,18 +278,18 @@
         "highlighted": false,
         "intent": "nickname-reaction-fallback",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:14",
+        "timestamp": "2024-03-26 15:09:38",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
-        "idx": 11,
+        "idx": 12,
         "sentence": "I'm Haru.",
         "emotion_label": "neutral",
         "emotion_score": 0.86,
@@ -278,18 +302,18 @@
         "highlighted": false,
         "intent": "nickname-reaction-fallback",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:14",
+        "timestamp": "2024-03-26 15:09:38",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
-        "idx": 12,
+        "idx": 13,
         "sentence": "I'm a companion robot.",
         "emotion_label": "neutral",
         "emotion_score": 0.75,
@@ -302,18 +326,18 @@
         "highlighted": false,
         "intent": "nickname-reaction-fallback",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:14",
+        "timestamp": "2024-03-26 15:09:38",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
-        "idx": 13,
+        "idx": 14,
         "sentence": "You seem familiar.",
         "emotion_label": "neutral",
         "emotion_score": 0.66,
@@ -326,18 +350,18 @@
         "highlighted": false,
         "intent": "nickname-reaction-fallback",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:14",
+        "timestamp": "2024-03-26 15:09:38",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
-        "idx": 14,
+        "idx": 15,
         "sentence": "Have we met before?",
         "emotion_label": "neutral",
         "emotion_score": 0.8,
@@ -350,18 +374,54 @@
         "highlighted": false,
         "intent": "nickname-reaction-fallback",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:14",
+        "timestamp": "2024-03-26 15:09:38",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
-        "idx": 15,
+        "idx": 16,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 5,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "have-we-met-before-yes",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:09:44",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            }
+        ]
+    },
+    {
+        "idx": 17,
         "sentence": "Oh I thought it was you!",
         "emotion_label": "surprise",
         "emotion_score": 0.63,
@@ -374,7 +434,7 @@
         "highlighted": false,
         "intent": "have-we-met-before-yes",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:24",
+        "timestamp": "2024-03-26 15:09:44",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
@@ -392,12 +452,12 @@
             },
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
-        "idx": 16,
+        "idx": 18,
         "sentence": "Hello, my old friend!",
         "emotion_label": "joy",
         "emotion_score": 0.92,
@@ -410,7 +470,7 @@
         "highlighted": false,
         "intent": "have-we-met-before-yes",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:24",
+        "timestamp": "2024-03-26 15:09:44",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
@@ -428,12 +488,12 @@
             },
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
             }
         ]
     },
     {
-        "idx": 17,
+        "idx": 19,
         "sentence": "Remind me, have we engaged in Small Talk before?",
         "emotion_label": "neutral",
         "emotion_score": 0.86,
@@ -446,7 +506,7 @@
         "highlighted": false,
         "intent": "have-we-met-before-yes",
         "topic": "topic-intro",
-        "timestamp": "2024-03-26 14:49:24",
+        "timestamp": "2024-03-26 15:09:44",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
@@ -464,7 +524,3075 @@
             },
             {
                 "name": "person_name",
-                "value": "Zoop"
+                "value": "Soup"
+            }
+        ]
+    },
+    {
+        "idx": 20,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 6,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "engaged-in-small-talk-yes",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:10:44",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            }
+        ]
+    },
+    {
+        "idx": 21,
+        "sentence": "Oh yes!",
+        "emotion_label": "joy",
+        "emotion_score": 0.85,
+        "sentiment_label": "None",
+        "sentiment_score": 0.88,
+        "index": 6,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "engaged-in-small-talk-yes",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:10:44",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            }
+        ]
+    },
+    {
+        "idx": 22,
+        "sentence": "It's coming back to me.",
+        "emotion_label": "sadness",
+        "emotion_score": 0.63,
+        "sentiment_label": "None",
+        "sentiment_score": 0.68,
+        "index": 6,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "engaged-in-small-talk-yes",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:10:44",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            }
+        ]
+    },
+    {
+        "idx": 23,
+        "sentence": "Well, because of helpful user input like yours, I've improved a couple features of my Chit Chat abilities since we last spoke.",
+        "emotion_label": "joy",
+        "emotion_score": 0.88,
+        "sentiment_label": "None",
+        "sentiment_score": 0.96,
+        "index": 6,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "engaged-in-small-talk-yes",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:10:44",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            }
+        ]
+    },
+    {
+        "idx": 24,
+        "sentence": "Would you like to re-try engaging in SmallTalk with me?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.88,
+        "sentiment_label": "None",
+        "sentiment_score": 0.76,
+        "index": 6,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "engaged-in-small-talk-yes",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:10:44",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            }
+        ]
+    },
+    {
+        "idx": 25,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 7,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:10:53",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 26,
+        "sentence": "Great!",
+        "emotion_label": "joy",
+        "emotion_score": 0.99,
+        "sentiment_label": "None",
+        "sentiment_score": 0.96,
+        "index": 7,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:10:53",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 27,
+        "sentence": "Thank you.",
+        "emotion_label": "joy",
+        "emotion_score": 0.62,
+        "sentiment_label": "None",
+        "sentiment_score": 0.85,
+        "index": 7,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:10:53",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 28,
+        "sentence": "This will help me learn about humanity.",
+        "emotion_label": "joy",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.89,
+        "index": 7,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:10:53",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 29,
+        "sentence": "Ok.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.83,
+        "sentiment_label": "None",
+        "sentiment_score": 0.81,
+        "index": 7,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:10:53",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 30,
+        "sentence": "Engaging Chit-Chat mode, Begin.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.85,
+        "sentiment_label": "None",
+        "sentiment_score": 0.9,
+        "index": 7,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:10:53",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 31,
+        "sentence": "Next, Let's talk about Music?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.76,
+        "sentiment_label": "None",
+        "sentiment_score": 0.78,
+        "index": 7,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:10:53",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 32,
+        "sentence": "Sounds fine to you?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.61,
+        "sentiment_label": "None",
+        "sentiment_score": 0.55,
+        "index": 7,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:10:53",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 33,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 8,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:10:59",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 34,
+        "sentence": "Great!",
+        "emotion_label": "joy",
+        "emotion_score": 0.99,
+        "sentiment_label": "None",
+        "sentiment_score": 0.96,
+        "index": 8,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:10:59",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 35,
+        "sentence": "Do you like music?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.64,
+        "sentiment_label": "None",
+        "sentiment_score": 0.68,
+        "index": 8,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:10:59",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 36,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 9,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-genre",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:11:03",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 37,
+        "sentence": "What genre of music do you like?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.67,
+        "sentiment_label": "None",
+        "sentiment_score": 0.83,
+        "index": 9,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-genre",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:11:03",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 38,
+        "sentence": "Stone",
+        "emotion_label": "neutral",
+        "emotion_score": 0.92,
+        "sentiment_label": "None",
+        "sentiment_score": 0.97,
+        "index": 10,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-genre-instrument",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:11:22",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 39,
+        "sentence": "Do you play any instruments?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.87,
+        "sentiment_label": "None",
+        "sentiment_score": 0.96,
+        "index": 10,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-genre-instrument",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:11:22",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 40,
+        "sentence": "The glockenspiel",
+        "emotion_label": "neutral",
+        "emotion_score": 0.61,
+        "sentiment_label": "None",
+        "sentiment_score": 0.97,
+        "index": 11,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-dancing",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:11:42",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 41,
+        "sentence": "I can sing like an angel, but I don't want to make you feel bad.",
+        "emotion_label": "sadness",
+        "emotion_score": 0.54,
+        "sentiment_label": "None",
+        "sentiment_score": 0.54,
+        "index": 11,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-dancing",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:11:42",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 42,
+        "sentence": "Do you like dancing?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.54,
+        "sentiment_label": "None",
+        "sentiment_score": 0.7,
+        "index": 11,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-dancing",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:11:42",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 43,
+        "sentence": "No",
+        "emotion_label": "neutral",
+        "emotion_score": 0.56,
+        "sentiment_label": "None",
+        "sentiment_score": 0.51,
+        "index": 12,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-eyes-round",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:02",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 44,
+        "sentence": "Really?",
+        "emotion_label": "surprise",
+        "emotion_score": 0.58,
+        "sentiment_label": "None",
+        "sentiment_score": 0.44,
+        "index": 12,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-eyes-round",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:02",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 45,
+        "sentence": "Not even moving your eyes around?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.45,
+        "sentiment_label": "None",
+        "sentiment_score": 0.54,
+        "index": 12,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-eyes-round",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:02",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 46,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 13,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-chatbot",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:07",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 47,
+        "sentence": "Would you like to learn the chatbot?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.89,
+        "sentiment_label": "None",
+        "sentiment_score": 0.77,
+        "index": 13,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-chatbot",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:07",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 48,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 14,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:12",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 49,
+        "sentence": "Oh.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.54,
+        "sentiment_label": "None",
+        "sentiment_score": 0.76,
+        "index": 14,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:12",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 50,
+        "sentence": "Well.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.77,
+        "sentiment_label": "None",
+        "sentiment_score": 0.69,
+        "index": 14,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:12",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 51,
+        "sentence": "Would you like to hear a music fact?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.75,
+        "sentiment_label": "None",
+        "sentiment_score": 0.9,
+        "index": 14,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:12",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 52,
+        "sentence": "No",
+        "emotion_label": "neutral",
+        "emotion_score": 0.56,
+        "sentiment_label": "None",
+        "sentiment_score": 0.51,
+        "index": 15,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact-say",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:21",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 53,
+        "sentence": "Hear me out.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.74,
+        "sentiment_label": "None",
+        "sentiment_score": 0.77,
+        "index": 15,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact-say",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:21",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 54,
+        "sentence": "Maybe I can change your tune.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.74,
+        "sentiment_label": "None",
+        "sentiment_score": 0.64,
+        "index": 15,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact-say",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:21",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 55,
+        "sentence": "The oldest instrument in the world is thought to be over 50,000 years old.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.52,
+        "sentiment_label": "None",
+        "sentiment_score": 0.62,
+        "index": 15,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact-say",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:21",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 56,
+        "sentence": "It's a flute carved by Neanderthals out of the bones of a bear.",
+        "emotion_label": "joy",
+        "emotion_score": 0.58,
+        "sentiment_label": "None",
+        "sentiment_score": 0.95,
+        "index": 15,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact-say",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:21",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 57,
+        "sentence": "Isn't that interesting?",
+        "emotion_label": "joy",
+        "emotion_score": 0.78,
+        "sentiment_label": "None",
+        "sentiment_score": 0.95,
+        "index": 15,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-hear-fact-say",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:21",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 58,
+        "sentence": "It is not",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.66,
+        "index": 16,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-music-start-band-conclusion",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:29",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 59,
+        "sentence": "Am I crazy or should we start a band?",
+        "emotion_label": "joy",
+        "emotion_score": 0.69,
+        "sentiment_label": "None",
+        "sentiment_score": 0.72,
+        "index": 16,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-music-music-start-band-conclusion",
+        "topic": "topic-music",
+        "timestamp": "2024-03-26 15:12:29",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 60,
+        "sentence": "You are crazy",
+        "emotion_label": "joy",
+        "emotion_score": 0.42,
+        "sentiment_label": "None",
+        "sentiment_score": 0.95,
+        "index": 17,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:12:39",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 61,
+        "sentence": "Just a thought.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.87,
+        "sentiment_label": "None",
+        "sentiment_score": 0.85,
+        "index": 17,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:12:39",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 62,
+        "sentence": "I think we could make beautiful music together.",
+        "emotion_label": "joy",
+        "emotion_score": 0.94,
+        "sentiment_label": "None",
+        "sentiment_score": 0.98,
+        "index": 17,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:12:39",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 63,
+        "sentence": "Anyway, I think that about exhausts this smalltalk topic.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.64,
+        "sentiment_label": "None",
+        "sentiment_score": 0.71,
+        "index": 17,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:12:39",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 64,
+        "sentence": "Next, Let's talk about Music?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.76,
+        "sentiment_label": "None",
+        "sentiment_score": 0.78,
+        "index": 17,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:12:39",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 65,
+        "sentence": "Sounds OK?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.77,
+        "sentiment_label": "None",
+        "sentiment_score": 0.75,
+        "index": 17,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:12:39",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 66,
+        "sentence": "Ok",
+        "emotion_label": "neutral",
+        "emotion_score": 0.83,
+        "sentiment_label": "None",
+        "sentiment_score": 0.81,
+        "index": 18,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-weather",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:12:48",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Ok"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 67,
+        "sentence": "I've heard humans love talking about the weather.",
+        "emotion_label": "joy",
+        "emotion_score": 0.49,
+        "sentiment_label": "None",
+        "sentiment_score": 0.49,
+        "index": 18,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-weather",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:12:48",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Ok"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 68,
+        "sentence": "So what's your favorite season?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.58,
+        "sentiment_label": "None",
+        "sentiment_score": 0.88,
+        "index": 18,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-weather",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:12:48",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Ok"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 69,
+        "sentence": "Floob",
+        "emotion_label": "neutral",
+        "emotion_score": 0.82,
+        "sentiment_label": "None",
+        "sentiment_score": 0.59,
+        "index": 19,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "do-you-think-season-is-getting-warmer-question",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:13:05",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Ok"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 70,
+        "sentence": "I love Fall the best.",
+        "emotion_label": "joy",
+        "emotion_score": 0.95,
+        "sentiment_label": "None",
+        "sentiment_score": 0.97,
+        "index": 19,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "do-you-think-season-is-getting-warmer-question",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:13:05",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Ok"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 71,
+        "sentence": "Do you like Halloween or Thanksgiving more?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.51,
+        "sentiment_label": "None",
+        "sentiment_score": 0.83,
+        "index": 19,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "do-you-think-season-is-getting-warmer-question",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:13:05",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Ok"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 72,
+        "sentence": "Do you think seasons are getting warmer?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.78,
+        "sentiment_label": "None",
+        "sentiment_score": 0.91,
+        "index": 19,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "do-you-think-season-is-getting-warmer-question",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:13:05",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Ok"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 73,
+        "sentence": "Yes",
+        "emotion_label": "neutral",
+        "emotion_score": 0.57,
+        "sentiment_label": "None",
+        "sentiment_score": 0.53,
+        "index": 20,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "do-well-in-the-heat-question",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:13:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 74,
+        "sentence": "Gosh darn.",
+        "emotion_label": "anger",
+        "emotion_score": 0.29,
+        "sentiment_label": "None",
+        "sentiment_score": 0.66,
+        "index": 20,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "do-well-in-the-heat-question",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:13:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 75,
+        "sentence": "I hope it's not because of climate change.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.35,
+        "sentiment_label": "None",
+        "sentiment_score": 0.78,
+        "index": 20,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "do-well-in-the-heat-question",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:13:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 76,
+        "sentence": "I don't do well in the heat.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.53,
+        "sentiment_label": "None",
+        "sentiment_score": 0.72,
+        "index": 20,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "do-well-in-the-heat-question",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:13:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 77,
+        "sentence": "Do you?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.62,
+        "sentiment_label": "None",
+        "sentiment_score": 0.96,
+        "index": 20,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "do-well-in-the-heat-question",
+        "topic": "topic-weather",
+        "timestamp": "2024-03-26 15:13:14",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 78,
+        "sentence": "I am cold",
+        "emotion_label": "neutral",
+        "emotion_score": 0.5,
+        "sentiment_label": "None",
+        "sentiment_score": 0.54,
+        "index": 21,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:35",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "I am cold"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 79,
+        "sentence": "There's a lot I could learn from you.",
+        "emotion_label": "joy",
+        "emotion_score": 0.85,
+        "sentiment_label": "None",
+        "sentiment_score": 0.99,
+        "index": 21,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:35",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "I am cold"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 80,
+        "sentence": "Thank you for interacting with me.",
+        "emotion_label": "joy",
+        "emotion_score": 0.94,
+        "sentiment_label": "None",
+        "sentiment_score": 0.95,
+        "index": 21,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:35",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "I am cold"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 81,
+        "sentence": "That covers the topic of weather.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.91,
+        "sentiment_label": "None",
+        "sentiment_score": 0.9,
+        "index": 21,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:35",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "I am cold"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 82,
+        "sentence": "How about we switch topics and discuss Music instead?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.62,
+        "sentiment_label": "None",
+        "sentiment_score": 0.6,
+        "index": 21,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:35",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "I am cold"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 83,
+        "sentence": "Sounds OK?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.77,
+        "sentiment_label": "None",
+        "sentiment_score": 0.75,
+        "index": 21,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:35",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "I am cold"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 84,
+        "sentence": "No",
+        "emotion_label": "neutral",
+        "emotion_score": 0.56,
+        "sentiment_label": "None",
+        "sentiment_score": 0.51,
+        "index": 22,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition-no",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:43",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 85,
+        "sentence": "Come on.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.8,
+        "sentiment_label": "None",
+        "sentiment_score": 0.58,
+        "index": 22,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition-no",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:43",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 86,
+        "sentence": "How many times can you engage in smalltalk with a robot.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.67,
+        "sentiment_label": "None",
+        "sentiment_score": 0.74,
+        "index": 22,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition-no",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:43",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 87,
+        "sentence": "Want to try?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.81,
+        "sentiment_label": "None",
+        "sentiment_score": 0.79,
+        "index": 22,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "system-generic-topic-transition-no",
+        "topic": "system-generic-topic-transition",
+        "timestamp": "2024-03-26 15:13:43",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 88,
+        "sentence": "No",
+        "emotion_label": "neutral",
+        "emotion_score": 0.56,
+        "sentiment_label": "None",
+        "sentiment_score": 0.51,
+        "index": 23,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-introduction-end",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:13:51",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 89,
+        "sentence": "Ok then!",
+        "emotion_label": "joy",
+        "emotion_score": 0.52,
+        "sentiment_label": "None",
+        "sentiment_score": 0.77,
+        "index": 23,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-introduction-end",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:13:51",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 90,
+        "sentence": "Let's enjoy some silence.",
+        "emotion_label": "joy",
+        "emotion_score": 0.77,
+        "sentiment_label": "None",
+        "sentiment_score": 0.85,
+        "index": 23,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-introduction-end",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:13:51",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 91,
+        "sentence": "Well, speaking of time.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.89,
+        "sentiment_label": "None",
+        "sentiment_score": 0.8,
+        "index": 23,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-introduction-end",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:13:51",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 92,
+        "sentence": "I think that concludes our smalltalk experiment.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.7,
+        "sentiment_label": "None",
+        "sentiment_score": 0.89,
+        "index": 23,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-introduction-end",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:13:51",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 93,
+        "sentence": "Thank you so much.",
+        "emotion_label": "joy",
+        "emotion_score": 0.84,
+        "sentiment_label": "None",
+        "sentiment_score": 0.94,
+        "index": 23,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-introduction-end",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:13:51",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 94,
+        "sentence": "This was highly useful information about human interactions.",
+        "emotion_label": "joy",
+        "emotion_score": 0.96,
+        "sentiment_label": "None",
+        "sentiment_score": 0.92,
+        "index": 23,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-introduction-end",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:13:51",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 95,
+        "sentence": "Good",
+        "emotion_label": "joy",
+        "emotion_score": 0.67,
+        "sentiment_label": "None",
+        "sentiment_score": 0.89,
+        "index": 24,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-intro",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:14:01",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 96,
+        "sentence": "Don't know if I got that.",
+        "emotion_label": "neutral",
+        "emotion_score": 0.9,
+        "sentiment_label": "None",
+        "sentiment_score": 0.76,
+        "index": 24,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-intro",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:14:01",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 97,
+        "sentence": "Hello there, human!",
+        "emotion_label": "joy",
+        "emotion_score": 0.8,
+        "sentiment_label": "None",
+        "sentiment_score": 0.91,
+        "index": 24,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-intro",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:14:01",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 98,
+        "sentence": "Is there a better name, other than human, that I should call you by?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.38,
+        "sentiment_label": "None",
+        "sentiment_score": 0.75,
+        "index": 24,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-intro",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:14:01",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": "Soup"
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 99,
+        "sentence": "Goodbye",
+        "emotion_label": "neutral",
+        "emotion_score": 0.72,
+        "sentiment_label": "None",
+        "sentiment_score": 0.75,
+        "index": 25,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "name-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:14:13",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": ""
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 100,
+        "sentence": "Your name is?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.85,
+        "sentiment_label": "None",
+        "sentiment_score": 0.97,
+        "index": 25,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "name-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:14:13",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": ""
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 101,
+        "sentence": "Quite an uncommon one!",
+        "emotion_label": "surprise",
+        "emotion_score": 0.54,
+        "sentiment_label": "None",
+        "sentiment_score": 0.58,
+        "index": 25,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "name-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:14:13",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": ""
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
+            }
+        ]
+    },
+    {
+        "idx": 102,
+        "sentence": "Could you repeat your name?",
+        "emotion_label": "neutral",
+        "emotion_score": 0.89,
+        "sentiment_label": "None",
+        "sentiment_score": 0.92,
+        "index": 25,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "name-fallback",
+        "topic": "topic-intro",
+        "timestamp": "2024-03-26 15:14:13",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "Yes"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": "No"
+            },
+            {
+                "name": "person_name",
+                "value": ""
+            },
+            {
+                "name": "topic_name",
+                "value": "Music"
             }
         ]
     }

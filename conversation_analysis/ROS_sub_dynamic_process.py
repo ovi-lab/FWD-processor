@@ -138,92 +138,92 @@ class HaruChatCLI:
                     else :
                         self.generic_entity_type_detection = False
             
-            if self.last_user_utterance != data.utterance :
-                self.last_user_utterance = data.utterance
+            # if self.last_user_utterance != data.utterance :
+            #     self.last_user_utterance = data.utterance
 
 
-                if len(data.utterance_sentences) == 0:
-                    if self._lastinteraction is not None and self.conversation != []:
-                        self.conversation[self._lastinteraction]['last_interaction'] = False
-                    if self.data['user']['sentence_list'] is not None:
+            if len(data.utterance_sentences) == 0:
+                if self._lastinteraction is not None and self.conversation != []:
+                    self.conversation[self._lastinteraction]['last_interaction'] = False
+                if self.data['user']['sentence_list'] is not None:
+                    self.conversation.append({
+                        'idx': self.index,
+                        'sentence': data.utterance,
+                        'emotion_label': "neutral",
+                        'emotion_score': -9,
+                        'sentiment_label': "neutral",
+                        'sentiment_score': -9,
+                        'index': data.header.seq,
+                        'app_name': self.app_name,
+                        'turn': 'user',
+                        'last_interaction': True,
+                        'highlighted': False,
+                        'intent': self.slu_intent,
+                        'topic' : self.topic_name,
+                        'timestamp' : self.timestamp,
+                        'type' : '',
+                        'entity_type_detection':self.generic_entity_type_detection,
+                        'slots': self.current_slots
+                    })
+                    self.index += 1
+                    self._lastinteraction = 0
+            else:
+                self.data['user']['sentence_list'] = data.utterance_sentences
+                if self._lastinteraction is not None and self.conversation != []:
+                    self.conversation[self._lastinteraction]['last_interaction'] = False
+                if self.data['user']['sentence_list'] is not None:
+                    for sentence_id, user in enumerate(self.data['user']['sentence_list']):
+                        try:
+                                
+                            # rospy.loginfo(
+                            #     "Using original emotion instead of rich response msg")
+                            rospy.loginfo(user.text)
+                            user_emotion_label = user.emotion_results.emotions.results.best_match.label
+                            user_emotion_score = user.emotion_results.emotions.results.best_match.score
+                        except Exception:
+                            if user.emotion != "":
+                                user_emotion_label = user.emotion
+                                user_emotion_score = 1.0
+                            elif user.auto_emotion != "":
+                                user_emotion_label = user.auto_emotion
+                                user_emotion_score = float(
+                                    user.auto_score) if user.auto_score != "" else 0.0
+                            else:
+                                user_emotion_label = self.combined_user_emotion_label
+                                user_emotion_score = self.combined_user_emotion_score
+
+                        sentiment_score = user.sentiment_results.sentiment.results.best_match.score
+                        sentiment_label = SENTIMENT_MAPPING.get(
+                            user.sentiment_results.sentiment.results.best_match.label, "None")
                         self.conversation.append({
                             'idx': self.index,
-                            'sentence': data.utterance,
-                            'emotion_label': "neutral",
-                            'emotion_score': -9,
-                            'sentiment_label': "neutral",
-                            'sentiment_score': -9,
+                            'sentence': user.text,
+                            'emotion_label': user_emotion_label,
+                            'emotion_score': round(user_emotion_score, 2),
+                            'sentiment_label': sentiment_label,
+                            'sentiment_score': round(sentiment_score, 2),
                             'index': data.header.seq,
                             'app_name': self.app_name,
                             'turn': 'user',
-                            'last_interaction': True,
+                            'last_interaction': sentence_id == 0,
                             'highlighted': False,
                             'intent': self.slu_intent,
                             'topic' : self.topic_name,
                             'timestamp' : self.timestamp,
-                            'type' : '',
+                            'type' : user.type,
                             'entity_type_detection':self.generic_entity_type_detection,
                             'slots': self.current_slots
                         })
                         self.index += 1
-                        self._lastinteraction = 0
-                else:
-                    self.data['user']['sentence_list'] = data.utterance_sentences
-                    if self._lastinteraction is not None and self.conversation != []:
-                        self.conversation[self._lastinteraction]['last_interaction'] = False
-                    if self.data['user']['sentence_list'] is not None:
-                        for sentence_id, user in enumerate(self.data['user']['sentence_list']):
-                            try:
-                                    
-                                rospy.loginfo(
-                                    "Using original emotion instead of rich response msg")
-                                rospy.loginfo(user.text)
-                                user_emotion_label = user.emotion_results.emotions.results.best_match.label
-                                user_emotion_score = user.emotion_results.emotions.results.best_match.score
-                            except Exception:
-                                if user.emotion != "":
-                                    user_emotion_label = user.emotion
-                                    user_emotion_score = 1.0
-                                elif user.auto_emotion != "":
-                                    user_emotion_label = user.auto_emotion
-                                    user_emotion_score = float(
-                                        user.auto_score) if user.auto_score != "" else 0.0
-                                else:
-                                    user_emotion_label = self.combined_user_emotion_label
-                                    user_emotion_score = self.combined_user_emotion_score
-
-                            sentiment_score = user.sentiment_results.sentiment.results.best_match.score
-                            sentiment_label = SENTIMENT_MAPPING.get(
-                                user.sentiment_results.sentiment.results.best_match.label, "None")
-                            self.conversation.append({
-                                'idx': self.index,
-                                'sentence': user.text,
-                                'emotion_label': user_emotion_label,
-                                'emotion_score': round(user_emotion_score, 2),
-                                'sentiment_label': sentiment_label,
-                                'sentiment_score': round(sentiment_score, 2),
-                                'index': data.header.seq,
-                                'app_name': self.app_name,
-                                'turn': 'user',
-                                'last_interaction': sentence_id == 0,
-                                'highlighted': False,
-                                'intent': self.slu_intent,
-                                'topic' : self.topic_name,
-                                'timestamp' : self.timestamp,
-                                'type' : user.type,
-                                'entity_type_detection':self.generic_entity_type_detection,
-                                'slots': self.current_slots
-                            })
-                            self.index += 1
-                            if sentence_id == 0:
-                                self._lastinteraction = len(self.conversation)-1
+                        if sentence_id == 0:
+                            self._lastinteraction = len(self.conversation)-1
             if self.data['haru']['sentence_list'] is not None:
                 for sentence_id, haru in enumerate(self.data['haru']['sentence_list']):
                     if '|' in haru.text:
                         continue
                     try:    
                         rospy.loginfo(
-                            "Using original emotion instead of rich response msg")
+                            haru.text)
                         haru_emotion_label = haru.emotion_results.emotions.results.best_match.label
                         haru_emotion_score = haru.emotion_results.emotions.results.best_match.score
                     except Exception:
