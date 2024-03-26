@@ -3,7 +3,7 @@
 from datetime import datetime
 import os
 import rospy
-import rosnode
+# import rosnode
 
 from time import time
 import signal
@@ -11,7 +11,6 @@ from rich.console import Console
 from rich import print
 import json
 from threading import Lock, Thread
-from std_msgs.msg import Empty
 from strawberry_ros_msgs.msg import DialogResult
 from process_utils.clean_JSON import generate_topic
 
@@ -25,11 +24,11 @@ GENRE_MAPPING = {
     "neutral": "neutral",
     "sadness": "sad",
     "surprise": "highnrg"}
-SENTIMENT_MAPPING = {
-    "neg": "negative",
-    "neu": "neutral",
-    "pos": "positive",
-    }
+# SENTIMENT_MAPPING = {
+#     "neg": "negative",
+#     "neu": "neutral",
+#     "pos": "positive",
+#     }
 
 
 class Timer:
@@ -48,6 +47,10 @@ class Timer:
 
 
 class HaruChatCLI:
+    """
+    Haru subscriber object created originally by Lithin with minor modifications.
+    Gets the raw ROS outputs and adds them to a json file
+    """
     def __init__(self, config, sentences=None) -> None:
         self._config = config
 
@@ -178,6 +181,7 @@ class HaruChatCLI:
                             # rospy.loginfo(
                             #     "Using original emotion instead of rich response msg")
                             rospy.loginfo(user.text)
+                            rospy.loginfo(user.sentiment_results.sentiment.results.best_match.label)
                             user_emotion_label = user.emotion_results.emotions.results.best_match.label
                             user_emotion_score = user.emotion_results.emotions.results.best_match.score
                         except Exception:
@@ -193,8 +197,9 @@ class HaruChatCLI:
                                 user_emotion_score = self.combined_user_emotion_score
 
                         sentiment_score = user.sentiment_results.sentiment.results.best_match.score
-                        sentiment_label = SENTIMENT_MAPPING.get(
-                            user.sentiment_results.sentiment.results.best_match.label, "None")
+                        sentiment_label = user.sentiment_results.sentiment.results.best_match.label
+                        # sentiment_label = SENTIMENT_MAPPING.get(  # These commented lines appear to be deprecated under the current smalltalk implementation
+                        #     user.sentiment_results.sentiment.results.best_match.label, "None")
                         self.conversation.append({
                             'idx': self.index,
                             'sentence': user.text,
@@ -224,6 +229,7 @@ class HaruChatCLI:
                     try:    
                         rospy.loginfo(
                             haru.text)
+                        rospy.loginfo(haru.sentiment_results.sentiment.results.best_match.label)
                         haru_emotion_label = haru.emotion_results.emotions.results.best_match.label
                         haru_emotion_score = haru.emotion_results.emotions.results.best_match.score
                     except Exception:
@@ -238,8 +244,9 @@ class HaruChatCLI:
                             haru_emotion_label = self.combined_haru_emotion_label
                             haru_emotion_score = self.combined_haru_emotion_score
                     sentiment_score = haru.sentiment_results.sentiment.results.best_match.score
-                    sentiment_label = SENTIMENT_MAPPING.get(
-                        haru.sentiment_results.sentiment.results.best_match.label, "None")
+                    sentiment_label = haru.sentiment_results.sentiment.results.best_match.label
+                    # sentiment_label = SENTIMENT_MAPPING.get(
+                    #     haru.sentiment_results.sentiment.results.best_match.label, "None")
                     self.conversation.append({
                         'idx': self.index,
                         'sentence': haru.text,
@@ -265,10 +272,7 @@ class HaruChatCLI:
         # Specify the file path
         # file_path = '/home/lithin/.cache/dynamic_visualization/conversations.json'
         transcript_path = '/home/lithin/frans_server/ROS-JSON-Middleman/data/transcript_data/transcript-log.json'
-        ### Before running this, make sure you source the workspace to the setup:
-        #   source /home/lithin/haru-repos/new_topics_ws/devel/setup.bash
-        ### then set the listener:
-        #   rostopic echo /strawberry/dialog_result
+        
         
         # Write the transcript to a JSON file
         with open(transcript_path, 'w') as transcript_file:
@@ -308,6 +312,11 @@ class HaruChatCLI:
         
 def connect_to_ROS(): 
     console = Console()
+    
+    ### Before running this, make sure you source the workspace to the setup:
+    #       source /home/lithin/haru-repos/new_topics_ws/devel/setup.bash
+    ### then set the listener:
+    #       rostopic echo /strawberry/dialog_result
 
     try:
         node_name = "/haru_smalltalk_record"

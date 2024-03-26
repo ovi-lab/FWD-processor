@@ -2,18 +2,26 @@ import json
 from datetime import datetime
 # from itertools import pairwise # This import does not work on Python versions that are < 3.10
 import ijson
+from itertools import tee
 import process_utils.diagram_prep.diagram_utils as utils
 
 
 def pairwise(iterable):
-    """Since the we have to run everything on Python 3.8 on the silverbox, 
+    """Returns an iterator of paired items, overlapping, from the original
+
+    >>> take(4, pairwise(count()))
+    [(0, 1), (1, 2), (2, 3), (3, 4)]
+
+    Since the we have to run everything on Python 3.8 on the silverbox, 
     we can't use Python's itertools pairwise, so we are using the old pairwise recipe from pre Python 3.10
     - If you are now running Python >= 3.10 feel free to comment out this function and import itertools pairwise if desired
-    """
     
-    "s -> (s0, s1), (s2, s3), (s4, s5), ..."
-    a = iter(iterable)
-    return zip(a, a)
+    On Python 3.10 and above, this is an alias for :func:`itertools.pairwise`.
+
+    """
+    a, b = tee(iterable)
+    next(b, None)
+    return zip(a, b)
 
     
 def generate_diagram_from_file(transcript_data, diagram_json_output):

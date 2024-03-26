@@ -1,6 +1,5 @@
 import os
 from flask import Flask
-from werkzeug.utils import secure_filename
 from flask_socketio import SocketIO
 import json
 import time
@@ -55,13 +54,9 @@ def getDiagramData(query='', retried=0):
     try:
         with open(file_path, 'r', encoding='utf8') as file:
             data = json.load(file)
-            if query == 'nodes' or query == 'links':
-                payload = data[query]
-                emission_ID = f'static-diagram-response-{query}'
-            else:
-                payload = data
-                emission_ID = f'static-diagram-response-all'
-        socketio.emit(emission_ID, payload)
+            
+            emission_ID = f'diagram-response-all'
+        socketio.emit(emission_ID, data)
         retried = 0
     except FileNotFoundError:
         if retried == 2:
@@ -83,16 +78,20 @@ def handle_disconnect():
 def realtime_ROS_emission():
     transcript_path = f'../data/transcript_data/transcript-{processed_file_suffix}'
     diagram_path = f'../data/diagram_data/diagram-{processed_file_suffix}'
-    transcript_payload = []
+    transcript_last_idx = -1
     while True:
         try:
             with open(transcript_path, 'r', encoding='utf8') as transcript_file:
                 transcript_payload = json.load(transcript_file)
-                # print(transcript_payload)
-                socketio.emit('linear-response', transcript_payload)
-        
-                diagram_payload = generate_diagram_from_file(transcript_payload, diagram_path)
-                socketio.emit('diagram-response-all', diagram_payload)
+                if (transcript_payload[-1]['idx'] != transcript_last_idx):
+                    print(transcript_payload[-1]['idx'])
+                    print('updating...')
+                    transcript_last_idx = transcript_payload[-1]['idx']
+                    # print(transcript_payload)
+                    socketio.emit('linear-response', transcript_payload)
+            
+                    diagram_payload = generate_diagram_from_file(transcript_payload, diagram_path)
+                    socketio.emit('diagram-response-all', diagram_payload)
         except Exception as e:
             print(f'Exception on emission: {e}')
             socketio.emit('fatal-emission', e)
