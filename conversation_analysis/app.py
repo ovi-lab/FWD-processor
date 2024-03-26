@@ -20,13 +20,12 @@ socketio = SocketIO(app, cors_allowed_origins='*')
 dirname = os.path.dirname
 DATA_DIRECTORY = os.path.join(dirname(dirname(__file__)), 'data')
 app.config['UPLOAD_FOLDER'] = os.path.join(DATA_DIRECTORY, 'tmp')
-UPLOADED_FILE_PATH = os.path.join(app.config['UPLOAD_FOLDER'], 'upload.yml')
 TRANSCRIPT_FILE_PATH = os.path.join(DATA_DIRECTORY, 'transcript_data/transcript-log.json')
 DIAGRAM_FILE_PATH = os.path.join(DATA_DIRECTORY, 'diagram_data/diagram-log.json')
+UPLOADED_FILE_PATH = os.path.join(app.config['UPLOAD_FOLDER'], 'raw_log.yml')
 
 @socketio.event
 def initRosFeed():
-    print('bruh')
     global thread
     with thread_lock:
         if thread is None:
@@ -56,7 +55,7 @@ def receiveSubscriberFeed(event):
                     print(transcript_payload[-1]['idx'])
                     print('updating...')
                     transcript_last_idx = transcript_payload[-1]['idx']
-                    socketio.emit('linear-response', transcript_payload)
+                    socketio.emit('transcript-response', transcript_payload)
                     diagram_payload = generate_diagram_from_file(transcript_payload, DIAGRAM_FILE_PATH)
                     socketio.emit('diagram-response-all', diagram_payload)
                 socketio.sleep(2) 
@@ -68,32 +67,38 @@ def receiveSubscriberFeed(event):
         event.clear()
         thread = None
 
-
+def intercepting_json(file_name):
+    ext = os.path.splitext(file_name)[-1].lower()
+    if ext == ".json":
+        return TRANSCRIPT_FILE_PATH, True
+    else:
+        return UPLOADED_FILE_PATH, False
 
 @socketio.event
-def upload_file(file_data):
+def upload_file(file_data, file_name):
     data_emission_mode = 'static'
-    uploaded_file = ''
     if file_data:
-        with open(UPLOADED_FILE_PATH, 'wb') as f:
+        print(file_name)
+        save_path, isJson = intercepting_json(file_name)
+        with open(save_path, 'wb') as f:
             f.write(file_data)
-        process_uploaded_transcript(UPLOADED_FILE_PATH)
+        process_uploaded_transcript(save_path, isJson)
 
-@socketio.on('static-linear-request')
+@socketio.on('transcript-request')
 def getLinearDialogue(retried=0):
     try:
         with open(TRANSCRIPT_FILE_PATH, 'r', encoding='utf8') as file:
             payload = json.load(file)
-        socketio.emit('linear-response', payload)
+        socketio.emit('transcript-response', payload)
         retried = 0
     except FileNotFoundError:
         if retried==2:
             socketio.emit('unable-to-open', TRANSCRIPT_FILE_PATH)
             return
-        process_uploaded_transcript(UPLOADED_FILE_PATH)
+        process_uploaded_transcript(UPLOADED_FILE_PATH, False)
         getLinearDialogue(retried=(retried+1))
 
-@socketio.on('static-diagram-request')
+@socketio.on('diagram-request')
 def getDiagramData(query='', retried=0):
     try:
         with open(DIAGRAM_FILE_PATH, 'r', encoding='utf8') as file:
@@ -104,7 +109,7 @@ def getDiagramData(query='', retried=0):
         if retried == 2:
             socketio.emit('unable-to-open', DIAGRAM_FILE_PATH)
             return
-        process_uploaded_transcript(UPLOADED_FILE_PATH)
+        process_uploaded_transcript(UPLOADED_FILE_PATH, False)
         getDiagramData(query, retried=(retried+1))
 
 
