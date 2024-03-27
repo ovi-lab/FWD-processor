@@ -32,8 +32,6 @@ def initRosFeed():
             thread_event.set()
             thread = socketio.start_background_task(receiveSubscriberFeed, thread_event)
 
-    pass
-
 @socketio.event
 def killRosFeed():
     global thread
@@ -42,7 +40,7 @@ def killRosFeed():
         if thread is not None:
             thread.join()
             thread = None
-            print('kachow')
+    print('Realtime feed to visualizer ended')
 
 def receiveSubscriberFeed(event):
     transcript_last_idx = -1
@@ -103,7 +101,7 @@ def getDiagramData(query='', retried=0):
     try:
         with open(DIAGRAM_FILE_PATH, 'r', encoding='utf8') as file:
             data = json.load(file)
-        socketio.emit('diagram-response-all', data)
+        socketio.emit('diagram-response', data)
         retried = 0
     except FileNotFoundError:
         if retried == 2:
