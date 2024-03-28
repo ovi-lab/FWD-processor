@@ -312,11 +312,17 @@ class HaruChatCLI:
         
 def connect_to_ROS(): 
     console = Console()
-    
+
+    ### run the ROS server at ~/haru-repos/new_topic_ws with the alias
+    #       dlg 
+    ### run the ROS CLI  ~/haru-repos/new_topic_ws with the alias
+    #       cli
+
     ### Before running this, make sure you source the workspace to the setup:
     #       source /home/lithin/haru-repos/new_topics_ws/devel/setup.bash
     ### then set the listener:
     #       rostopic echo /strawberry/dialog_result
+    ### now you can run this script in the sourced location
 
     try:
         node_name = "/haru_smalltalk_record"
