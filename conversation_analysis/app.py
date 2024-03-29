@@ -2,6 +2,7 @@ import os
 from flask import Flask
 from flask_socketio import SocketIO
 import json
+from datetime import datetime
 from threading import Event, Lock
 from process_uploaded_transcript import process_uploaded_transcript
 from process_utils.diagram_prep.diagram_process import generate_diagram_from_file
@@ -24,6 +25,7 @@ TRANSCRIPT_FILE_PATH = os.path.join(DATA_DIRECTORY, 'transcript_data/transcript-
 DIAGRAM_FILE_PATH = os.path.join(DATA_DIRECTORY, 'diagram_data/diagram-log.json')
 UPLOADED_FILE_PATH = os.path.join(app.config['UPLOAD_FOLDER'], 'raw_log.yml')
 
+
 @socketio.event
 def initRosFeed():
     global thread
@@ -31,6 +33,7 @@ def initRosFeed():
         if thread is None:
             thread_event.set()
             thread = socketio.start_background_task(receiveSubscriberFeed, thread_event)
+    print("Realtime feed to visuzalizer initialized")
 
 @socketio.event
 def killRosFeed():
@@ -74,13 +77,25 @@ def intercepting_json(file_name):
 
 @socketio.event
 def upload_file(file_data, file_name):
-    data_emission_mode = 'static'
+    killRosFeed()
     if file_data:
         print(file_name)
         save_path, isJson = intercepting_json(file_name)
         with open(save_path, 'wb') as f:
             f.write(file_data)
         process_uploaded_transcript(save_path, isJson)
+
+@socketio.event
+def request_download():
+    try:
+        with open(TRANSCRIPT_FILE_PATH, 'r', encoding='utf8') as file:
+            payload = json.load(file)
+        time_value = datetime.now().strftime("%Y-%m-%d_%H%M%S")
+        file_name = f"transcript-log_{time_value}.json"
+        socketio.emit('json_file_response', [payload, file_name])
+        print(f"{file_name} sent for download")
+    except FileNotFoundError:
+        print(FileNotFoundError)
 
 @socketio.on('transcript-request')
 def getLinearDialogue(retried=0):

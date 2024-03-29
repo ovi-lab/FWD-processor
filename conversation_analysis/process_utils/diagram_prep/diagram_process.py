@@ -1,7 +1,6 @@
 import json
 from datetime import datetime
 # from itertools import pairwise # This import does not work on Python versions that are < 3.10
-import ijson
 from itertools import tee
 import process_utils.diagram_prep.diagram_utils as utils
 
@@ -25,11 +24,16 @@ def pairwise(iterable):
 
     
 def generate_diagram_from_file(transcript_data, diagram_json_output):
-    """
-    Reads a file with a list of conversation and uses the DialogTag Python tool to
-    predict the dialogue tag of each line of conversation and groups the conversation
-    based on the dialogue tag functional groups. The information obtained are then
-    organized into a dictionary and saved as a JSON file to feed into the d3.js script.
+    """Iterates through the transcript JSON file data and creates nodes for each topic for both speakers, 
+    records ever line of dialogue uttered within that topic, and populates a list of links whenever 
+    there is a topic linking to another
+
+    Args:
+        transcript_data (_type_): _description_
+        diagram_json_output (String): filepath for where we want to save the diagram output
+
+    Returns:
+        _type_: _description_
     """
     
     mapped_conversation = {
