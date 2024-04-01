@@ -40,15 +40,16 @@ def replace_keys(original_dict):
     return new_dict
 
 
-def generate_topic(dialog_line_intent):
+def generate_topic(dialog_line_intent, prev_topic):
     """use the intents from the data to make sure the correct topic is assigned to each line"""
 
     topic_name_output = ""
-    # if last_topic_group:
-    #     for intent in last_topic_group["intents"]:
-    #         if intent == dialog_line_intent:
-    #             topic_name_output = last_topic_group["topic_name"]
-    #             return topic_name_output, last_topic_group
+
+    if dialog_line_intent == "":
+        topic_name_output = "error"
+
+    if (dialog_line_intent.__contains__("system-generic-topic-transition")):
+        return prev_topic
 
     for topic in topic_list:
         if topic["topic_name"] in dialog_line_intent:
@@ -72,7 +73,7 @@ def fix_index(input_list):
     for line in input_list:
         line["idx"] = idx
         idx += 1
-    input_list.reverse()    
+    # input_list.reverse()
     return input_list
 
 def process_conversation(data, output_file=''):
@@ -83,7 +84,6 @@ def process_conversation(data, output_file=''):
 
     for utterance in data:
         updated_line = utterance
-        # updated_line["topic"], last_topic = generate_topic(updated_line['intent'], last_topic)
         updated_list.append(updated_line)
     updated_list = fix_index(updated_list)
 
@@ -97,14 +97,22 @@ def process_conversation(data, output_file=''):
             print(end - start)
     return updated_list
 
-def process_from_file(input_file, output_file=''):
-    # Open the JSON file
-    with open(input_file, "r", encoding='utf8') as json_file:
-        # Load JSON data
-        data = json.load(json_file)
-    return process_conversation(data, output_file)
+def process_from_json(input_json, output_file=''):
+    prev_topic = ''
+    new_data = []
+    for line in input_json:
+        line['topic'] = prev_topic = generate_topic(line['intent'], prev_topic) 
+        new_data.append(line)
+        print(line)
+    if output_file:
+        # Dump data to JSON file
+        with open(output_file, "w", encoding="utf8") as json_file:
+            print('writing...')
+            json.dump(new_data, json_file, indent=4)
+            print('done.')
+    return new_data
 
 if __name__ == '__main__':
     INPUT_FILE_PATH = "data/dialog_output.json"
     OUTPUT_FILE_PATH = "data/log-03-12.json"
-    process_from_file(INPUT_FILE_PATH, OUTPUT_FILE_PATH)
+    process_from_json(INPUT_FILE_PATH, OUTPUT_FILE_PATH)

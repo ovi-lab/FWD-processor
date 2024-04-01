@@ -129,7 +129,7 @@ class HaruChatCLI:
             self.combined_user_emotion_label = data.utterance_emotion.emotions.results.best_match.label
             self.combined_user_emotion_score = data.utterance_emotion.emotions.results.best_match.score
             self.slu_intent = data.slu_result.intent
-            self.topic_name = generate_topic(data.slu_result.intent)
+            self.topic_name, self.prev_topic = generate_topic(data.slu_result.intent, self.prev_topic)
             self.timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             self.generic_entity_type_detection = False
             self.current_slots = []
@@ -270,7 +270,6 @@ class HaruChatCLI:
             self._data_is_ready = True
             
         # Specify the file path
-        # file_path = '/home/lithin/.cache/dynamic_visualization/conversations.json'
         transcript_path = '/home/lithin/frans_server/ROS-JSON-Middleman/data/transcript_data/transcript-log.json'
         
         
@@ -289,25 +288,6 @@ class HaruChatCLI:
         while True:
             rospy.spin()
             pass
-            # if not first_pass:
-            #     print("\n")
-
-            # while not self._send_allowed:
-            #     try:
-            #         sleep(0.2)
-            #     except KeyboardInterrupt as e:
-            #         exit(1)
-            # if self._use_stdin:
-            #     self._console.print("> ", style="bold rgb(255,255,100)", end="")
-            #     # text = input()
-            # else:
-            #     try:
-            #         text = next(self._iter)
-            #         sleep(0.2)
-            #         self._console.print("> ", style="bold rgb(255,100,100)", end="")
-            #         self._console.print(f"{text}", style="bold rgb(255,100,100)")
-            #     except Exception as e:
-            #         break
                 
         
 def connect_to_ROS(): 

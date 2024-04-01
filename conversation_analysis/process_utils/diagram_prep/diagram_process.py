@@ -94,7 +94,7 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
             for link in link_turn_section:
                 if link["name"] == link_name:
                     link["timestamp"] = str(prompt["timestamp"])
-                    link["responseIDs"].append(new_interaction["idx"])
+                    link["responseIDs"].append({'idx': new_interaction["idx"], 'time': new_interaction['timestamp']})
                     link["value"] += 1
 
         # If a link between the request and prompt node does not

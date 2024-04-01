@@ -46,6 +46,7 @@ class HaruChatObject:
     def __init__(self, data) -> None:
         self._data = data
         self.index = 0
+        self.prev_topic = ''
         self.last_user_utterance = ""
         self.app_name = "smalltalk"
         self.conversation = []
@@ -95,7 +96,10 @@ class HaruChatObject:
                 "results"
             ]["best_match"]["score"]
             self.slu_intent = doc["slu_result"]["intent"]
-            self.topic_name = generate_topic(doc["slu_result"]["intent"])
+            self.topic_name = self.prev_topic = generate_topic(doc["slu_result"]["intent"], self.prev_topic)
+            print('Checking...')
+            print(self.topic_name)
+            print(self.prev_topic)
             self.timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             self.generic_entity_type_detection = False
             if doc["slots"]:
