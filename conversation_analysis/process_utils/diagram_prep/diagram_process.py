@@ -46,54 +46,54 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
 
 
     for prompt, response in pairwise(transcript_data):
-        response_timestamp = str(prompt["timestamp"])
+        response_timestamp = str(response["timestamp"])
         response_generated_idx = utils.select_or_create_node(
-            mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp
+            mapped_nodes, response["topic"], response["turn"], response_timestamp
         )
         prompt_generated_idx = utils.select_or_create_node(
-            mapped_nodes, response["topic"], response["turn"], response_timestamp
+            mapped_nodes, prompt["topic"], prompt["turn"], response_timestamp
         )
         response_node = mapped_nodes[response_generated_idx]
         prompt_node = mapped_nodes[prompt_generated_idx]
 
         new_interaction = {
-            "idx": prompt["idx"],
-            "index": prompt["index"],
-            "response": response["sentence"],
-            "sentence": prompt["sentence"],
-            "turn": prompt["turn"],
-            "topic": prompt["topic"],
-            "intent": prompt["intent"],
-            "emotion_label": prompt["emotion_label"],
-            "emotion_score": float(prompt["emotion_score"]),
-            "sentiment_label": prompt["sentiment_label"],
-            "sentiment_score": float(prompt["sentiment_score"]),
-            "last_interaction": bool(prompt["last_interaction"]),
-            "data_collection": prompt["entity_type_detection"],
+            "idx": response["idx"],
+            "index": response["index"],
+            "response": prompt["sentence"],
+            "sentence": response["sentence"],
+            "turn": response["turn"],
+            "topic": response["topic"],
+            "intent": response["intent"],
+            "emotion_label": response["emotion_label"],
+            "emotion_score": float(response["emotion_score"]),
+            "sentiment_label": response["sentiment_label"],
+            "sentiment_score": float(response["sentiment_score"]),
+            "last_interaction": bool(response["last_interaction"]),
+            "data_collection": response["entity_type_detection"],
             "timestamp": response_timestamp,
-            "slots": prompt["slots"]
+            "slots": response["slots"]
         }
 
         # Adding more information to each node
         mapped_nodes[response_generated_idx]["interactions"].append(new_interaction)
 
-        response_node['slots'] = utils.add_node_slots(response_node, prompt['slots'])
+        response_node['slots'] = utils.add_node_slots(response_node, response['slots'])
 
         mapped_nodes[response_generated_idx]["timestamp"] = str(
-            prompt["timestamp"]
+            response["timestamp"]
         )
 
         if response_node["name"] == prompt_node["name"]:
             continue
 
-        link_turn_section = mapped_links[response["turn"]]
+        link_turn_section = mapped_links[prompt["turn"]]
         link_name = f"{prompt_node['name']} -> {response_node['name']}"  # ex. "HARU: Action-directive to CHILD: Question"
 
         # If the link already exists, don't create another one
         if utils.link_exists(link_name, link_turn_section):
             for link in link_turn_section:
                 if link["name"] == link_name:
-                    link["timestamp"] = str(prompt["timestamp"])
+                    link["timestamp"] = response_timestamp
                     link["responseIDs"].append({'idx': new_interaction["idx"], 'time': new_interaction['timestamp']})
                     link["value"] += 1
 
@@ -106,12 +106,15 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
                     "source": prompt_node["id"],
                     "target": response_node["id"],
                     "value": 1,
-                    "timestamp": str(prompt["timestamp"]),
+                    "timestamp": response_timestamp,
                     "responseIDs": [new_interaction["idx"]],
                 }
             )
 
-    for node in mapped_nodes:
+    for i, node in enumerate(mapped_nodes):
+        if i == 0 or i == len(mapped_nodes)-1:
+            node['show'] = True
+            continue
         node["show"] = utils.node_has_links(node, link_turn_section)
 
     # Save the results as a JSON file

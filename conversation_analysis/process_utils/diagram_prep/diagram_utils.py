@@ -42,10 +42,8 @@ def node_has_links(n, link_section):
     boolean
         true if link contains node n
     """
-    for l in link_section:
-        # if n['id'] == 0:
-        #     return False
-        if n["id"] == l["source"] or n['id'] == l["target"]:
+    for link in link_section:
+        if n["id"] == link["source"] or n['id'] == link["target"]:
             return True
     return False
 

@@ -2,40 +2,57 @@
     "nodes": [
         {
             "id": 0,
-            "name": "user: topic-intro",
-            "turn": "user",
+            "name": "haru: topic-intro",
+            "turn": "haru",
             "topic": "topic-intro",
-            "n": 8.0,
+            "n": 17.25,
             "interactions": [
                 {
-                    "idx": 0,
+                    "idx": 1,
                     "index": 1,
-                    "response": "Hello there, human!",
-                    "sentence": "Hi haru",
-                    "turn": "user",
+                    "response": "Hi haru",
+                    "sentence": "Hello there, human!",
+                    "turn": "haru",
                     "topic": "topic-intro",
                     "intent": "topic-intro",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.91,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.87,
+                    "emotion_label": "joy",
+                    "emotion_score": 0.8,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.91,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-03-29 17:10:42",
                     "slots": []
                 },
                 {
-                    "idx": 3,
+                    "idx": 2,
+                    "index": 1,
+                    "response": "Hello there, human!",
+                    "sentence": "Is there a better name, other than human, that I should call you by?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "topic-intro",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.38,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.75,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:10:42",
+                    "slots": []
+                },
+                {
+                    "idx": 4,
                     "index": 2,
-                    "response": "Your name is Alex?",
-                    "sentence": "Alex",
-                    "turn": "user",
+                    "response": "Alex",
+                    "sentence": "Your name is Alex?",
+                    "turn": "haru",
                     "topic": "topic-intro",
                     "intent": "haru-chat-name-collected",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.9,
+                    "emotion_score": 0.77,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.94,
+                    "sentiment_score": 0.96,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-03-29 17:11:10",
@@ -51,17 +68,43 @@
                     ]
                 },
                 {
-                    "idx": 6,
+                    "idx": 5,
+                    "index": 2,
+                    "response": "Your name is Alex?",
+                    "sentence": "Did I get that right?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "haru-chat-name-collected",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.55,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.89,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:11:10",
+                    "slots": [
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 7,
                     "index": 3,
-                    "response": "Alex McAlex face.",
-                    "sentence": "Yeah",
-                    "turn": "user",
+                    "response": "Yeah",
+                    "sentence": "Alex McAlex face.",
+                    "turn": "haru",
                     "topic": "topic-intro",
                     "intent": "name-react",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.66,
+                    "emotion_score": 0.87,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.75,
+                    "sentiment_score": 0.68,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-03-29 17:11:19",
@@ -73,17 +116,39 @@
                     ]
                 },
                 {
-                    "idx": 9,
+                    "idx": 8,
+                    "index": 3,
+                    "response": "Alex McAlex face.",
+                    "sentence": "What do you think of my nicknames?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "name-react",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.47,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.97,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:11:19",
+                    "slots": [
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 10,
                     "index": 4,
-                    "response": "Well for now I'll call you.",
-                    "sentence": "I don't like them",
-                    "turn": "user",
+                    "response": "I don't like them",
+                    "sentence": "Well for now I'll call you.",
+                    "turn": "haru",
                     "topic": "topic-intro",
                     "intent": "nickname-reaction-fallback",
-                    "emotion_label": "anger",
-                    "emotion_score": 0.53,
-                    "sentiment_label": "negative",
-                    "sentiment_score": 0.97,
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.88,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.91,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-03-29 17:11:57",
@@ -95,17 +160,105 @@
                     ]
                 },
                 {
-                    "idx": 15,
+                    "idx": 11,
+                    "index": 4,
+                    "response": "Well for now I'll call you.",
+                    "sentence": "I'm Haru.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "nickname-reaction-fallback",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.86,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.98,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:11:57",
+                    "slots": [
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 12,
+                    "index": 4,
+                    "response": "I'm Haru.",
+                    "sentence": "I'm a companion robot.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "nickname-reaction-fallback",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.75,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.69,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:11:57",
+                    "slots": [
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 13,
+                    "index": 4,
+                    "response": "I'm a companion robot.",
+                    "sentence": "You seem familiar.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "nickname-reaction-fallback",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.66,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.83,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:11:57",
+                    "slots": [
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 14,
+                    "index": 4,
+                    "response": "You seem familiar.",
+                    "sentence": "Have we met before?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "nickname-reaction-fallback",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.8,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.95,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:11:57",
+                    "slots": [
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 16,
                     "index": 5,
-                    "response": "Oh I thought it was you!",
-                    "sentence": "Yes",
-                    "turn": "user",
+                    "response": "Yes",
+                    "sentence": "Oh I thought it was you!",
+                    "turn": "haru",
                     "topic": "topic-intro",
                     "intent": "have-we-met-before-yes",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.57,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.53,
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.63,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.63,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-03-29 17:12:16",
@@ -129,17 +282,85 @@
                     ]
                 },
                 {
-                    "idx": 19,
+                    "idx": 17,
+                    "index": 5,
+                    "response": "Oh I thought it was you!",
+                    "sentence": "Hello, my old friend!",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "have-we-met-before-yes",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.92,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.96,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:16",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 18,
+                    "index": 5,
+                    "response": "Hello, my old friend!",
+                    "sentence": "Remind me, have we engaged in Small Talk before?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "have-we-met-before-yes",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.86,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.92,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:16",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 20,
                     "index": 6,
-                    "response": "Oh yes!",
-                    "sentence": "Yes",
-                    "turn": "user",
+                    "response": "Yes",
+                    "sentence": "Oh yes!",
+                    "turn": "haru",
                     "topic": "topic-intro",
                     "intent": "engaged-in-small-talk-yes",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.57,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.53,
+                    "emotion_label": "joy",
+                    "emotion_score": 0.85,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.88,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-03-29 17:12:25",
@@ -163,17 +384,347 @@
                     ]
                 },
                 {
-                    "idx": 24,
+                    "idx": 21,
+                    "index": 6,
+                    "response": "Oh yes!",
+                    "sentence": "It's coming back to me.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "engaged-in-small-talk-yes",
+                    "emotion_label": "sadness",
+                    "emotion_score": 0.63,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.68,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:25",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 22,
+                    "index": 6,
+                    "response": "It's coming back to me.",
+                    "sentence": "Well, because of helpful user input like yours, I've improved a couple features of my Chit Chat abilities since we last spoke.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "engaged-in-small-talk-yes",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.88,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.96,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:25",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 23,
+                    "index": 6,
+                    "response": "Well, because of helpful user input like yours, I've improved a couple features of my Chit Chat abilities since we last spoke.",
+                    "sentence": "Would you like to re-try engaging in SmallTalk with me?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "engaged-in-small-talk-yes",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.88,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.76,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:25",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
+                },
+                {
+                    "idx": 25,
+                    "index": 7,
+                    "response": "Sure",
+                    "sentence": "Great!",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.99,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.96,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 26,
                     "index": 7,
                     "response": "Great!",
-                    "sentence": "Sure",
-                    "turn": "user",
+                    "sentence": "Thank you.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.62,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.85,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 27,
+                    "index": 7,
+                    "response": "Thank you.",
+                    "sentence": "This will help me learn about humanity.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.57,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.89,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 28,
+                    "index": 7,
+                    "response": "This will help me learn about humanity.",
+                    "sentence": "Ok.",
+                    "turn": "haru",
                     "topic": "topic-intro",
                     "intent": "system-generic-topic-transition",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.77,
+                    "emotion_score": 0.83,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.53,
+                    "sentiment_score": 0.81,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 29,
+                    "index": 7,
+                    "response": "Ok.",
+                    "sentence": "Engaging Chit-Chat mode, Begin.",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.85,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 30,
+                    "index": 7,
+                    "response": "Engaging Chit-Chat mode, Begin.",
+                    "sentence": "How about we switch topics and discuss Pet instead?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.78,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.79,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 31,
+                    "index": 7,
+                    "response": "How about we switch topics and discuss Pet instead?",
+                    "sentence": "Sounds fine to you?",
+                    "turn": "haru",
+                    "topic": "topic-intro",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.61,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.55,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-03-29 17:12:41",
@@ -224,111 +775,51 @@
         },
         {
             "id": 1,
-            "name": "haru: topic-intro",
-            "turn": "haru",
+            "name": "user: topic-intro",
+            "turn": "user",
             "topic": "topic-intro",
-            "n": 17.25,
+            "n": 8.0,
             "interactions": [
                 {
-                    "idx": 1,
-                    "index": 1,
+                    "idx": 3,
+                    "index": 2,
                     "response": "Is there a better name, other than human, that I should call you by?",
-                    "sentence": "Hello there, human!",
-                    "turn": "haru",
+                    "sentence": "Alex",
+                    "turn": "user",
                     "topic": "topic-intro",
-                    "intent": "topic-intro",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.8,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.91,
+                    "intent": "haru-chat-name-collected",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.9,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.94,
                     "last_interaction": false,
                     "data_collection": false,
-                    "timestamp": "2024-03-29 17:10:42",
-                    "slots": []
+                    "timestamp": "2024-03-29 17:11:10",
+                    "slots": [
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        }
+                    ]
                 },
                 {
-                    "idx": 2,
-                    "index": 1,
-                    "response": "Alex",
-                    "sentence": "Is there a better name, other than human, that I should call you by?",
-                    "turn": "haru",
+                    "idx": 6,
+                    "index": 3,
+                    "response": "Did I get that right?",
+                    "sentence": "Yeah",
+                    "turn": "user",
                     "topic": "topic-intro",
-                    "intent": "topic-intro",
+                    "intent": "name-react",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.38,
+                    "emotion_score": 0.66,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.75,
                     "last_interaction": false,
                     "data_collection": false,
-                    "timestamp": "2024-03-29 17:10:42",
-                    "slots": []
-                },
-                {
-                    "idx": 4,
-                    "index": 2,
-                    "response": "Did I get that right?",
-                    "sentence": "Your name is Alex?",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "haru-chat-name-collected",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.77,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.96,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:11:10",
-                    "slots": [
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 5,
-                    "index": 2,
-                    "response": "Yeah",
-                    "sentence": "Did I get that right?",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "haru-chat-name-collected",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.55,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.89,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:11:10",
-                    "slots": [
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 7,
-                    "index": 3,
-                    "response": "What do you think of my nicknames?",
-                    "sentence": "Alex McAlex face.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "name-react",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.87,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.68,
-                    "last_interaction": false,
-                    "data_collection": false,
                     "timestamp": "2024-03-29 17:11:19",
                     "slots": [
                         {
@@ -338,41 +829,19 @@
                     ]
                 },
                 {
-                    "idx": 8,
-                    "index": 3,
-                    "response": "I don't like them",
-                    "sentence": "What do you think of my nicknames?",
-                    "turn": "haru",
+                    "idx": 9,
+                    "index": 4,
+                    "response": "What do you think of my nicknames?",
+                    "sentence": "I don't like them",
+                    "turn": "user",
                     "topic": "topic-intro",
-                    "intent": "name-react",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.47,
-                    "sentiment_label": "neutral",
+                    "intent": "nickname-reaction-fallback",
+                    "emotion_label": "anger",
+                    "emotion_score": 0.53,
+                    "sentiment_label": "negative",
                     "sentiment_score": 0.97,
                     "last_interaction": false,
                     "data_collection": false,
-                    "timestamp": "2024-03-29 17:11:19",
-                    "slots": [
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 10,
-                    "index": 4,
-                    "response": "I'm Haru.",
-                    "sentence": "Well for now I'll call you.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "nickname-reaction-fallback",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.88,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.91,
-                    "last_interaction": false,
-                    "data_collection": false,
                     "timestamp": "2024-03-29 17:11:57",
                     "slots": [
                         {
@@ -382,426 +851,24 @@
                     ]
                 },
                 {
-                    "idx": 11,
-                    "index": 4,
-                    "response": "I'm a companion robot.",
-                    "sentence": "I'm Haru.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "nickname-reaction-fallback",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.86,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.98,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:11:57",
-                    "slots": [
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 12,
-                    "index": 4,
-                    "response": "You seem familiar.",
-                    "sentence": "I'm a companion robot.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "nickname-reaction-fallback",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.75,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.69,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:11:57",
-                    "slots": [
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 13,
-                    "index": 4,
+                    "idx": 15,
+                    "index": 5,
                     "response": "Have we met before?",
-                    "sentence": "You seem familiar.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "nickname-reaction-fallback",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.66,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.83,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:11:57",
-                    "slots": [
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 14,
-                    "index": 4,
-                    "response": "Yes",
-                    "sentence": "Have we met before?",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "nickname-reaction-fallback",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.8,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.95,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:11:57",
-                    "slots": [
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 16,
-                    "index": 5,
-                    "response": "Hello, my old friend!",
-                    "sentence": "Oh I thought it was you!",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "have-we-met-before-yes",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.63,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.63,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:16",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 17,
-                    "index": 5,
-                    "response": "Remind me, have we engaged in Small Talk before?",
-                    "sentence": "Hello, my old friend!",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "have-we-met-before-yes",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.92,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.96,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:16",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 18,
-                    "index": 5,
-                    "response": "Yes",
-                    "sentence": "Remind me, have we engaged in Small Talk before?",
-                    "turn": "haru",
+                    "sentence": "Yes",
+                    "turn": "user",
                     "topic": "topic-intro",
                     "intent": "have-we-met-before-yes",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.86,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.92,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:16",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 20,
-                    "index": 6,
-                    "response": "It's coming back to me.",
-                    "sentence": "Oh yes!",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "engaged-in-small-talk-yes",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.85,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.88,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:25",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 21,
-                    "index": 6,
-                    "response": "Well, because of helpful user input like yours, I've improved a couple features of my Chit Chat abilities since we last spoke.",
-                    "sentence": "It's coming back to me.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "engaged-in-small-talk-yes",
-                    "emotion_label": "sadness",
-                    "emotion_score": 0.63,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.68,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:25",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 22,
-                    "index": 6,
-                    "response": "Would you like to re-try engaging in SmallTalk with me?",
-                    "sentence": "Well, because of helpful user input like yours, I've improved a couple features of my Chit Chat abilities since we last spoke.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "engaged-in-small-talk-yes",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.88,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.96,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:25",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 23,
-                    "index": 6,
-                    "response": "Sure",
-                    "sentence": "Would you like to re-try engaging in SmallTalk with me?",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "engaged-in-small-talk-yes",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.88,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.76,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:25",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        }
-                    ]
-                },
-                {
-                    "idx": 25,
-                    "index": 7,
-                    "response": "Thank you.",
-                    "sentence": "Great!",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.99,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.96,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 26,
-                    "index": 7,
-                    "response": "This will help me learn about humanity.",
-                    "sentence": "Thank you.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.62,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.85,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 27,
-                    "index": 7,
-                    "response": "Ok.",
-                    "sentence": "This will help me learn about humanity.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
                     "emotion_score": 0.57,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.89,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.53,
                     "last_interaction": false,
                     "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
+                    "timestamp": "2024-03-29 17:12:16",
                     "slots": [
                         {
                             "name": "agreement_patterns",
-                            "value": "Sure"
+                            "value": "Yes"
                         },
                         {
                             "name": "any",
@@ -814,32 +881,28 @@
                         {
                             "name": "person_name",
                             "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
                         }
                     ]
                 },
                 {
-                    "idx": 28,
-                    "index": 7,
-                    "response": "Engaging Chit-Chat mode, Begin.",
-                    "sentence": "Ok.",
-                    "turn": "haru",
+                    "idx": 19,
+                    "index": 6,
+                    "response": "Remind me, have we engaged in Small Talk before?",
+                    "sentence": "Yes",
+                    "turn": "user",
                     "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
+                    "intent": "engaged-in-small-talk-yes",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.83,
+                    "emotion_score": 0.57,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.81,
+                    "sentiment_score": 0.53,
                     "last_interaction": false,
                     "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
+                    "timestamp": "2024-03-29 17:12:25",
                     "slots": [
                         {
                             "name": "agreement_patterns",
-                            "value": "Sure"
+                            "value": "Yes"
                         },
                         {
                             "name": "any",
@@ -852,101 +915,21 @@
                         {
                             "name": "person_name",
                             "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
                         }
                     ]
                 },
                 {
-                    "idx": 29,
+                    "idx": 24,
                     "index": 7,
-                    "response": "How about we switch topics and discuss Pet instead?",
-                    "sentence": "Engaging Chit-Chat mode, Begin.",
-                    "turn": "haru",
+                    "response": "Would you like to re-try engaging in SmallTalk with me?",
+                    "sentence": "Sure",
+                    "turn": "user",
                     "topic": "topic-intro",
                     "intent": "system-generic-topic-transition",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.85,
+                    "emotion_score": 0.77,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 30,
-                    "index": 7,
-                    "response": "Sounds fine to you?",
-                    "sentence": "How about we switch topics and discuss Pet instead?",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.78,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.79,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 31,
-                    "index": 7,
-                    "response": "Yes",
-                    "sentence": "Sounds fine to you?",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.61,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.55,
+                    "sentiment_score": 0.53,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-03-29 17:12:41",
@@ -1005,7 +988,7 @@
                 {
                     "idx": 32,
                     "index": 8,
-                    "response": "Do you own a pet?",
+                    "response": "Sounds fine to you?",
                     "sentence": "Yes",
                     "turn": "user",
                     "topic": "topic-pet",
@@ -1035,7 +1018,7 @@
                 {
                     "idx": 34,
                     "index": 9,
-                    "response": "I like.",
+                    "response": "Do you own a pet?",
                     "sentence": "Yes i do",
                     "turn": "user",
                     "topic": "topic-pet",
@@ -1077,7 +1060,7 @@
                 {
                     "idx": 37,
                     "index": 10,
-                    "response": "This is interesting to me, thank you.",
+                    "response": "Can you tell me whether your pet takes a bath?",
                     "sentence": "No my pet is very dirty",
                     "turn": "user",
                     "topic": "topic-pet",
@@ -1107,7 +1090,7 @@
                 {
                     "idx": 40,
                     "index": 11,
-                    "response": "Thanks for sharing.",
+                    "response": "Does your pet eat a lot?",
                     "sentence": "Yes",
                     "turn": "user",
                     "topic": "topic-pet",
@@ -1166,7 +1149,7 @@
                 {
                     "idx": 33,
                     "index": 8,
-                    "response": "Yes i do",
+                    "response": "Yes",
                     "sentence": "Do you own a pet?",
                     "turn": "haru",
                     "topic": "topic-pet",
@@ -1196,7 +1179,7 @@
                 {
                     "idx": 35,
                     "index": 9,
-                    "response": "Can you tell me whether your pet takes a bath?",
+                    "response": "Yes i do",
                     "sentence": "I like.",
                     "turn": "haru",
                     "topic": "topic-pet",
@@ -1238,7 +1221,7 @@
                 {
                     "idx": 36,
                     "index": 9,
-                    "response": "No my pet is very dirty",
+                    "response": "I like.",
                     "sentence": "Can you tell me whether your pet takes a bath?",
                     "turn": "haru",
                     "topic": "topic-pet",
@@ -1280,7 +1263,7 @@
                 {
                     "idx": 38,
                     "index": 10,
-                    "response": "Does your pet eat a lot?",
+                    "response": "No my pet is very dirty",
                     "sentence": "This is interesting to me, thank you.",
                     "turn": "haru",
                     "topic": "topic-pet",
@@ -1310,7 +1293,7 @@
                 {
                     "idx": 39,
                     "index": 10,
-                    "response": "Yes",
+                    "response": "This is interesting to me, thank you.",
                     "sentence": "Does your pet eat a lot?",
                     "turn": "haru",
                     "topic": "topic-pet",
@@ -1340,7 +1323,7 @@
                 {
                     "idx": 41,
                     "index": 11,
-                    "response": "Next, Let's talk about Pet?",
+                    "response": "Yes",
                     "sentence": "Thanks for sharing.",
                     "turn": "haru",
                     "topic": "topic-pet",
@@ -1370,7 +1353,7 @@
                 {
                     "idx": 42,
                     "index": 11,
-                    "response": "Sounds fine?",
+                    "response": "Thanks for sharing.",
                     "sentence": "Next, Let's talk about Pet?",
                     "turn": "haru",
                     "topic": "topic-pet",
@@ -1400,7 +1383,7 @@
                 {
                     "idx": 43,
                     "index": 11,
-                    "response": "Ok",
+                    "response": "Next, Let's talk about Pet?",
                     "sentence": "Sounds fine?",
                     "turn": "haru",
                     "topic": "topic-pet",
@@ -1459,7 +1442,7 @@
                 {
                     "idx": 44,
                     "index": 12,
-                    "response": "I've heard humans love talking about the weather.",
+                    "response": "Sounds fine?",
                     "sentence": "Ok",
                     "turn": "user",
                     "topic": "topic-weather",
@@ -1489,7 +1472,7 @@
                 {
                     "idx": 47,
                     "index": 13,
-                    "response": "I love Fall the best.",
+                    "response": "So what's your favorite season?",
                     "sentence": "Fall",
                     "turn": "user",
                     "topic": "topic-weather",
@@ -1519,7 +1502,7 @@
                 {
                     "idx": 51,
                     "index": 14,
-                    "response": "Well, whatever happens, I hope it doesn't get warmer.",
+                    "response": "Do you think seasons are getting warmer?",
                     "sentence": "I like halloween more, and the seasons are getting weirder",
                     "turn": "user",
                     "topic": "topic-weather",
@@ -1549,7 +1532,7 @@
                 {
                     "idx": 55,
                     "index": 15,
-                    "response": "You're impressive!",
+                    "response": "Do you?",
                     "sentence": "I like warm weather",
                     "turn": "user",
                     "topic": "topic-weather",
@@ -1608,7 +1591,7 @@
                 {
                     "idx": 45,
                     "index": 12,
-                    "response": "So what's your favorite season?",
+                    "response": "Ok",
                     "sentence": "I've heard humans love talking about the weather.",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1638,7 +1621,7 @@
                 {
                     "idx": 46,
                     "index": 12,
-                    "response": "Fall",
+                    "response": "I've heard humans love talking about the weather.",
                     "sentence": "So what's your favorite season?",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1668,7 +1651,7 @@
                 {
                     "idx": 48,
                     "index": 13,
-                    "response": "Do you like Halloween or Thanksgiving more?",
+                    "response": "Fall",
                     "sentence": "I love Fall the best.",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1698,7 +1681,7 @@
                 {
                     "idx": 49,
                     "index": 13,
-                    "response": "Do you think seasons are getting warmer?",
+                    "response": "I love Fall the best.",
                     "sentence": "Do you like Halloween or Thanksgiving more?",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1728,7 +1711,7 @@
                 {
                     "idx": 50,
                     "index": 13,
-                    "response": "I like halloween more, and the seasons are getting weirder",
+                    "response": "Do you like Halloween or Thanksgiving more?",
                     "sentence": "Do you think seasons are getting warmer?",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1758,7 +1741,7 @@
                 {
                     "idx": 52,
                     "index": 14,
-                    "response": "I don't do well in the heat.",
+                    "response": "I like halloween more, and the seasons are getting weirder",
                     "sentence": "Well, whatever happens, I hope it doesn't get warmer.",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1788,7 +1771,7 @@
                 {
                     "idx": 53,
                     "index": 14,
-                    "response": "Do you?",
+                    "response": "Well, whatever happens, I hope it doesn't get warmer.",
                     "sentence": "I don't do well in the heat.",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1818,7 +1801,7 @@
                 {
                     "idx": 54,
                     "index": 14,
-                    "response": "I like warm weather",
+                    "response": "I don't do well in the heat.",
                     "sentence": "Do you?",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1848,7 +1831,7 @@
                 {
                     "idx": 56,
                     "index": 15,
-                    "response": "There's a lot I could learn from you.",
+                    "response": "I like warm weather",
                     "sentence": "You're impressive!",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1878,7 +1861,7 @@
                 {
                     "idx": 57,
                     "index": 15,
-                    "response": "Thank you for interacting with me.",
+                    "response": "You're impressive!",
                     "sentence": "There's a lot I could learn from you.",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1908,7 +1891,7 @@
                 {
                     "idx": 58,
                     "index": 15,
-                    "response": "That covers the topic of weather.",
+                    "response": "There's a lot I could learn from you.",
                     "sentence": "Thank you for interacting with me.",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1938,7 +1921,7 @@
                 {
                     "idx": 59,
                     "index": 15,
-                    "response": "Next, Let's talk about Pet?",
+                    "response": "Thank you for interacting with me.",
                     "sentence": "That covers the topic of weather.",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1968,7 +1951,7 @@
                 {
                     "idx": 60,
                     "index": 15,
-                    "response": "Is that OK?",
+                    "response": "That covers the topic of weather.",
                     "sentence": "Next, Let's talk about Pet?",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -1998,7 +1981,7 @@
                 {
                     "idx": 61,
                     "index": 15,
-                    "response": "Ok",
+                    "response": "Next, Let's talk about Pet?",
                     "sentence": "Is that OK?",
                     "turn": "haru",
                     "topic": "topic-weather",
@@ -2057,7 +2040,7 @@
                 {
                     "idx": 62,
                     "index": 16,
-                    "response": "What do you do?",
+                    "response": "Is that OK?",
                     "sentence": "Ok",
                     "turn": "user",
                     "topic": "topic-profession",
@@ -2087,7 +2070,7 @@
                 {
                     "idx": 64,
                     "index": 17,
-                    "response": "You know what?",
+                    "response": "What do you do?",
                     "sentence": "I am a student",
                     "turn": "user",
                     "topic": "topic-profession",
@@ -2142,7 +2125,7 @@
                 {
                     "idx": 63,
                     "index": 16,
-                    "response": "I am a student",
+                    "response": "Ok",
                     "sentence": "What do you do?",
                     "turn": "haru",
                     "topic": "topic-profession",
@@ -2172,7 +2155,7 @@
                 {
                     "idx": 65,
                     "index": 17,
-                    "response": "Let's discuss something else instead.",
+                    "response": "I am a student",
                     "sentence": "You know what?",
                     "turn": "haru",
                     "topic": "topic-profession",
@@ -2202,7 +2185,7 @@
                 {
                     "idx": 66,
                     "index": 17,
-                    "response": "How about we switch topics and discuss Pet instead?",
+                    "response": "You know what?",
                     "sentence": "Let's discuss something else instead.",
                     "turn": "haru",
                     "topic": "topic-profession",
@@ -2232,7 +2215,7 @@
                 {
                     "idx": 67,
                     "index": 17,
-                    "response": "Sounds OK?",
+                    "response": "Let's discuss something else instead.",
                     "sentence": "How about we switch topics and discuss Pet instead?",
                     "turn": "haru",
                     "topic": "topic-profession",
@@ -2262,7 +2245,7 @@
                 {
                     "idx": 68,
                     "index": 17,
-                    "response": "Oh ok",
+                    "response": "How about we switch topics and discuss Pet instead?",
                     "sentence": "Sounds OK?",
                     "turn": "haru",
                     "topic": "topic-profession",
@@ -2317,7 +2300,7 @@
                 {
                     "idx": 69,
                     "index": 18,
-                    "response": "Can you guess where I am from?",
+                    "response": "Sounds OK?",
                     "sentence": "Oh ok",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2347,7 +2330,7 @@
                 {
                     "idx": 71,
                     "index": 19,
-                    "response": "Not exactly.",
+                    "response": "Can you guess where I am from?",
                     "sentence": "HRI in Wakoshi in saitama japan",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2377,7 +2360,7 @@
                 {
                     "idx": 75,
                     "index": 20,
-                    "response": "Yes!",
+                    "response": "Want to venture another guess now that I have given you this hint?",
                     "sentence": "I already said japan",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2419,7 +2402,7 @@
                 {
                     "idx": 78,
                     "index": 21,
-                    "response": "America!",
+                    "response": "Now tell me what's your home country?",
                     "sentence": "United states",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2453,7 +2436,7 @@
                 {
                     "idx": 85,
                     "index": 22,
-                    "response": "That's my favorite part!",
+                    "response": "What part are you from?",
                     "sentence": "Atlanta",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2487,7 +2470,7 @@
                 {
                     "idx": 92,
                     "index": 23,
-                    "response": "Well you can visit me whenever you come to... this exact spot I guess!",
+                    "response": "Could I visit you?",
                     "sentence": "You could, but I don't go there often",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2521,7 +2504,7 @@
                 {
                     "idx": 95,
                     "index": 24,
-                    "response": "I hear the food is delicious there.",
+                    "response": "Where do you want to visit in the world?",
                     "sentence": "I would like to check out korea sometime",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2555,7 +2538,7 @@
                 {
                     "idx": 100,
                     "index": 25,
-                    "response": "Nice.",
+                    "response": "Is that close to what it's like?",
                     "sentence": "Yeah pretty much",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2589,7 +2572,7 @@
                 {
                     "idx": 106,
                     "index": 26,
-                    "response": "Nice!",
+                    "response": "North or South?",
                     "sentence": "North",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2623,7 +2606,7 @@
                 {
                     "idx": 112,
                     "index": 27,
-                    "response": "Have you ever seen the Northern lights?",
+                    "response": "Have you ever been to Sweden?",
                     "sentence": "No i have not",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2657,7 +2640,7 @@
                 {
                     "idx": 114,
                     "index": 28,
-                    "response": "Want to know where the lights come from?",
+                    "response": "Have you ever seen the Northern lights?",
                     "sentence": "No i always miss them in canada",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2691,7 +2674,7 @@
                 {
                     "idx": 116,
                     "index": 29,
-                    "response": "The lights are the result of solar particles colliding with gases in Earth's atmosphere.",
+                    "response": "Want to know where the lights come from?",
                     "sentence": "The earth's magnetic field",
                     "turn": "user",
                     "topic": "topic-travel",
@@ -2754,7 +2737,7 @@
                 {
                     "idx": 70,
                     "index": 18,
-                    "response": "HRI in Wakoshi in saitama japan",
+                    "response": "Oh ok",
                     "sentence": "Can you guess where I am from?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -2784,7 +2767,7 @@
                 {
                     "idx": 72,
                     "index": 19,
-                    "response": "Think sushi and the world's greatest car company, Honda.",
+                    "response": "HRI in Wakoshi in saitama japan",
                     "sentence": "Not exactly.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -2814,7 +2797,7 @@
                 {
                     "idx": 73,
                     "index": 19,
-                    "response": "Want to venture another guess now that I have given you this hint?",
+                    "response": "Not exactly.",
                     "sentence": "Think sushi and the world's greatest car company, Honda.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -2844,7 +2827,7 @@
                 {
                     "idx": 74,
                     "index": 19,
-                    "response": "I already said japan",
+                    "response": "Think sushi and the world's greatest car company, Honda.",
                     "sentence": "Want to venture another guess now that I have given you this hint?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -2874,7 +2857,7 @@
                 {
                     "idx": 76,
                     "index": 20,
-                    "response": "Now tell me what's your home country?",
+                    "response": "I already said japan",
                     "sentence": "Yes!",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -2916,7 +2899,7 @@
                 {
                     "idx": 77,
                     "index": 20,
-                    "response": "United states",
+                    "response": "Yes!",
                     "sentence": "Now tell me what's your home country?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -2958,7 +2941,7 @@
                 {
                     "idx": 79,
                     "index": 21,
-                    "response": "New York!",
+                    "response": "United states",
                     "sentence": "America!",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -2992,7 +2975,7 @@
                 {
                     "idx": 80,
                     "index": 21,
-                    "response": "Liberty!",
+                    "response": "America!",
                     "sentence": "New York!",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3026,7 +3009,7 @@
                 {
                     "idx": 81,
                     "index": 21,
-                    "response": "Eagles!",
+                    "response": "New York!",
                     "sentence": "Liberty!",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3060,7 +3043,7 @@
                 {
                     "idx": 82,
                     "index": 21,
-                    "response": "Soybeans being the number one export.",
+                    "response": "Liberty!",
                     "sentence": "Eagles!",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3094,7 +3077,7 @@
                 {
                     "idx": 83,
                     "index": 21,
-                    "response": "What part are you from?",
+                    "response": "Eagles!",
                     "sentence": "Soybeans being the number one export.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3128,7 +3111,7 @@
                 {
                     "idx": 84,
                     "index": 21,
-                    "response": "Atlanta",
+                    "response": "Soybeans being the number one export.",
                     "sentence": "What part are you from?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3162,7 +3145,7 @@
                 {
                     "idx": 86,
                     "index": 22,
-                    "response": "Oooh.",
+                    "response": "Atlanta",
                     "sentence": "That's my favorite part!",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3196,7 +3179,7 @@
                 {
                     "idx": 87,
                     "index": 22,
-                    "response": "Can I visit you sometime?",
+                    "response": "That's my favorite part!",
                     "sentence": "Oooh.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3230,7 +3213,7 @@
                 {
                     "idx": 88,
                     "index": 22,
-                    "response": "I could stay on your couch?",
+                    "response": "Oooh.",
                     "sentence": "Can I visit you sometime?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3264,7 +3247,7 @@
                 {
                     "idx": 89,
                     "index": 22,
-                    "response": "Or under?",
+                    "response": "Can I visit you sometime?",
                     "sentence": "I could stay on your couch?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3298,7 +3281,7 @@
                 {
                     "idx": 90,
                     "index": 22,
-                    "response": "Could I visit you?",
+                    "response": "I could stay on your couch?",
                     "sentence": "Or under?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3332,7 +3315,7 @@
                 {
                     "idx": 91,
                     "index": 22,
-                    "response": "You could, but I don't go there often",
+                    "response": "Or under?",
                     "sentence": "Could I visit you?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3366,7 +3349,7 @@
                 {
                     "idx": 93,
                     "index": 23,
-                    "response": "Where do you want to visit in the world?",
+                    "response": "You could, but I don't go there often",
                     "sentence": "Well you can visit me whenever you come to... this exact spot I guess!",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3400,7 +3383,7 @@
                 {
                     "idx": 94,
                     "index": 23,
-                    "response": "I would like to check out korea sometime",
+                    "response": "Well you can visit me whenever you come to... this exact spot I guess!",
                     "sentence": "Where do you want to visit in the world?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3434,7 +3417,7 @@
                 {
                     "idx": 96,
                     "index": 24,
-                    "response": "Though I really wouldn't know.",
+                    "response": "I would like to check out korea sometime",
                     "sentence": "I hear the food is delicious there.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3468,7 +3451,7 @@
                 {
                     "idx": 97,
                     "index": 24,
-                    "response": "To me, food seems like electricity you smash against your face.",
+                    "response": "I hear the food is delicious there.",
                     "sentence": "Though I really wouldn't know.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3502,7 +3485,7 @@
                 {
                     "idx": 98,
                     "index": 24,
-                    "response": "Is that close to what it's like?",
+                    "response": "Though I really wouldn't know.",
                     "sentence": "To me, food seems like electricity you smash against your face.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3536,7 +3519,7 @@
                 {
                     "idx": 99,
                     "index": 24,
-                    "response": "Yeah pretty much",
+                    "response": "To me, food seems like electricity you smash against your face.",
                     "sentence": "Is that close to what it's like?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3570,7 +3553,7 @@
                 {
                     "idx": 101,
                     "index": 25,
-                    "response": "I'm like a human expert.",
+                    "response": "Yeah pretty much",
                     "sentence": "Nice.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3604,7 +3587,7 @@
                 {
                     "idx": 102,
                     "index": 25,
-                    "response": "Anyway, we were talking about where you'd want to travel to.",
+                    "response": "Nice.",
                     "sentence": "I'm like a human expert.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3638,7 +3621,7 @@
                 {
                     "idx": 103,
                     "index": 25,
-                    "response": "Which is your favorite hemisphere?",
+                    "response": "I'm like a human expert.",
                     "sentence": "Anyway, we were talking about where you'd want to travel to.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3672,7 +3655,7 @@
                 {
                     "idx": 104,
                     "index": 25,
-                    "response": "North or South?",
+                    "response": "Anyway, we were talking about where you'd want to travel to.",
                     "sentence": "Which is your favorite hemisphere?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3706,7 +3689,7 @@
                 {
                     "idx": 105,
                     "index": 25,
-                    "response": "North",
+                    "response": "Which is your favorite hemisphere?",
                     "sentence": "North or South?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3740,7 +3723,7 @@
                 {
                     "idx": 107,
                     "index": 26,
-                    "response": "Me too.",
+                    "response": "North",
                     "sentence": "Nice!",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3774,7 +3757,7 @@
                 {
                     "idx": 108,
                     "index": 26,
-                    "response": "I've always wanted to see Sweden.",
+                    "response": "Nice!",
                     "sentence": "Me too.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3808,7 +3791,7 @@
                 {
                     "idx": 109,
                     "index": 26,
-                    "response": "If I were solar powered, I could run all day during the months where the sun never goes down.",
+                    "response": "Me too.",
                     "sentence": "I've always wanted to see Sweden.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3842,7 +3825,7 @@
                 {
                     "idx": 110,
                     "index": 26,
-                    "response": "Have you ever been to Sweden?",
+                    "response": "I've always wanted to see Sweden.",
                     "sentence": "If I were solar powered, I could run all day during the months where the sun never goes down.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3876,7 +3859,7 @@
                 {
                     "idx": 111,
                     "index": 26,
-                    "response": "No i have not",
+                    "response": "If I were solar powered, I could run all day during the months where the sun never goes down.",
                     "sentence": "Have you ever been to Sweden?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3910,7 +3893,7 @@
                 {
                     "idx": 113,
                     "index": 27,
-                    "response": "No i always miss them in canada",
+                    "response": "No i have not",
                     "sentence": "Have you ever seen the Northern lights?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3944,7 +3927,7 @@
                 {
                     "idx": 115,
                     "index": 28,
-                    "response": "The earth's magnetic field",
+                    "response": "No i always miss them in canada",
                     "sentence": "Want to know where the lights come from?",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -3978,7 +3961,7 @@
                 {
                     "idx": 117,
                     "index": 29,
-                    "response": "The indigenous believed they were the souls of animals dancing in the sky.",
+                    "response": "The earth's magnetic field",
                     "sentence": "The lights are the result of solar particles colliding with gases in Earth's atmosphere.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -4012,7 +3995,7 @@
                 {
                     "idx": 118,
                     "index": 29,
-                    "response": "Don't you just love how humans interact with nature?",
+                    "response": "The lights are the result of solar particles colliding with gases in Earth's atmosphere.",
                     "sentence": "The indigenous believed they were the souls of animals dancing in the sky.",
                     "turn": "haru",
                     "topic": "topic-travel",
@@ -4021,6 +4004,40 @@
                     "emotion_score": 0.59,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.87,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:18:38",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Oh ok"
+                        },
+                        {
+                            "name": "geo-country",
+                            "value": "japan"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 119,
+                    "index": 29,
+                    "response": "The indigenous believed they were the souls of animals dancing in the sky.",
+                    "sentence": "Don't you just love how humans interact with nature?",
+                    "turn": "haru",
+                    "topic": "topic-travel",
+                    "intent": "topic-travel-homecountry-wants-to-know-where-the-lights-come-from",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.85,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.93,
                     "last_interaction": false,
                     "data_collection": false,
                     "timestamp": "2024-03-29 17:18:38",
@@ -4070,16 +4087,12 @@
         "haru": [
             {
                 "name": "haru: topic-intro -> user: topic-intro",
-                "source": 1,
-                "target": 0,
-                "value": 7,
+                "source": 0,
+                "target": 1,
+                "value": 6,
                 "timestamp": "2024-03-29 17:12:41",
                 "responseIDs": [
-                    0,
-                    {
-                        "idx": 3,
-                        "time": "2024-03-29 17:11:10"
-                    },
+                    3,
                     {
                         "idx": 6,
                         "time": "2024-03-29 17:11:19"
@@ -4103,17 +4116,23 @@
                 ]
             },
             {
+                "name": "haru: topic-intro -> user: topic-pet",
+                "source": 0,
+                "target": 2,
+                "value": 1,
+                "timestamp": "2024-03-29 17:12:51",
+                "responseIDs": [
+                    32
+                ]
+            },
+            {
                 "name": "haru: topic-pet -> user: topic-pet",
                 "source": 3,
                 "target": 2,
-                "value": 4,
+                "value": 3,
                 "timestamp": "2024-03-29 17:13:34",
                 "responseIDs": [
-                    32,
-                    {
-                        "idx": 34,
-                        "time": "2024-03-29 17:13:04"
-                    },
+                    34,
                     {
                         "idx": 37,
                         "time": "2024-03-29 17:13:26"
@@ -4125,17 +4144,23 @@
                 ]
             },
             {
+                "name": "haru: topic-pet -> user: topic-weather",
+                "source": 3,
+                "target": 4,
+                "value": 1,
+                "timestamp": "2024-03-29 17:13:39",
+                "responseIDs": [
+                    44
+                ]
+            },
+            {
                 "name": "haru: topic-weather -> user: topic-weather",
                 "source": 5,
                 "target": 4,
-                "value": 4,
+                "value": 3,
                 "timestamp": "2024-03-29 17:14:34",
                 "responseIDs": [
-                    44,
-                    {
-                        "idx": 47,
-                        "time": "2024-03-29 17:13:45"
-                    },
+                    47,
                     {
                         "idx": 51,
                         "time": "2024-03-29 17:14:08"
@@ -4147,31 +4172,43 @@
                 ]
             },
             {
+                "name": "haru: topic-weather -> user: topic-profession",
+                "source": 5,
+                "target": 6,
+                "value": 1,
+                "timestamp": "2024-03-29 17:14:43",
+                "responseIDs": [
+                    62
+                ]
+            },
+            {
                 "name": "haru: topic-profession -> user: topic-profession",
                 "source": 7,
                 "target": 6,
-                "value": 2,
+                "value": 1,
                 "timestamp": "2024-03-29 17:14:53",
                 "responseIDs": [
-                    62,
-                    {
-                        "idx": 64,
-                        "time": "2024-03-29 17:14:53"
-                    }
+                    64
+                ]
+            },
+            {
+                "name": "haru: topic-profession -> user: topic-travel",
+                "source": 7,
+                "target": 8,
+                "value": 1,
+                "timestamp": "2024-03-29 17:15:00",
+                "responseIDs": [
+                    69
                 ]
             },
             {
                 "name": "haru: topic-travel -> user: topic-travel",
                 "source": 9,
                 "target": 8,
-                "value": 12,
+                "value": 11,
                 "timestamp": "2024-03-29 17:18:38",
                 "responseIDs": [
-                    69,
-                    {
-                        "idx": 71,
-                        "time": "2024-03-29 17:15:34"
-                    },
+                    71,
                     {
                         "idx": 75,
                         "time": "2024-03-29 17:16:08"
@@ -4218,158 +4255,134 @@
         "user": [
             {
                 "name": "user: topic-intro -> haru: topic-intro",
-                "source": 0,
-                "target": 1,
-                "value": 6,
-                "timestamp": "2024-03-29 17:12:25",
+                "source": 1,
+                "target": 0,
+                "value": 7,
+                "timestamp": "2024-03-29 17:12:41",
                 "responseIDs": [
-                    2,
+                    1,
                     {
-                        "idx": 5,
+                        "idx": 4,
                         "time": "2024-03-29 17:11:10"
                     },
                     {
-                        "idx": 8,
+                        "idx": 7,
                         "time": "2024-03-29 17:11:19"
                     },
                     {
-                        "idx": 14,
+                        "idx": 10,
                         "time": "2024-03-29 17:11:57"
                     },
                     {
-                        "idx": 18,
+                        "idx": 16,
                         "time": "2024-03-29 17:12:16"
                     },
                     {
-                        "idx": 23,
+                        "idx": 20,
                         "time": "2024-03-29 17:12:25"
+                    },
+                    {
+                        "idx": 25,
+                        "time": "2024-03-29 17:12:41"
                     }
-                ]
-            },
-            {
-                "name": "user: topic-pet -> haru: topic-intro",
-                "source": 2,
-                "target": 1,
-                "value": 1,
-                "timestamp": "2024-03-29 17:12:41",
-                "responseIDs": [
-                    31
                 ]
             },
             {
                 "name": "user: topic-pet -> haru: topic-pet",
                 "source": 2,
                 "target": 3,
-                "value": 3,
-                "timestamp": "2024-03-29 17:13:26",
+                "value": 4,
+                "timestamp": "2024-03-29 17:13:34",
                 "responseIDs": [
                     33,
                     {
-                        "idx": 36,
+                        "idx": 35,
                         "time": "2024-03-29 17:13:04"
                     },
                     {
-                        "idx": 39,
+                        "idx": 38,
                         "time": "2024-03-29 17:13:26"
+                    },
+                    {
+                        "idx": 41,
+                        "time": "2024-03-29 17:13:34"
                     }
-                ]
-            },
-            {
-                "name": "user: topic-weather -> haru: topic-pet",
-                "source": 4,
-                "target": 3,
-                "value": 1,
-                "timestamp": "2024-03-29 17:13:34",
-                "responseIDs": [
-                    43
                 ]
             },
             {
                 "name": "user: topic-weather -> haru: topic-weather",
                 "source": 4,
                 "target": 5,
-                "value": 3,
-                "timestamp": "2024-03-29 17:14:08",
+                "value": 4,
+                "timestamp": "2024-03-29 17:14:34",
                 "responseIDs": [
-                    46,
+                    45,
                     {
-                        "idx": 50,
+                        "idx": 48,
                         "time": "2024-03-29 17:13:45"
                     },
                     {
-                        "idx": 54,
+                        "idx": 52,
                         "time": "2024-03-29 17:14:08"
+                    },
+                    {
+                        "idx": 56,
+                        "time": "2024-03-29 17:14:34"
                     }
-                ]
-            },
-            {
-                "name": "user: topic-profession -> haru: topic-weather",
-                "source": 6,
-                "target": 5,
-                "value": 1,
-                "timestamp": "2024-03-29 17:14:34",
-                "responseIDs": [
-                    61
                 ]
             },
             {
                 "name": "user: topic-profession -> haru: topic-profession",
                 "source": 6,
                 "target": 7,
-                "value": 1,
-                "timestamp": "2024-03-29 17:14:43",
-                "responseIDs": [
-                    63
-                ]
-            },
-            {
-                "name": "user: topic-travel -> haru: topic-profession",
-                "source": 8,
-                "target": 7,
-                "value": 1,
+                "value": 2,
                 "timestamp": "2024-03-29 17:14:53",
                 "responseIDs": [
-                    68
+                    63,
+                    {
+                        "idx": 65,
+                        "time": "2024-03-29 17:14:53"
+                    }
                 ]
             },
             {
                 "name": "user: topic-travel -> haru: topic-travel",
                 "source": 8,
                 "target": 9,
-                "value": 11,
-                "timestamp": "2024-03-29 17:18:26",
+                "value": 12,
+                "timestamp": "2024-03-29 17:18:38",
                 "responseIDs": [
                     70,
                     {
-                        "idx": 74,
+                        "idx": 72,
                         "time": "2024-03-29 17:15:34"
                     },
                     {
-                        "idx": 77,
+                        "idx": 76,
                         "time": "2024-03-29 17:16:08"
                     },
                     {
-                        "idx": 84,
+                        "idx": 79,
                         "time": "2024-03-29 17:16:31"
                     },
                     {
-                        "idx": 91,
+                        "idx": 86,
                         "time": "2024-03-29 17:16:43"
                     },
                     {
-                        "idx": 94,
+                        "idx": 93,
                         "time": "2024-03-29 17:17:00"
                     },
                     {
-                        "idx": 99,
+                        "idx": 96,
                         "time": "2024-03-29 17:17:19"
                     },
                     {
-                        "idx": 105,
+                        "idx": 101,
                         "time": "2024-03-29 17:17:30"
                     },
                     {
-                        "idx": 111,
+                        "idx": 107,
                         "time": "2024-03-29 17:17:56"
                     },
                     {
@@ -4379,6 +4392,10 @@
                     {
                         "idx": 115,
                         "time": "2024-03-29 17:18:26"
+                    },
+                    {
+                        "idx": 117,
+                        "time": "2024-03-29 17:18:38"
                     }
                 ]
             }

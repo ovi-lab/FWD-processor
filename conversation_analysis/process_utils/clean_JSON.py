@@ -103,7 +103,6 @@ def process_from_json(input_json, output_file=''):
     for line in input_json:
         line['topic'] = prev_topic = generate_topic(line['intent'], prev_topic) 
         new_data.append(line)
-        print(line)
     if output_file:
         # Dump data to JSON file
         with open(output_file, "w", encoding="utf8") as json_file:
