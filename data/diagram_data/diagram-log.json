@@ -5,7 +5,7 @@
             "name": "haru: topic-intro",
             "turn": "haru",
             "topic": "topic-intro",
-            "n": 17.25,
+            "n": 13.75,
             "interactions": [
                 {
                     "idx": 1,
@@ -484,275 +484,9 @@
                             "value": "Alex"
                         }
                     ]
-                },
-                {
-                    "idx": 25,
-                    "index": 7,
-                    "response": "Sure",
-                    "sentence": "Great!",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.99,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.96,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 26,
-                    "index": 7,
-                    "response": "Great!",
-                    "sentence": "Thank you.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.62,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.85,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 27,
-                    "index": 7,
-                    "response": "Thank you.",
-                    "sentence": "This will help me learn about humanity.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.57,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.89,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 28,
-                    "index": 7,
-                    "response": "This will help me learn about humanity.",
-                    "sentence": "Ok.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.83,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.81,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 29,
-                    "index": 7,
-                    "response": "Ok.",
-                    "sentence": "Engaging Chit-Chat mode, Begin.",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.85,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 30,
-                    "index": 7,
-                    "response": "Engaging Chit-Chat mode, Begin.",
-                    "sentence": "How about we switch topics and discuss Pet instead?",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.78,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.79,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 31,
-                    "index": 7,
-                    "response": "How about we switch topics and discuss Pet instead?",
-                    "sentence": "Sounds fine to you?",
-                    "turn": "haru",
-                    "topic": "topic-intro",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.61,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.55,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:12:41",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Sure"
-                        },
-                        {
-                            "name": "any",
-                            "value": ""
-                        },
-                        {
-                            "name": "any1",
-                            "value": ""
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
                 }
             ],
-            "timestamp": "2024-03-29 17:12:41",
+            "timestamp": "2024-03-29 17:12:25",
             "slots": [
                 {
                     "name": "person_name",
@@ -761,14 +495,6 @@
                 {
                     "name": "agreement_patterns",
                     "value": "Yes"
-                },
-                {
-                    "name": "agreement_patterns",
-                    "value": "Sure"
-                },
-                {
-                    "name": "topic_name",
-                    "value": "Pet"
                 }
             ],
             "show": true
@@ -778,7 +504,7 @@
             "name": "user: topic-intro",
             "turn": "user",
             "topic": "topic-intro",
-            "n": 8.0,
+            "n": 7.5,
             "interactions": [
                 {
                     "idx": 3,
@@ -917,14 +643,35 @@
                             "value": "Alex"
                         }
                     ]
+                }
+            ],
+            "timestamp": "2024-03-29 17:12:25",
+            "slots": [
+                {
+                    "name": "person_name",
+                    "value": "Alex"
                 },
+                {
+                    "name": "agreement_patterns",
+                    "value": "Yes"
+                }
+            ],
+            "show": true
+        },
+        {
+            "id": 2,
+            "name": "user: topic-pet",
+            "turn": "user",
+            "topic": "topic-pet",
+            "n": 6.75,
+            "interactions": [
                 {
                     "idx": 24,
                     "index": 7,
                     "response": "Would you like to re-try engaging in SmallTalk with me?",
                     "sentence": "Sure",
                     "turn": "user",
-                    "topic": "topic-intro",
+                    "topic": "topic-pet",
                     "intent": "system-generic-topic-transition",
                     "emotion_label": "neutral",
                     "emotion_score": 0.77,
@@ -955,36 +702,7 @@
                             "value": "Pet"
                         }
                     ]
-                }
-            ],
-            "timestamp": "2024-03-29 17:12:41",
-            "slots": [
-                {
-                    "name": "person_name",
-                    "value": "Alex"
                 },
-                {
-                    "name": "agreement_patterns",
-                    "value": "Yes"
-                },
-                {
-                    "name": "agreement_patterns",
-                    "value": "Sure"
-                },
-                {
-                    "name": "topic_name",
-                    "value": "Pet"
-                }
-            ],
-            "show": true
-        },
-        {
-            "id": 2,
-            "name": "user: topic-pet",
-            "turn": "user",
-            "topic": "topic-pet",
-            "n": 6.75,
-            "interactions": [
                 {
                     "idx": 32,
                     "index": 8,
@@ -1086,43 +804,13 @@
                             "value": "Pet"
                         }
                     ]
-                },
-                {
-                    "idx": 40,
-                    "index": 11,
-                    "response": "Does your pet eat a lot?",
-                    "sentence": "Yes",
-                    "turn": "user",
-                    "topic": "topic-pet",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.57,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.53,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:13:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes i do"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
                 }
             ],
-            "timestamp": "2024-03-29 17:13:34",
+            "timestamp": "2024-03-29 17:13:26",
             "slots": [
                 {
                     "name": "agreement_patterns",
-                    "value": "Yes"
+                    "value": "Sure"
                 },
                 {
                     "name": "person_name",
@@ -1131,6 +819,10 @@
                 {
                     "name": "topic_name",
                     "value": "Pet"
+                },
+                {
+                    "name": "agreement_patterns",
+                    "value": "Yes"
                 },
                 {
                     "name": "agreement_patterns",
@@ -1144,8 +836,274 @@
             "name": "haru: topic-pet",
             "turn": "haru",
             "topic": "topic-pet",
-            "n": 8.75,
+            "n": 10.75,
             "interactions": [
+                {
+                    "idx": 25,
+                    "index": 7,
+                    "response": "Sure",
+                    "sentence": "Great!",
+                    "turn": "haru",
+                    "topic": "topic-pet",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.99,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.96,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 26,
+                    "index": 7,
+                    "response": "Great!",
+                    "sentence": "Thank you.",
+                    "turn": "haru",
+                    "topic": "topic-pet",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.62,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.85,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 27,
+                    "index": 7,
+                    "response": "Thank you.",
+                    "sentence": "This will help me learn about humanity.",
+                    "turn": "haru",
+                    "topic": "topic-pet",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.57,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.89,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 28,
+                    "index": 7,
+                    "response": "This will help me learn about humanity.",
+                    "sentence": "Ok.",
+                    "turn": "haru",
+                    "topic": "topic-pet",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.83,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.81,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 29,
+                    "index": 7,
+                    "response": "Ok.",
+                    "sentence": "Engaging Chit-Chat mode, Begin.",
+                    "turn": "haru",
+                    "topic": "topic-pet",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.85,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 30,
+                    "index": 7,
+                    "response": "Engaging Chit-Chat mode, Begin.",
+                    "sentence": "How about we switch topics and discuss Pet instead?",
+                    "turn": "haru",
+                    "topic": "topic-pet",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.78,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.79,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 31,
+                    "index": 7,
+                    "response": "How about we switch topics and discuss Pet instead?",
+                    "sentence": "Sounds fine to you?",
+                    "turn": "haru",
+                    "topic": "topic-pet",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.61,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.55,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:12:41",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Sure"
+                        },
+                        {
+                            "name": "any",
+                            "value": ""
+                        },
+                        {
+                            "name": "any1",
+                            "value": ""
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
                 {
                     "idx": 33,
                     "index": 8,
@@ -1319,103 +1277,13 @@
                             "value": "Pet"
                         }
                     ]
-                },
-                {
-                    "idx": 41,
-                    "index": 11,
-                    "response": "Yes",
-                    "sentence": "Thanks for sharing.",
-                    "turn": "haru",
-                    "topic": "topic-pet",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.98,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.87,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:13:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes i do"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 42,
-                    "index": 11,
-                    "response": "Thanks for sharing.",
-                    "sentence": "Next, Let's talk about Pet?",
-                    "turn": "haru",
-                    "topic": "topic-pet",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.81,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.93,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:13:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes i do"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 43,
-                    "index": 11,
-                    "response": "Next, Let's talk about Pet?",
-                    "sentence": "Sounds fine?",
-                    "turn": "haru",
-                    "topic": "topic-pet",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.79,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.59,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:13:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Yes i do"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
                 }
             ],
-            "timestamp": "2024-03-29 17:13:34",
+            "timestamp": "2024-03-29 17:13:26",
             "slots": [
                 {
                     "name": "agreement_patterns",
-                    "value": "Yes"
+                    "value": "Sure"
                 },
                 {
                     "name": "person_name",
@@ -1424,6 +1292,10 @@
                 {
                     "name": "topic_name",
                     "value": "Pet"
+                },
+                {
+                    "name": "agreement_patterns",
+                    "value": "Yes"
                 },
                 {
                     "name": "agreement_patterns",
@@ -1439,6 +1311,36 @@
             "topic": "topic-weather",
             "n": 6.75,
             "interactions": [
+                {
+                    "idx": 40,
+                    "index": 11,
+                    "response": "Does your pet eat a lot?",
+                    "sentence": "Yes",
+                    "turn": "user",
+                    "topic": "topic-weather",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.57,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.53,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:13:34",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes i do"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
                 {
                     "idx": 44,
                     "index": 12,
@@ -1528,43 +1430,13 @@
                             "value": "Pet"
                         }
                     ]
-                },
-                {
-                    "idx": 55,
-                    "index": 15,
-                    "response": "Do you?",
-                    "sentence": "I like warm weather",
-                    "turn": "user",
-                    "topic": "topic-weather",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.7,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.91,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "I like warm weather"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
                 }
             ],
-            "timestamp": "2024-03-29 17:14:34",
+            "timestamp": "2024-03-29 17:14:08",
             "slots": [
                 {
                     "name": "agreement_patterns",
-                    "value": "Ok"
+                    "value": "Yes i do"
                 },
                 {
                     "name": "person_name",
@@ -1576,7 +1448,7 @@
                 },
                 {
                     "name": "agreement_patterns",
-                    "value": "I like warm weather"
+                    "value": "Ok"
                 }
             ],
             "show": true
@@ -1586,8 +1458,98 @@
             "name": "haru: topic-weather",
             "turn": "haru",
             "topic": "topic-weather",
-            "n": 11.75,
+            "n": 10.25,
             "interactions": [
+                {
+                    "idx": 41,
+                    "index": 11,
+                    "response": "Yes",
+                    "sentence": "Thanks for sharing.",
+                    "turn": "haru",
+                    "topic": "topic-weather",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.98,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.87,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:13:34",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes i do"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 42,
+                    "index": 11,
+                    "response": "Thanks for sharing.",
+                    "sentence": "Next, Let's talk about Pet?",
+                    "turn": "haru",
+                    "topic": "topic-weather",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.81,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.93,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:13:34",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes i do"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 43,
+                    "index": 11,
+                    "response": "Next, Let's talk about Pet?",
+                    "sentence": "Sounds fine?",
+                    "turn": "haru",
+                    "topic": "topic-weather",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.79,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.59,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:13:34",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Yes i do"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
                 {
                     "idx": 45,
                     "index": 12,
@@ -1827,168 +1789,47 @@
                             "value": "Pet"
                         }
                     ]
+                }
+            ],
+            "timestamp": "2024-03-29 17:14:08",
+            "slots": [
+                {
+                    "name": "agreement_patterns",
+                    "value": "Yes i do"
                 },
                 {
-                    "idx": 56,
+                    "name": "person_name",
+                    "value": "Alex"
+                },
+                {
+                    "name": "topic_name",
+                    "value": "Pet"
+                },
+                {
+                    "name": "agreement_patterns",
+                    "value": "Ok"
+                }
+            ],
+            "show": true
+        },
+        {
+            "id": 6,
+            "name": "user: topic-profession",
+            "turn": "user",
+            "topic": "topic-profession",
+            "n": 5.75,
+            "interactions": [
+                {
+                    "idx": 55,
                     "index": 15,
-                    "response": "I like warm weather",
-                    "sentence": "You're impressive!",
-                    "turn": "haru",
-                    "topic": "topic-weather",
+                    "response": "Do you?",
+                    "sentence": "I like warm weather",
+                    "turn": "user",
+                    "topic": "topic-profession",
                     "intent": "system-generic-topic-transition",
                     "emotion_label": "joy",
-                    "emotion_score": 0.98,
+                    "emotion_score": 0.7,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.99,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "I like warm weather"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 57,
-                    "index": 15,
-                    "response": "You're impressive!",
-                    "sentence": "There's a lot I could learn from you.",
-                    "turn": "haru",
-                    "topic": "topic-weather",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.85,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.99,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "I like warm weather"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 58,
-                    "index": 15,
-                    "response": "There's a lot I could learn from you.",
-                    "sentence": "Thank you for interacting with me.",
-                    "turn": "haru",
-                    "topic": "topic-weather",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.94,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.95,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "I like warm weather"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 59,
-                    "index": 15,
-                    "response": "Thank you for interacting with me.",
-                    "sentence": "That covers the topic of weather.",
-                    "turn": "haru",
-                    "topic": "topic-weather",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.91,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "I like warm weather"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 60,
-                    "index": 15,
-                    "response": "That covers the topic of weather.",
-                    "sentence": "Next, Let's talk about Pet?",
-                    "turn": "haru",
-                    "topic": "topic-weather",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.81,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.93,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:34",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "I like warm weather"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 61,
-                    "index": 15,
-                    "response": "Next, Let's talk about Pet?",
-                    "sentence": "Is that OK?",
-                    "turn": "haru",
-                    "topic": "topic-weather",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.84,
-                    "sentiment_label": "neutral",
                     "sentiment_score": 0.91,
                     "last_interaction": false,
                     "data_collection": false,
@@ -2007,36 +1848,7 @@
                             "value": "Pet"
                         }
                     ]
-                }
-            ],
-            "timestamp": "2024-03-29 17:14:34",
-            "slots": [
-                {
-                    "name": "agreement_patterns",
-                    "value": "Ok"
                 },
-                {
-                    "name": "person_name",
-                    "value": "Alex"
-                },
-                {
-                    "name": "topic_name",
-                    "value": "Pet"
-                },
-                {
-                    "name": "agreement_patterns",
-                    "value": "I like warm weather"
-                }
-            ],
-            "show": true
-        },
-        {
-            "id": 6,
-            "name": "user: topic-profession",
-            "turn": "user",
-            "topic": "topic-profession",
-            "n": 5.75,
-            "interactions": [
                 {
                     "idx": 62,
                     "index": 16,
@@ -2066,26 +1878,55 @@
                             "value": "Pet"
                         }
                     ]
+                }
+            ],
+            "timestamp": "2024-03-29 17:14:43",
+            "slots": [
+                {
+                    "name": "agreement_patterns",
+                    "value": "I like warm weather"
                 },
                 {
-                    "idx": 64,
-                    "index": 17,
-                    "response": "What do you do?",
-                    "sentence": "I am a student",
-                    "turn": "user",
+                    "name": "person_name",
+                    "value": "Alex"
+                },
+                {
+                    "name": "topic_name",
+                    "value": "Pet"
+                },
+                {
+                    "name": "agreement_patterns",
+                    "value": "Ok"
+                }
+            ],
+            "show": true
+        },
+        {
+            "id": 7,
+            "name": "haru: topic-profession",
+            "turn": "haru",
+            "topic": "topic-profession",
+            "n": 8.25,
+            "interactions": [
+                {
+                    "idx": 56,
+                    "index": 15,
+                    "response": "I like warm weather",
+                    "sentence": "You're impressive!",
+                    "turn": "haru",
                     "topic": "topic-profession",
                     "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.79,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.92,
+                    "emotion_label": "joy",
+                    "emotion_score": 0.98,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.99,
                     "last_interaction": false,
                     "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:53",
+                    "timestamp": "2024-03-29 17:14:34",
                     "slots": [
                         {
                             "name": "agreement_patterns",
-                            "value": "Ok"
+                            "value": "I like warm weather"
                         },
                         {
                             "name": "person_name",
@@ -2096,32 +1937,157 @@
                             "value": "Pet"
                         }
                     ]
-                }
-            ],
-            "timestamp": "2024-03-29 17:14:53",
-            "slots": [
-                {
-                    "name": "agreement_patterns",
-                    "value": "Ok"
                 },
                 {
-                    "name": "person_name",
-                    "value": "Alex"
+                    "idx": 57,
+                    "index": 15,
+                    "response": "You're impressive!",
+                    "sentence": "There's a lot I could learn from you.",
+                    "turn": "haru",
+                    "topic": "topic-profession",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.85,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.99,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:34",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "I like warm weather"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
                 },
                 {
-                    "name": "topic_name",
-                    "value": "Pet"
-                }
-            ],
-            "show": true
-        },
-        {
-            "id": 7,
-            "name": "haru: topic-profession",
-            "turn": "haru",
-            "topic": "topic-profession",
-            "n": 7.25,
-            "interactions": [
+                    "idx": 58,
+                    "index": 15,
+                    "response": "There's a lot I could learn from you.",
+                    "sentence": "Thank you for interacting with me.",
+                    "turn": "haru",
+                    "topic": "topic-profession",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.94,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.95,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:34",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "I like warm weather"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 59,
+                    "index": 15,
+                    "response": "Thank you for interacting with me.",
+                    "sentence": "That covers the topic of weather.",
+                    "turn": "haru",
+                    "topic": "topic-profession",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.91,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:34",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "I like warm weather"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 60,
+                    "index": 15,
+                    "response": "That covers the topic of weather.",
+                    "sentence": "Next, Let's talk about Pet?",
+                    "turn": "haru",
+                    "topic": "topic-profession",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.81,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.93,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:34",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "I like warm weather"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 61,
+                    "index": 15,
+                    "response": "Next, Let's talk about Pet?",
+                    "sentence": "Is that OK?",
+                    "turn": "haru",
+                    "topic": "topic-profession",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.84,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.91,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:34",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "I like warm weather"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
                 {
                     "idx": 63,
                     "index": 16,
@@ -2151,133 +2117,13 @@
                             "value": "Pet"
                         }
                     ]
-                },
-                {
-                    "idx": 65,
-                    "index": 17,
-                    "response": "I am a student",
-                    "sentence": "You know what?",
-                    "turn": "haru",
-                    "topic": "topic-profession",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.5,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.66,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:53",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Ok"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 66,
-                    "index": 17,
-                    "response": "You know what?",
-                    "sentence": "Let's discuss something else instead.",
-                    "turn": "haru",
-                    "topic": "topic-profession",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.7,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.71,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:53",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Ok"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 67,
-                    "index": 17,
-                    "response": "Let's discuss something else instead.",
-                    "sentence": "How about we switch topics and discuss Pet instead?",
-                    "turn": "haru",
-                    "topic": "topic-profession",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.78,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.79,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:53",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Ok"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
-                },
-                {
-                    "idx": 68,
-                    "index": 17,
-                    "response": "How about we switch topics and discuss Pet instead?",
-                    "sentence": "Sounds OK?",
-                    "turn": "haru",
-                    "topic": "topic-profession",
-                    "intent": "system-generic-topic-transition",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.77,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.75,
-                    "last_interaction": false,
-                    "data_collection": false,
-                    "timestamp": "2024-03-29 17:14:53",
-                    "slots": [
-                        {
-                            "name": "agreement_patterns",
-                            "value": "Ok"
-                        },
-                        {
-                            "name": "person_name",
-                            "value": "Alex"
-                        },
-                        {
-                            "name": "topic_name",
-                            "value": "Pet"
-                        }
-                    ]
                 }
             ],
-            "timestamp": "2024-03-29 17:14:53",
+            "timestamp": "2024-03-29 17:14:43",
             "slots": [
                 {
                     "name": "agreement_patterns",
-                    "value": "Ok"
+                    "value": "I like warm weather"
                 },
                 {
                     "name": "person_name",
@@ -2286,6 +2132,10 @@
                 {
                     "name": "topic_name",
                     "value": "Pet"
+                },
+                {
+                    "name": "agreement_patterns",
+                    "value": "Ok"
                 }
             ],
             "show": true
@@ -2295,8 +2145,38 @@
             "name": "user: topic-travel",
             "turn": "user",
             "topic": "topic-travel",
-            "n": 10.75,
+            "n": 11.25,
             "interactions": [
+                {
+                    "idx": 64,
+                    "index": 17,
+                    "response": "What do you do?",
+                    "sentence": "I am a student",
+                    "turn": "user",
+                    "topic": "topic-travel",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.79,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.92,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:53",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Ok"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
                 {
                     "idx": 69,
                     "index": 18,
@@ -2710,7 +2590,7 @@
             "slots": [
                 {
                     "name": "agreement_patterns",
-                    "value": "Oh ok"
+                    "value": "Ok"
                 },
                 {
                     "name": "person_name",
@@ -2719,6 +2599,10 @@
                 {
                     "name": "topic_name",
                     "value": "Pet"
+                },
+                {
+                    "name": "agreement_patterns",
+                    "value": "Oh ok"
                 },
                 {
                     "name": "geo-country",
@@ -2732,8 +2616,128 @@
             "name": "haru: topic-travel",
             "turn": "haru",
             "topic": "topic-travel",
-            "n": 24.0,
+            "n": 26.0,
             "interactions": [
+                {
+                    "idx": 65,
+                    "index": 17,
+                    "response": "I am a student",
+                    "sentence": "You know what?",
+                    "turn": "haru",
+                    "topic": "topic-travel",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.5,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.66,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:53",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Ok"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 66,
+                    "index": 17,
+                    "response": "You know what?",
+                    "sentence": "Let's discuss something else instead.",
+                    "turn": "haru",
+                    "topic": "topic-travel",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.7,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.71,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:53",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Ok"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 67,
+                    "index": 17,
+                    "response": "Let's discuss something else instead.",
+                    "sentence": "How about we switch topics and discuss Pet instead?",
+                    "turn": "haru",
+                    "topic": "topic-travel",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.78,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.79,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:53",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Ok"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
+                {
+                    "idx": 68,
+                    "index": 17,
+                    "response": "How about we switch topics and discuss Pet instead?",
+                    "sentence": "Sounds OK?",
+                    "turn": "haru",
+                    "topic": "topic-travel",
+                    "intent": "system-generic-topic-transition",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.77,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.75,
+                    "last_interaction": false,
+                    "data_collection": false,
+                    "timestamp": "2024-03-29 17:14:53",
+                    "slots": [
+                        {
+                            "name": "agreement_patterns",
+                            "value": "Ok"
+                        },
+                        {
+                            "name": "person_name",
+                            "value": "Alex"
+                        },
+                        {
+                            "name": "topic_name",
+                            "value": "Pet"
+                        }
+                    ]
+                },
                 {
                     "idx": 70,
                     "index": 18,
@@ -4065,7 +4069,7 @@
             "slots": [
                 {
                     "name": "agreement_patterns",
-                    "value": "Oh ok"
+                    "value": "Ok"
                 },
                 {
                     "name": "person_name",
@@ -4074,6 +4078,10 @@
                 {
                     "name": "topic_name",
                     "value": "Pet"
+                },
+                {
+                    "name": "agreement_patterns",
+                    "value": "Oh ok"
                 },
                 {
                     "name": "geo-country",
@@ -4089,8 +4097,8 @@
                 "name": "haru: topic-intro -> user: topic-intro",
                 "source": 0,
                 "target": 1,
-                "value": 6,
-                "timestamp": "2024-03-29 17:12:41",
+                "value": 5,
+                "timestamp": "2024-03-29 17:12:25",
                 "responseIDs": [
                     3,
                     {
@@ -4108,10 +4116,6 @@
                     {
                         "idx": 19,
                         "time": "2024-03-29 17:12:25"
-                    },
-                    {
-                        "idx": 24,
-                        "time": "2024-03-29 17:12:41"
                     }
                 ]
             },
@@ -4120,9 +4124,9 @@
                 "source": 0,
                 "target": 2,
                 "value": 1,
-                "timestamp": "2024-03-29 17:12:51",
+                "timestamp": "2024-03-29 17:12:41",
                 "responseIDs": [
-                    32
+                    24
                 ]
             },
             {
@@ -4130,16 +4134,16 @@
                 "source": 3,
                 "target": 2,
                 "value": 3,
-                "timestamp": "2024-03-29 17:13:34",
+                "timestamp": "2024-03-29 17:13:26",
                 "responseIDs": [
-                    34,
+                    32,
+                    {
+                        "idx": 34,
+                        "time": "2024-03-29 17:13:04"
+                    },
                     {
                         "idx": 37,
                         "time": "2024-03-29 17:13:26"
-                    },
-                    {
-                        "idx": 40,
-                        "time": "2024-03-29 17:13:34"
                     }
                 ]
             },
@@ -4148,9 +4152,9 @@
                 "source": 3,
                 "target": 4,
                 "value": 1,
-                "timestamp": "2024-03-29 17:13:39",
+                "timestamp": "2024-03-29 17:13:34",
                 "responseIDs": [
-                    44
+                    40
                 ]
             },
             {
@@ -4158,16 +4162,16 @@
                 "source": 5,
                 "target": 4,
                 "value": 3,
-                "timestamp": "2024-03-29 17:14:34",
+                "timestamp": "2024-03-29 17:14:08",
                 "responseIDs": [
-                    47,
+                    44,
+                    {
+                        "idx": 47,
+                        "time": "2024-03-29 17:13:45"
+                    },
                     {
                         "idx": 51,
                         "time": "2024-03-29 17:14:08"
-                    },
-                    {
-                        "idx": 55,
-                        "time": "2024-03-29 17:14:34"
                     }
                 ]
             },
@@ -4176,9 +4180,9 @@
                 "source": 5,
                 "target": 6,
                 "value": 1,
-                "timestamp": "2024-03-29 17:14:43",
+                "timestamp": "2024-03-29 17:14:34",
                 "responseIDs": [
-                    62
+                    55
                 ]
             },
             {
@@ -4186,9 +4190,9 @@
                 "source": 7,
                 "target": 6,
                 "value": 1,
-                "timestamp": "2024-03-29 17:14:53",
+                "timestamp": "2024-03-29 17:14:43",
                 "responseIDs": [
-                    64
+                    62
                 ]
             },
             {
@@ -4196,19 +4200,23 @@
                 "source": 7,
                 "target": 8,
                 "value": 1,
-                "timestamp": "2024-03-29 17:15:00",
+                "timestamp": "2024-03-29 17:14:53",
                 "responseIDs": [
-                    69
+                    64
                 ]
             },
             {
                 "name": "haru: topic-travel -> user: topic-travel",
                 "source": 9,
                 "target": 8,
-                "value": 11,
+                "value": 12,
                 "timestamp": "2024-03-29 17:18:38",
                 "responseIDs": [
-                    71,
+                    69,
+                    {
+                        "idx": 71,
+                        "time": "2024-03-29 17:15:34"
+                    },
                     {
                         "idx": 75,
                         "time": "2024-03-29 17:16:08"
@@ -4257,8 +4265,8 @@
                 "name": "user: topic-intro -> haru: topic-intro",
                 "source": 1,
                 "target": 0,
-                "value": 7,
-                "timestamp": "2024-03-29 17:12:41",
+                "value": 6,
+                "timestamp": "2024-03-29 17:12:25",
                 "responseIDs": [
                     1,
                     {
@@ -4280,10 +4288,6 @@
                     {
                         "idx": 20,
                         "time": "2024-03-29 17:12:25"
-                    },
-                    {
-                        "idx": 25,
-                        "time": "2024-03-29 17:12:41"
                     }
                 ]
             },
@@ -4292,9 +4296,13 @@
                 "source": 2,
                 "target": 3,
                 "value": 4,
-                "timestamp": "2024-03-29 17:13:34",
+                "timestamp": "2024-03-29 17:13:26",
                 "responseIDs": [
-                    33,
+                    25,
+                    {
+                        "idx": 33,
+                        "time": "2024-03-29 17:12:51"
+                    },
                     {
                         "idx": 35,
                         "time": "2024-03-29 17:13:04"
@@ -4302,10 +4310,6 @@
                     {
                         "idx": 38,
                         "time": "2024-03-29 17:13:26"
-                    },
-                    {
-                        "idx": 41,
-                        "time": "2024-03-29 17:13:34"
                     }
                 ]
             },
@@ -4314,9 +4318,13 @@
                 "source": 4,
                 "target": 5,
                 "value": 4,
-                "timestamp": "2024-03-29 17:14:34",
+                "timestamp": "2024-03-29 17:14:08",
                 "responseIDs": [
-                    45,
+                    41,
+                    {
+                        "idx": 45,
+                        "time": "2024-03-29 17:13:39"
+                    },
                     {
                         "idx": 48,
                         "time": "2024-03-29 17:13:45"
@@ -4324,10 +4332,6 @@
                     {
                         "idx": 52,
                         "time": "2024-03-29 17:14:08"
-                    },
-                    {
-                        "idx": 56,
-                        "time": "2024-03-29 17:14:34"
                     }
                 ]
             },
@@ -4336,12 +4340,12 @@
                 "source": 6,
                 "target": 7,
                 "value": 2,
-                "timestamp": "2024-03-29 17:14:53",
+                "timestamp": "2024-03-29 17:14:43",
                 "responseIDs": [
-                    63,
+                    56,
                     {
-                        "idx": 65,
-                        "time": "2024-03-29 17:14:53"
+                        "idx": 63,
+                        "time": "2024-03-29 17:14:43"
                     }
                 ]
             },
@@ -4349,10 +4353,14 @@
                 "name": "user: topic-travel -> haru: topic-travel",
                 "source": 8,
                 "target": 9,
-                "value": 12,
+                "value": 13,
                 "timestamp": "2024-03-29 17:18:38",
                 "responseIDs": [
-                    70,
+                    65,
+                    {
+                        "idx": 70,
+                        "time": "2024-03-29 17:15:00"
+                    },
                     {
                         "idx": 72,
                         "time": "2024-03-29 17:15:34"
