@@ -59,7 +59,7 @@ def receiveSubscriberFeed(event):
                     socketio.emit('transcript-response', transcript_payload)
                     diagram_payload = generate_diagram_from_file(transcript_payload, DIAGRAM_FILE_PATH)
                     socketio.emit('diagram-response-all', diagram_payload)
-                socketio.sleep(2) 
+                socketio.sleep(2) # This sleep function adjusts the polling rate for dialogue updates
             print('waiting')
     except Exception as e:
         print(f'Exception on emission: {e}')

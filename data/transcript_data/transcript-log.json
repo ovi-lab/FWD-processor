@@ -3867,6 +3867,10 @@
                 "value": "japan"
             },
             {
+                "name": "northern_lights",
+                "value": "seen"
+            },
+            {
                 "name": "person_name",
                 "value": "Alex"
             },
@@ -3901,6 +3905,10 @@
             {
                 "name": "geo-country",
                 "value": "japan"
+            },
+            {
+                "name": "northern_lights",
+                "value": "seen"
             },
             {
                 "name": "person_name",
@@ -3939,6 +3947,10 @@
                 "value": "japan"
             },
             {
+                "name": "northern_lights",
+                "value": "seen"
+            },
+            {
                 "name": "person_name",
                 "value": "Alex"
             },
@@ -3973,6 +3985,10 @@
             {
                 "name": "geo-country",
                 "value": "japan"
+            },
+            {
+                "name": "northern_lights",
+                "value": "seen"
             },
             {
                 "name": "person_name",
@@ -4011,6 +4027,10 @@
                 "value": "japan"
             },
             {
+                "name": "northern_lights",
+                "value": "seen"
+            },
+            {
                 "name": "person_name",
                 "value": "Alex"
             },
@@ -4045,6 +4065,10 @@
             {
                 "name": "geo-country",
                 "value": "japan"
+            },
+            {
+                "name": "northern_lights",
+                "value": "seen"
             },
             {
                 "name": "person_name",
