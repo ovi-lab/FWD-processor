@@ -104,7 +104,9 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
                 {
                     "name": link_name,
                     "source": prompt_node["id"],
+                    "sourceName": prompt_node["name"],
                     "target": response_node["id"],
+                    "targetName": response_node["name"],
                     "value": 1,
                     "timestamp": response_timestamp,
                     "responseIDs": [{'idx': new_interaction["idx"], 'time': new_interaction['timestamp']}],

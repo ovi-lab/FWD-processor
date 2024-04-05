@@ -68,7 +68,7 @@ class HaruChatCLI:
                      for key2 in ['user', 'haru']}
         self.data['index'] = None
         self._lastinteraction = None
-
+        self.prev_topic = ''
 
         self._use_stdin = not self._sentences or len(self._sentences) == 0
 
@@ -129,7 +129,8 @@ class HaruChatCLI:
             self.combined_user_emotion_label = data.utterance_emotion.emotions.results.best_match.label
             self.combined_user_emotion_score = data.utterance_emotion.emotions.results.best_match.score
             self.slu_intent = data.slu_result.intent
-            self.topic_name, self.prev_topic = generate_topic(data.slu_result.intent, self.prev_topic)
+            self.topic_name = generate_topic(data.slu_result.intent, self.prev_topic)
+            self.prev_topic = self.topic_name
             self.timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             self.generic_entity_type_detection = False
             self.current_slots = []
