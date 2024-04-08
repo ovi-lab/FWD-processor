@@ -93,3 +93,9 @@ def add_node_slots(node, response_slots):
         if slot not in node_slots and slot['value']:
             node_slots.append(slot)
     return node_slots
+
+def check_longest_utterance(sentence, longest_value):
+    if longest_value < len(sentence):
+        return len(sentence)
+    else: 
+        return longest_value

@@ -39,11 +39,13 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
     mapped_conversation = {
         "nodes": [],
         "links": {"haru": [], "user": []},
-        "attributes": {},
+        "attributes": {"longest_haru_utterance": 0, 'longest_user_utterance': 0},
     }
     mapped_nodes = mapped_conversation["nodes"]
     mapped_links = mapped_conversation["links"]
 
+    h_longest_utterance_length = 0
+    u_longest_utterance_length = 0
 
     for prompt, response in pairwise(transcript_data):
         response_timestamp = str(response["timestamp"])
@@ -83,6 +85,11 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
             response["timestamp"]
         )
 
+        if response["turn"] == 'haru':
+            h_longest_utterance_length = utils.check_longest_utterance(response['sentence'], h_longest_utterance_length)
+        else:
+            u_longest_utterance_length = utils.check_longest_utterance(response['sentence'], u_longest_utterance_length)
+
         if response_node["name"] == prompt_node["name"]:
             continue
 
@@ -120,6 +127,8 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
         node["show"] = utils.node_has_links(node, link_turn_section)
 
     # Save the results as a JSON file
+    mapped_conversation["attributes"]['longest_haru_utterance'] = h_longest_utterance_length
+    mapped_conversation["attributes"]['longest_user_utterance'] = u_longest_utterance_length
 
     with open(diagram_json_output, "w", encoding="utf8") as f:
         json.dump(mapped_conversation, f, ensure_ascii=False, indent=4)
