@@ -97,8 +97,8 @@ def request_download():
     except FileNotFoundError:
         print(FileNotFoundError)
 
-@socketio.on('transcript-request')
-def getLinearDialogue(retried=0):
+@socketio.event
+def transcriptRequest(retried=0):
     try:
         with open(TRANSCRIPT_FILE_PATH, 'r', encoding='utf8') as file:
             payload = json.load(file)
@@ -111,8 +111,8 @@ def getLinearDialogue(retried=0):
         process_uploaded_transcript(UPLOADED_FILE_PATH, False)
         getLinearDialogue(retried=(retried+1))
 
-@socketio.on('diagram-request')
-def getDiagramData(query='', retried=0):
+@socketio.event
+def diagramRequest(query='', retried=0):
     try:
         with open(DIAGRAM_FILE_PATH, 'r', encoding='utf8') as file:
             data = json.load(file)
