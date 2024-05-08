@@ -8,35 +8,49 @@ from process_uploaded_transcript import process_uploaded_transcript
 from process_utils.diagram_prep.diagram_process import generate_diagram_from_file
 
 
-thread_event = Event()
-thread_lock = Lock()
-thread = None
-
-data_emission_mode = 'dynamic'
-
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins='*')
 
 # Setting up the paths needed for the application
-dirname = os.path.dirname
-DATA_DIRECTORY = os.path.join(dirname(dirname(__file__)), 'data')
-app.config['UPLOAD_FOLDER'] = os.path.join(DATA_DIRECTORY, 'tmp')
-TRANSCRIPT_FILE_PATH = os.path.join(DATA_DIRECTORY, 'transcript_data/transcript-log.json')
-DIAGRAM_FILE_PATH = os.path.join(DATA_DIRECTORY, 'diagram_data/diagram-log.json')
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+DATA_DIR = os.path.join(BASE_DIR, 'data')
+app.config['UPLOAD_FOLDER'] = os.path.join(DATA_DIR, 'tmp')
+TRANSCRIPT_FILE_PATH = os.path.join(DATA_DIR, 'transcript_data', 'transcript-log.json')
+DIAGRAM_FILE_PATH = os.path.join(DATA_DIR, 'diagram_data', 'diagram-log.json')
 UPLOADED_FILE_PATH = os.path.join(app.config['UPLOAD_FOLDER'], 'raw_log.yml')
+
+# Thread controls for ROS feed
+thread_event = Event()
+thread_lock = Lock()
+thread = None
+
+@socketio.on('connect')
+def handle_connect():
+    print('Client connected')
+
+@socketio.on('disconnect')
+def handle_disconnect():
+    print('Client disconnected')
 
 
 @socketio.event
-def initRosFeed():
+def init_ros_feed():
+    """
+    Initializes the background task for receiving ROS feed. It checks if there's already a thread running and starts
+    one if not.
+    """
     global thread
     with thread_lock:
         if thread is None:
             thread_event.set()
-            thread = socketio.start_background_task(receiveSubscriberFeed, thread_event)
-    print("Realtime feed to visuzalizer initialized")
+            thread = socketio.start_background_task(receive_subscriber_feed, thread_event)
+    print("Realtime feed to visualizer initialized")
 
 @socketio.event
-def killRosFeed():
+def kill_ros_feed():
+    """
+    Stops the ROS feed by clearing the event and joining the thread if it exists, closing without leaving hanging processes.
+    """
     global thread
     thread_event.clear()
     with thread_lock:
@@ -45,7 +59,12 @@ def killRosFeed():
             thread = None
     print('Realtime feed to visualizer ended')
 
-def receiveSubscriberFeed(event):
+def receive_subscriber_feed(event):
+    """
+    Continuously checks for new updates in the transcript file. If a new update is found, it emits the updated data
+    to connected clients. It also generates and emits corresponding diagram data. The function runs as a background
+    thread that updates clients with new data at set intervals.
+    """
     transcript_last_idx = -1
     global thread
     try:
@@ -56,37 +75,45 @@ def receiveSubscriberFeed(event):
                     print(transcript_payload[-1]['idx'])
                     print('updating...')
                     transcript_last_idx = transcript_payload[-1]['idx']
-                    socketio.emit('transcript-response', transcript_payload)
+                    socketio.emit('transcript_response', transcript_payload)
                     diagram_payload = generate_diagram_from_file(transcript_payload, DIAGRAM_FILE_PATH)
-                    socketio.emit('diagram-response', diagram_payload)
+                    socketio.emit('diagram_response', diagram_payload)
                 socketio.sleep(1) # This sleep function adjusts the polling rate for dialogue updates
             print('waiting')
     except Exception as e:
         print(f'Exception on emission: {e}')
         socketio.emit('fatal-emission', e)
     finally:
-        event.clear()
+        thread_event.clear()
         thread = None
 
 def intercepting_json(file_name):
+    """
+    Determines the save path and file type based on the extension of the file name provided.
+    """
     ext = os.path.splitext(file_name)[-1].lower()
-    if ext == ".json":
-        return TRANSCRIPT_FILE_PATH, True
-    else:
-        return UPLOADED_FILE_PATH, False
+    return (TRANSCRIPT_FILE_PATH if ext == ".json" else UPLOADED_FILE_PATH, ext == ".json")
 
 @socketio.event
 def upload_file(file_data, file_name):
-    killRosFeed()
+    """
+    Handles file uploads from clients, determining the file path and processing the uploaded transcript.
+    This function kills any active ROS feed before processing to avoid conflicts with incoming data.
+    """
+    kill_ros_feed()
     if file_data:
         print(file_name)
-        save_path, isJson = intercepting_json(file_name)
+        save_path, is_json = intercepting_json(file_name)
         with open(save_path, 'wb') as f:
             f.write(file_data)
-        process_uploaded_transcript(save_path, isJson)
+        process_uploaded_transcript(save_path, is_json)
 
 @socketio.event
 def request_download():
+    """
+    Allows clients to request the download of the current transcript log. It provides the file with a timestamp
+    to differentiate it from other downloads.
+    """
     try:
         with open(TRANSCRIPT_FILE_PATH, 'r', encoding='utf8') as file:
             payload = json.load(file)
@@ -98,41 +125,39 @@ def request_download():
         print(FileNotFoundError)
 
 @socketio.event
-def transcriptRequest(retried=0):
+def transcript_request(retried=0):
+    """
+    Responds to client requests for the transcript. It retries up to 2 times if the file is not found,
+    which could be the case if the file is still being processed or needs to be remade.
+    """
     try:
         with open(TRANSCRIPT_FILE_PATH, 'r', encoding='utf8') as file:
             payload = json.load(file)
-        socketio.emit('transcript-response', payload)
-        retried = 0
+        socketio.emit('transcript_response', payload)
     except FileNotFoundError:
-        if retried==2:
+        if retried < 2:
+            process_uploaded_transcript(UPLOADED_FILE_PATH, False)
+            transcript_request(retried + 1)
+        else:
             socketio.emit('unable-to-open', TRANSCRIPT_FILE_PATH)
-            return
-        process_uploaded_transcript(UPLOADED_FILE_PATH, False)
-        getLinearDialogue(retried=(retried+1))
+
 
 @socketio.event
-def diagramRequest(query='', retried=0):
+def diagram_request(retried=0):
+    """
+    Responds to client requests for data needed to generate the diagrams. It retries up to 2 times if the file is not found,
+    which could be the case if the file is still being processed or needs to be remade.
+    """
     try:
         with open(DIAGRAM_FILE_PATH, 'r', encoding='utf8') as file:
             data = json.load(file)
-        socketio.emit('diagram-response', data)
-        retried = 0
+        socketio.emit('diagram_response', data)
     except FileNotFoundError:
-        if retried == 2:
+        if retried < 2:
+            process_uploaded_transcript(UPLOADED_FILE_PATH, False)
+            diagram_request(retried + 1)
+        else:
             socketio.emit('unable-to-open', DIAGRAM_FILE_PATH)
-            return
-        process_uploaded_transcript(UPLOADED_FILE_PATH, False)
-        getDiagramData(query, retried=(retried+1))
-
-
-@socketio.on('connect')
-def handle_connect():
-    print('Client connected')
-
-@socketio.on('disconnect')
-def handle_disconnect():
-    print('Client disconnected')
 
 
 
