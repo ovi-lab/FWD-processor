@@ -4,6 +4,8 @@ from flask_socketio import SocketIO
 import json
 from datetime import datetime
 from threading import Event, Lock
+
+import yaml
 from process_uploaded_transcript import process_uploaded_transcript
 from process_utils.diagram_prep.diagram_process import generate_diagram_from_file
 
@@ -109,17 +111,36 @@ def upload_file(file_data, file_name):
         process_uploaded_transcript(save_path, is_json)
 
 @socketio.event
-def request_download():
+def json_download_request():
     """
-    Allows clients to request the download of the current transcript log. It provides the file with a timestamp
-    to differentiate it from other downloads.
+    Allows clients to request the download of the transcript log in JSON format 
+    (processed for the application to use). 
+    It provides the file with a timestamp to differentiate it from other downloads.
     """
     try:
         with open(TRANSCRIPT_FILE_PATH, 'r', encoding='utf8') as file:
             payload = json.load(file)
         time_value = datetime.now().strftime("%Y-%m-%d_%H%M%S")
         file_name = f"transcript-log_{time_value}.json"
-        socketio.emit('json_file_response', [payload, file_name])
+        socketio.emit('json_download_response', [payload, file_name])
+        print(f"{file_name} sent for download")
+    except FileNotFoundError:
+        print(FileNotFoundError)
+
+@socketio.event
+def yaml_download_request():
+    """
+    Allows clients to request the download of the transcript log in YAML format 
+    (what ROS outputs). 
+    It provides the file with a timestamp to differentiate it from other downloads.
+    """
+    try:
+        with open(UPLOADED_FILE_PATH, 'r', encoding='utf8') as file:
+            yaml_data =  yaml.safe_load_all(file)
+            payload = '\n---\n'.join([yaml.dump(data) for data in yaml_data])
+        time_value = datetime.now().strftime("%Y-%m-%d_%H%M%S")
+        file_name = f"transcript-log_{time_value}.yaml"
+        socketio.emit('yaml_download_response', [payload, file_name])
         print(f"{file_name} sent for download")
     except FileNotFoundError:
         print(FileNotFoundError)
