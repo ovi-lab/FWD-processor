@@ -2,7 +2,7 @@
 
 from datetime import datetime
 import os
-import rospy
+import roslibpy
 # import rosnode
 
 from time import time
@@ -11,7 +11,6 @@ from rich.console import Console
 from rich import print
 import json
 from threading import Lock, Thread
-from strawberry_ros_msgs.msg import DialogResult
 from process_utils.clean_JSON import generate_topic
 
 EMOTIONS = ["anger", "disgust", "fear",
@@ -54,7 +53,10 @@ class HaruChatCLI:
     def __init__(self, config, sentences=None) -> None:
         self._config = config
 
-        self.configure()
+        # self.configure()
+
+        self.client = roslibpy.Ros(host='10.80.58.230', port=9090)
+        self.client.run()
 
         self._sentences = sentences
         self.index = 0
@@ -93,7 +95,7 @@ class HaruChatCLI:
 
         self._console = Console()
 
-        rospy.init_node("haru_chat_record")
+        # rospy.init_node("haru_chat_record")
 
 
         self.init_ros()
@@ -111,17 +113,14 @@ class HaruChatCLI:
         exit()
         
     def init_ros(self):
-        rospy.Subscriber(
-            self._topics["dialog_result"],
-            DialogResult,
-            self.callback_smalltalk_dialog,
-            queue_size=1,
-        )
+        listener = roslibpy.Topic(self.client, '/strawberry/dialog_result', 'strawberry_ros_msgs/DialogResult')
+        listener.subscribe(self.callback_smalltalk_dialog)
 
 
     def callback_smalltalk_dialog(self, data):
         with self.mutex:
-            self.data['index'] = data.header.seq
+            print(data)
+            self.data['index'] = data['header']['seq']
             self.data['haru']['sentence_list'] = data.fulfillment_sentences
 
             self.combined_haru_emotion_label = data.fulfillment_emotion.emotions.results.best_match.label
@@ -181,8 +180,8 @@ class HaruChatCLI:
                                 
                             # rospy.loginfo(
                             #     "Using original emotion instead of rich response msg")
-                            rospy.loginfo(user.text)
-                            rospy.loginfo(user.sentiment_results.sentiment.results.best_match.label)
+                            # rospy.loginfo(user.text)
+                            # rospy.loginfo(user.sentiment_results.sentiment.results.best_match.label)
                             user_emotion_label = user.emotion_results.emotions.results.best_match.label
                             user_emotion_score = user.emotion_results.emotions.results.best_match.score
                         except Exception:
@@ -228,9 +227,9 @@ class HaruChatCLI:
                     if '|' in haru.text:
                         continue
                     try:    
-                        rospy.loginfo(
-                            haru.text)
-                        rospy.loginfo(haru.sentiment_results.sentiment.results.best_match.label)
+                        # rospy.loginfo(
+                            # haru.text)
+                        # rospy.loginfo(haru.sentiment_results.sentiment.results.best_match.label)
                         haru_emotion_label = haru.emotion_results.emotions.results.best_match.label
                         haru_emotion_score = haru.emotion_results.emotions.results.best_match.score
                     except Exception:
@@ -287,7 +286,7 @@ class HaruChatCLI:
         first_pass = True
 
         while True:
-            rospy.spin()
+            # rospy.spin()
             pass
                 
         
@@ -307,13 +306,14 @@ def connect_to_ROS():
 
     try:
         node_name = "/haru_smalltalk_record"
-        config = {
-            "history_path": rospy.get_param(
-                f"{node_name}/history_path",
-                f"{os.environ.get('HOME')}/.ros/haru-project/haru-smalltalk-cli",
-            ),
-            "language_code": "en",
-        }
+        # config = {
+        #     "history_path": rospy.get_param(
+        #         f"{node_name}/history_path",
+        #         f"{os.environ.get('HOME')}/.ros/haru-project/haru-smalltalk-cli",
+        #     ),
+        #     "language_code": "en",
+        # }
+        config={}
         cli = HaruChatCLI(config)
         cli.run()
 
