@@ -17,6 +17,7 @@ flask-cors = "^4.0.0"
 pyyaml = "^6.0.1"
 flask-socketio = "^5.3.6"
 rich = "^13.7.1"
+roslibpy = "^1.7.0"
 
 
 [build-system]
