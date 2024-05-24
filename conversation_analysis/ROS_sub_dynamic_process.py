@@ -10,8 +10,8 @@ import signal
 from rich.console import Console
 from rich import print
 import json
-from threading import Lock, Thread
-from process_utils.clean_JSON import generate_topic
+from threading import Lock
+from process_utils.parse_subscriber_data import parse_subscriber_data
 
 EMOTIONS = ["anger", "disgust", "fear",
             "joy", "neutral", "sadness", "surprise"]
@@ -66,9 +66,9 @@ class HaruChatCLI:
         # Set Parameters
         self.data_type_list = ['sentence_list', 'sentence_id', 'sentence', 'emotion_name', 'emotion_score', 'sentiment_name', 'sentiment_score',
                                'emotion_frequency', 'probability_emote', 'random_value', 'react', 'reaction_text', 'sentence_processed', 'sentence_processed_list']
-        self.data = {key2: {key: None for key in self.data_type_list}
+        self.data_keys = {key2: {key: None for key in self.data_type_list}
                      for key2 in ['user', 'haru']}
-        self.data['index'] = None
+        self.data_keys['index'] = None
         self._lastinteraction = None
         self.prev_topic = ''
 
@@ -119,162 +119,15 @@ class HaruChatCLI:
 
     def callback_smalltalk_dialog(self, data):
         with self.mutex:
-            print(data)
-            self.data['index'] = data['header']['seq']
-            self.data['haru']['sentence_list'] = data.fulfillment_sentences
-
-            self.combined_haru_emotion_label = data.fulfillment_emotion.emotions.results.best_match.label
-            self.combined_haru_emotion_score = data.fulfillment_emotion.emotions.results.best_match.score
-            self.combined_user_emotion_label = data.utterance_emotion.emotions.results.best_match.label
-            self.combined_user_emotion_score = data.utterance_emotion.emotions.results.best_match.score
-            self.slu_intent = data.slu_result.intent
-            self.topic_name = generate_topic(data.slu_result.intent, self.prev_topic)
-            self.prev_topic = self.topic_name
-            self.timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            self.generic_entity_type_detection = False
-            self.current_slots = []
-            if data.slots :
-                for slots in data.slots :
-                    self.current_slots.append({'name': slots.name, 'value': slots.value})
-                    if slots.name == "enable_intent_classification" :
-                        self.generic_entity_type_detection = True
-                    else :
-                        self.generic_entity_type_detection = False
-            
-            # if self.last_user_utterance != data.utterance :
-            #     self.last_user_utterance = data.utterance
-
-
-            if len(data.utterance_sentences) == 0:
-                if self._lastinteraction is not None and self.conversation != []:
-                    self.conversation[self._lastinteraction]['last_interaction'] = False
-                if self.data['user']['sentence_list'] is not None:
-                    self.conversation.append({
-                        'idx': self.index,
-                        'sentence': data.utterance,
-                        'emotion_label': "neutral",
-                        'emotion_score': -9,
-                        'sentiment_label': "neutral",
-                        'sentiment_score': -9,
-                        'index': data.header.seq,
-                        'app_name': self.app_name,
-                        'turn': 'user',
-                        'last_interaction': True,
-                        'highlighted': False,
-                        'intent': self.slu_intent,
-                        'topic' : self.topic_name,
-                        'timestamp' : self.timestamp,
-                        'type' : '',
-                        'entity_type_detection':self.generic_entity_type_detection,
-                        'slots': self.current_slots
-                    })
-                    self.index += 1
-                    self._lastinteraction = 0
-            else:
-                self.data['user']['sentence_list'] = data.utterance_sentences
-                if self._lastinteraction is not None and self.conversation != []:
-                    self.conversation[self._lastinteraction]['last_interaction'] = False
-                if self.data['user']['sentence_list'] is not None:
-                    for sentence_id, user in enumerate(self.data['user']['sentence_list']):
-                        try:
-                                
-                            # rospy.loginfo(
-                            #     "Using original emotion instead of rich response msg")
-                            # rospy.loginfo(user.text)
-                            # rospy.loginfo(user.sentiment_results.sentiment.results.best_match.label)
-                            user_emotion_label = user.emotion_results.emotions.results.best_match.label
-                            user_emotion_score = user.emotion_results.emotions.results.best_match.score
-                        except Exception:
-                            if user.emotion != "":
-                                user_emotion_label = user.emotion
-                                user_emotion_score = 1.0
-                            elif user.auto_emotion != "":
-                                user_emotion_label = user.auto_emotion
-                                user_emotion_score = float(
-                                    user.auto_score) if user.auto_score != "" else 0.0
-                            else:
-                                user_emotion_label = self.combined_user_emotion_label
-                                user_emotion_score = self.combined_user_emotion_score
-
-                        sentiment_score = user.sentiment_results.sentiment.results.best_match.score
-                        sentiment_label = user.sentiment_results.sentiment.results.best_match.label
-                        # sentiment_label = SENTIMENT_MAPPING.get(  # These commented lines appear to be deprecated under the current smalltalk implementation
-                        #     user.sentiment_results.sentiment.results.best_match.label, "None")
-                        self.conversation.append({
-                            'idx': self.index,
-                            'sentence': user.text,
-                            'emotion_label': user_emotion_label,
-                            'emotion_score': round(user_emotion_score, 2),
-                            'sentiment_label': sentiment_label,
-                            'sentiment_score': round(sentiment_score, 2),
-                            'index': data.header.seq,
-                            'app_name': self.app_name,
-                            'turn': 'user',
-                            'last_interaction': sentence_id == 0,
-                            'highlighted': False,
-                            'intent': self.slu_intent,
-                            'topic' : self.topic_name,
-                            'timestamp' : self.timestamp,
-                            'type' : user.type,
-                            'entity_type_detection':self.generic_entity_type_detection,
-                            'slots': self.current_slots
-                        })
-                        self.index += 1
-                        if sentence_id == 0:
-                            self._lastinteraction = len(self.conversation)-1
-            if self.data['haru']['sentence_list'] is not None:
-                for sentence_id, haru in enumerate(self.data['haru']['sentence_list']):
-                    if '|' in haru.text:
-                        continue
-                    try:    
-                        # rospy.loginfo(
-                            # haru.text)
-                        # rospy.loginfo(haru.sentiment_results.sentiment.results.best_match.label)
-                        haru_emotion_label = haru.emotion_results.emotions.results.best_match.label
-                        haru_emotion_score = haru.emotion_results.emotions.results.best_match.score
-                    except Exception:
-                        if haru.emotion != "":
-                            haru_emotion_label = haru.emotion
-                            haru_emotion_score = 1.0
-                        elif haru.auto_emotion != "":
-                            haru_emotion_label = haru.auto_emotion
-                            haru_emotion_score = float(
-                                haru.auto_score) if haru.auto_score != "" else 0.0
-                        else:
-                            haru_emotion_label = self.combined_haru_emotion_label
-                            haru_emotion_score = self.combined_haru_emotion_score
-                    sentiment_score = haru.sentiment_results.sentiment.results.best_match.score
-                    sentiment_label = haru.sentiment_results.sentiment.results.best_match.label
-                    # sentiment_label = SENTIMENT_MAPPING.get(
-                    #     haru.sentiment_results.sentiment.results.best_match.label, "None")
-                    self.conversation.append({
-                        'idx': self.index,
-                        'sentence': haru.text,
-                        'emotion_label': haru_emotion_label,
-                        'emotion_score': round(haru_emotion_score, 2),
-                        'sentiment_label': sentiment_label,
-                        'sentiment_score': round(sentiment_score, 2),
-                        'index': data.header.seq,
-                        'app_name': self.app_name,
-                        'turn': 'haru',
-                        'last_interaction': False,
-                        'highlighted': False,
-                        'intent': self.slu_intent,
-                        'topic' : self.topic_name,
-                        'timestamp' : self.timestamp,
-                        'type' : haru.type,
-                        'entity_type_detection':self.generic_entity_type_detection,
-                        'slots': self.current_slots
-                    })
-                    self.index += 1
-            self._data_is_ready = True
+            self.conversation = parse_subscriber_data(self, data)
             
         # Specify the file path
-        transcript_path = '/home/lithin/frans_server/ROS-JSON-Middleman/data/transcript_data/transcript-log.json'
-        
+        BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+        DATA_DIR = os.path.join(BASE_DIR, 'data')
+        TRANSCRIPT_FILE_PATH = os.path.join(DATA_DIR, 'transcript_data', 'transcript-log.json')        
         
         # Write the transcript to a JSON file
-        with open(transcript_path, 'w') as transcript_file:
+        with open(TRANSCRIPT_FILE_PATH, 'w') as transcript_file:
             json.dump(self.conversation, transcript_file, indent=4)
             
             

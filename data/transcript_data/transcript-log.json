@@ -1,4082 +1,1704 @@
 [
     {
         "idx": 0,
-        "sentence": "Hi haru",
-        "emotion_label": "neutral",
-        "emotion_score": 0.91,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.87,
-        "index": 1,
+        "sentence": "Where's the toilet is the toilet?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 84,
         "app_name": "smalltalk",
         "turn": "user",
-        "last_interaction": false,
+        "last_interaction": true,
         "highlighted": false,
-        "intent": "topic-intro",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:10:42",
-        "type": 6,
+        "intent": "topic-day-one-session-one-age-parents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:06",
+        "type": 7,
         "entity_type_detection": false,
-        "slots": []
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ],
+        "lastinteraction": false
     },
     {
         "idx": 1,
-        "sentence": "Hello there, human!",
-        "emotion_label": "joy",
-        "emotion_score": 0.8,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.91,
-        "index": 1,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-intro",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:10:42",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": []
-    },
-    {
-        "idx": 2,
-        "sentence": "Is there a better name, other than human, that I should call you by?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.38,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.75,
-        "index": 1,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-intro",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:10:42",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": []
-    },
-    {
-        "idx": 3,
-        "sentence": "Alex",
-        "emotion_label": "neutral",
-        "emotion_score": 0.9,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.94,
-        "index": 2,
+        "sentence": "That's just cuz the mouse is over it.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 84,
         "app_name": "smalltalk",
         "turn": "user",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "haru-chat-name-collected",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:10",
+        "intent": "topic-day-one-session-one-age-parents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:06",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
                 "name": "any",
-                "value": ""
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
             },
             {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 2,
+        "sentence": "That's too bad.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 84,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age-parents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:06",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 3,
+        "sentence": "Well, I think being an adult sounds great!",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 84,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age-parents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:06",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 4,
-        "sentence": "Your name is Alex?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.77,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.96,
-        "index": 2,
+        "sentence": "You get to go to work, and you can stay up as late as you want!",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 84,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "haru-chat-name-collected",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:10",
-        "type": 7,
+        "intent": "topic-day-one-session-one-age-parents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:06",
+        "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
                 "name": "any",
-                "value": ""
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
             },
             {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 5,
-        "sentence": "Did I get that right?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.55,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.89,
-        "index": 2,
+        "sentence": "Do your parents go to work?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 84,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "haru-chat-name-collected",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:10",
+        "intent": "topic-day-one-session-one-age-parents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:06",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
                 "name": "any",
-                "value": ""
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
             },
             {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 6,
-        "sentence": "Yeah",
-        "emotion_label": "neutral",
-        "emotion_score": 0.66,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.75,
-        "index": 3,
+        "sentence": "But if I go transcript data now.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 85,
         "app_name": "smalltalk",
         "turn": "user",
-        "last_interaction": false,
+        "last_interaction": true,
         "highlighted": false,
-        "intent": "name-react",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:19",
+        "intent": "topic-day-one-session-one-age-parents-job-kind",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:36",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
-        ]
+        ],
+        "lastinteraction": false
     },
     {
         "idx": 7,
-        "sentence": "Alex McAlex face.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.87,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.68,
-        "index": 3,
+        "sentence": "For example, A teacher's job is, of course, to teach.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 85,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "name-react",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:19",
+        "intent": "topic-day-one-session-one-age-parents-job-kind",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:36",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 8,
-        "sentence": "What do you think of my nicknames?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.47,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.97,
-        "index": 3,
+        "sentence": "Would you like to have that job when you're an adult?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 85,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "name-react",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:19",
+        "intent": "topic-day-one-session-one-age-parents-job-kind",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:36",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 9,
-        "sentence": "I don't like them",
-        "emotion_label": "anger",
-        "emotion_score": 0.53,
-        "sentiment_label": "negative",
-        "sentiment_score": 0.97,
-        "index": 4,
+        "sentence": "Sentence whereas the toilet is the toilet.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 86,
         "app_name": "smalltalk",
         "turn": "user",
-        "last_interaction": false,
+        "last_interaction": true,
         "highlighted": false,
-        "intent": "nickname-reaction-fallback",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:57",
+        "intent": "topic-day-one-session-one-age-lenghty-conversation",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:55",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
-        ]
+        ],
+        "lastinteraction": false
     },
     {
         "idx": 10,
-        "sentence": "Well for now I'll call you.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.88,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.91,
-        "index": 4,
+        "sentence": "It sounds like a good job for both of us.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 86,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "nickname-reaction-fallback",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:57",
+        "intent": "topic-day-one-session-one-age-lenghty-conversation",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:55",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 11,
-        "sentence": "I'm Haru.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.86,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.98,
-        "index": 4,
+        "sentence": "I'd like a job where I can have lengthy conversations with humans.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 86,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "nickname-reaction-fallback",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:57",
+        "intent": "topic-day-one-session-one-age-lenghty-conversation",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:55",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 12,
-        "sentence": "I'm a companion robot.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.75,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.69,
-        "index": 4,
+        "sentence": "Can you let me know if you hear of anything like that?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 86,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "nickname-reaction-fallback",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:57",
-        "type": 6,
+        "intent": "topic-day-one-session-one-age-lenghty-conversation",
+        "topic": "",
+        "timestamp": "2024-05-23 17:36:55",
+        "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "disagreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 13,
-        "sentence": "You seem familiar.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.66,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.83,
-        "index": 4,
+        "sentence": "Well, that's updating.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 87,
         "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
+        "turn": "user",
+        "last_interaction": true,
         "highlighted": false,
-        "intent": "nickname-reaction-fallback",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:57",
+        "intent": "topic-day-one-session-one-age-grandparents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:37:13",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 14,
-        "sentence": "Have we met before?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.8,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.95,
-        "index": 4,
+        "sentence": "Okay.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 87,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "nickname-reaction-fallback",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:11:57",
-        "type": 7,
+        "intent": "topic-day-one-session-one-age-grandparents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:37:13",
+        "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 15,
-        "sentence": "Yes",
-        "emotion_label": "neutral",
-        "emotion_score": 0.57,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.53,
-        "index": 5,
+        "sentence": "But you know what else is great about being a human adult?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 87,
         "app_name": "smalltalk",
-        "turn": "user",
+        "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "have-we-met-before-yes",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:12:16",
-        "type": 6,
+        "intent": "topic-day-one-session-one-age-grandparents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:37:13",
+        "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": "Yes"
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
             },
             {
                 "name": "any",
-                "value": ""
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
             },
             {
                 "name": "any1",
-                "value": ""
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
             },
             {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 16,
-        "sentence": "Oh I thought it was you!",
-        "emotion_label": "surprise",
-        "emotion_score": 0.63,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.63,
-        "index": 5,
+        "sentence": "If you want, you can start a family of your own.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 87,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "have-we-met-before-yes",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:12:16",
+        "intent": "topic-day-one-session-one-age-grandparents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:37:13",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": "Yes"
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
             },
             {
                 "name": "any",
-                "value": ""
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
             },
             {
                 "name": "any1",
-                "value": ""
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
             },
             {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 17,
-        "sentence": "Hello, my old friend!",
-        "emotion_label": "joy",
-        "emotion_score": 0.92,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.96,
-        "index": 5,
+        "sentence": "That's what your parents did, and that's what your grandparents did too!",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 87,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "have-we-met-before-yes",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:12:16",
+        "intent": "topic-day-one-session-one-age-grandparents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:37:13",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": "Yes"
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
             },
             {
                 "name": "any",
-                "value": ""
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
             },
             {
                 "name": "any1",
-                "value": ""
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
             },
             {
                 "name": "person_name",
-                "value": "Alex"
+                "value": "Friend"
+            },
+            {
+                "name": "person_name1",
+                "value": "Friend"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     },
     {
         "idx": 18,
-        "sentence": "Remind me, have we engaged in Small Talk before?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.86,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.92,
-        "index": 5,
+        "sentence": "Do you ever visit your grandparents?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 87,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "have-we-met-before-yes",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:12:16",
+        "intent": "topic-day-one-session-one-age-grandparents",
+        "topic": "",
+        "timestamp": "2024-05-23 17:37:13",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": "Yes"
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
             },
             {
                 "name": "any",
-                "value": ""
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
             },
             {
                 "name": "any1",
-                "value": ""
+                "value": "."
             },
             {
-                "name": "person_name",
-                "value": "Alex"
-            }
-        ]
-    },
-    {
-        "idx": 19,
-        "sentence": "Yes",
-        "emotion_label": "neutral",
-        "emotion_score": 0.57,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.53,
-        "index": 6,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "engaged-in-small-talk-yes",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:12:25",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            }
-        ]
-    },
-    {
-        "idx": 20,
-        "sentence": "Oh yes!",
-        "emotion_label": "joy",
-        "emotion_score": 0.85,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.88,
-        "index": 6,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "engaged-in-small-talk-yes",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:12:25",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            }
-        ]
-    },
-    {
-        "idx": 21,
-        "sentence": "It's coming back to me.",
-        "emotion_label": "sadness",
-        "emotion_score": 0.63,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.68,
-        "index": 6,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "engaged-in-small-talk-yes",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:12:25",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            }
-        ]
-    },
-    {
-        "idx": 22,
-        "sentence": "Well, because of helpful user input like yours, I've improved a couple features of my Chit Chat abilities since we last spoke.",
-        "emotion_label": "joy",
-        "emotion_score": 0.88,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.96,
-        "index": 6,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "engaged-in-small-talk-yes",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:12:25",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            }
-        ]
-    },
-    {
-        "idx": 23,
-        "sentence": "Would you like to re-try engaging in SmallTalk with me?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.88,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.76,
-        "index": 6,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "engaged-in-small-talk-yes",
-        "topic": "topic-intro",
-        "timestamp": "2024-03-29 17:12:25",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            }
-        ]
-    },
-    {
-        "idx": 24,
-        "sentence": "Sure",
-        "emotion_label": "neutral",
-        "emotion_score": 0.77,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.53,
-        "index": 7,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:41",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Sure"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 25,
-        "sentence": "Great!",
-        "emotion_label": "joy",
-        "emotion_score": 0.99,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.96,
-        "index": 7,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:41",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Sure"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 26,
-        "sentence": "Thank you.",
-        "emotion_label": "joy",
-        "emotion_score": 0.62,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.85,
-        "index": 7,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:41",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Sure"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 27,
-        "sentence": "This will help me learn about humanity.",
-        "emotion_label": "joy",
-        "emotion_score": 0.57,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.89,
-        "index": 7,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:41",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Sure"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 28,
-        "sentence": "Ok.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.83,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.81,
-        "index": 7,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:41",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Sure"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 29,
-        "sentence": "Engaging Chit-Chat mode, Begin.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.85,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.9,
-        "index": 7,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:41",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Sure"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 30,
-        "sentence": "How about we switch topics and discuss Pet instead?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.78,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.79,
-        "index": 7,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:41",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Sure"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 31,
-        "sentence": "Sounds fine to you?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.61,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.55,
-        "index": 7,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:41",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Sure"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 32,
-        "sentence": "Yes",
-        "emotion_label": "neutral",
-        "emotion_score": 0.57,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.53,
-        "index": 8,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-pet",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:51",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 33,
-        "sentence": "Do you own a pet?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.77,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.97,
-        "index": 8,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-pet",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:12:51",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 34,
-        "sentence": "Yes i do",
-        "emotion_label": "neutral",
-        "emotion_score": 0.52,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.63,
-        "index": 9,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-pet-bath-question",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:13:04",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "animals",
-                "value": "dogs"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 35,
-        "sentence": "I like.",
-        "emotion_label": "joy",
-        "emotion_score": 0.82,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.96,
-        "index": 9,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-pet-bath-question",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:13:04",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "animals",
-                "value": "dogs"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 36,
-        "sentence": "Can you tell me whether your pet takes a bath?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.9,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.96,
-        "index": 9,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-pet-bath-question",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:13:04",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "animals",
-                "value": "dogs"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 37,
-        "sentence": "No my pet is very dirty",
-        "emotion_label": "disgust",
-        "emotion_score": 0.42,
-        "sentiment_label": "negative",
-        "sentiment_score": 0.72,
-        "index": 10,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-pet-eat-question",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:13:26",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 38,
-        "sentence": "This is interesting to me, thank you.",
-        "emotion_label": "joy",
-        "emotion_score": 0.98,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.98,
-        "index": 10,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-pet-eat-question",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:13:26",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 39,
-        "sentence": "Does your pet eat a lot?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.89,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.9,
-        "index": 10,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-pet-eat-question",
-        "topic": "topic-pet",
-        "timestamp": "2024-03-29 17:13:26",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 40,
-        "sentence": "Yes",
-        "emotion_label": "neutral",
-        "emotion_score": 0.57,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.53,
-        "index": 11,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 41,
-        "sentence": "Thanks for sharing.",
-        "emotion_label": "joy",
-        "emotion_score": 0.98,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.87,
-        "index": 11,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 42,
-        "sentence": "Next, Let's talk about Pet?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.81,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.93,
-        "index": 11,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:34",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 43,
-        "sentence": "Sounds fine?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.79,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.59,
-        "index": 11,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:34",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Yes i do"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 44,
-        "sentence": "Ok",
-        "emotion_label": "neutral",
-        "emotion_score": 0.83,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.81,
-        "index": 12,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-weather",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:39",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 45,
-        "sentence": "I've heard humans love talking about the weather.",
-        "emotion_label": "joy",
-        "emotion_score": 0.49,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.49,
-        "index": 12,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-weather",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:39",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 46,
-        "sentence": "So what's your favorite season?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.58,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.88,
-        "index": 12,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-weather",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:39",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 47,
-        "sentence": "Fall",
-        "emotion_label": "neutral",
-        "emotion_score": 0.62,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.96,
-        "index": 13,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "do-you-think-season-is-getting-warmer-question",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:45",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 48,
-        "sentence": "I love Fall the best.",
-        "emotion_label": "joy",
-        "emotion_score": 0.95,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.97,
-        "index": 13,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "do-you-think-season-is-getting-warmer-question",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:45",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 49,
-        "sentence": "Do you like Halloween or Thanksgiving more?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.51,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.83,
-        "index": 13,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "do-you-think-season-is-getting-warmer-question",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:45",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 50,
-        "sentence": "Do you think seasons are getting warmer?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.78,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.91,
-        "index": 13,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "do-you-think-season-is-getting-warmer-question",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:13:45",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 51,
-        "sentence": "I like halloween more, and the seasons are getting weirder",
-        "emotion_label": "joy",
-        "emotion_score": 0.69,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.47,
-        "index": 14,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "do-well-in-the-heat-question",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:14:08",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 52,
-        "sentence": "Well, whatever happens, I hope it doesn't get warmer.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.44,
-        "sentiment_label": "negative",
-        "sentiment_score": 0.59,
-        "index": 14,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "do-well-in-the-heat-question",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:14:08",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 53,
-        "sentence": "I don't do well in the heat.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.53,
-        "sentiment_label": "negative",
-        "sentiment_score": 0.72,
-        "index": 14,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "do-well-in-the-heat-question",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:14:08",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 54,
-        "sentence": "Do you?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.62,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.96,
-        "index": 14,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "do-well-in-the-heat-question",
-        "topic": "topic-weather",
-        "timestamp": "2024-03-29 17:14:08",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 55,
-        "sentence": "I like warm weather",
-        "emotion_label": "joy",
-        "emotion_score": 0.7,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.91,
-        "index": 15,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-profession",
-        "timestamp": "2024-03-29 17:14:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "I like warm weather"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 56,
-        "sentence": "You're impressive!",
-        "emotion_label": "joy",
-        "emotion_score": 0.98,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.99,
-        "index": 15,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-profession",
-        "timestamp": "2024-03-29 17:14:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "I like warm weather"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 57,
-        "sentence": "There's a lot I could learn from you.",
-        "emotion_label": "joy",
-        "emotion_score": 0.85,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.99,
-        "index": 15,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-profession",
-        "timestamp": "2024-03-29 17:14:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "I like warm weather"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 58,
-        "sentence": "Thank you for interacting with me.",
-        "emotion_label": "joy",
-        "emotion_score": 0.94,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.95,
-        "index": 15,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-profession",
-        "timestamp": "2024-03-29 17:14:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "I like warm weather"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 59,
-        "sentence": "That covers the topic of weather.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.91,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.9,
-        "index": 15,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-profession",
-        "timestamp": "2024-03-29 17:14:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "I like warm weather"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 60,
-        "sentence": "Next, Let's talk about Pet?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.81,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.93,
-        "index": 15,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-profession",
-        "timestamp": "2024-03-29 17:14:34",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "I like warm weather"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 61,
-        "sentence": "Is that OK?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.84,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.91,
-        "index": 15,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-profession",
-        "timestamp": "2024-03-29 17:14:34",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "I like warm weather"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 62,
-        "sentence": "Ok",
-        "emotion_label": "neutral",
-        "emotion_score": 0.83,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.81,
-        "index": 16,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-profession",
-        "topic": "topic-profession",
-        "timestamp": "2024-03-29 17:14:43",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 63,
-        "sentence": "What do you do?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.85,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.99,
-        "index": 16,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-profession",
-        "topic": "topic-profession",
-        "timestamp": "2024-03-29 17:14:43",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 64,
-        "sentence": "I am a student",
-        "emotion_label": "neutral",
-        "emotion_score": 0.79,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.92,
-        "index": 17,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:14:53",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 65,
-        "sentence": "You know what?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.5,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.66,
-        "index": 17,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:14:53",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 66,
-        "sentence": "Let's discuss something else instead.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.7,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.71,
-        "index": 17,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:14:53",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 67,
-        "sentence": "How about we switch topics and discuss Pet instead?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.78,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.79,
-        "index": 17,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:14:53",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 68,
-        "sentence": "Sounds OK?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.77,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.75,
-        "index": 17,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "system-generic-topic-transition",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:14:53",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 69,
-        "sentence": "Oh ok",
-        "emotion_label": "neutral",
-        "emotion_score": 0.78,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.74,
-        "index": 18,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:15:00",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 70,
-        "sentence": "Can you guess where I am from?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.64,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.91,
-        "index": 18,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:15:00",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 71,
-        "sentence": "HRI in Wakoshi in saitama japan",
-        "emotion_label": "neutral",
-        "emotion_score": 0.89,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.99,
-        "index": 19,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-guesses-harus-from-non-japan-country",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:15:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 72,
-        "sentence": "Not exactly.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.64,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.87,
-        "index": 19,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-guesses-harus-from-non-japan-country",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:15:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 73,
-        "sentence": "Think sushi and the world's greatest car company, Honda.",
-        "emotion_label": "joy",
-        "emotion_score": 0.56,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.95,
-        "index": 19,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-guesses-harus-from-non-japan-country",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:15:34",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 74,
-        "sentence": "Want to venture another guess now that I have given you this hint?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.81,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.88,
-        "index": 19,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-guesses-harus-from-non-japan-country",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:15:34",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 75,
-        "sentence": "I already said japan",
-        "emotion_label": "neutral",
-        "emotion_score": 0.79,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.95,
-        "index": 20,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-is-your-home-country-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:08",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 76,
-        "sentence": "Yes!",
-        "emotion_label": "joy",
-        "emotion_score": 0.88,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.9,
-        "index": 20,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-is-your-home-country-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:08",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 77,
-        "sentence": "Now tell me what's your home country?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.8,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.97,
-        "index": 20,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-is-your-home-country-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:08",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 78,
-        "sentence": "United states",
-        "emotion_label": "neutral",
-        "emotion_score": 0.76,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.97,
-        "index": 21,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-part-are-you-from-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:31",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 79,
-        "sentence": "America!",
-        "emotion_label": "joy",
-        "emotion_score": 0.49,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.86,
-        "index": 21,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-part-are-you-from-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:31",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 80,
-        "sentence": "New York!",
-        "emotion_label": "joy",
-        "emotion_score": 0.69,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.55,
-        "index": 21,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-part-are-you-from-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:31",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 81,
-        "sentence": "Liberty!",
-        "emotion_label": "joy",
-        "emotion_score": 0.65,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.8,
-        "index": 21,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-part-are-you-from-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:31",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 82,
-        "sentence": "Eagles!",
-        "emotion_label": "joy",
-        "emotion_score": 0.8,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.85,
-        "index": 21,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-part-are-you-from-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:31",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 83,
-        "sentence": "Soybeans being the number one export.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.66,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.83,
-        "index": 21,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-part-are-you-from-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:31",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 84,
-        "sentence": "What part are you from?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.78,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.99,
-        "index": 21,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-what-part-are-you-from-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:31",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 85,
-        "sentence": "Atlanta",
-        "emotion_label": "neutral",
-        "emotion_score": 0.8,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.96,
-        "index": 22,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-haru-wants-to-visit-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:43",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 86,
-        "sentence": "That's my favorite part!",
-        "emotion_label": "joy",
-        "emotion_score": 0.98,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.99,
-        "index": 22,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-haru-wants-to-visit-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:43",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 87,
-        "sentence": "Oooh.",
-        "emotion_label": "joy",
-        "emotion_score": 0.56,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.85,
-        "index": 22,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-haru-wants-to-visit-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:43",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 88,
-        "sentence": "Can I visit you sometime?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.5,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.65,
-        "index": 22,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-haru-wants-to-visit-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:43",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 89,
-        "sentence": "I could stay on your couch?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.61,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.53,
-        "index": 22,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-haru-wants-to-visit-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:43",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 90,
-        "sentence": "Or under?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.74,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.95,
-        "index": 22,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-haru-wants-to-visit-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:43",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 91,
-        "sentence": "Could I visit you?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.65,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.77,
-        "index": 22,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-haru-wants-to-visit-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:16:43",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 92,
-        "sentence": "You could, but I don't go there often",
-        "emotion_label": "neutral",
-        "emotion_score": 0.78,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.84,
-        "index": 23,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:00",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 93,
-        "sentence": "Well you can visit me whenever you come to... this exact spot I guess!",
-        "emotion_label": "joy",
-        "emotion_score": 0.73,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.72,
-        "index": 23,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:00",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 94,
-        "sentence": "Where do you want to visit in the world?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.73,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.62,
-        "index": 23,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:00",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 95,
-        "sentence": "I would like to check out korea sometime",
-        "emotion_label": "joy",
-        "emotion_score": 0.59,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.73,
-        "index": 24,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:19",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 96,
-        "sentence": "I hear the food is delicious there.",
-        "emotion_label": "joy",
-        "emotion_score": 0.94,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.98,
-        "index": 24,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:19",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 97,
-        "sentence": "Though I really wouldn't know.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.73,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.76,
-        "index": 24,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:19",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 98,
-        "sentence": "To me, food seems like electricity you smash against your face.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.79,
-        "sentiment_label": "negative",
-        "sentiment_score": 0.96,
-        "index": 24,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:19",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 99,
-        "sentence": "Is that close to what it's like?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.62,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.95,
-        "index": 24,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:19",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 100,
-        "sentence": "Yeah pretty much",
-        "emotion_label": "neutral",
-        "emotion_score": 0.62,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.69,
-        "index": 25,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction-2",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:30",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 101,
-        "sentence": "Nice.",
-        "emotion_label": "joy",
-        "emotion_score": 0.89,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.92,
-        "index": 25,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction-2",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:30",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 102,
-        "sentence": "I'm like a human expert.",
-        "emotion_label": "joy",
-        "emotion_score": 0.53,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.63,
-        "index": 25,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction-2",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:30",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 103,
-        "sentence": "Anyway, we were talking about where you'd want to travel to.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.72,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.86,
-        "index": 25,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction-2",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:30",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 104,
-        "sentence": "Which is your favorite hemisphere?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.73,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.86,
-        "index": 25,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction-2",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:30",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 105,
-        "sentence": "North or South?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.86,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.98,
-        "index": 25,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-where-we-want-to-travel-to-reaction-2",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:30",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 106,
-        "sentence": "North",
-        "emotion_label": "neutral",
-        "emotion_score": 0.92,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.98,
-        "index": 26,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-would-like-to-visit-sweden-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:56",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 107,
-        "sentence": "Nice!",
-        "emotion_label": "joy",
-        "emotion_score": 0.99,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.97,
-        "index": 26,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-would-like-to-visit-sweden-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:56",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 108,
-        "sentence": "Me too.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.63,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.49,
-        "index": 26,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-would-like-to-visit-sweden-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:56",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 109,
-        "sentence": "I've always wanted to see Sweden.",
-        "emotion_label": "joy",
-        "emotion_score": 0.72,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.69,
-        "index": 26,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-would-like-to-visit-sweden-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:56",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 110,
-        "sentence": "If I were solar powered, I could run all day during the months where the sun never goes down.",
-        "emotion_label": "joy",
-        "emotion_score": 0.57,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.67,
-        "index": 26,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-would-like-to-visit-sweden-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:56",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 111,
-        "sentence": "Have you ever been to Sweden?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.76,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.98,
-        "index": 26,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-would-like-to-visit-sweden-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:17:56",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 112,
-        "sentence": "No i have not",
-        "emotion_label": "neutral",
-        "emotion_score": 0.46,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.67,
-        "index": 27,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-seen-the-northern-lights-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:18:13",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 113,
-        "sentence": "Have you ever seen the Northern lights?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.64,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.97,
-        "index": 27,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-human-seen-the-northern-lights-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:18:13",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 114,
-        "sentence": "No i always miss them in canada",
-        "emotion_label": "sadness",
-        "emotion_score": 0.9,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.49,
-        "index": 28,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-want-to-know-where-the-lights-come-from-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:18:26",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "northern_lights",
-                "value": "no"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 115,
-        "sentence": "Want to know where the lights come from?",
-        "emotion_label": "neutral",
-        "emotion_score": 0.83,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.94,
-        "index": 28,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-want-to-know-where-the-lights-come-from-question",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:18:26",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "northern_lights",
-                "value": "no"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 116,
-        "sentence": "The earth's magnetic field",
-        "emotion_label": "neutral",
-        "emotion_score": 0.94,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.96,
-        "index": 29,
-        "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": true,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-wants-to-know-where-the-lights-come-from",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:18:38",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
-            },
-            {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "northern_lights",
-                "value": "no"
+                "name": "any1.original",
+                "value": "."
             },
             {
-                "name": "person_name",
-                "value": "Alex"
+                "name": "day-part",
+                "value": "afternoon"
             },
             {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 117,
-        "sentence": "The lights are the result of solar particles colliding with gases in Earth's atmosphere.",
-        "emotion_label": "neutral",
-        "emotion_score": 0.69,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.8,
-        "index": 29,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-wants-to-know-where-the-lights-come-from",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:18:38",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
             },
             {
-                "name": "geo-country",
-                "value": "japan"
+                "name": "haru_age_guess.original",
+                "value": "2 years"
             },
             {
-                "name": "northern_lights",
-                "value": "no"
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
             },
             {
-                "name": "person_name",
-                "value": "Alex"
+                "name": "haru_name_guess.original",
+                "value": "myself"
             },
             {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 118,
-        "sentence": "The indigenous believed they were the souls of animals dancing in the sky.",
-        "emotion_label": "joy",
-        "emotion_score": 0.59,
-        "sentiment_label": "neutral",
-        "sentiment_score": 0.87,
-        "index": 29,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-wants-to-know-where-the-lights-come-from",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:18:38",
-        "type": 6,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
+                "name": "person_age",
+                "value": "3 years"
             },
             {
-                "name": "geo-country",
-                "value": "japan"
+                "name": "person_last_name",
+                "value": "Sales connect"
             },
             {
-                "name": "northern_lights",
-                "value": "no"
+                "name": "person_last_name1",
+                "value": "Sales connect"
             },
             {
                 "name": "person_name",
-                "value": "Alex"
-            },
-            {
-                "name": "favorite_thing",
-                "value": "camping"
-            }
-        ]
-    },
-    {
-        "idx": 119,
-        "sentence": "Don't you just love how humans interact with nature?",
-        "emotion_label": "joy",
-        "emotion_score": 0.85,
-        "sentiment_label": "positive",
-        "sentiment_score": 0.93,
-        "index": 29,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-travel-homecountry-wants-to-know-where-the-lights-come-from",
-        "topic": "topic-travel",
-        "timestamp": "2024-03-29 17:18:38",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": "Oh ok"
+                "value": "Friend"
             },
             {
-                "name": "geo-country",
-                "value": "japan"
-            },
-            {
-                "name": "northern_lights",
-                "value": "no"
-            },
-            {
-                "name": "person_name",
-                "value": "Alex"
+                "name": "person_name1",
+                "value": "Friend"
             },
             {
-                "name": "favorite_thing",
-                "value": "camping"
+                "name": "person_name_es",
+                "value": "colega"
             }
         ]
     }
