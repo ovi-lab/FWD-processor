@@ -1,0 +1,318 @@
+{
+    "header": {
+        "seq": 41,
+        "stamp": {
+            "secs": 0,
+            "nsecs": 0
+        },
+        "frame_id": ""
+    },
+    "person_id": 0,
+    "utterance": "I was getting a little Annoying with a little annoyed with me.",
+    "utterance_sentences": [
+        {
+            "type": 6,
+            "text": "I was getting a little Annoying with a little annoyed with me.",
+            "genre": "",
+            "emotion": "",
+            "routine": "",
+            "auto_genre": "",
+            "auto_emotion": "",
+            "auto_score": "",
+            "sentiment_results": {
+                "sentence": "",
+                "sentiment": {
+                    "classifier_name": "",
+                    "results": {
+                        "best_match": {
+                            "label": "",
+                            "score": 0.0
+                        },
+                        "results": []
+                    }
+                }
+            },
+            "emotion_results": {
+                "sentence": "",
+                "emotions": {
+                    "classifier_name": "",
+                    "results": {
+                        "best_match": {
+                            "label": "",
+                            "score": 0.0
+                        },
+                        "results": []
+                    }
+                }
+            }
+        }
+    ],
+    "language_code": "en",
+    "fulfillment_text": "Do you like being a child?",
+    "fulfillment_messages": [
+        "Do you like being a child?"
+    ],
+    "fulfillment_sentences": [
+        {
+            "type": 7,
+            "text": "Do you like being a child?",
+            "genre": "question",
+            "emotion": "",
+            "routine": "",
+            "auto_genre": "question",
+            "auto_emotion": "joy",
+            "auto_score": "0.661949813365936",
+            "sentiment_results": {
+                "sentence": "",
+                "sentiment": {
+                    "classifier_name": "",
+                    "results": {
+                        "best_match": {
+                            "label": "",
+                            "score": 0.0
+                        },
+                        "results": []
+                    }
+                }
+            },
+            "emotion_results": {
+                "sentence": "",
+                "emotions": {
+                    "classifier_name": "",
+                    "results": {
+                        "best_match": {
+                            "label": "",
+                            "score": 0.0
+                        },
+                        "results": []
+                    }
+                }
+            }
+        }
+    ],
+    "dialogue_act": "",
+    "topic": "Day",
+    "subtopic": "Topic day one session one person feeling about child",
+    "question": "Do you like being a child?",
+    "conversation_finished": false,
+    "suggested_routine_id": 0,
+    "slu_result": {
+        "intent": "topic-day-one-session-one-person-feeling-about-child",
+        "intent_conf": 1.0,
+        "intent_conf_avg": 0.10526315867900848,
+        "is_fallback": false
+    },
+    "sentiment_results": {
+        "utterance_sentiment": {
+            "sentence": "I was getting a little Annoying with a little annoyed with me.",
+            "sentiment": {
+                "classifier_name": "/strawberry_ros_dialog",
+                "results": {
+                    "best_match": {
+                        "label": "neg",
+                        "score": 0.93994140625
+                    },
+                    "results": [
+                        {
+                            "label": "pos",
+                            "score": 0.02508544921875
+                        },
+                        {
+                            "label": "neg",
+                            "score": 0.939453125
+                        },
+                        {
+                            "label": "neu",
+                            "score": 0.03509521484375
+                        },
+                        {
+                            "label": "compound",
+                            "score": -0.8974000215530396
+                        }
+                    ]
+                }
+            }
+        },
+        "fulfillment_sentiment": {
+            "sentence": "",
+            "sentiment": {
+                "classifier_name": "",
+                "results": {
+                    "best_match": {
+                        "label": "",
+                        "score": 0.0
+                    },
+                    "results": []
+                }
+            }
+        },
+        "avg_utterance_sentiment": {
+            "sentence": "I was getting a little Annoying with a little annoyed with me.",
+            "sentiment": {
+                "classifier_name": "/strawberry_ros_dialog",
+                "results": {
+                    "best_match": {
+                        "label": "neg",
+                        "score": 0.2029999941587448
+                    },
+                    "results": [
+                        {
+                            "label": "compound",
+                            "score": 0.01489999983459711
+                        },
+                        {
+                            "label": "neg",
+                            "score": 0.20347662270069122
+                        },
+                        {
+                            "label": "neu",
+                            "score": 0.09898418933153152
+                        },
+                        {
+                            "label": "pos",
+                            "score": 0.16090302169322968
+                        }
+                    ]
+                }
+            }
+        },
+        "avg_fulfillment_sentiment": {
+            "sentence": "",
+            "sentiment": {
+                "classifier_name": "",
+                "results": {
+                    "best_match": {
+                        "label": "",
+                        "score": 0.0
+                    },
+                    "results": []
+                }
+            }
+        }
+    },
+    "utterance_emotion": {
+        "sentence": "I was getting a little Annoying with a little annoyed with me.",
+        "emotions": {
+            "classifier_name": "/strawberry_ros_dialog",
+            "results": {
+                "best_match": {
+                    "label": "anger",
+                    "score": 0.8331381678581238
+                },
+                "results": [
+                    {
+                        "label": "anger",
+                        "score": 0.8331381678581238
+                    },
+                    {
+                        "label": "disgust",
+                        "score": 0.1301312893629074
+                    },
+                    {
+                        "label": "fear",
+                        "score": 0.00523540610447526
+                    },
+                    {
+                        "label": "joy",
+                        "score": 0.0012797927483916283
+                    },
+                    {
+                        "label": "neutral",
+                        "score": 0.004866966046392918
+                    },
+                    {
+                        "label": "sadness",
+                        "score": 0.023515567183494568
+                    },
+                    {
+                        "label": "surprise",
+                        "score": 0.0018327658763155341
+                    }
+                ]
+            }
+        }
+    },
+    "fulfillment_emotion": {
+        "sentence": "",
+        "emotions": {
+            "classifier_name": "",
+            "results": {
+                "best_match": {
+                    "label": "",
+                    "score": 0.0
+                },
+                "results": []
+            }
+        }
+    },
+    "slots": [
+        {
+            "name": "agreement_patterns",
+            "value": "[,',y,e,s,',,, ,',.,',]"
+        },
+        {
+            "name": "agreement_patterns.original",
+            "value": "[,',Y,e,s,',,, ,',.,',]"
+        },
+        {
+            "name": "any",
+            "value": ""
+        },
+        {
+            "name": "any.original",
+            "value": "it does not have a data."
+        },
+        {
+            "name": "any1",
+            "value": ""
+        },
+        {
+            "name": "any1.original",
+            "value": "."
+        },
+        {
+            "name": "day-part",
+            "value": "afternoon"
+        },
+        {
+            "name": "haru_age_guess",
+            "value": "{'unit': 'year', 'amount': 2.0}"
+        },
+        {
+            "name": "haru_age_guess.original",
+            "value": "2 years"
+        },
+        {
+            "name": "haru_name_guess",
+            "value": "{'name': 'myself'}"
+        },
+        {
+            "name": "haru_name_guess.original",
+            "value": "myself"
+        },
+        {
+            "name": "person_age",
+            "value": ""
+        },
+        {
+            "name": "person_last_name",
+            "value": "Us"
+        },
+        {
+            "name": "person_last_name1",
+            "value": "Sales connect"
+        },
+        {
+            "name": "person_name",
+            "value": "Buddy"
+        },
+        {
+            "name": "person_name1",
+            "value": "John"
+        },
+        {
+            "name": "person_name_es",
+            "value": "colega"
+        }
+    ]
+}

@@ -1,19 +1,19 @@
 [
     {
         "idx": 0,
-        "sentence": "Where's the toilet is the toilet?",
+        "sentence": "Can you hear me?",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 84,
+        "index": 6,
         "app_name": "smalltalk",
         "turn": "user",
         "last_interaction": true,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-parents",
+        "intent": "topic-day-one-session-one-names-origins",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:06",
+        "timestamp": "2024-05-24 15:14:22",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
@@ -47,7 +47,7 @@
             },
             {
                 "name": "haru_age_guess",
-                "value": "{'unit': 'year', 'amount': 2.0}"
+                "value": "{'amount': 2.0, 'unit': 'year'}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -75,11 +75,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -90,19 +90,19 @@
     },
     {
         "idx": 1,
-        "sentence": "That's just cuz the mouse is over it.",
+        "sentence": "You'll love it, I promise.",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 84,
+        "index": 6,
         "app_name": "smalltalk",
-        "turn": "user",
+        "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-parents",
+        "intent": "topic-day-one-session-one-names-origins",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:06",
+        "timestamp": "2024-05-24 15:14:22",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
@@ -136,7 +136,7 @@
             },
             {
                 "name": "haru_age_guess",
-                "value": "{'unit': 'year', 'amount': 2.0}"
+                "value": "{'amount': 2.0, 'unit': 'year'}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -164,11 +164,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -178,20 +178,20 @@
     },
     {
         "idx": 2,
-        "sentence": "That's too bad.",
+        "sentence": "So, Buddy, how do you spell your name?",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 84,
+        "index": 6,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-parents",
+        "intent": "topic-day-one-session-one-names-origins",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:06",
-        "type": 6,
+        "timestamp": "2024-05-24 15:14:22",
+        "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
@@ -224,7 +224,7 @@
             },
             {
                 "name": "haru_age_guess",
-                "value": "{'unit': 'year', 'amount': 2.0}"
+                "value": "{'amount': 2.0, 'unit': 'year'}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -252,11 +252,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -266,19 +266,19 @@
     },
     {
         "idx": 3,
-        "sentence": "Well, I think being an adult sounds great!",
+        "sentence": "S",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 84,
+        "index": 7,
         "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
+        "turn": "user",
+        "last_interaction": true,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-parents",
+        "intent": "topic-day-one-session-one-names-origins-meaning",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:06",
+        "timestamp": "2024-05-24 15:14:34",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
@@ -340,33 +340,34 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
                 "value": "colega"
             }
-        ]
+        ],
+        "lastinteraction": false
     },
     {
         "idx": 4,
-        "sentence": "You get to go to work, and you can stay up as late as you want!",
+        "sentence": "w a g",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 84,
+        "index": 7,
         "app_name": "smalltalk",
-        "turn": "haru",
+        "turn": "user",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-parents",
+        "intent": "topic-day-one-session-one-names-origins-meaning",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:06",
+        "timestamp": "2024-05-24 15:14:34",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
@@ -428,11 +429,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -442,19 +443,19 @@
     },
     {
         "idx": 5,
-        "sentence": "Do your parents go to work?",
+        "sentence": "What a beautiful name.",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 84,
+        "index": 7,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-parents",
+        "intent": "topic-day-one-session-one-names-origins-meaning",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:06",
+        "timestamp": "2024-05-24 15:14:34",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
@@ -516,11 +517,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -530,25 +531,113 @@
     },
     {
         "idx": 6,
-        "sentence": "But if I go transcript data now.",
+        "sentence": "Do you know what it means?",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 85,
+        "index": 7,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-names-origins-meaning",
+        "topic": "",
+        "timestamp": "2024-05-24 15:14:34",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 7,
+        "sentence": "No.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 8,
         "app_name": "smalltalk",
         "turn": "user",
         "last_interaction": true,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-parents-job-kind",
+        "intent": "topic-day-one-session-one-names-origins-meaning-haru",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:36",
+        "timestamp": "2024-05-24 15:14:43",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": ""
+                "value": "[,',y,e,s,',,, ,',.,',]"
             },
             {
                 "name": "agreement_patterns.original",
@@ -580,7 +669,7 @@
             },
             {
                 "name": "haru_age_guess",
-                "value": "{'amount': 2.0, 'unit': 'year'}"
+                "value": "{'unit': 'year', 'amount': 2.0}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -608,11 +697,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -622,26 +711,26 @@
         "lastinteraction": false
     },
     {
-        "idx": 7,
-        "sentence": "For example, A teacher's job is, of course, to teach.",
+        "idx": 8,
+        "sentence": "Well, that's OK.",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 85,
+        "index": 8,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-parents-job-kind",
+        "intent": "topic-day-one-session-one-names-origins-meaning-haru",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:36",
+        "timestamp": "2024-05-24 15:14:43",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": ""
+                "value": "[,',y,e,s,',,, ,',.,',]"
             },
             {
                 "name": "agreement_patterns.original",
@@ -673,7 +762,7 @@
             },
             {
                 "name": "haru_age_guess",
-                "value": "{'amount': 2.0, 'unit': 'year'}"
+                "value": "{'unit': 'year', 'amount': 2.0}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -701,103 +790,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
-            },
-            {
-                "name": "person_name_es",
-                "value": "colega"
-            }
-        ]
-    },
-    {
-        "idx": 8,
-        "sentence": "Would you like to have that job when you're an adult?",
-        "emotion_label": "",
-        "emotion_score": 0.0,
-        "sentiment_label": "",
-        "sentiment_score": 0.0,
-        "index": 85,
-        "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
-        "highlighted": false,
-        "intent": "topic-day-one-session-one-age-parents-job-kind",
-        "topic": "",
-        "timestamp": "2024-05-23 17:36:36",
-        "type": 7,
-        "entity_type_detection": false,
-        "slots": [
-            {
-                "name": "agreement_patterns",
-                "value": ""
-            },
-            {
-                "name": "agreement_patterns.original",
-                "value": "[,',Y,e,s,',,, ,',.,',]"
-            },
-            {
-                "name": "any",
-                "value": ""
-            },
-            {
-                "name": "any.original",
-                "value": "it does not have a data."
-            },
-            {
-                "name": "any1",
-                "value": ""
-            },
-            {
-                "name": "any1.original",
-                "value": "."
-            },
-            {
-                "name": "day-part",
-                "value": "afternoon"
-            },
-            {
-                "name": "disagreement_patterns",
-                "value": ""
-            },
-            {
-                "name": "haru_age_guess",
-                "value": "{'amount': 2.0, 'unit': 'year'}"
-            },
-            {
-                "name": "haru_age_guess.original",
-                "value": "2 years"
-            },
-            {
-                "name": "haru_name_guess",
-                "value": "{'name': 'myself'}"
-            },
-            {
-                "name": "haru_name_guess.original",
-                "value": "myself"
-            },
-            {
-                "name": "person_age",
-                "value": "3 years"
-            },
-            {
-                "name": "person_last_name",
-                "value": "Sales connect"
-            },
-            {
-                "name": "person_last_name1",
-                "value": "Sales connect"
-            },
-            {
-                "name": "person_name",
-                "value": "Friend"
-            },
-            {
-                "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -807,25 +804,25 @@
     },
     {
         "idx": 9,
-        "sentence": "Sentence whereas the toilet is the toilet.",
+        "sentence": "I don't know what my name means either.",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 86,
+        "index": 8,
         "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": true,
+        "turn": "haru",
+        "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-lenghty-conversation",
+        "intent": "topic-day-one-session-one-names-origins-meaning-haru",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:55",
+        "timestamp": "2024-05-24 15:14:43",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": ""
+                "value": "[,',y,e,s,',,, ,',.,',]"
             },
             {
                 "name": "agreement_patterns.original",
@@ -841,7 +838,7 @@
             },
             {
                 "name": "any1",
-                "value": "."
+                "value": ""
             },
             {
                 "name": "any1.original",
@@ -857,7 +854,7 @@
             },
             {
                 "name": "haru_age_guess",
-                "value": "{'amount': 2.0, 'unit': 'year'}"
+                "value": "{'unit': 'year', 'amount': 2.0}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -885,40 +882,39 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
                 "value": "colega"
             }
-        ],
-        "lastinteraction": false
+        ]
     },
     {
         "idx": 10,
-        "sentence": "It sounds like a good job for both of us.",
+        "sentence": "Do you know what Haru means?",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 86,
+        "index": 8,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-lenghty-conversation",
+        "intent": "topic-day-one-session-one-names-origins-meaning-haru",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:55",
-        "type": 6,
+        "timestamp": "2024-05-24 15:14:43",
+        "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": ""
+                "value": "[,',y,e,s,',,, ,',.,',]"
             },
             {
                 "name": "agreement_patterns.original",
@@ -934,7 +930,7 @@
             },
             {
                 "name": "any1",
-                "value": "."
+                "value": ""
             },
             {
                 "name": "any1.original",
@@ -950,7 +946,7 @@
             },
             {
                 "name": "haru_age_guess",
-                "value": "{'amount': 2.0, 'unit': 'year'}"
+                "value": "{'unit': 'year', 'amount': 2.0}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -978,11 +974,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -992,19 +988,19 @@
     },
     {
         "idx": 11,
-        "sentence": "I'd like a job where I can have lengthy conversations with humans.",
+        "sentence": "Spring",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 86,
+        "index": 9,
         "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
+        "turn": "user",
+        "last_interaction": true,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-lenghty-conversation",
+        "intent": "topic-day-one-session-one-names-happy-with-name",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:55",
+        "timestamp": "2024-05-24 15:15:02",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
@@ -1018,7 +1014,7 @@
             },
             {
                 "name": "any",
-                "value": ""
+                "value": "it does not have a data."
             },
             {
                 "name": "any.original",
@@ -1042,7 +1038,7 @@
             },
             {
                 "name": "haru_age_guess",
-                "value": "{'amount': 2.0, 'unit': 'year'}"
+                "value": "{'unit': 'year', 'amount': 2.0}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -1070,34 +1066,35 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
                 "value": "colega"
             }
-        ]
+        ],
+        "lastinteraction": false
     },
     {
         "idx": 12,
-        "sentence": "Can you let me know if you hear of anything like that?",
+        "sentence": "I bet Haru means something cool like strong-willed warrior or friendly robot companion.",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 86,
+        "index": 9,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-lenghty-conversation",
+        "intent": "topic-day-one-session-one-names-happy-with-name",
         "topic": "",
-        "timestamp": "2024-05-23 17:36:55",
-        "type": 7,
+        "timestamp": "2024-05-24 15:15:02",
+        "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
@@ -1110,7 +1107,7 @@
             },
             {
                 "name": "any",
-                "value": ""
+                "value": "it does not have a data."
             },
             {
                 "name": "any.original",
@@ -1134,7 +1131,7 @@
             },
             {
                 "name": "haru_age_guess",
-                "value": "{'amount': 2.0, 'unit': 'year'}"
+                "value": "{'unit': 'year', 'amount': 2.0}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -1162,11 +1159,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -1176,25 +1173,25 @@
     },
     {
         "idx": 13,
-        "sentence": "Well, that's updating.",
+        "sentence": "Do you like the name Buddy?",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 87,
+        "index": 9,
         "app_name": "smalltalk",
-        "turn": "user",
-        "last_interaction": true,
+        "turn": "haru",
+        "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-grandparents",
+        "intent": "topic-day-one-session-one-names-happy-with-name",
         "topic": "",
-        "timestamp": "2024-05-23 17:37:13",
-        "type": 6,
+        "timestamp": "2024-05-24 15:15:02",
+        "type": 7,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": "[,',y,e,s,',,, ,',.,',]"
+                "value": ""
             },
             {
                 "name": "agreement_patterns.original",
@@ -1221,8 +1218,12 @@
                 "value": "afternoon"
             },
             {
+                "name": "disagreement_patterns",
+                "value": ""
+            },
+            {
                 "name": "haru_age_guess",
-                "value": "{'amount': 2.0, 'unit': 'year'}"
+                "value": "{'unit': 'year', 'amount': 2.0}"
             },
             {
                 "name": "haru_age_guess.original",
@@ -1250,11 +1251,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -1264,25 +1265,25 @@
     },
     {
         "idx": 14,
-        "sentence": "Okay.",
+        "sentence": "User",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 87,
+        "index": 11,
         "app_name": "smalltalk",
-        "turn": "haru",
-        "last_interaction": false,
+        "turn": "user",
+        "last_interaction": true,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-grandparents",
+        "intent": "topic-day-one-session-one-haru-name",
         "topic": "",
-        "timestamp": "2024-05-23 17:37:13",
+        "timestamp": "2024-05-24 15:15:23",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": "[,',y,e,s,',,, ,',.,',]"
+                "value": ""
             },
             {
                 "name": "agreement_patterns.original",
@@ -1290,7 +1291,7 @@
             },
             {
                 "name": "any",
-                "value": "it does not have a data."
+                "value": ""
             },
             {
                 "name": "any.original",
@@ -1298,7 +1299,7 @@
             },
             {
                 "name": "any1",
-                "value": "."
+                "value": ""
             },
             {
                 "name": "any1.original",
@@ -1338,39 +1339,40 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": ""
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
                 "value": "colega"
             }
-        ]
+        ],
+        "lastinteraction": false
     },
     {
         "idx": 15,
-        "sentence": "But you know what else is great about being a human adult?",
+        "sentence": "Way to brag, child whose name I definitely remember.",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 87,
+        "index": 11,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-grandparents",
+        "intent": "topic-day-one-session-one-haru-name",
         "topic": "",
-        "timestamp": "2024-05-23 17:37:13",
-        "type": 7,
+        "timestamp": "2024-05-24 15:15:23",
+        "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": "[,',y,e,s,',,, ,',.,',]"
+                "value": ""
             },
             {
                 "name": "agreement_patterns.original",
@@ -1378,7 +1380,7 @@
             },
             {
                 "name": "any",
-                "value": "it does not have a data."
+                "value": ""
             },
             {
                 "name": "any.original",
@@ -1386,7 +1388,7 @@
             },
             {
                 "name": "any1",
-                "value": "."
+                "value": ""
             },
             {
                 "name": "any1.original",
@@ -1426,11 +1428,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": ""
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -1440,25 +1442,25 @@
     },
     {
         "idx": 16,
-        "sentence": "If you want, you can start a family of your own.",
+        "sentence": "Just kidding.",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 87,
+        "index": 11,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-grandparents",
+        "intent": "topic-day-one-session-one-haru-name",
         "topic": "",
-        "timestamp": "2024-05-23 17:37:13",
+        "timestamp": "2024-05-24 15:15:23",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
             {
                 "name": "agreement_patterns",
-                "value": "[,',y,e,s,',,, ,',.,',]"
+                "value": ""
             },
             {
                 "name": "agreement_patterns.original",
@@ -1466,7 +1468,7 @@
             },
             {
                 "name": "any",
-                "value": "it does not have a data."
+                "value": ""
             },
             {
                 "name": "any.original",
@@ -1474,7 +1476,7 @@
             },
             {
                 "name": "any1",
-                "value": "."
+                "value": ""
             },
             {
                 "name": "any1.original",
@@ -1514,11 +1516,11 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": ""
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -1528,19 +1530,548 @@
     },
     {
         "idx": 17,
-        "sentence": "That's what your parents did, and that's what your grandparents did too!",
+        "sentence": "How could I forget a name like!",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 87,
+        "index": 11,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-grandparents",
+        "intent": "topic-day-one-session-one-haru-name",
         "topic": "",
-        "timestamp": "2024-05-23 17:37:13",
+        "timestamp": "2024-05-24 15:15:23",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": ""
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 18,
+        "sentence": "So if you're so good with names,.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 11,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-haru-name",
+        "topic": "",
+        "timestamp": "2024-05-24 15:15:23",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": ""
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 19,
+        "sentence": "What is my name?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 11,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-haru-name",
+        "topic": "",
+        "timestamp": "2024-05-24 15:15:23",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": ""
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 20,
+        "sentence": "No, I can't repeat that.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 26,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-last-name",
+        "topic": "",
+        "timestamp": "2024-05-24 15:22:04",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ],
+        "lastinteraction": false
+    },
+    {
+        "idx": 21,
+        "sentence": "Well, technically, my name is Haru.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 26,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-last-name",
+        "topic": "",
+        "timestamp": "2024-05-24 15:22:04",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 22,
+        "sentence": "So what's your family's last name?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 26,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-last-name",
+        "topic": "",
+        "timestamp": "2024-05-24 15:22:04",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 23,
+        "sentence": "You got to compile.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 31,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-family-name-capture-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:24:08",
         "type": 6,
         "entity_type_detection": false,
         "slots": [
@@ -1594,19 +2125,108 @@
             },
             {
                 "name": "person_last_name",
-                "value": "Sales connect"
+                "value": ""
             },
             {
                 "name": "person_last_name1",
-                "value": "Sales connect"
+                "value": ""
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ],
+        "lastinteraction": false
+    },
+    {
+        "idx": 24,
+        "sentence": "I'm sorry!",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 31,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-family-name-capture-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:24:08",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": ""
+            },
+            {
+                "name": "person_last_name1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
             },
             {
                 "name": "person_name_es",
@@ -1615,20 +2235,108 @@
         ]
     },
     {
-        "idx": 18,
-        "sentence": "Do you ever visit your grandparents?",
+        "idx": 25,
+        "sentence": "I didn't quite catch your family's name.",
         "emotion_label": "",
         "emotion_score": 0.0,
         "sentiment_label": "",
         "sentiment_score": 0.0,
-        "index": 87,
+        "index": 31,
         "app_name": "smalltalk",
         "turn": "haru",
         "last_interaction": false,
         "highlighted": false,
-        "intent": "topic-day-one-session-one-age-grandparents",
+        "intent": "topic-day-one-session-one-family-name-capture-again",
         "topic": "",
-        "timestamp": "2024-05-23 17:37:13",
+        "timestamp": "2024-05-24 15:24:08",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": ""
+            },
+            {
+                "name": "person_last_name1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 26,
+        "sentence": "Can you please say your last name again?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 31,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-family-name-capture-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:24:08",
         "type": 7,
         "entity_type_detection": false,
         "slots": [
@@ -1682,7 +2390,95 @@
             },
             {
                 "name": "person_last_name",
-                "value": "Sales connect"
+                "value": ""
+            },
+            {
+                "name": "person_last_name1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 27,
+        "sentence": "Us",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 33,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-family-name-double-check",
+        "topic": "",
+        "timestamp": "2024-05-24 15:24:46",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
             },
             {
                 "name": "person_last_name1",
@@ -1690,11 +2486,2830 @@
             },
             {
                 "name": "person_name",
-                "value": "Friend"
+                "value": "Buddy"
             },
             {
                 "name": "person_name1",
-                "value": "Friend"
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ],
+        "lastinteraction": false
+    },
+    {
+        "idx": 28,
+        "sentence": "Your last name is Us.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 33,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-family-name-double-check",
+        "topic": "",
+        "timestamp": "2024-05-24 15:24:46",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 29,
+        "sentence": "Am I saying that right?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 33,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-family-name-double-check",
+        "topic": "",
+        "timestamp": "2024-05-24 15:24:46",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 30,
+        "sentence": "In 1 partition, that's cool.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 35,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            },
+            {
+                "name": "tner-cardinal",
+                "value": "1"
+            }
+        ],
+        "lastinteraction": false
+    },
+    {
+        "idx": 31,
+        "sentence": "No way!",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 35,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            },
+            {
+                "name": "tner-cardinal",
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "idx": 32,
+        "sentence": "Wow!",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 35,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            },
+            {
+                "name": "tner-cardinal",
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "idx": 33,
+        "sentence": "That's beautiful.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 35,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:14",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            },
+            {
+                "name": "tner-cardinal",
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "idx": 34,
+        "sentence": "Where does your last name come from?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 35,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:14",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            },
+            {
+                "name": "tner-cardinal",
+                "value": "1"
+            }
+        ]
+    },
+    {
+        "idx": 35,
+        "sentence": "It's crazy how much like garbage data however throws out.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 36,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin-capture-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:32",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_lastname_origin",
+                "value": ""
+            },
+            {
+                "name": "person_lastname_origin1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ],
+        "lastinteraction": false
+    },
+    {
+        "idx": 36,
+        "sentence": "I'm sorry!",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 36,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin-capture-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:32",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_lastname_origin",
+                "value": ""
+            },
+            {
+                "name": "person_lastname_origin1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 37,
+        "sentence": "I didn't quite catch your name's origin.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 36,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin-capture-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:32",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_lastname_origin",
+                "value": ""
+            },
+            {
+                "name": "person_lastname_origin1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 38,
+        "sentence": "I'm sorry, I must have malfunctioned.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 36,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin-capture-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:32",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_lastname_origin",
+                "value": ""
+            },
+            {
+                "name": "person_lastname_origin1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 39,
+        "sentence": "Can you repeat the name of the country your last name comes from?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 36,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-collect-name-origin-capture-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:32",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_lastname_origin",
+                "value": ""
+            },
+            {
+                "name": "person_lastname_origin1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 40,
+        "sentence": "Like 00 so there's like a motion results out of a sentence.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 37,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-haru-origin",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:53",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_lastname_origin",
+                "value": ""
+            },
+            {
+                "name": "person_lastname_origin1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ],
+        "lastinteraction": false
+    },
+    {
+        "idx": 41,
+        "sentence": "You don't say.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 37,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-haru-origin",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:53",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_lastname_origin",
+                "value": ""
+            },
+            {
+                "name": "person_lastname_origin1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 42,
+        "sentence": "Do you want to guess where my name comes from?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 37,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-haru-origin",
+        "topic": "",
+        "timestamp": "2024-05-24 15:25:53",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_lastname_origin",
+                "value": ""
+            },
+            {
+                "name": "person_lastname_origin1",
+                "value": ""
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 43,
+        "sentence": "And like same for here for different like empty.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 38,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-ever-been",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:11",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ],
+        "lastinteraction": false
+    },
+    {
+        "idx": 44,
+        "sentence": "There's a ton of empties.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 38,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-ever-been",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:11",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 45,
+        "sentence": "No worries.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 38,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-ever-been",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:11",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 46,
+        "sentence": "I'll tell you anyway!",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 38,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-ever-been",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:11",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 47,
+        "sentence": "It comes from Japan.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 38,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-ever-been",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:11",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 48,
+        "sentence": "Have you ever been there?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 38,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-ever-been",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:11",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 49,
+        "sentence": "Um here",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 39,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:23",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ],
+        "lastinteraction": false
+    },
+    {
+        "idx": 50,
+        "sentence": "Let's come back to where I'm from later.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 39,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:23",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 51,
+        "sentence": "First, I think we should talk about age!",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 39,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:23",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 52,
+        "sentence": "I know you're a child, but I wonder how old you are exactly.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 39,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:23",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 53,
+        "sentence": "Can you tell me your age in years?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 39,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:23",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": ""
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": "."
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'amount': 2.0, 'unit': 'year'}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": "3 years"
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 54,
+        "sentence": "Good try",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 40,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:57",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": ""
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ],
+        "lastinteraction": false
+    },
+    {
+        "idx": 55,
+        "sentence": "That's great but.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 40,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:57",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": ""
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 56,
+        "sentence": "Can you please tell me your age as a number of years?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 40,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-age-again",
+        "topic": "",
+        "timestamp": "2024-05-24 15:26:57",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": ""
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 57,
+        "sentence": "I was getting a little Annoying with a little annoyed with me.",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 41,
+        "app_name": "smalltalk",
+        "turn": "user",
+        "last_interaction": true,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-person-feeling-about-child",
+        "topic": "",
+        "timestamp": "2024-05-24 15:27:10",
+        "type": 6,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": ""
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
+            },
+            {
+                "name": "person_name_es",
+                "value": "colega"
+            }
+        ]
+    },
+    {
+        "idx": 58,
+        "sentence": "Do you like being a child?",
+        "emotion_label": "",
+        "emotion_score": 0.0,
+        "sentiment_label": "",
+        "sentiment_score": 0.0,
+        "index": 41,
+        "app_name": "smalltalk",
+        "turn": "haru",
+        "last_interaction": false,
+        "highlighted": false,
+        "intent": "topic-day-one-session-one-person-feeling-about-child",
+        "topic": "",
+        "timestamp": "2024-05-24 15:27:10",
+        "type": 7,
+        "entity_type_detection": false,
+        "slots": [
+            {
+                "name": "agreement_patterns",
+                "value": "[,',y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "agreement_patterns.original",
+                "value": "[,',Y,e,s,',,, ,',.,',]"
+            },
+            {
+                "name": "any",
+                "value": ""
+            },
+            {
+                "name": "any.original",
+                "value": "it does not have a data."
+            },
+            {
+                "name": "any1",
+                "value": ""
+            },
+            {
+                "name": "any1.original",
+                "value": "."
+            },
+            {
+                "name": "day-part",
+                "value": "afternoon"
+            },
+            {
+                "name": "haru_age_guess",
+                "value": "{'unit': 'year', 'amount': 2.0}"
+            },
+            {
+                "name": "haru_age_guess.original",
+                "value": "2 years"
+            },
+            {
+                "name": "haru_name_guess",
+                "value": "{'name': 'myself'}"
+            },
+            {
+                "name": "haru_name_guess.original",
+                "value": "myself"
+            },
+            {
+                "name": "person_age",
+                "value": ""
+            },
+            {
+                "name": "person_last_name",
+                "value": "Us"
+            },
+            {
+                "name": "person_last_name1",
+                "value": "Sales connect"
+            },
+            {
+                "name": "person_name",
+                "value": "Buddy"
+            },
+            {
+                "name": "person_name1",
+                "value": "John"
             },
             {
                 "name": "person_name_es",

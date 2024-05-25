@@ -125,11 +125,14 @@ class HaruChatCLI:
         BASE_DIR = os.path.dirname(os.path.dirname(__file__))
         DATA_DIR = os.path.join(BASE_DIR, 'data')
         TRANSCRIPT_FILE_PATH = os.path.join(DATA_DIR, 'transcript_data', 'transcript-log.json')        
+        RAW_RESULT_PATH = os.path.join(DATA_DIR, 'raw_YAML', 'dialog_result.json')
         
         # Write the transcript to a JSON file
         with open(TRANSCRIPT_FILE_PATH, 'w') as transcript_file:
             json.dump(self.conversation, transcript_file, indent=4)
-            
+
+        with open(RAW_RESULT_PATH, 'w') as raw_file:
+            json.dump(data, raw_file, indent=4)
             
     def run(self, language_code=None):
         language_code = (
