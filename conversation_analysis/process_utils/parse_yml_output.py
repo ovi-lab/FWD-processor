@@ -6,7 +6,7 @@ to a legible JSON file for further processing
 from time import time
 from datetime import datetime
 import yaml
-from conversation_analysis.process_utils.parse_subscriber_data import parse_subscriber_data
+from process_utils.parse_subscriber_data import parse_subscriber_data
 from process_utils.clean_JSON import generate_topic
 
 
