@@ -1,6 +1,6 @@
 {
     "header": {
-        "seq": 41,
+        "seq": 226,
         "stamp": {
             "secs": 0,
             "nsecs": 0
@@ -8,11 +8,11 @@
         "frame_id": ""
     },
     "person_id": 0,
-    "utterance": "I was getting a little Annoying with a little annoyed with me.",
+    "utterance": "bye haru",
     "utterance_sentences": [
         {
             "type": 6,
-            "text": "I was getting a little Annoying with a little annoyed with me.",
+            "text": "Bye haru",
             "genre": "",
             "emotion": "",
             "routine": "",
@@ -48,20 +48,57 @@
         }
     ],
     "language_code": "en",
-    "fulfillment_text": "Do you like being a child?",
+    "fulfillment_text": "Okay. See you soon.",
     "fulfillment_messages": [
-        "Do you like being a child?"
+        "Okay.",
+        "See you soon."
     ],
     "fulfillment_sentences": [
         {
-            "type": 7,
-            "text": "Do you like being a child?",
-            "genre": "question",
+            "type": 6,
+            "text": "Okay.",
+            "genre": "",
             "emotion": "",
             "routine": "",
-            "auto_genre": "question",
-            "auto_emotion": "joy",
-            "auto_score": "0.661949813365936",
+            "auto_genre": "",
+            "auto_emotion": "",
+            "auto_score": "",
+            "sentiment_results": {
+                "sentence": "",
+                "sentiment": {
+                    "classifier_name": "",
+                    "results": {
+                        "best_match": {
+                            "label": "",
+                            "score": 0.0
+                        },
+                        "results": []
+                    }
+                }
+            },
+            "emotion_results": {
+                "sentence": "",
+                "emotions": {
+                    "classifier_name": "",
+                    "results": {
+                        "best_match": {
+                            "label": "",
+                            "score": 0.0
+                        },
+                        "results": []
+                    }
+                }
+            }
+        },
+        {
+            "type": 6,
+            "text": "See you soon.",
+            "genre": "",
+            "emotion": "",
+            "routine": "",
+            "auto_genre": "",
+            "auto_emotion": "",
+            "auto_score": "",
             "sentiment_results": {
                 "sentence": "",
                 "sentiment": {
@@ -91,43 +128,43 @@
         }
     ],
     "dialogue_act": "",
-    "topic": "Day",
-    "subtopic": "Topic day one session one person feeling about child",
-    "question": "Do you like being a child?",
+    "topic": "Command",
+    "subtopic": "Command conversation end",
+    "question": "",
     "conversation_finished": false,
     "suggested_routine_id": 0,
     "slu_result": {
-        "intent": "topic-day-one-session-one-person-feeling-about-child",
+        "intent": "command-conversation-end",
         "intent_conf": 1.0,
-        "intent_conf_avg": 0.10526315867900848,
+        "intent_conf_avg": 0.2836154103279114,
         "is_fallback": false
     },
     "sentiment_results": {
         "utterance_sentiment": {
-            "sentence": "I was getting a little Annoying with a little annoyed with me.",
+            "sentence": "bye haru",
             "sentiment": {
                 "classifier_name": "/strawberry_ros_dialog",
                 "results": {
                     "best_match": {
-                        "label": "neg",
-                        "score": 0.93994140625
+                        "label": "neu",
+                        "score": 0.8790000081062317
                     },
                     "results": [
                         {
+                            "label": "neu",
+                            "score": 0.8792102932929993
+                        },
+                        {
                             "label": "pos",
-                            "score": 0.02508544921875
+                            "score": 0.0714312195777893
                         },
                         {
                             "label": "neg",
-                            "score": 0.939453125
-                        },
-                        {
-                            "label": "neu",
-                            "score": 0.03509521484375
+                            "score": 0.049358539283275604
                         },
                         {
                             "label": "compound",
-                            "score": -0.8974000215530396
+                            "score": 0.4616999924182892
                         }
                     ]
                 }
@@ -147,30 +184,30 @@
             }
         },
         "avg_utterance_sentiment": {
-            "sentence": "I was getting a little Annoying with a little annoyed with me.",
+            "sentence": "bye haru",
             "sentiment": {
                 "classifier_name": "/strawberry_ros_dialog",
                 "results": {
                     "best_match": {
-                        "label": "neg",
-                        "score": 0.2029999941587448
+                        "label": "pos",
+                        "score": 0.44699999690055847
                     },
                     "results": [
                         {
                             "label": "compound",
-                            "score": 0.01489999983459711
+                            "score": 0.5105000138282776
                         },
                         {
                             "label": "neg",
-                            "score": 0.20347662270069122
+                            "score": 0.142586350440979
                         },
                         {
                             "label": "neu",
-                            "score": 0.09898418933153152
+                            "score": 0.3295018672943115
                         },
                         {
                             "label": "pos",
-                            "score": 0.16090302169322968
+                            "score": 0.4471285939216614
                         }
                     ]
                 }
@@ -191,42 +228,42 @@
         }
     },
     "utterance_emotion": {
-        "sentence": "I was getting a little Annoying with a little annoyed with me.",
+        "sentence": "Bye haru",
         "emotions": {
             "classifier_name": "/strawberry_ros_dialog",
             "results": {
                 "best_match": {
-                    "label": "anger",
-                    "score": 0.8331381678581238
+                    "label": "neutral",
+                    "score": 0.7415992617607117
                 },
                 "results": [
                     {
                         "label": "anger",
-                        "score": 0.8331381678581238
+                        "score": 0.0008297667372971773
                     },
                     {
                         "label": "disgust",
-                        "score": 0.1301312893629074
+                        "score": 0.0013212859630584717
                     },
                     {
                         "label": "fear",
-                        "score": 0.00523540610447526
+                        "score": 0.0026938209775835276
                     },
                     {
                         "label": "joy",
-                        "score": 0.0012797927483916283
+                        "score": 0.24877114593982697
                     },
                     {
                         "label": "neutral",
-                        "score": 0.004866966046392918
+                        "score": 0.7415992617607117
                     },
                     {
                         "label": "sadness",
-                        "score": 0.023515567183494568
+                        "score": 0.003487949026748538
                     },
                     {
                         "label": "surprise",
-                        "score": 0.0018327658763155341
+                        "score": 0.001296836999244988
                     }
                 ]
             }
@@ -247,72 +284,12 @@
     },
     "slots": [
         {
-            "name": "agreement_patterns",
-            "value": "[,',y,e,s,',,, ,',.,',]"
-        },
-        {
-            "name": "agreement_patterns.original",
-            "value": "[,',Y,e,s,',,, ,',.,',]"
-        },
-        {
             "name": "any",
             "value": ""
         },
         {
-            "name": "any.original",
-            "value": "it does not have a data."
-        },
-        {
             "name": "any1",
             "value": ""
-        },
-        {
-            "name": "any1.original",
-            "value": "."
-        },
-        {
-            "name": "day-part",
-            "value": "afternoon"
-        },
-        {
-            "name": "haru_age_guess",
-            "value": "{'unit': 'year', 'amount': 2.0}"
-        },
-        {
-            "name": "haru_age_guess.original",
-            "value": "2 years"
-        },
-        {
-            "name": "haru_name_guess",
-            "value": "{'name': 'myself'}"
-        },
-        {
-            "name": "haru_name_guess.original",
-            "value": "myself"
-        },
-        {
-            "name": "person_age",
-            "value": ""
-        },
-        {
-            "name": "person_last_name",
-            "value": "Us"
-        },
-        {
-            "name": "person_last_name1",
-            "value": "Sales connect"
-        },
-        {
-            "name": "person_name",
-            "value": "Buddy"
-        },
-        {
-            "name": "person_name1",
-            "value": "John"
-        },
-        {
-            "name": "person_name_es",
-            "value": "colega"
         }
     ]
 }
