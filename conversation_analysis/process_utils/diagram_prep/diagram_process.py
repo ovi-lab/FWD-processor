@@ -38,13 +38,13 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
     
     mapped_conversation = {
         "nodes": [],
-        "links": {"haru": [], "user": []},
-        "attributes": {"longest_haru_utterance": 0, 'longest_user_utterance': 0},
+        "links": {"robot": [], "user": []},
+        "attributes": {"longest_robot_utterance": 0, 'longest_user_utterance': 0},
     }
     mapped_nodes = mapped_conversation["nodes"]
     mapped_links = mapped_conversation["links"]
 
-    h_longest_utterance_length = 0
+    r_longest_utterance_length = 0
     u_longest_utterance_length = 0
 
     for prompt, response in pairwise(transcript_data):
@@ -60,7 +60,6 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
 
         new_interaction = {
             "idx": response["idx"],
-            "index": response["index"],
             "response": prompt["sentence"],
             "sentence": response["sentence"],
             "turn": response["turn"],
@@ -71,11 +70,10 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
             "sentiment_label": response["sentiment_label"],
             "sentiment_score": float(response["sentiment_score"]),
             "last_interaction": bool(response["last_interaction"]),
-            "data_collection": response["entity_type_detection"],
+            # "data_collection": response["entity_type_detection"],
             "timestamp": response_timestamp,
             "slots": response["slots"]
         }
-
         # Adding more information to each node
         mapped_nodes[response_generated_idx]["interactions"].append(new_interaction)
 
@@ -85,8 +83,8 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
             response["timestamp"]
         )
 
-        if response["turn"] == 'haru':
-            h_longest_utterance_length = utils.check_longest_utterance(response['sentence'], h_longest_utterance_length)
+        if response["turn"].lower() != 'user':
+            r_longest_utterance_length = utils.check_longest_utterance(response['sentence'], r_longest_utterance_length)
         else:
             u_longest_utterance_length = utils.check_longest_utterance(response['sentence'], u_longest_utterance_length)
 
@@ -119,6 +117,10 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
                     "responseIDs": [{'idx': new_interaction["idx"], 'time': new_interaction['timestamp']}],
                 }
             )
+        
+        if prompt["idx"] == 0:
+            prompt_node["show"] = True
+            prompt_node["interactions"].append(prompt_node) 
 
     for i, node in enumerate(mapped_nodes):
         if i == 0 or i == len(mapped_nodes)-1:
@@ -127,7 +129,7 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
         node["show"] = utils.node_has_links(node, link_turn_section)
 
     # Save the results as a JSON file
-    mapped_conversation["attributes"]['longest_haru_utterance'] = h_longest_utterance_length
+    mapped_conversation["attributes"]['longest_robot_utterance'] = r_longest_utterance_length
     mapped_conversation["attributes"]['longest_user_utterance'] = u_longest_utterance_length
 
     with open(diagram_json_output, "w", encoding="utf8") as f:

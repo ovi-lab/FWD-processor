@@ -78,7 +78,6 @@ def fix_index(input_list):
 
 def process_conversation(data, output_file=''):
     updated_list = []
-    last_topic = ''
 
     start = datetime.now()
 
@@ -102,8 +101,9 @@ def process_from_json(input_json, output_file=''):
     new_data = []
     input_json.reverse()
     for line in input_json:
-        line['topic'] = prev_topic = generate_topic(line['intent'], prev_topic) 
+        # line['topic'] = prev_topic = generate_topic(line['intent'], prev_topic) 
         new_data.insert(0, line)
+        # new_data.append(line)
     if output_file:
         # Dump data to JSON file
         with open(output_file, "w", encoding="utf8") as json_file:

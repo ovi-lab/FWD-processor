@@ -45,9 +45,9 @@ class Timer:
         return self._stop_time - self._start_time
 
 
-class HaruChatCLI:
+class RobotChatCLI:
     """
-    Haru subscriber object created originally by Lithin with minor modifications.
+    Robot subscriber object created originally by Lithin with minor modifications.
     Gets the raw ROS outputs and adds them to a json file
     """
     def __init__(self, config, sentences=None) -> None:
@@ -67,7 +67,7 @@ class HaruChatCLI:
         self.data_type_list = ['sentence_list', 'sentence_id', 'sentence', 'emotion_name', 'emotion_score', 'sentiment_name', 'sentiment_score',
                                'emotion_frequency', 'probability_emote', 'random_value', 'react', 'reaction_text', 'sentence_processed', 'sentence_processed_list']
         self.data_keys = {key2: {key: None for key in self.data_type_list}
-                     for key2 in ['user', 'haru']}
+                     for key2 in ['user', 'robot']}
         self.data_keys['index'] = None
         self._lastinteraction = None
         self.prev_topic = ''
@@ -170,7 +170,7 @@ def connect_to_ROS():
         #     "language_code": "en",
         # }
         config={}
-        cli = HaruChatCLI(config)
+        cli = RobotChatCLI(config)
         cli.run()
 
     except Exception as e:
