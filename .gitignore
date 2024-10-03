@@ -1,6 +1,6 @@
 .old
 __pycache__/
-
+.vscode
 *.pyc
 
 # Environments

@@ -2,28 +2,28 @@
     "nodes": [
         {
             "id": 0,
-            "name": "robot: recent activities",
+            "name": "robot: school",
             "turn": "robot",
-            "topic": "recent activities",
+            "topic": "school",
             "n": 5.25,
             "interactions": [
                 {
                     "idx": 1,
-                    "response": "hi",
-                    "sentence": "Hi there! I'm so excited to chat with you today! What fun things have you been up to lately?",
+                    "prompt": "Hello There",
+                    "sentence": "Hi there! I'm so excited to chat with you! What's something fun you've done today?",
                     "turn": "robot",
-                    "topic": "recent activities",
+                    "topic": "school",
                     "intent": "ask-about-day",
                     "emotion_label": "joy",
-                    "emotion_score": 0.9268627166748047,
+                    "emotion_score": 0.8892539143562317,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9683173894882202,
+                    "sentiment_score": 0.978623628616333,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:51:18",
+                    "timestamp": "2024-07-11 16:20:47",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:51:18",
+            "timestamp": "2024-07-11 16:20:47",
             "slots": [],
             "show": true
         },
@@ -33,743 +33,854 @@
             "turn": "user",
             "topic": "greeting",
             "n": 5,
-            "interactions": [],
-            "timestamp": "2024-07-04 14:51:18",
+            "interactions": [
+                {
+                    "idx": 0,
+                    "prompt": "Conversation Start",
+                    "sentence": "Hello There",
+                    "turn": "user",
+                    "topic": "greeting",
+                    "intent": "greeting",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.9214327931404114,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9668347239494324,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:20:45"
+                }
+            ],
+            "timestamp": "2024-07-11 16:20:47",
             "slots": [],
             "show": false
         },
         {
             "id": 2,
-            "name": "user: current activity",
+            "name": "user: test",
             "turn": "user",
-            "topic": "current activity",
-            "n": 5.25,
+            "topic": "test",
+            "n": 5.75,
             "interactions": [
                 {
                     "idx": 2,
-                    "response": "Hi there! I'm so excited to chat with you today! What fun things have you been up to lately?",
-                    "sentence": "nothing much",
+                    "prompt": "Hi there! I'm so excited to chat with you! What's something fun you've done today?",
+                    "sentence": "It wasn't too fun, I had a test today",
                     "turn": "user",
-                    "topic": "current activity",
-                    "intent": "ask-about-day",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.57451331615448,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.925169825553894,
+                    "topic": "test",
+                    "intent": "respond-to-sadness",
+                    "emotion_label": "sadness",
+                    "emotion_score": 0.9411863088607788,
+                    "sentiment_label": "negative",
+                    "sentiment_score": 0.9563823938369751,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:51:28",
+                    "timestamp": "2024-07-11 16:21:44",
+                    "slots": []
+                },
+                {
+                    "idx": 4,
+                    "prompt": "Oh, tests can be tough, I hope it went well!",
+                    "sentence": "I think it went ok",
+                    "turn": "user",
+                    "topic": "test",
+                    "intent": "request-confirmation",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.9531080722808838,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9473212361335754,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:22:15",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:51:28",
+            "timestamp": "2024-07-11 16:22:15",
             "slots": [],
             "show": true
         },
         {
             "id": 3,
-            "name": "robot: hobbies",
+            "name": "robot: test",
             "turn": "robot",
-            "topic": "hobbies",
-            "n": 5.25,
+            "topic": "test",
+            "n": 5.75,
             "interactions": [
                 {
                     "idx": 3,
-                    "response": "nothing much",
-                    "sentence": "That's okay! Sometimes it's nice to just relax. Do you have any favorite hobbies or games you like to play?",
+                    "prompt": "It wasn't too fun, I had a test today",
+                    "sentence": "Oh, tests can be tough, I hope it went well!",
                     "turn": "robot",
-                    "topic": "hobbies",
-                    "intent": "ask-about-hobbies",
+                    "topic": "test",
+                    "intent": "give-encouragement",
                     "emotion_label": "joy",
-                    "emotion_score": 0.6886278390884399,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9125149250030518,
+                    "emotion_score": 0.3830050230026245,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.6173922419548035,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:51:30",
+                    "timestamp": "2024-07-11 16:21:46",
+                    "slots": []
+                },
+                {
+                    "idx": 3,
+                    "prompt": "I think it went ok",
+                    "sentence": "I bet you did your best! What was the test about?",
+                    "turn": "robot",
+                    "topic": "test",
+                    "intent": "give-encouragement",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.3830050230026245,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.6173922419548035,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:21:46",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:51:30",
+            "timestamp": "2024-07-11 16:21:46",
             "slots": [],
             "show": true
         },
         {
             "id": 4,
-            "name": "user: video games",
+            "name": "user: history",
             "turn": "user",
-            "topic": "video games",
-            "n": 5.25,
+            "topic": "history",
+            "n": 5.75,
             "interactions": [
                 {
                     "idx": 4,
-                    "response": "That's okay! Sometimes it's nice to just relax. Do you have any favorite hobbies or games you like to play?",
-                    "sentence": "video games",
+                    "prompt": "I bet you did your best! What was the test about?",
+                    "sentence": "I had a history test today, I think it went well",
                     "turn": "user",
-                    "topic": "video games",
-                    "intent": "general-discussion",
+                    "topic": "history",
+                    "intent": "request-confirmation",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.7624526619911194,
+                    "emotion_score": 0.9531080722808838,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9657033085823059,
+                    "sentiment_score": 0.9473212361335754,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:51:44",
+                    "timestamp": "2024-07-11 16:22:15",
+                    "slots": []
+                },
+                {
+                    "idx": 6,
+                    "prompt": "I think history is so interesting! There's so much to learn about the past. I'm sure you did great! Do you like history?",
+                    "sentence": "Yes it is my favorite subject",
+                    "turn": "user",
+                    "topic": "history",
+                    "intent": "give-fact",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.6593225002288818,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9367497563362122,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:23:49",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:51:44",
+            "timestamp": "2024-07-11 16:23:49",
             "slots": [],
             "show": true
         },
         {
             "id": 5,
-            "name": "robot: video games",
+            "name": "robot: history",
             "turn": "robot",
-            "topic": "video games",
-            "n": 5.25,
+            "topic": "history",
+            "n": 5.75,
             "interactions": [
                 {
                     "idx": 5,
-                    "response": "video games",
-                    "sentence": "Cool! Video games are so much fun! What's your favorite game to play?",
+                    "prompt": "I had a history test today, I think it went well",
+                    "sentence": "I think history is so interesting! There's so much to learn about the past. I'm sure you did great! Do you like history?",
                     "turn": "robot",
-                    "topic": "video games",
-                    "intent": "ask-about-favorite-game",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.9468262791633606,
+                    "topic": "history",
+                    "intent": "ask-knowledge",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.7614161968231201,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9673937559127808,
+                    "sentiment_score": 0.9201496839523315,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:51:46",
+                    "timestamp": "2024-07-11 16:22:19",
+                    "slots": []
+                },
+                {
+                    "idx": 5,
+                    "prompt": "Yes it is my favorite subject",
+                    "sentence": "What was one thing you learned while studying for your history test?",
+                    "turn": "robot",
+                    "topic": "history",
+                    "intent": "ask-knowledge",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.7614161968231201,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9201496839523315,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:22:19",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:51:46",
+            "timestamp": "2024-07-11 16:22:19",
             "slots": [],
             "show": true
         },
         {
             "id": 6,
-            "name": "user: games",
+            "name": "user: ancient Egypt",
             "turn": "user",
-            "topic": "games",
-            "n": 5.25,
+            "topic": "ancient Egypt",
+            "n": 6.75,
             "interactions": [
                 {
                     "idx": 6,
-                    "response": "Cool! Video games are so much fun! What's your favorite game to play?",
-                    "sentence": "minecraft",
+                    "prompt": "What was one thing you learned while studying for your history test?",
+                    "sentence": "That the pyramids were built in Egypt during the dry season",
                     "turn": "user",
-                    "topic": "games",
-                    "intent": "ask-about-favorite-game",
+                    "topic": "ancient Egypt",
+                    "intent": "give-fact",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.8429011702537537,
+                    "emotion_score": 0.6593225002288818,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9678723812103271,
+                    "sentiment_score": 0.9367497563362122,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:51:52",
+                    "timestamp": "2024-07-11 16:23:49",
+                    "slots": []
+                },
+                {
+                    "idx": 8,
+                    "prompt": "Wow, that's really cool! Did you know that some of the pyramids are over 4,500 years old? Imagine how long they've been standing! What's your favorite thing about ancient Egypt?",
+                    "sentence": "I think the Pharaohs are cool",
+                    "turn": "user",
+                    "topic": "ancient Egypt",
+                    "intent": "give-opinion",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.6018417477607727,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.7782806754112244,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:24:32",
+                    "slots": []
+                },
+                {
+                    "idx": 10,
+                    "prompt": "Pharaohs were amazing rulers with so much power and mystery! Did you know that they were often buried with lots of treasures? It's like they had their very own treasure chests! If you could be a pharaoh for a day, what would you do?",
+                    "sentence": "I would build a really big pyramid",
+                    "turn": "user",
+                    "topic": "ancient Egypt",
+                    "intent": "give-suggestion",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.3913251757621765,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9340874552726746,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:25:20",
+                    "slots": []
+                },
+                {
+                    "idx": 10,
+                    "prompt": "That sounds awesome! Your pyramid would be a sight to see! Did you know that the tallest pyramid in Egypt is the Great Pyramid of Giza? It's as tall as a 40-story building! What do you think you would put inside your pyramid?",
+                    "sentence": "I would put many things in the pyramid",
+                    "turn": "user",
+                    "topic": "ancient Egypt",
+                    "intent": "give-suggestion",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.3913251757621765,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9340874552726746,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:25:20",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:51:52",
+            "timestamp": "2024-07-11 16:25:20",
             "slots": [],
             "show": true
         },
         {
             "id": 7,
-            "name": "robot: Minecraft",
+            "name": "robot: ancient Egypt",
             "turn": "robot",
-            "topic": "Minecraft",
-            "n": 7.25,
+            "topic": "ancient Egypt",
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 7,
-                    "response": "minecraft",
-                    "sentence": "Minecraft is awesome! You can build anything you imagine. Have you built any cool houses or castles in the game?",
+                    "prompt": "That the pyramids were built in Egypt during the dry season",
+                    "sentence": "Wow, that's really cool! Did you know that some of the pyramids are over 4,500 years old? Imagine how long they've been standing! What's your favorite thing about ancient Egypt?",
                     "turn": "robot",
-                    "topic": "Minecraft",
-                    "intent": "ask-opinion",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.4175782799720764,
+                    "topic": "ancient Egypt",
+                    "intent": "ask-preference",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.9631296396255493,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9467158913612366,
+                    "sentiment_score": 0.9316280484199524,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:51:54",
+                    "timestamp": "2024-07-11 16:23:51",
                     "slots": []
                 },
                 {
                     "idx": 9,
-                    "response": "i like it",
-                    "sentence": "That's fantastic! Did you know that playing Minecraft can help you get better at problem-solving and being creative? What's the coolest thing you've built so far?",
+                    "prompt": "I think the Pharaohs are cool",
+                    "sentence": "Pharaohs were amazing rulers with so much power and mystery! Did you know that they were often buried with lots of treasures? It's like they had their very own treasure chests! If you could be a pharaoh for a day, what would you do?",
                     "turn": "robot",
-                    "topic": "Minecraft",
-                    "intent": "request-information",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.46027836203575134,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9593749046325684,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-04 14:52:19",
-                    "slots": []
-                },
-                {
-                    "idx": 17,
-                    "response": "I don't know",
-                    "sentence": "That's perfectly fine! Sometimes, just having a special place you built yourself is the best part. Do you ever play Minecraft with friends and show them your cool creations?",
-                    "turn": "robot",
-                    "topic": "Minecraft",
-                    "intent": "ask-opinion",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.6600139737129211,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9491875171661377,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-04 14:53:47",
-                    "slots": []
-                },
-                {
-                    "idx": 19,
-                    "response": "yes, with all my friends",
-                    "sentence": "That sounds like a blast! Working together in Minecraft can make things even more fun. Have you and your friends built anything amazing together?",
-                    "turn": "robot",
-                    "topic": "Minecraft",
-                    "intent": "ask-about-friends",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.9559511542320251,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9641576409339905,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-04 14:54:02",
-                    "slots": []
-                },
-                {
-                    "idx": 23,
-                    "response": "no",
-                    "sentence": "Sometimes simple houses can be the coziest! Do you and Bob like to go on adventures in Minecraft too, like exploring caves or fighting zombies?",
-                    "turn": "robot",
-                    "topic": "Minecraft",
+                    "topic": "ancient Egypt",
                     "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.7305544018745422,
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.8537946343421936,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.5136690139770508,
+                    "sentiment_score": 0.7967413663864136,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:54:39",
+                    "timestamp": "2024-07-11 16:24:35",
+                    "slots": []
+                },
+                {
+                    "idx": 11,
+                    "prompt": "I would put many things in the pyramid",
+                    "sentence": "That's great! What is one of those things you would put in your pyramid?",
+                    "turn": "robot",
+                    "topic": "ancient Egypt",
+                    "intent": "ask-opinion",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.8457604050636292,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9675754308700562,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:25:22",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:54:39",
+            "timestamp": "2024-07-11 16:25:22",
             "slots": [],
             "show": true
         },
         {
             "id": 8,
-            "name": "user: Minecraft",
-            "turn": "user",
-            "topic": "Minecraft",
+            "name": "robot: pyramid",
+            "turn": "robot",
+            "topic": "pyramid",
             "n": 5.25,
             "interactions": [
                 {
-                    "idx": 8,
-                    "response": "Minecraft is awesome! You can build anything you imagine. Have you built any cool houses or castles in the game?",
-                    "sentence": "i like it",
-                    "turn": "user",
-                    "topic": "Minecraft",
-                    "intent": "give-opinion",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.986973762512207,
+                    "idx": 11,
+                    "prompt": "I would build a really big pyramid",
+                    "sentence": "That sounds awesome! Your pyramid would be a sight to see! Did you know that the tallest pyramid in Egypt is the Great Pyramid of Giza? It's as tall as a 40-story building! What do you think you would put inside your pyramid?",
+                    "turn": "robot",
+                    "topic": "pyramid",
+                    "intent": "ask-opinion",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.8457604050636292,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9753630757331848,
+                    "sentiment_score": 0.9675754308700562,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:52:17",
+                    "timestamp": "2024-07-11 16:25:22",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:52:17",
+            "timestamp": "2024-07-11 16:25:22",
             "slots": [],
             "show": true
         },
         {
             "id": 9,
-            "name": "user: castle building",
+            "name": "user: adventures and mysteries",
             "turn": "user",
-            "topic": "castle building",
-            "n": 5.25,
+            "topic": "adventures and mysteries",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 10,
-                    "response": "That's fantastic! Did you know that playing Minecraft can help you get better at problem-solving and being creative? What's the coolest thing you've built so far?",
-                    "sentence": "a castle",
+                    "idx": 14,
+                    "prompt": "That's great! What is one of those things you would put in your pyramid?",
+                    "sentence": "It would be a secret",
                     "turn": "user",
-                    "topic": "castle building",
+                    "topic": "adventures and mysteries",
                     "intent": "give-fact",
-                    "emotion_label": "fear",
-                    "emotion_score": 0.28612685203552246,
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.7064497470855713,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9629418253898621,
+                    "sentiment_score": 0.9292850494384766,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:52:28",
+                    "timestamp": "2024-07-11 16:26:05",
+                    "slots": []
+                },
+                {
+                    "idx": 14,
+                    "prompt": "Oh, a true mystery! Secrets make things even more exciting. Speaking of exciting, do you like to read or watch stories about adventures and mysteries?",
+                    "sentence": "It would be a secret",
+                    "turn": "user",
+                    "topic": "adventures and mysteries",
+                    "intent": "give-fact",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.7064497470855713,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9292850494384766,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:26:05",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:52:28",
+            "timestamp": "2024-07-11 16:26:05",
             "slots": [],
             "show": true
         },
         {
             "id": 10,
-            "name": "robot: castle building",
+            "name": "robot: adventures and mysteries",
             "turn": "robot",
-            "topic": "castle building",
-            "n": 6.25,
+            "topic": "adventures and mysteries",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 11,
-                    "response": "a castle",
-                    "sentence": "Wow, a castle! That sounds amazing! Did you build it somewhere special, like on a mountain, or maybe by the sea?",
+                    "idx": 15,
+                    "prompt": "It would be a secret",
+                    "sentence": "Oh, a true mystery! Secrets make things even more exciting. Speaking of exciting, do you like to read or watch stories about adventures and mysteries?",
                     "turn": "robot",
-                    "topic": "castle building",
-                    "intent": "request-information",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.9501580595970154,
+                    "topic": "adventures and mysteries",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.7496224641799927,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9675718545913696,
+                    "sentiment_score": 0.8819095492362976,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:52:31",
-                    "slots": []
-                },
-                {
-                    "idx": 13,
-                    "response": "in a cave",
-                    "sentence": "In a cave? That's such a neat idea! Like a secret hideout! Are there any hidden passages or secret rooms in your castle?",
-                    "turn": "robot",
-                    "topic": "castle building",
-                    "intent": "request-information",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.631271481513977,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.6563979387283325,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-04 14:52:56",
+                    "timestamp": "2024-07-11 16:26:07",
                     "slots": []
                 },
                 {
                     "idx": 15,
-                    "response": "Yes, but I won't tell you where",
-                    "sentence": "Ooo, a mystery! That's exciting! Keeping secrets makes it even more special. What's your favorite part about having your own secret cave castle?",
+                    "prompt": "It would be a secret",
+                    "sentence": "Oh, a true mystery! Secrets make things even more exciting. Speaking of exciting, do you like to read or watch stories about adventures and mysteries?",
                     "turn": "robot",
-                    "topic": "castle building",
+                    "topic": "adventures and mysteries",
                     "intent": "ask-preference",
                     "emotion_label": "joy",
-                    "emotion_score": 0.6931613087654114,
+                    "emotion_score": 0.7496224641799927,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9714529514312744,
+                    "sentiment_score": 0.8819095492362976,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:53:17",
+                    "timestamp": "2024-07-11 16:26:07",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:53:17",
+            "timestamp": "2024-07-11 16:26:07",
             "slots": [],
             "show": true
         },
         {
             "id": 11,
-            "name": "user: location",
+            "name": "user: adventure movies",
             "turn": "user",
-            "topic": "location",
+            "topic": "adventure movies",
             "n": 5.75,
             "interactions": [
                 {
-                    "idx": 12,
-                    "response": "Wow, a castle! That sounds amazing! Did you build it somewhere special, like on a mountain, or maybe by the sea?",
-                    "sentence": "in a cave",
+                    "idx": 16,
+                    "prompt": "Oh, a true mystery! Secrets make things even more exciting. Speaking of exciting, do you like to read or watch stories about adventures and mysteries?",
+                    "sentence": "I like adventure movies",
                     "turn": "user",
-                    "topic": "location",
-                    "intent": "give-fact",
-                    "emotion_label": "fear",
-                    "emotion_score": 0.5801318287849426,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9614574909210205,
+                    "topic": "adventure movies",
+                    "intent": "give-opinion",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9882748126983643,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.5015918374061584,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:52:54",
+                    "timestamp": "2024-07-11 16:27:19",
                     "slots": []
                 },
                 {
-                    "idx": 14,
-                    "response": "In a cave? That's such a neat idea! Like a secret hideout! Are there any hidden passages or secret rooms in your castle?",
-                    "sentence": "Yes, but I won't tell you where",
+                    "idx": 16,
+                    "prompt": "Adventure movies are so thrilling! You never know what's going to happen next. Do you have a favorite adventure movie or a character you really like?",
+                    "sentence": "I like adventure movies",
                     "turn": "user",
-                    "topic": "location",
-                    "intent": "respond-to-mistake",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.6239293813705444,
+                    "topic": "adventure movies",
+                    "intent": "give-opinion",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9882748126983643,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9152761101722717,
+                    "sentiment_score": 0.3015918374061584,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:53:15",
+                    "timestamp": "2024-07-11 16:27:19",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:53:15",
+            "timestamp": "2024-07-11 16:27:19",
             "slots": [],
             "show": true
         },
         {
             "id": 12,
-            "name": "user: uncertainty",
-            "turn": "user",
-            "topic": "uncertainty",
-            "n": 5.25,
+            "name": "robot: adventure movies",
+            "turn": "robot",
+            "topic": "adventure movies",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 16,
-                    "response": "Ooo, a mystery! That's exciting! Keeping secrets makes it even more special. What's your favorite part about having your own secret cave castle?",
-                    "sentence": "I don't know",
-                    "turn": "user",
-                    "topic": "uncertainty",
-                    "intent": "respond-to-mistake",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.7713068127632141,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.8965778946876526,
+                    "idx": 17,
+                    "prompt": "I like adventure movies",
+                    "sentence": "Adventure movies are so thrilling! You never know what's going to happen next. Do you have a favorite adventure movie or a character you really like?",
+                    "turn": "robot",
+                    "topic": "adventure movies",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9038628339767456,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:53:45",
+                    "timestamp": "2024-07-11 16:27:21",
+                    "slots": []
+                },
+                {
+                    "idx": 17,
+                    "prompt": "I like adventure movies",
+                    "sentence": "Adventure movies are so thrilling! You never know what's going to happen next.",
+                    "turn": "robot",
+                    "topic": "adventure movies",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9038628339767456,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:27:21",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:53:45",
+            "timestamp": "2024-07-11 16:27:21",
             "slots": [],
             "show": true
         },
         {
             "id": 13,
-            "name": "user: friends",
+            "name": "user: favorite movie",
             "turn": "user",
-            "topic": "friends",
-            "n": 6.25,
+            "topic": "favorite movie",
+            "n": 6.75,
             "interactions": [
                 {
                     "idx": 18,
-                    "response": "That's perfectly fine! Sometimes, just having a special place you built yourself is the best part. Do you ever play Minecraft with friends and show them your cool creations?",
-                    "sentence": "yes, with all my friends",
+                    "prompt": "Adventure movies are so thrilling! You never know what's going to happen next.",
+                    "sentence": "That's true, I like them a lot",
                     "turn": "user",
-                    "topic": "friends",
-                    "intent": "respond-to-confirmation",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.45220670104026794,
+                    "topic": "favorite movie",
+                    "intent": "ask-preference",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.6541816592216492,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9482421278953552,
+                    "sentiment_score": 0.8944276571273804,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:54:01",
+                    "timestamp": "2024-07-11 16:29:17",
                     "slots": []
                 },
                 {
-                    "idx": 20,
-                    "response": "That sounds like a blast! Working together in Minecraft can make things even more fun. Have you and your friends built anything amazing together?",
-                    "sentence": "I built a house with my friend bob",
+                    "idx": 18,
+                    "prompt": "Do you have a favorite adventure movie or a character you really like?",
+                    "sentence": "I don't know, what's your favorite movie",
                     "turn": "user",
-                    "topic": "friends",
-                    "intent": "give-fact",
+                    "topic": "favorite movie",
+                    "intent": "ask-preference",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.6541816592216492,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.8944276571273804,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:29:17",
+                    "slots": []
+                },
+                {
+                    "idx": 17,
+                    "prompt": "it's a thrilling adventure!",
+                    "sentence": "I still don't know which movie I like best",
+                    "turn": "user",
+                    "topic": "favorite movie",
+                    "intent": "ask-preference",
                     "emotion_label": "joy",
-                    "emotion_score": 0.529009222984314,
+                    "emotion_score": 0.5973013043403625,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9447694420814514,
+                    "sentiment_score": 0.9038628339767456,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:54:25",
+                    "timestamp": "2024-07-11 16:27:21",
                     "slots": []
                 },
                 {
-                    "idx": 22,
-                    "response": "That sounds awesome! Building a house together must have been so fun! Does your house have any special features, like a swimming pool or a secret room?",
-                    "sentence": "no",
+                    "idx": 18,
+                    "prompt": "Don't you have a favorite movie?",
+                    "sentence": "maybe something with adventure",
                     "turn": "user",
-                    "topic": "friends",
-                    "intent": "respond-to-mistake",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.5532127618789673,
+                    "topic": "favorite movie",
+                    "intent": "ask-preference",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.6541816592216492,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9513096809387207,
+                    "sentiment_score": 0.8944276571273804,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:54:37",
+                    "timestamp": "2024-07-11 16:29:17",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:54:37",
+            "timestamp": "2024-07-11 16:29:17",
             "slots": [],
             "show": true
         },
         {
             "id": 14,
-            "name": "robot: house building",
+            "name": "robot: favorite movie",
             "turn": "robot",
-            "topic": "house building",
-            "n": 5.25,
+            "topic": "favorite movie",
+            "n": 6.25,
             "interactions": [
                 {
-                    "idx": 21,
-                    "response": "I built a house with my friend bob",
-                    "sentence": "That sounds awesome! Building a house together must have been so fun! Does your house have any special features, like a swimming pool or a secret room?",
+                    "idx": 17,
+                    "prompt": "That's true, I like them a lot",
+                    "sentence": "Do you have a favorite adventure movie or a character you really like?",
                     "turn": "robot",
-                    "topic": "house building",
-                    "intent": "request-information",
+                    "topic": "favorite movie",
+                    "intent": "ask-preference",
                     "emotion_label": "joy",
-                    "emotion_score": 0.8745421171188354,
+                    "emotion_score": 0.5973013043403625,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.968408465385437,
+                    "sentiment_score": 0.9038628339767456,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:54:27",
+                    "timestamp": "2024-07-11 16:27:21",
+                    "slots": []
+                },
+                {
+                    "idx": 17,
+                    "prompt": "I still don't know which movie I like best",
+                    "sentence": "Don't you have a favorite movie?",
+                    "turn": "robot",
+                    "topic": "favorite movie",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9038628339767456,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:27:21",
+                    "slots": []
+                },
+                {
+                    "idx": 17,
+                    "prompt": "maybe something with adventure",
+                    "sentence": "Well then what is your favorite movie with a lot of adventure?",
+                    "turn": "robot",
+                    "topic": "favorite movie",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9038628339767456,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:27:21",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:54:27",
+            "timestamp": "2024-07-11 16:27:21",
             "slots": [],
             "show": true
         },
         {
             "id": 15,
-            "name": "user: homework",
-            "turn": "user",
-            "topic": "homework",
-            "n": 5.5,
+            "name": "robot: Robots movie",
+            "turn": "robot",
+            "topic": "Robots movie",
+            "n": 6.25,
             "interactions": [
                 {
-                    "idx": 24,
-                    "response": "Sometimes simple houses can be the coziest! Do you and Bob like to go on adventures in Minecraft too, like exploring caves or fighting zombies?",
-                    "sentence": "I have too much homework",
-                    "turn": "user",
-                    "topic": "homework",
-                    "intent": "respond-to-sadness",
-                    "emotion_label": "sadness",
-                    "emotion_score": 0.7775793075561523,
-                    "sentiment_label": "negative",
-                    "sentiment_score": 0.7951595187187195,
+                    "idx": 17,
+                    "prompt": "I don't know, what's your favorite movie",
+                    "sentence": "I like the Robots movie!",
+                    "turn": "robot",
+                    "topic": "Robots movie",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9038628339767456,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:54:57",
+                    "timestamp": "2024-07-11 16:27:21",
                     "slots": []
                 },
                 {
-                    "idx": 34,
-                    "response": "That's okay! Sometimes just practicing them can help a lot. You could make a game out of it, like a timed challenge, to see how many you can solve in one minute. Want to try some math riddles or would you like to talk about something else fun?",
-                    "sentence": "I should focus on my homework then go to sleep",
-                    "turn": "user",
-                    "topic": "homework",
-                    "intent": "give-suggestion",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.7089837193489075,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9320317506790161,
+                    "idx": 17,
+                    "prompt": "I like the Robots movie!",
+                    "sentence": "Thats a really good movie",
+                    "turn": "robot",
+                    "topic": "Robots movie",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9038628339767456,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:56:26",
+                    "timestamp": "2024-07-11 16:27:21",
+                    "slots": []
+                },
+                {
+                    "idx": 17,
+                    "prompt": "Thats a really good movie",
+                    "sentence": "it's a thrilling adventure!",
+                    "turn": "robot",
+                    "topic": "Robots movie",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9038628339767456,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:27:21",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:56:26",
+            "timestamp": "2024-07-11 16:27:21",
             "slots": [],
             "show": true
         },
         {
             "id": 16,
-            "name": "robot: homework",
-            "turn": "robot",
-            "topic": "homework",
-            "n": 5.25,
+            "name": "user: Indiana Jones",
+            "turn": "user",
+            "topic": "Indiana Jones",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 25,
-                    "response": "I have too much homework",
-                    "sentence": "Oh no! Homework can take up a lot of time. But it's really important and helps you learn new things! Do you have a favorite subject that makes homework more fun?",
-                    "turn": "robot",
-                    "topic": "homework",
+                    "idx": 18,
+                    "prompt": "Well then what is your favorite movie with a lot of adventure?",
+                    "sentence": "I think I really like Indiana Jones",
+                    "turn": "user",
+                    "topic": "Indiana Jones",
+                    "intent": "ask-preference",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.6541816592216492,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9944276571273803,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:29:17",
+                    "slots": []
+                },
+                {
+                    "idx": 17,
+                    "prompt": "Indiana Jones is such a classic choice! He's always on an exciting adventure, searching for hidden treasures and solving mysteries. If you could go on an adventure with Indiana Jones, where would you want to explore?",
+                    "sentence": "I want to go to the Amazon",
+                    "turn": "user",
+                    "topic": "Indiana Jones",
                     "intent": "ask-preference",
                     "emotion_label": "joy",
-                    "emotion_score": 0.7786042094230652,
+                    "emotion_score": 0.5973013043403625,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.8096611499786377,
+                    "sentiment_score": 0.9038628339767456,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:54:59",
+                    "timestamp": "2024-07-11 16:27:21",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:54:59",
+            "timestamp": "2024-07-11 16:27:21",
             "slots": [],
             "show": true
         },
         {
             "id": 17,
-            "name": "user: school subject",
-            "turn": "user",
-            "topic": "school subject",
-            "n": 5.25,
+            "name": "robot: Indiana Jones",
+            "turn": "robot",
+            "topic": "Indiana Jones",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 26,
-                    "response": "Oh no! Homework can take up a lot of time. But it's really important and helps you learn new things! Do you have a favorite subject that makes homework more fun?",
-                    "sentence": "math",
-                    "turn": "user",
-                    "topic": "school subject",
-                    "intent": "ask-knowledge",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.7593602538108826,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9623639583587646,
+                    "idx": 17,
+                    "prompt": "I think I really like Indiana Jones",
+                    "sentence": "Indiana Jones is such a classic choice! He's always on an exciting adventure, searching for hidden treasures and solving mysteries. If you could go on an adventure with Indiana Jones, where would you want to explore?",
+                    "turn": "robot",
+                    "topic": "Indiana Jones",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9038628339767456,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:55:09",
+                    "timestamp": "2024-07-11 16:27:21",
+                    "slots": []
+                },
+                {
+                    "idx": 17,
+                    "prompt": "I want to go to the Amazon",
+                    "sentence": "That sounds awesome!",
+                    "turn": "robot",
+                    "topic": "Indiana Jones",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9038628339767456,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 16:27:21",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:55:09",
+            "timestamp": "2024-07-11 16:27:21",
             "slots": [],
             "show": true
         },
         {
             "id": 18,
-            "name": "robot: math",
-            "turn": "robot",
-            "topic": "math",
-            "n": 5.75,
+            "name": "user: goodbye",
+            "turn": "user",
+            "topic": "goodbye",
+            "n": 5.5,
             "interactions": [
                 {
-                    "idx": 27,
-                    "response": "math",
-                    "sentence": "That's great! Math can be really fun once you get the hang of it. Do you have a favorite type of math problem, like adding, subtracting, or maybe solving puzzles?",
-                    "turn": "robot",
-                    "topic": "math",
+                    "idx": 18,
+                    "prompt": "That sounds awesome!",
+                    "sentence": "I actually have to go on adventure right now, so I have to say goodbye",
+                    "turn": "user",
+                    "topic": "goodbye",
                     "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.9270570278167725,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9593269228935242,
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.6541816592216492,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.8944276571273804,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:55:11",
+                    "timestamp": "2024-07-11 16:29:17",
                     "slots": []
                 },
                 {
-                    "idx": 33,
-                    "response": "no",
-                    "sentence": "That's okay! Sometimes just practicing them can help a lot. You could make a game out of it, like a timed challenge, to see how many you can solve in one minute. Want to try some math riddles or would you like to talk about something else fun?",
-                    "turn": "robot",
-                    "topic": "math",
-                    "intent": "give-suggestion",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.6760404706001282,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.6963982582092285,
+                    "idx": 18,
+                    "prompt": "That's so cool! Anyway, I have to go recharge soon, so let's chat again later. Have a great day!",
+                    "sentence": "bye",
+                    "turn": "user",
+                    "topic": "goodbye",
+                    "intent": "ask-preference",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.6541816592216492,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.8944276571273804,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:56:03",
+                    "timestamp": "2024-07-11 16:29:17",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:56:03",
+            "timestamp": "2024-07-11 16:29:17",
             "slots": [],
             "show": true
         },
         {
             "id": 19,
-            "name": "user: math",
-            "turn": "user",
-            "topic": "math",
-            "n": 5.75,
-            "interactions": [
-                {
-                    "idx": 28,
-                    "response": "That's great! Math can be really fun once you get the hang of it. Do you have a favorite type of math problem, like adding, subtracting, or maybe solving puzzles?",
-                    "sentence": "multiplication",
-                    "turn": "user",
-                    "topic": "math",
-                    "intent": "ask-knowledge",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.7178007364273071,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9701623916625977,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-04 14:55:32",
-                    "slots": []
-                },
-                {
-                    "idx": 30,
-                    "response": "Multiplication is super cool! It's like adding numbers really fast. Did you know there are fun tricks to make multiplication easier? Like multiplying by 10 just means adding a zero at the end. What's the hardest multiplication problem you solved recently?",
-                    "sentence": "7 times 4",
-                    "turn": "user",
-                    "topic": "math",
-                    "intent": "ask-knowledge",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.6958339214324951,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9669094681739807,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-04 14:55:49",
-                    "slots": []
-                }
-            ],
-            "timestamp": "2024-07-04 14:55:49",
-            "slots": [],
-            "show": true
-        },
-        {
-            "id": 20,
-            "name": "robot: multiplication",
+            "name": "robot: goodbye",
             "turn": "robot",
-            "topic": "multiplication",
-            "n": 5.75,
-            "interactions": [
-                {
-                    "idx": 29,
-                    "response": "multiplication",
-                    "sentence": "Multiplication is super cool! It's like adding numbers really fast. Did you know there are fun tricks to make multiplication easier? Like multiplying by 10 just means adding a zero at the end. What's the hardest multiplication problem you solved recently?",
-                    "turn": "robot",
-                    "topic": "multiplication",
-                    "intent": "ask-knowledge",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.3896633982658386,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.4921308159828186,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-04 14:55:34",
-                    "slots": []
-                },
-                {
-                    "idx": 31,
-                    "response": "7 times 4",
-                    "sentence": "That's a good one! 7 times 4 equals 28. You're doing great with your multiplication! Keep practicing and you'll be a math whiz in no time. Do you have any tips that help you remember your multiplication facts?",
-                    "turn": "robot",
-                    "topic": "multiplication",
-                    "intent": "give-fact",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.54133540391922,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9572998285293579,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-04 14:55:51",
-                    "slots": []
-                }
-            ],
-            "timestamp": "2024-07-04 14:55:51",
-            "slots": [],
-            "show": true
-        },
-        {
-            "id": 21,
-            "name": "user: multiplication",
-            "turn": "user",
-            "topic": "multiplication",
+            "topic": "goodbye",
             "n": 5.25,
             "interactions": [
                 {
-                    "idx": 32,
-                    "response": "That's a good one! 7 times 4 equals 28. You're doing great with your multiplication! Keep practicing and you'll be a math whiz in no time. Do you have any tips that help you remember your multiplication facts?",
-                    "sentence": "no",
-                    "turn": "user",
-                    "topic": "multiplication",
-                    "intent": "respond-to-mistake",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.5532127618789673,
+                    "idx": 17,
+                    "prompt": "I actually have to go on adventure right now, so I have to say goodbye",
+                    "sentence": "That's so cool! Anyway, I have to go recharge soon, so let's chat again later. Have a great day!",
+                    "turn": "robot",
+                    "topic": "goodbye",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5973013043403625,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9513096809387207,
+                    "sentiment_score": 0.9038628339767456,
                     "last_interaction": false,
-                    "timestamp": "2024-07-04 14:56:01",
+                    "timestamp": "2024-07-11 16:27:21",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-04 14:56:01",
+            "timestamp": "2024-07-11 16:27:21",
             "slots": [],
             "show": true
         }
@@ -777,466 +888,490 @@
     "links": {
         "robot": [
             {
-                "name": "robot: recent activities -> user: current activity",
+                "name": "robot: school -> user: test",
                 "source": 0,
-                "sourceName": "robot: recent activities",
+                "sourceName": "robot: school",
                 "target": 2,
-                "targetName": "user: current activity",
+                "targetName": "user: test",
                 "value": 1,
-                "timestamp": "2024-07-04 14:51:28",
+                "timestamp": "2024-07-11 16:21:44",
                 "responseIDs": [
                     {
                         "idx": 2,
-                        "time": "2024-07-04 14:51:28"
+                        "time": "2024-07-11 16:21:44"
                     }
                 ]
             },
             {
-                "name": "robot: hobbies -> user: video games",
+                "name": "robot: test -> user: test",
                 "source": 3,
-                "sourceName": "robot: hobbies",
-                "target": 4,
-                "targetName": "user: video games",
+                "sourceName": "robot: test",
+                "target": 2,
+                "targetName": "user: test",
                 "value": 1,
-                "timestamp": "2024-07-04 14:51:44",
+                "timestamp": "2024-07-11 16:22:15",
                 "responseIDs": [
                     {
                         "idx": 4,
-                        "time": "2024-07-04 14:51:44"
+                        "time": "2024-07-11 16:22:15"
                     }
                 ]
             },
             {
-                "name": "robot: video games -> user: games",
-                "source": 5,
-                "sourceName": "robot: video games",
-                "target": 6,
-                "targetName": "user: games",
+                "name": "robot: test -> user: history",
+                "source": 3,
+                "sourceName": "robot: test",
+                "target": 4,
+                "targetName": "user: history",
                 "value": 1,
-                "timestamp": "2024-07-04 14:51:52",
+                "timestamp": "2024-07-11 16:22:15",
+                "responseIDs": [
+                    {
+                        "idx": 4,
+                        "time": "2024-07-11 16:22:15"
+                    }
+                ]
+            },
+            {
+                "name": "robot: history -> user: history",
+                "source": 5,
+                "sourceName": "robot: history",
+                "target": 4,
+                "targetName": "user: history",
+                "value": 1,
+                "timestamp": "2024-07-11 16:23:49",
                 "responseIDs": [
                     {
                         "idx": 6,
-                        "time": "2024-07-04 14:51:52"
+                        "time": "2024-07-11 16:23:49"
                     }
                 ]
             },
             {
-                "name": "robot: Minecraft -> user: Minecraft",
-                "source": 7,
-                "sourceName": "robot: Minecraft",
-                "target": 8,
-                "targetName": "user: Minecraft",
+                "name": "robot: history -> user: ancient Egypt",
+                "source": 5,
+                "sourceName": "robot: history",
+                "target": 6,
+                "targetName": "user: ancient Egypt",
                 "value": 1,
-                "timestamp": "2024-07-04 14:52:17",
+                "timestamp": "2024-07-11 16:23:49",
+                "responseIDs": [
+                    {
+                        "idx": 6,
+                        "time": "2024-07-11 16:23:49"
+                    }
+                ]
+            },
+            {
+                "name": "robot: ancient Egypt -> user: ancient Egypt",
+                "source": 7,
+                "sourceName": "robot: ancient Egypt",
+                "target": 6,
+                "targetName": "user: ancient Egypt",
+                "value": 2,
+                "timestamp": "2024-07-11 16:25:20",
                 "responseIDs": [
                     {
                         "idx": 8,
-                        "time": "2024-07-04 14:52:17"
+                        "time": "2024-07-11 16:24:32"
+                    },
+                    {
+                        "idx": 10,
+                        "time": "2024-07-11 16:25:20"
                     }
                 ]
             },
             {
-                "name": "robot: Minecraft -> user: castle building",
-                "source": 7,
-                "sourceName": "robot: Minecraft",
-                "target": 9,
-                "targetName": "user: castle building",
+                "name": "robot: pyramid -> user: ancient Egypt",
+                "source": 8,
+                "sourceName": "robot: pyramid",
+                "target": 6,
+                "targetName": "user: ancient Egypt",
                 "value": 1,
-                "timestamp": "2024-07-04 14:52:28",
+                "timestamp": "2024-07-11 16:25:20",
                 "responseIDs": [
                     {
                         "idx": 10,
-                        "time": "2024-07-04 14:52:28"
+                        "time": "2024-07-11 16:25:20"
                     }
                 ]
             },
             {
-                "name": "robot: castle building -> user: location",
-                "source": 10,
-                "sourceName": "robot: castle building",
-                "target": 11,
-                "targetName": "user: location",
-                "value": 2,
-                "timestamp": "2024-07-04 14:53:15",
+                "name": "robot: ancient Egypt -> user: adventures and mysteries",
+                "source": 7,
+                "sourceName": "robot: ancient Egypt",
+                "target": 9,
+                "targetName": "user: adventures and mysteries",
+                "value": 1,
+                "timestamp": "2024-07-11 16:26:05",
                 "responseIDs": [
                     {
-                        "idx": 12,
-                        "time": "2024-07-04 14:52:54"
-                    },
-                    {
                         "idx": 14,
-                        "time": "2024-07-04 14:53:15"
+                        "time": "2024-07-11 16:26:05"
                     }
                 ]
             },
             {
-                "name": "robot: castle building -> user: uncertainty",
+                "name": "robot: adventures and mysteries -> user: adventures and mysteries",
                 "source": 10,
-                "sourceName": "robot: castle building",
-                "target": 12,
-                "targetName": "user: uncertainty",
+                "sourceName": "robot: adventures and mysteries",
+                "target": 9,
+                "targetName": "user: adventures and mysteries",
                 "value": 1,
-                "timestamp": "2024-07-04 14:53:45",
+                "timestamp": "2024-07-11 16:26:05",
+                "responseIDs": [
+                    {
+                        "idx": 14,
+                        "time": "2024-07-11 16:26:05"
+                    }
+                ]
+            },
+            {
+                "name": "robot: adventures and mysteries -> user: adventure movies",
+                "source": 10,
+                "sourceName": "robot: adventures and mysteries",
+                "target": 11,
+                "targetName": "user: adventure movies",
+                "value": 1,
+                "timestamp": "2024-07-11 16:27:19",
                 "responseIDs": [
                     {
                         "idx": 16,
-                        "time": "2024-07-04 14:53:45"
+                        "time": "2024-07-11 16:27:19"
                     }
                 ]
             },
             {
-                "name": "robot: Minecraft -> user: friends",
-                "source": 7,
-                "sourceName": "robot: Minecraft",
+                "name": "robot: adventure movies -> user: adventure movies",
+                "source": 12,
+                "sourceName": "robot: adventure movies",
+                "target": 11,
+                "targetName": "user: adventure movies",
+                "value": 1,
+                "timestamp": "2024-07-11 16:27:19",
+                "responseIDs": [
+                    {
+                        "idx": 16,
+                        "time": "2024-07-11 16:27:19"
+                    }
+                ]
+            },
+            {
+                "name": "robot: adventure movies -> user: favorite movie",
+                "source": 12,
+                "sourceName": "robot: adventure movies",
                 "target": 13,
-                "targetName": "user: friends",
-                "value": 2,
-                "timestamp": "2024-07-04 14:54:25",
+                "targetName": "user: favorite movie",
+                "value": 1,
+                "timestamp": "2024-07-11 16:29:17",
                 "responseIDs": [
                     {
                         "idx": 18,
-                        "time": "2024-07-04 14:54:01"
+                        "time": "2024-07-11 16:29:17"
+                    }
+                ]
+            },
+            {
+                "name": "robot: favorite movie -> user: favorite movie",
+                "source": 14,
+                "sourceName": "robot: favorite movie",
+                "target": 13,
+                "targetName": "user: favorite movie",
+                "value": 2,
+                "timestamp": "2024-07-11 16:29:17",
+                "responseIDs": [
+                    {
+                        "idx": 18,
+                        "time": "2024-07-11 16:29:17"
                     },
                     {
-                        "idx": 20,
-                        "time": "2024-07-04 14:54:25"
+                        "idx": 18,
+                        "time": "2024-07-11 16:29:17"
                     }
                 ]
             },
             {
-                "name": "robot: house building -> user: friends",
-                "source": 14,
-                "sourceName": "robot: house building",
+                "name": "robot: Robots movie -> user: favorite movie",
+                "source": 15,
+                "sourceName": "robot: Robots movie",
                 "target": 13,
-                "targetName": "user: friends",
+                "targetName": "user: favorite movie",
                 "value": 1,
-                "timestamp": "2024-07-04 14:54:37",
+                "timestamp": "2024-07-11 16:27:21",
                 "responseIDs": [
                     {
-                        "idx": 22,
-                        "time": "2024-07-04 14:54:37"
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
                     }
                 ]
             },
             {
-                "name": "robot: Minecraft -> user: homework",
-                "source": 7,
-                "sourceName": "robot: Minecraft",
-                "target": 15,
-                "targetName": "user: homework",
+                "name": "robot: favorite movie -> user: Indiana Jones",
+                "source": 14,
+                "sourceName": "robot: favorite movie",
+                "target": 16,
+                "targetName": "user: Indiana Jones",
                 "value": 1,
-                "timestamp": "2024-07-04 14:54:57",
+                "timestamp": "2024-07-11 16:29:17",
                 "responseIDs": [
                     {
-                        "idx": 24,
-                        "time": "2024-07-04 14:54:57"
+                        "idx": 18,
+                        "time": "2024-07-11 16:29:17"
                     }
                 ]
             },
             {
-                "name": "robot: homework -> user: school subject",
-                "source": 16,
-                "sourceName": "robot: homework",
-                "target": 17,
-                "targetName": "user: school subject",
+                "name": "robot: Indiana Jones -> user: Indiana Jones",
+                "source": 17,
+                "sourceName": "robot: Indiana Jones",
+                "target": 16,
+                "targetName": "user: Indiana Jones",
                 "value": 1,
-                "timestamp": "2024-07-04 14:55:09",
+                "timestamp": "2024-07-11 16:27:21",
                 "responseIDs": [
                     {
-                        "idx": 26,
-                        "time": "2024-07-04 14:55:09"
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
                     }
                 ]
             },
             {
-                "name": "robot: math -> user: math",
-                "source": 18,
-                "sourceName": "robot: math",
-                "target": 19,
-                "targetName": "user: math",
+                "name": "robot: Indiana Jones -> user: goodbye",
+                "source": 17,
+                "sourceName": "robot: Indiana Jones",
+                "target": 18,
+                "targetName": "user: goodbye",
                 "value": 1,
-                "timestamp": "2024-07-04 14:55:32",
+                "timestamp": "2024-07-11 16:29:17",
                 "responseIDs": [
                     {
-                        "idx": 28,
-                        "time": "2024-07-04 14:55:32"
+                        "idx": 18,
+                        "time": "2024-07-11 16:29:17"
                     }
                 ]
             },
             {
-                "name": "robot: multiplication -> user: math",
-                "source": 20,
-                "sourceName": "robot: multiplication",
-                "target": 19,
-                "targetName": "user: math",
+                "name": "robot: goodbye -> user: goodbye",
+                "source": 19,
+                "sourceName": "robot: goodbye",
+                "target": 18,
+                "targetName": "user: goodbye",
                 "value": 1,
-                "timestamp": "2024-07-04 14:55:49",
+                "timestamp": "2024-07-11 16:29:17",
                 "responseIDs": [
                     {
-                        "idx": 30,
-                        "time": "2024-07-04 14:55:49"
-                    }
-                ]
-            },
-            {
-                "name": "robot: multiplication -> user: multiplication",
-                "source": 20,
-                "sourceName": "robot: multiplication",
-                "target": 21,
-                "targetName": "user: multiplication",
-                "value": 1,
-                "timestamp": "2024-07-04 14:56:01",
-                "responseIDs": [
-                    {
-                        "idx": 32,
-                        "time": "2024-07-04 14:56:01"
-                    }
-                ]
-            },
-            {
-                "name": "robot: math -> user: homework",
-                "source": 18,
-                "sourceName": "robot: math",
-                "target": 15,
-                "targetName": "user: homework",
-                "value": 1,
-                "timestamp": "2024-07-04 14:56:26",
-                "responseIDs": [
-                    {
-                        "idx": 34,
-                        "time": "2024-07-04 14:56:26"
+                        "idx": 18,
+                        "time": "2024-07-11 16:29:17"
                     }
                 ]
             }
         ],
         "user": [
             {
-                "name": "user: greeting -> robot: recent activities",
+                "name": "user: greeting -> robot: school",
                 "source": 1,
                 "sourceName": "user: greeting",
                 "target": 0,
-                "targetName": "robot: recent activities",
+                "targetName": "robot: school",
                 "value": 1,
-                "timestamp": "2024-07-04 14:51:18",
+                "timestamp": "2024-07-11 16:20:47",
                 "responseIDs": [
                     {
                         "idx": 1,
-                        "time": "2024-07-04 14:51:18"
+                        "time": "2024-07-11 16:20:47"
                     }
                 ]
             },
             {
-                "name": "user: current activity -> robot: hobbies",
+                "name": "user: test -> robot: test",
                 "source": 2,
-                "sourceName": "user: current activity",
+                "sourceName": "user: test",
                 "target": 3,
-                "targetName": "robot: hobbies",
-                "value": 1,
-                "timestamp": "2024-07-04 14:51:30",
+                "targetName": "robot: test",
+                "value": 2,
+                "timestamp": "2024-07-11 16:21:46",
                 "responseIDs": [
                     {
                         "idx": 3,
-                        "time": "2024-07-04 14:51:30"
+                        "time": "2024-07-11 16:21:46"
+                    },
+                    {
+                        "idx": 3,
+                        "time": "2024-07-11 16:21:46"
                     }
                 ]
             },
             {
-                "name": "user: video games -> robot: video games",
+                "name": "user: history -> robot: history",
                 "source": 4,
-                "sourceName": "user: video games",
+                "sourceName": "user: history",
                 "target": 5,
-                "targetName": "robot: video games",
-                "value": 1,
-                "timestamp": "2024-07-04 14:51:46",
+                "targetName": "robot: history",
+                "value": 2,
+                "timestamp": "2024-07-11 16:22:19",
                 "responseIDs": [
                     {
                         "idx": 5,
-                        "time": "2024-07-04 14:51:46"
+                        "time": "2024-07-11 16:22:19"
+                    },
+                    {
+                        "idx": 5,
+                        "time": "2024-07-11 16:22:19"
                     }
                 ]
             },
             {
-                "name": "user: games -> robot: Minecraft",
+                "name": "user: ancient Egypt -> robot: ancient Egypt",
                 "source": 6,
-                "sourceName": "user: games",
+                "sourceName": "user: ancient Egypt",
                 "target": 7,
-                "targetName": "robot: Minecraft",
-                "value": 1,
-                "timestamp": "2024-07-04 14:51:54",
+                "targetName": "robot: ancient Egypt",
+                "value": 3,
+                "timestamp": "2024-07-11 16:25:22",
                 "responseIDs": [
                     {
                         "idx": 7,
-                        "time": "2024-07-04 14:51:54"
-                    }
-                ]
-            },
-            {
-                "name": "user: Minecraft -> robot: Minecraft",
-                "source": 8,
-                "sourceName": "user: Minecraft",
-                "target": 7,
-                "targetName": "robot: Minecraft",
-                "value": 1,
-                "timestamp": "2024-07-04 14:52:19",
-                "responseIDs": [
+                        "time": "2024-07-11 16:23:51"
+                    },
                     {
                         "idx": 9,
-                        "time": "2024-07-04 14:52:19"
+                        "time": "2024-07-11 16:24:35"
+                    },
+                    {
+                        "idx": 11,
+                        "time": "2024-07-11 16:25:22"
                     }
                 ]
             },
             {
-                "name": "user: castle building -> robot: castle building",
-                "source": 9,
-                "sourceName": "user: castle building",
-                "target": 10,
-                "targetName": "robot: castle building",
+                "name": "user: ancient Egypt -> robot: pyramid",
+                "source": 6,
+                "sourceName": "user: ancient Egypt",
+                "target": 8,
+                "targetName": "robot: pyramid",
                 "value": 1,
-                "timestamp": "2024-07-04 14:52:31",
+                "timestamp": "2024-07-11 16:25:22",
                 "responseIDs": [
                     {
                         "idx": 11,
-                        "time": "2024-07-04 14:52:31"
+                        "time": "2024-07-11 16:25:22"
                     }
                 ]
             },
             {
-                "name": "user: location -> robot: castle building",
-                "source": 11,
-                "sourceName": "user: location",
+                "name": "user: adventures and mysteries -> robot: adventures and mysteries",
+                "source": 9,
+                "sourceName": "user: adventures and mysteries",
                 "target": 10,
-                "targetName": "robot: castle building",
+                "targetName": "robot: adventures and mysteries",
                 "value": 2,
-                "timestamp": "2024-07-04 14:53:17",
+                "timestamp": "2024-07-11 16:26:07",
                 "responseIDs": [
                     {
-                        "idx": 13,
-                        "time": "2024-07-04 14:52:56"
+                        "idx": 15,
+                        "time": "2024-07-11 16:26:07"
                     },
                     {
                         "idx": 15,
-                        "time": "2024-07-04 14:53:17"
+                        "time": "2024-07-11 16:26:07"
                     }
                 ]
             },
             {
-                "name": "user: uncertainty -> robot: Minecraft",
-                "source": 12,
-                "sourceName": "user: uncertainty",
-                "target": 7,
-                "targetName": "robot: Minecraft",
-                "value": 1,
-                "timestamp": "2024-07-04 14:53:47",
+                "name": "user: adventure movies -> robot: adventure movies",
+                "source": 11,
+                "sourceName": "user: adventure movies",
+                "target": 12,
+                "targetName": "robot: adventure movies",
+                "value": 2,
+                "timestamp": "2024-07-11 16:27:21",
                 "responseIDs": [
                     {
                         "idx": 17,
-                        "time": "2024-07-04 14:53:47"
-                    }
-                ]
-            },
-            {
-                "name": "user: friends -> robot: Minecraft",
-                "source": 13,
-                "sourceName": "user: friends",
-                "target": 7,
-                "targetName": "robot: Minecraft",
-                "value": 2,
-                "timestamp": "2024-07-04 14:54:39",
-                "responseIDs": [
-                    {
-                        "idx": 19,
-                        "time": "2024-07-04 14:54:02"
+                        "time": "2024-07-11 16:27:21"
                     },
                     {
-                        "idx": 23,
-                        "time": "2024-07-04 14:54:39"
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
                     }
                 ]
             },
             {
-                "name": "user: friends -> robot: house building",
+                "name": "user: favorite movie -> robot: favorite movie",
                 "source": 13,
-                "sourceName": "user: friends",
+                "sourceName": "user: favorite movie",
                 "target": 14,
-                "targetName": "robot: house building",
-                "value": 1,
-                "timestamp": "2024-07-04 14:54:27",
+                "targetName": "robot: favorite movie",
+                "value": 3,
+                "timestamp": "2024-07-11 16:27:21",
                 "responseIDs": [
                     {
-                        "idx": 21,
-                        "time": "2024-07-04 14:54:27"
-                    }
-                ]
-            },
-            {
-                "name": "user: homework -> robot: homework",
-                "source": 15,
-                "sourceName": "user: homework",
-                "target": 16,
-                "targetName": "robot: homework",
-                "value": 1,
-                "timestamp": "2024-07-04 14:54:59",
-                "responseIDs": [
-                    {
-                        "idx": 25,
-                        "time": "2024-07-04 14:54:59"
-                    }
-                ]
-            },
-            {
-                "name": "user: school subject -> robot: math",
-                "source": 17,
-                "sourceName": "user: school subject",
-                "target": 18,
-                "targetName": "robot: math",
-                "value": 1,
-                "timestamp": "2024-07-04 14:55:11",
-                "responseIDs": [
-                    {
-                        "idx": 27,
-                        "time": "2024-07-04 14:55:11"
-                    }
-                ]
-            },
-            {
-                "name": "user: math -> robot: multiplication",
-                "source": 19,
-                "sourceName": "user: math",
-                "target": 20,
-                "targetName": "robot: multiplication",
-                "value": 2,
-                "timestamp": "2024-07-04 14:55:51",
-                "responseIDs": [
-                    {
-                        "idx": 29,
-                        "time": "2024-07-04 14:55:34"
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
                     },
                     {
-                        "idx": 31,
-                        "time": "2024-07-04 14:55:51"
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
+                    },
+                    {
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
                     }
                 ]
             },
             {
-                "name": "user: multiplication -> robot: math",
-                "source": 21,
-                "sourceName": "user: multiplication",
-                "target": 18,
-                "targetName": "robot: math",
+                "name": "user: favorite movie -> robot: Robots movie",
+                "source": 13,
+                "sourceName": "user: favorite movie",
+                "target": 15,
+                "targetName": "robot: Robots movie",
                 "value": 1,
-                "timestamp": "2024-07-04 14:56:03",
+                "timestamp": "2024-07-11 16:27:21",
                 "responseIDs": [
                     {
-                        "idx": 33,
-                        "time": "2024-07-04 14:56:03"
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
+                    }
+                ]
+            },
+            {
+                "name": "user: Indiana Jones -> robot: Indiana Jones",
+                "source": 16,
+                "sourceName": "user: Indiana Jones",
+                "target": 17,
+                "targetName": "robot: Indiana Jones",
+                "value": 2,
+                "timestamp": "2024-07-11 16:27:21",
+                "responseIDs": [
+                    {
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
+                    },
+                    {
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
+                    }
+                ]
+            },
+            {
+                "name": "user: goodbye -> robot: goodbye",
+                "source": 18,
+                "sourceName": "user: goodbye",
+                "target": 19,
+                "targetName": "robot: goodbye",
+                "value": 1,
+                "timestamp": "2024-07-11 16:27:21",
+                "responseIDs": [
+                    {
+                        "idx": 17,
+                        "time": "2024-07-11 16:27:21"
                     }
                 ]
             }
         ]
     },
     "attributes": {
-        "longest_robot_utterance": 255,
-        "longest_user_utterance": 46
+        "longest_robot_utterance": 232,
+        "longest_user_utterance": 70
     }
 }

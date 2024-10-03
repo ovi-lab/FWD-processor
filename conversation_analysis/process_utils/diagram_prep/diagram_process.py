@@ -60,7 +60,7 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
 
         new_interaction = {
             "idx": response["idx"],
-            "response": prompt["sentence"],
+            "prompt": prompt["sentence"],
             "sentence": response["sentence"],
             "turn": response["turn"],
             "topic": response["topic"],
@@ -120,13 +120,14 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
         
         if prompt["idx"] == 0:
             prompt_node["show"] = True
-            prompt_node["interactions"].append(prompt_node) 
+            prompt_node["interactions"].append(utils.initial_interaction(prompt)) 
 
     for i, node in enumerate(mapped_nodes):
         if i == 0 or i == len(mapped_nodes)-1:
             node['show'] = True
             continue
         node["show"] = utils.node_has_links(node, link_turn_section)
+        # node["show"] = Tru            e
 
     # Save the results as a JSON file
     mapped_conversation["attributes"]['longest_robot_utterance'] = r_longest_utterance_length

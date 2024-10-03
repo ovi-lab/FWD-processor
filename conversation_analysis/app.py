@@ -104,7 +104,6 @@ def upload_file(file_data, file_name):
     """
     kill_ros_feed()
     if file_data:
-        print(file_name)
         save_path, is_json = intercepting_json(file_name)
         with open(save_path, 'wb') as f:
             f.write(file_data)
@@ -184,4 +183,4 @@ def diagram_request(retried=0):
 
 if __name__ == "__main__":
     # Start the WebSocket server
-    socketio.run(app, debug=False, port=6400)
+    socketio.run(app, debug=False, port=6400, use_reloader=False, log_output=False)

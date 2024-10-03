@@ -82,7 +82,7 @@ def select_or_create_node(existing_nodes, node_topic, node_turn, timestamp):
             "interactions": [],
             "timestamp": timestamp,
             "slots": [],
-            "show": False,
+            "show": True,
         }
     )
     return new_id
@@ -99,3 +99,31 @@ def check_longest_utterance(sentence, longest_value):
         return len(sentence)
     else: 
         return longest_value
+    
+def initial_interaction(prompt):
+    """
+    Process the initial interaction prompt and return a dictionary with the relevant information.
+
+    Args:
+        prompt (dict): A dictionary containing the prompt information.
+
+    Returns:
+        dict: A dictionary with the processed prompt information.
+
+    """
+    return {
+        'idx': prompt['idx'],
+        'prompt': 'Conversation Start',
+        'sentence': prompt['sentence'],
+        'turn': prompt['turn'],
+        'topic': prompt['topic'],
+        'intent': prompt['intent'],
+        'emotion_label': prompt['emotion_label'],
+        'emotion_score': float(prompt['emotion_score']),
+        'sentiment_label': prompt['sentiment_label'],
+        'sentiment_score': float(prompt['sentiment_score']),
+        'last_interaction': bool(prompt['last_interaction']),
+        'timestamp': str(prompt["timestamp"]),
+        'turn': prompt['turn'],
+        'sentence': prompt['sentence']
+    }
