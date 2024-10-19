@@ -107,7 +107,7 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
         else:
             link_turn_section.append(
                 {
-                    "name": link_name,
+                    "name": link_name,  
                     "source": prompt_node["id"],
                     "sourceName": prompt_node["name"],
                     "target": response_node["id"],
