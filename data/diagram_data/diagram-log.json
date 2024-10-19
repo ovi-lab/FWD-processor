@@ -2,28 +2,28 @@
     "nodes": [
         {
             "id": 0,
-            "name": "robot: school",
+            "name": "robot: greeting",
             "turn": "robot",
-            "topic": "school",
+            "topic": "greeting",
             "n": 5.25,
             "interactions": [
                 {
                     "idx": 1,
-                    "prompt": "Hello There",
-                    "sentence": "Hi there! I'm so excited to chat with you! What's something fun you've done today?",
+                    "prompt": "Hi there",
+                    "sentence": "Hello! I'm so excited to chat with you today! What fun things have you been up to?",
                     "turn": "robot",
-                    "topic": "school",
-                    "intent": "ask-about-day",
+                    "topic": "greeting",
+                    "intent": "greeting",
                     "emotion_label": "joy",
-                    "emotion_score": 0.8892539143562317,
+                    "emotion_score": 0.9303067922592163,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.978623628616333,
+                    "sentiment_score": 0.9752476215362549,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:20:47",
+                    "timestamp": "2024-07-11 15:11:42",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:20:47",
+            "timestamp": "2024-07-11 15:11:42",
             "slots": [],
             "show": true
         },
@@ -37,850 +37,1069 @@
                 {
                     "idx": 0,
                     "prompt": "Conversation Start",
-                    "sentence": "Hello There",
+                    "sentence": "Hi there",
                     "turn": "user",
                     "topic": "greeting",
                     "intent": "greeting",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.9214327931404114,
+                    "emotion_score": 0.7230956554412842,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9668347239494324,
+                    "sentiment_score": 0.9619812369346619,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:20:45"
+                    "timestamp": "2024-07-11 15:11:40"
                 }
             ],
-            "timestamp": "2024-07-11 16:20:47",
+            "timestamp": "2024-07-11 15:11:42",
             "slots": [],
-            "show": false
+            "show": true
         },
         {
             "id": 2,
-            "name": "user: test",
+            "name": "user: hockey",
             "turn": "user",
-            "topic": "test",
-            "n": 5.75,
+            "topic": "hockey",
+            "n": 6.25,
             "interactions": [
                 {
                     "idx": 2,
-                    "prompt": "Hi there! I'm so excited to chat with you! What's something fun you've done today?",
-                    "sentence": "It wasn't too fun, I had a test today",
+                    "prompt": "Hello! I'm so excited to chat with you today! What fun things have you been up to?",
+                    "sentence": "I just got back from hockey practice",
                     "turn": "user",
-                    "topic": "test",
-                    "intent": "respond-to-sadness",
-                    "emotion_label": "sadness",
-                    "emotion_score": 0.9411863088607788,
-                    "sentiment_label": "negative",
-                    "sentiment_score": 0.9563823938369751,
+                    "topic": "hockey",
+                    "intent": "give-fact",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.8474916815757751,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9427608847618103,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:21:44",
+                    "timestamp": "2024-07-11 15:11:57",
                     "slots": []
                 },
                 {
                     "idx": 4,
-                    "prompt": "Oh, tests can be tough, I hope it went well!",
-                    "sentence": "I think it went ok",
+                    "prompt": "That sounds so cool! Hockey is such an exciting sport. Did you learn any new tricks or plays today?",
+                    "sentence": "no, but it was really fun",
                     "turn": "user",
-                    "topic": "test",
-                    "intent": "request-confirmation",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.9531080722808838,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9473212361335754,
+                    "topic": "hockey",
+                    "intent": "respond-to-excitement",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9676184058189392,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.8842290043830872,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:22:15",
+                    "timestamp": "2024-07-11 15:12:14",
+                    "slots": []
+                },
+                {
+                    "idx": 12,
+                    "prompt": "I bet it feels like being a superhero! Have you ever thought about other sports you might want to try? Or is hockey your absolute favorite?",
+                    "sentence": "Hockey is my favorite",
+                    "turn": "user",
+                    "topic": "hockey",
+                    "intent": "give-fact",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.4876845180988312,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.894657552242279,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:13:32",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:22:15",
+            "timestamp": "2024-07-11 15:13:32",
             "slots": [],
             "show": true
         },
         {
             "id": 3,
-            "name": "robot: test",
+            "name": "robot: hockey",
             "turn": "robot",
-            "topic": "test",
-            "n": 5.75,
+            "topic": "hockey",
+            "n": 7.25,
             "interactions": [
                 {
                     "idx": 3,
-                    "prompt": "It wasn't too fun, I had a test today",
-                    "sentence": "Oh, tests can be tough, I hope it went well!",
+                    "prompt": "I just got back from hockey practice",
+                    "sentence": "That sounds so cool! Hockey is such an exciting sport. Did you learn any new tricks or plays today?",
                     "turn": "robot",
-                    "topic": "test",
-                    "intent": "give-encouragement",
+                    "topic": "hockey",
+                    "intent": "request-information",
                     "emotion_label": "joy",
-                    "emotion_score": 0.3830050230026245,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.6173922419548035,
+                    "emotion_score": 0.9096173644065857,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9641901850700378,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:21:46",
+                    "timestamp": "2024-07-11 15:11:59",
                     "slots": []
                 },
                 {
-                    "idx": 3,
-                    "prompt": "I think it went ok",
-                    "sentence": "I bet you did your best! What was the test about?",
+                    "idx": 5,
+                    "prompt": "no, but it was really fun",
+                    "sentence": "That's awesome! Having fun is the best part. Do you have a favorite position you like to play in hockey?",
                     "turn": "robot",
-                    "topic": "test",
-                    "intent": "give-encouragement",
+                    "topic": "hockey",
+                    "intent": "ask-preference",
                     "emotion_label": "joy",
-                    "emotion_score": 0.3830050230026245,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.6173922419548035,
+                    "emotion_score": 0.9351192712783813,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9830386638641357,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:21:46",
+                    "timestamp": "2024-07-11 15:12:16",
+                    "slots": []
+                },
+                {
+                    "idx": 11,
+                    "prompt": "Making those game winning saves is the best",
+                    "sentence": "I bet it feels like being a superhero! Have you ever thought about other sports you might want to try? Or is hockey your absolute favorite?",
+                    "turn": "robot",
+                    "topic": "hockey",
+                    "intent": "ask-preference",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.5907449722290039,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.5028823018074036,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:13:08",
+                    "slots": []
+                },
+                {
+                    "idx": 13,
+                    "prompt": "Hockey is my favorite",
+                    "sentence": "That's fantastic! It's great when you find something you really love. Do you have a favorite hockey player or team you love to watch?",
+                    "turn": "robot",
+                    "topic": "hockey",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.922976553440094,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9850260615348816,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:13:34",
+                    "slots": []
+                },
+                {
+                    "idx": 23,
+                    "prompt": "I do a backflip",
+                    "sentence": "Wow, that's super impressive! Not everyone can do a backflip when celerating a hockey match. You must have practiced a lot. Do you do other cool tricks?",
+                    "turn": "robot",
+                    "topic": "hockey",
+                    "intent": "give-compliment",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.9665464162826538,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.8841878771781921,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:14:46",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:21:46",
+            "timestamp": "2024-07-11 15:14:46",
             "slots": [],
             "show": true
         },
         {
             "id": 4,
-            "name": "user: history",
+            "name": "user: goalkeeping",
             "turn": "user",
-            "topic": "history",
-            "n": 5.75,
+            "topic": "goalkeeping",
+            "n": 6.25,
             "interactions": [
                 {
-                    "idx": 4,
-                    "prompt": "I bet you did your best! What was the test about?",
-                    "sentence": "I had a history test today, I think it went well",
+                    "idx": 6,
+                    "prompt": "That's awesome! Having fun is the best part. Do you have a favorite position you like to play in hockey?",
+                    "sentence": "I play goalie",
                     "turn": "user",
-                    "topic": "history",
-                    "intent": "request-confirmation",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.9531080722808838,
+                    "topic": "goalkeeping",
+                    "intent": "give-fact",
+                    "emotion_label": "fear",
+                    "emotion_score": 0.7183127999305725,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9473212361335754,
+                    "sentiment_score": 0.9596894383430481,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:22:15",
+                    "timestamp": "2024-07-11 15:12:24",
                     "slots": []
                 },
                 {
-                    "idx": 6,
-                    "prompt": "I think history is so interesting! There's so much to learn about the past. I'm sure you did great! Do you like history?",
-                    "sentence": "Yes it is my favorite subject",
+                    "idx": 8,
+                    "prompt": "Whoa, that’s amazing! Goalies have to be super quick and brave. Do you have a favorite save you made recently?",
+                    "sentence": "I made a save that helped us win",
                     "turn": "user",
-                    "topic": "history",
-                    "intent": "give-fact",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.6593225002288818,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9367497563362122,
+                    "topic": "goalkeeping",
+                    "intent": "respond-to-achievement",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.5005184412002563,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.8032023906707764,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:23:49",
+                    "timestamp": "2024-07-11 15:12:44",
+                    "slots": []
+                },
+                {
+                    "idx": 10,
+                    "prompt": "Wow, that's incredible! You must be so proud. Saving a goal to win the game is a huge deal. What's your favorite thing about being a goalie?",
+                    "sentence": "Making those game winning saves is the best",
+                    "turn": "user",
+                    "topic": "goalkeeping",
+                    "intent": "respond-to-achievement",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.8849976658821106,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9672264456748962,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:13:05",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:23:49",
+            "timestamp": "2024-07-11 15:13:05",
             "slots": [],
             "show": true
         },
         {
             "id": 5,
-            "name": "robot: history",
+            "name": "robot: goalkeeping",
             "turn": "robot",
-            "topic": "history",
+            "topic": "goalkeeping",
             "n": 5.75,
             "interactions": [
                 {
-                    "idx": 5,
-                    "prompt": "I had a history test today, I think it went well",
-                    "sentence": "I think history is so interesting! There's so much to learn about the past. I'm sure you did great! Do you like history?",
+                    "idx": 7,
+                    "prompt": "I play goalie",
+                    "sentence": "Whoa, that’s amazing! Goalies have to be super quick and brave. Do you have a favorite save you made recently?",
                     "turn": "robot",
-                    "topic": "history",
-                    "intent": "ask-knowledge",
+                    "topic": "goalkeeping",
+                    "intent": "ask-preference",
                     "emotion_label": "surprise",
-                    "emotion_score": 0.7614161968231201,
+                    "emotion_score": 0.8750374913215637,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9201496839523315,
+                    "sentiment_score": 0.9618173241615295,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:22:19",
+                    "timestamp": "2024-07-11 15:12:27",
                     "slots": []
                 },
                 {
-                    "idx": 5,
-                    "prompt": "Yes it is my favorite subject",
-                    "sentence": "What was one thing you learned while studying for your history test?",
+                    "idx": 9,
+                    "prompt": "I made a save that helped us win",
+                    "sentence": "Wow, that's incredible! You must be so proud. Saving a goal to win the game is a huge deal. What's your favorite thing about being a goalie?",
                     "turn": "robot",
-                    "topic": "history",
-                    "intent": "ask-knowledge",
+                    "topic": "goalkeeping",
+                    "intent": "ask-preference",
                     "emotion_label": "surprise",
-                    "emotion_score": 0.7614161968231201,
+                    "emotion_score": 0.9476913213729858,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9201496839523315,
+                    "sentiment_score": 0.9746001958847046,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:22:19",
+                    "timestamp": "2024-07-11 15:12:46",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:22:19",
+            "timestamp": "2024-07-11 15:12:46",
             "slots": [],
             "show": true
         },
         {
             "id": 6,
-            "name": "user: ancient Egypt",
+            "name": "user: Canucks",
             "turn": "user",
-            "topic": "ancient Egypt",
+            "topic": "Canucks",
             "n": 6.75,
             "interactions": [
                 {
-                    "idx": 6,
-                    "prompt": "What was one thing you learned while studying for your history test?",
-                    "sentence": "That the pyramids were built in Egypt during the dry season",
+                    "idx": 14,
+                    "prompt": "That's fantastic! It's great when you find something you really love. Do you have a favorite hockey player or team you love to watch?",
+                    "sentence": "I like the Canucks",
                     "turn": "user",
-                    "topic": "ancient Egypt",
-                    "intent": "give-fact",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.6593225002288818,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9367497563362122,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-11 16:23:49",
-                    "slots": []
-                },
-                {
-                    "idx": 8,
-                    "prompt": "Wow, that's really cool! Did you know that some of the pyramids are over 4,500 years old? Imagine how long they've been standing! What's your favorite thing about ancient Egypt?",
-                    "sentence": "I think the Pharaohs are cool",
-                    "turn": "user",
-                    "topic": "ancient Egypt",
+                    "topic": "Canucks",
                     "intent": "give-opinion",
                     "emotion_label": "joy",
-                    "emotion_score": 0.6018417477607727,
+                    "emotion_score": 0.9808608293533325,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.7782806754112244,
+                    "sentiment_score": 0.9365954995155334,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:24:32",
+                    "timestamp": "2024-07-11 15:13:50",
                     "slots": []
                 },
                 {
-                    "idx": 10,
-                    "prompt": "Pharaohs were amazing rulers with so much power and mystery! Did you know that they were often buried with lots of treasures? It's like they had their very own treasure chests! If you could be a pharaoh for a day, what would you do?",
-                    "sentence": "I would build a really big pyramid",
+                    "idx": 16,
+                    "prompt": "The Canucks are a great team! Watching your favorite team can be so exciting. Do you ever go to their games or watch them on TV?",
+                    "sentence": "I watch them on TV",
                     "turn": "user",
-                    "topic": "ancient Egypt",
-                    "intent": "give-suggestion",
+                    "topic": "Canucks",
+                    "intent": "give-fact",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.3913251757621765,
+                    "emotion_score": 0.5774725079536438,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9340874552726746,
+                    "sentiment_score": 0.9452980756759644,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:25:20",
+                    "timestamp": "2024-07-11 15:14:03",
                     "slots": []
                 },
                 {
-                    "idx": 10,
-                    "prompt": "That sounds awesome! Your pyramid would be a sight to see! Did you know that the tallest pyramid in Egypt is the Great Pyramid of Giza? It's as tall as a 40-story building! What do you think you would put inside your pyramid?",
-                    "sentence": "I would put many things in the pyramid",
+                    "idx": 18,
+                    "prompt": "That sounds like a lot of fun! Do you watch the games with your family or friends?",
+                    "sentence": "I watch them with my family",
                     "turn": "user",
-                    "topic": "ancient Egypt",
-                    "intent": "give-suggestion",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.3913251757621765,
+                    "topic": "Canucks",
+                    "intent": "give-fact",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.3062818646430969,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9340874552726746,
+                    "sentiment_score": 0.9492429494857788,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:25:20",
+                    "timestamp": "2024-07-11 15:14:15",
+                    "slots": []
+                },
+                {
+                    "idx": 22,
+                    "prompt": "That must be so exciting! Do you have a special way you celebrate when they score a goal?",
+                    "sentence": "I do a backflip",
+                    "turn": "user",
+                    "topic": "Canucks",
+                    "intent": "command",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.7374250292778015,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.8839919567108154,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:14:44",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:25:20",
+            "timestamp": "2024-07-11 15:14:44",
             "slots": [],
             "show": true
         },
         {
             "id": 7,
-            "name": "robot: ancient Egypt",
+            "name": "robot: Canucks",
             "turn": "robot",
-            "topic": "ancient Egypt",
-            "n": 6.25,
+            "topic": "Canucks",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 7,
-                    "prompt": "That the pyramids were built in Egypt during the dry season",
-                    "sentence": "Wow, that's really cool! Did you know that some of the pyramids are over 4,500 years old? Imagine how long they've been standing! What's your favorite thing about ancient Egypt?",
+                    "idx": 15,
+                    "prompt": "I like the Canucks",
+                    "sentence": "The Canucks are a great team! Watching your favorite team can be so exciting. Do you ever go to their games or watch them on TV?",
                     "turn": "robot",
-                    "topic": "ancient Egypt",
+                    "topic": "Canucks",
                     "intent": "ask-preference",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.9631296396255493,
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9114879965782166,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9316280484199524,
+                    "sentiment_score": 0.9706976413726807,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:23:51",
+                    "timestamp": "2024-07-11 15:13:52",
                     "slots": []
                 },
                 {
-                    "idx": 9,
-                    "prompt": "I think the Pharaohs are cool",
-                    "sentence": "Pharaohs were amazing rulers with so much power and mystery! Did you know that they were often buried with lots of treasures? It's like they had their very own treasure chests! If you could be a pharaoh for a day, what would you do?",
+                    "idx": 17,
+                    "prompt": "I watch them on TV",
+                    "sentence": "That sounds like a lot of fun! Do you watch the games with your family or friends?",
                     "turn": "robot",
-                    "topic": "ancient Egypt",
-                    "intent": "ask-preference",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.8537946343421936,
+                    "topic": "Canucks",
+                    "intent": "request-information",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9824705719947815,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.7967413663864136,
+                    "sentiment_score": 0.9408057332038879,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:24:35",
-                    "slots": []
-                },
-                {
-                    "idx": 11,
-                    "prompt": "I would put many things in the pyramid",
-                    "sentence": "That's great! What is one of those things you would put in your pyramid?",
-                    "turn": "robot",
-                    "topic": "ancient Egypt",
-                    "intent": "ask-opinion",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.8457604050636292,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9675754308700562,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-11 16:25:22",
+                    "timestamp": "2024-07-11 15:14:05",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:25:22",
+            "timestamp": "2024-07-11 15:14:05",
             "slots": [],
             "show": true
         },
         {
             "id": 8,
-            "name": "robot: pyramid",
+            "name": "robot: watching with family",
             "turn": "robot",
-            "topic": "pyramid",
-            "n": 5.25,
+            "topic": "watching with family",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 11,
-                    "prompt": "I would build a really big pyramid",
-                    "sentence": "That sounds awesome! Your pyramid would be a sight to see! Did you know that the tallest pyramid in Egypt is the Great Pyramid of Giza? It's as tall as a 40-story building! What do you think you would put inside your pyramid?",
+                    "idx": 19,
+                    "prompt": "I watch them with my family",
+                    "sentence": "That sounds like a blast! Watching sports together is a great way to spend time with family. Do you all cheer really loudly when the Canucks score?",
                     "turn": "robot",
-                    "topic": "pyramid",
-                    "intent": "ask-opinion",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.8457604050636292,
+                    "topic": "watching with family",
+                    "intent": "ask-about-family",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9734896421432495,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9675754308700562,
+                    "sentiment_score": 0.9741696715354919,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:25:22",
+                    "timestamp": "2024-07-11 15:14:18",
+                    "slots": []
+                },
+                {
+                    "idx": 21,
+                    "prompt": "Yeah, I do",
+                    "sentence": "That must be so exciting! Do you have a special way you celebrate when they score a goal?",
+                    "turn": "robot",
+                    "topic": "watching with family",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.7308256030082703,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.956200897693634,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:14:34",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:25:22",
+            "timestamp": "2024-07-11 15:14:34",
             "slots": [],
             "show": true
         },
         {
             "id": 9,
-            "name": "user: adventures and mysteries",
+            "name": "user: watching with family",
             "turn": "user",
-            "topic": "adventures and mysteries",
-            "n": 5.75,
+            "topic": "watching with family",
+            "n": 5.25,
             "interactions": [
                 {
-                    "idx": 14,
-                    "prompt": "That's great! What is one of those things you would put in your pyramid?",
-                    "sentence": "It would be a secret",
+                    "idx": 20,
+                    "prompt": "That sounds like a blast! Watching sports together is a great way to spend time with family. Do you all cheer really loudly when the Canucks score?",
+                    "sentence": "Yeah, I do",
                     "turn": "user",
-                    "topic": "adventures and mysteries",
-                    "intent": "give-fact",
+                    "topic": "watching with family",
+                    "intent": "request-confirmation",
                     "emotion_label": "neutral",
-                    "emotion_score": 0.7064497470855713,
+                    "emotion_score": 0.8735928535461426,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9292850494384766,
+                    "sentiment_score": 0.9237647652626038,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:26:05",
-                    "slots": []
-                },
-                {
-                    "idx": 14,
-                    "prompt": "Oh, a true mystery! Secrets make things even more exciting. Speaking of exciting, do you like to read or watch stories about adventures and mysteries?",
-                    "sentence": "It would be a secret",
-                    "turn": "user",
-                    "topic": "adventures and mysteries",
-                    "intent": "give-fact",
-                    "emotion_label": "neutral",
-                    "emotion_score": 0.7064497470855713,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9292850494384766,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-11 16:26:05",
+                    "timestamp": "2024-07-11 15:14:32",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:26:05",
+            "timestamp": "2024-07-11 15:14:32",
             "slots": [],
             "show": true
         },
         {
             "id": 10,
-            "name": "robot: adventures and mysteries",
-            "turn": "robot",
-            "topic": "adventures and mysteries",
-            "n": 5.75,
+            "name": "user: gymnastics",
+            "turn": "user",
+            "topic": "gymnastics",
+            "n": 6.75,
             "interactions": [
                 {
-                    "idx": 15,
-                    "prompt": "It would be a secret",
-                    "sentence": "Oh, a true mystery! Secrets make things even more exciting. Speaking of exciting, do you like to read or watch stories about adventures and mysteries?",
-                    "turn": "robot",
-                    "topic": "adventures and mysteries",
-                    "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.7496224641799927,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.8819095492362976,
+                    "idx": 22,
+                    "prompt": "Wow, that's super impressive! Not everyone can do a backflip when celerating a hockey match. You must have practiced a lot. Do you do other cool tricks?",
+                    "sentence": "I can do a somersault",
+                    "turn": "user",
+                    "topic": "gymnastics",
+                    "intent": "command",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.7374250292778015,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.8839919567108154,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:26:07",
+                    "timestamp": "2024-07-11 15:14:44",
                     "slots": []
                 },
                 {
-                    "idx": 15,
-                    "prompt": "It would be a secret",
-                    "sentence": "Oh, a true mystery! Secrets make things even more exciting. Speaking of exciting, do you like to read or watch stories about adventures and mysteries?",
-                    "turn": "robot",
-                    "topic": "adventures and mysteries",
-                    "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.7496224641799927,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.8819095492362976,
+                    "idx": 24,
+                    "prompt": "Wow, that's super impressive! How do you practice these tricks?",
+                    "sentence": "I do gymnastics",
+                    "turn": "user",
+                    "topic": "gymnastics",
+                    "intent": "give-fact",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.5931776762008667,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9570969343185425,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:26:07",
+                    "timestamp": "2024-07-11 15:15:03",
+                    "slots": []
+                },
+                {
+                    "idx": 26,
+                    "prompt": "Gymnastics is so awesome! You must be really strong and flexible. What's your favorite move in gymnastics?",
+                    "sentence": "The backflip",
+                    "turn": "user",
+                    "topic": "gymnastics",
+                    "intent": "ask-opinion",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.588434100151062,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9530801177024841,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:15:12",
+                    "slots": []
+                },
+                {
+                    "idx": 28,
+                    "prompt": "That's a fantastic move! It must feel like flying for a moment. Did you know that gymnasts sometimes refer to powerful, quick moves as having \"explosive power\"? Sounds pretty cool, right? What do you enjoy most about gymnastics?",
+                    "sentence": "doing cool tricks",
+                    "turn": "user",
+                    "topic": "gymnastics",
+                    "intent": "ask-about-hobbies",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.7884058952331543,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.6471529603004456,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:15:37",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:26:07",
+            "timestamp": "2024-07-11 15:15:37",
             "slots": [],
             "show": true
         },
         {
             "id": 11,
-            "name": "user: adventure movies",
-            "turn": "user",
-            "topic": "adventure movies",
-            "n": 5.75,
+            "name": "robot: gymnastics",
+            "turn": "robot",
+            "topic": "gymnastics",
+            "n": 7.25,
             "interactions": [
                 {
-                    "idx": 16,
-                    "prompt": "Oh, a true mystery! Secrets make things even more exciting. Speaking of exciting, do you like to read or watch stories about adventures and mysteries?",
-                    "sentence": "I like adventure movies",
-                    "turn": "user",
-                    "topic": "adventure movies",
-                    "intent": "give-opinion",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.9882748126983643,
+                    "idx": 23,
+                    "prompt": "I can do a somersault",
+                    "sentence": "Wow, that's super impressive! How do you practice these tricks?",
+                    "turn": "robot",
+                    "topic": "gymnastics",
+                    "intent": "give-compliment",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.9665464162826538,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.5015918374061584,
+                    "sentiment_score": 0.8841878771781921,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:19",
+                    "timestamp": "2024-07-11 15:14:46",
                     "slots": []
                 },
                 {
-                    "idx": 16,
-                    "prompt": "Adventure movies are so thrilling! You never know what's going to happen next. Do you have a favorite adventure movie or a character you really like?",
-                    "sentence": "I like adventure movies",
-                    "turn": "user",
-                    "topic": "adventure movies",
-                    "intent": "give-opinion",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.9882748126983643,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.3015918374061584,
+                    "idx": 25,
+                    "prompt": "I do gymnastics",
+                    "sentence": "Gymnastics is so awesome! You must be really strong and flexible. What's your favorite move in gymnastics?",
+                    "turn": "robot",
+                    "topic": "gymnastics",
+                    "intent": "ask-preference",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.4827580749988556,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9724657535552979,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:19",
+                    "timestamp": "2024-07-11 15:15:04",
+                    "slots": []
+                },
+                {
+                    "idx": 27,
+                    "prompt": "The backflip",
+                    "sentence": "That's a fantastic move! It must feel like flying for a moment. Did you know that gymnasts sometimes refer to powerful, quick moves as having \"explosive power\"? Sounds pretty cool, right? What do you enjoy most about gymnastics?",
+                    "turn": "robot",
+                    "topic": "gymnastics",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.916304349899292,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9534041285514832,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:15:14",
+                    "slots": []
+                },
+                {
+                    "idx": 29,
+                    "prompt": "doing cool tricks",
+                    "sentence": "I can totally see why! Doing cool tricks must make you feel like a superstar. Do you have a favorite place where you like to practice gymnastics?",
+                    "turn": "robot",
+                    "topic": "gymnastics",
+                    "intent": "ask-preference",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.4165699779987335,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.7971607446670532,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:15:39",
+                    "slots": []
+                },
+                {
+                    "idx": 35,
+                    "prompt": "Not really",
+                    "sentence": "That's okay! Practicing together is still a blast. Maybe one day you can all show off your amazing skills! What other fun things do you like to do with your friends?",
+                    "turn": "robot",
+                    "topic": "gymnastics",
+                    "intent": "ask-about-friends",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.8582668304443359,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9675273299217224,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:16:40",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:27:19",
+            "timestamp": "2024-07-11 15:16:40",
             "slots": [],
             "show": true
         },
         {
             "id": 12,
-            "name": "robot: adventure movies",
-            "turn": "robot",
-            "topic": "adventure movies",
-            "n": 5.75,
+            "name": "user: friend activities",
+            "turn": "user",
+            "topic": "friend activities",
+            "n": 6.25,
             "interactions": [
                 {
-                    "idx": 17,
-                    "prompt": "I like adventure movies",
-                    "sentence": "Adventure movies are so thrilling! You never know what's going to happen next. Do you have a favorite adventure movie or a character you really like?",
-                    "turn": "robot",
-                    "topic": "adventure movies",
-                    "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
+                    "idx": 30,
+                    "prompt": "I can totally see why! Doing cool tricks must make you feel like a superstar. Do you have a favorite place where you like to practice gymnastics?",
+                    "sentence": "At school",
+                    "turn": "user",
+                    "topic": "friend activities",
+                    "intent": "request-confirmation",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.7239062190055847,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9673929810523987,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:16:00",
                     "slots": []
                 },
                 {
-                    "idx": 17,
-                    "prompt": "I like adventure movies",
-                    "sentence": "Adventure movies are so thrilling! You never know what's going to happen next.",
-                    "turn": "robot",
-                    "topic": "adventure movies",
-                    "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
+                    "idx": 32,
+                    "prompt": "That's great! It's cool that your school has a place for you to practice. Do you get to practice with friends there, too?",
+                    "sentence": "Yeah, I have friends that do it too",
+                    "turn": "user",
+                    "topic": "friend activities",
+                    "intent": "ask-about-friends",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.8515654802322388,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9379377961158752,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:16:17",
+                    "slots": []
+                },
+                {
+                    "idx": 34,
+                    "prompt": "That sounds like so much fun! Practicing with friends can make everything even more enjoyable. Do you and your friends ever put on gymnastics shows for others to watch?",
+                    "sentence": "Not really",
+                    "turn": "user",
+                    "topic": "friend activities",
+                    "intent": "respond-to-mistake",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.5196177363395691,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9049085378646851,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:16:38",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:27:21",
+            "timestamp": "2024-07-11 15:16:38",
             "slots": [],
             "show": true
         },
         {
             "id": 13,
-            "name": "user: favorite movie",
-            "turn": "user",
-            "topic": "favorite movie",
-            "n": 6.75,
+            "name": "robot: friend activities",
+            "turn": "robot",
+            "topic": "friend activities",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 18,
-                    "prompt": "Adventure movies are so thrilling! You never know what's going to happen next.",
-                    "sentence": "That's true, I like them a lot",
-                    "turn": "user",
-                    "topic": "favorite movie",
-                    "intent": "ask-preference",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.6541816592216492,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.8944276571273804,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-11 16:29:17",
-                    "slots": []
-                },
-                {
-                    "idx": 18,
-                    "prompt": "Do you have a favorite adventure movie or a character you really like?",
-                    "sentence": "I don't know, what's your favorite movie",
-                    "turn": "user",
-                    "topic": "favorite movie",
-                    "intent": "ask-preference",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.6541816592216492,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.8944276571273804,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-11 16:29:17",
-                    "slots": []
-                },
-                {
-                    "idx": 17,
-                    "prompt": "it's a thrilling adventure!",
-                    "sentence": "I still don't know which movie I like best",
-                    "turn": "user",
-                    "topic": "favorite movie",
-                    "intent": "ask-preference",
+                    "idx": 31,
+                    "prompt": "At school",
+                    "sentence": "That's great! It's cool that your school has a place for you to practice. Do you get to practice with friends there, too?",
+                    "turn": "robot",
+                    "topic": "friend activities",
+                    "intent": "request-confirmation",
                     "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9038628339767456,
+                    "emotion_score": 0.8532810211181641,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.974692702293396,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:16:03",
                     "slots": []
                 },
                 {
-                    "idx": 18,
-                    "prompt": "Don't you have a favorite movie?",
-                    "sentence": "maybe something with adventure",
-                    "turn": "user",
-                    "topic": "favorite movie",
-                    "intent": "ask-preference",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.6541816592216492,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.8944276571273804,
+                    "idx": 33,
+                    "prompt": "Yeah, I have friends that do it too",
+                    "sentence": "That sounds like so much fun! Practicing with friends can make everything even more enjoyable. Do you and your friends ever put on gymnastics shows for others to watch?",
+                    "turn": "robot",
+                    "topic": "friend activities",
+                    "intent": "ask-about-friends",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9426823854446411,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9448720216751099,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:29:17",
+                    "timestamp": "2024-07-11 15:16:19",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:29:17",
+            "timestamp": "2024-07-11 15:16:19",
             "slots": [],
             "show": true
         },
         {
             "id": 14,
-            "name": "robot: favorite movie",
-            "turn": "robot",
-            "topic": "favorite movie",
-            "n": 6.25,
+            "name": "user: skiing",
+            "turn": "user",
+            "topic": "skiing",
+            "n": 6.75,
             "interactions": [
                 {
-                    "idx": 17,
-                    "prompt": "That's true, I like them a lot",
-                    "sentence": "Do you have a favorite adventure movie or a character you really like?",
-                    "turn": "robot",
-                    "topic": "favorite movie",
-                    "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
-                    "slots": []
-                },
-                {
-                    "idx": 17,
-                    "prompt": "I still don't know which movie I like best",
-                    "sentence": "Don't you have a favorite movie?",
-                    "turn": "robot",
-                    "topic": "favorite movie",
-                    "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
-                    "slots": []
-                },
-                {
-                    "idx": 17,
-                    "prompt": "maybe something with adventure",
-                    "sentence": "Well then what is your favorite movie with a lot of adventure?",
-                    "turn": "robot",
-                    "topic": "favorite movie",
-                    "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
+                    "idx": 36,
+                    "prompt": "That's okay! Practicing together is still a blast. Maybe one day you can all show off your amazing skills! What other fun things do you like to do with your friends?",
+                    "sentence": "In the winter I also go skiing",
+                    "turn": "user",
+                    "topic": "skiing",
+                    "intent": "give-fact",
+                    "emotion_label": "sadness",
+                    "emotion_score": 0.34047967195510864,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.9038628339767456,
+                    "sentiment_score": 0.944086492061615,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:17:02",
+                    "slots": []
+                },
+                {
+                    "idx": 38,
+                    "prompt": "Skiing is such an awesome winter activity! Racing down the slopes must be so thrilling. Do you have a favorite place you like to go skiing?",
+                    "sentence": "At big white mountain",
+                    "turn": "user",
+                    "topic": "skiing",
+                    "intent": "give-fact",
+                    "emotion_label": "fear",
+                    "emotion_score": 0.674258828163147,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9655895829200745,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:17:16",
+                    "slots": []
+                },
+                {
+                    "idx": 40,
+                    "prompt": "I Bet you can go really fast on Big White!",
+                    "sentence": "Yes, I go really fast down the slopes",
+                    "turn": "user",
+                    "topic": "skiing",
+                    "intent": "give-opinion",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9898589253425598,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.8879449963569641,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:17:28",
+                    "slots": []
+                },
+                {
+                    "idx": 42,
+                    "prompt": "Zooming down the slopes at high speed must feel like flying! It's so cool that you enjoy going fast. Do you have a favorite memory from skiing at Big White Mountain?",
+                    "sentence": "Going down a black diamond with my Dad was very scary but exciting",
+                    "turn": "user",
+                    "topic": "skiing",
+                    "intent": "give-fact",
+                    "emotion_label": "fear",
+                    "emotion_score": 0.3259865641593933,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.953406810760498,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:17:54",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:27:21",
+            "timestamp": "2024-07-11 15:17:54",
             "slots": [],
             "show": true
         },
         {
             "id": 15,
-            "name": "robot: Robots movie",
+            "name": "robot: skiing",
             "turn": "robot",
-            "topic": "Robots movie",
+            "topic": "skiing",
             "n": 6.25,
             "interactions": [
                 {
-                    "idx": 17,
-                    "prompt": "I don't know, what's your favorite movie",
-                    "sentence": "I like the Robots movie!",
+                    "idx": 37,
+                    "prompt": "In the winter I also go skiing",
+                    "sentence": "Skiing is such an awesome winter activity! Racing down the slopes must be so thrilling. Do you have a favorite place you like to go skiing?",
                     "turn": "robot",
-                    "topic": "Robots movie",
+                    "topic": "skiing",
                     "intent": "ask-preference",
                     "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
+                    "emotion_score": 0.6330935955047607,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
+                    "sentiment_score": 0.9732513427734375,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:17:04",
                     "slots": []
                 },
                 {
-                    "idx": 17,
-                    "prompt": "I like the Robots movie!",
-                    "sentence": "Thats a really good movie",
+                    "idx": 41,
+                    "prompt": "Yes, I go really fast down the slopes",
+                    "sentence": "Zooming down the slopes at high speed must feel like flying! It's so cool that you enjoy going fast. Do you have a favorite memory from skiing at Big White Mountain?",
                     "turn": "robot",
-                    "topic": "Robots movie",
-                    "intent": "ask-preference",
+                    "topic": "skiing",
+                    "intent": "ask-about-favorite-activity",
                     "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
+                    "emotion_score": 0.9452603459358215,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
+                    "sentiment_score": 0.9462082386016846,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:17:31",
                     "slots": []
                 },
                 {
-                    "idx": 17,
-                    "prompt": "Thats a really good movie",
-                    "sentence": "it's a thrilling adventure!",
+                    "idx": 43,
+                    "prompt": "Going down a black diamond with my Dad was very scary but exciting",
+                    "sentence": "Wow, that's so brave and exciting! Black diamond runs are really challenging. It must have been an amazing adventure with your dad. Do you have any other special activities you like to do with your family?",
                     "turn": "robot",
-                    "topic": "Robots movie",
-                    "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
+                    "topic": "skiing",
+                    "intent": "ask-about-family",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.7942864894866943,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
+                    "sentiment_score": 0.9687390923500061,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:17:56",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:27:21",
+            "timestamp": "2024-07-11 15:17:56",
             "slots": [],
             "show": true
         },
         {
             "id": 16,
-            "name": "user: Indiana Jones",
-            "turn": "user",
-            "topic": "Indiana Jones",
+            "name": "robot: Big White",
+            "turn": "robot",
+            "topic": "Big White",
             "n": 5.75,
             "interactions": [
                 {
-                    "idx": 18,
-                    "prompt": "Well then what is your favorite movie with a lot of adventure?",
-                    "sentence": "I think I really like Indiana Jones",
-                    "turn": "user",
-                    "topic": "Indiana Jones",
+                    "idx": 39,
+                    "prompt": "At big white mountain",
+                    "sentence": "Big White Mountain sounds like an exciting place! There's probably lots of snow and fun trails to explore. Do you prefer skiing down the steep runs or do you enjoy the easier slopes more? ",
+                    "turn": "robot",
+                    "topic": "Big White",
                     "intent": "ask-preference",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.6541816592216492,
+                    "emotion_label": "joy",
+                    "emotion_score": 0.8153573274612427,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9944276571273803,
+                    "sentiment_score": 0.9388284683227539,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:29:17",
+                    "timestamp": "2024-07-11 15:17:18",
                     "slots": []
                 },
                 {
-                    "idx": 17,
-                    "prompt": "Indiana Jones is such a classic choice! He's always on an exciting adventure, searching for hidden treasures and solving mysteries. If you could go on an adventure with Indiana Jones, where would you want to explore?",
-                    "sentence": "I want to go to the Amazon",
-                    "turn": "user",
-                    "topic": "Indiana Jones",
+                    "idx": 39,
+                    "prompt": "I like going fast",
+                    "sentence": "I Bet you can go really fast on Big White!",
+                    "turn": "robot",
+                    "topic": "Big White",
                     "intent": "ask-preference",
                     "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
+                    "emotion_score": 0.8153573274612427,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
+                    "sentiment_score": 0.9388284683227539,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:17:18",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:27:21",
+            "timestamp": "2024-07-11 15:17:18",
             "slots": [],
             "show": true
         },
         {
             "id": 17,
-            "name": "robot: Indiana Jones",
-            "turn": "robot",
-            "topic": "Indiana Jones",
-            "n": 5.75,
+            "name": "user: Big White",
+            "turn": "user",
+            "topic": "Big White",
+            "n": 5.25,
             "interactions": [
                 {
-                    "idx": 17,
-                    "prompt": "I think I really like Indiana Jones",
-                    "sentence": "Indiana Jones is such a classic choice! He's always on an exciting adventure, searching for hidden treasures and solving mysteries. If you could go on an adventure with Indiana Jones, where would you want to explore?",
-                    "turn": "robot",
-                    "topic": "Indiana Jones",
-                    "intent": "ask-preference",
+                    "idx": 40,
+                    "prompt": "Big White Mountain sounds like an exciting place! There's probably lots of snow and fun trails to explore. Do you prefer skiing down the steep runs or do you enjoy the easier slopes more? ",
+                    "sentence": "I like going fast",
+                    "turn": "user",
+                    "topic": "Big White",
+                    "intent": "give-opinion",
                     "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
+                    "emotion_score": 0.9898589253425598,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
+                    "sentiment_score": 0.8879449963569641,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
-                    "slots": []
-                },
-                {
-                    "idx": 17,
-                    "prompt": "I want to go to the Amazon",
-                    "sentence": "That sounds awesome!",
-                    "turn": "robot",
-                    "topic": "Indiana Jones",
-                    "intent": "ask-preference",
-                    "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.9038628339767456,
-                    "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:17:28",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:27:21",
+            "timestamp": "2024-07-11 15:17:28",
             "slots": [],
             "show": true
         },
         {
             "id": 18,
-            "name": "user: goodbye",
+            "name": "user: family ski trips",
             "turn": "user",
-            "topic": "goodbye",
-            "n": 5.5,
+            "topic": "family ski trips",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 18,
-                    "prompt": "That sounds awesome!",
-                    "sentence": "I actually have to go on adventure right now, so I have to say goodbye",
+                    "idx": 44,
+                    "prompt": "Wow, that's so brave and exciting! Black diamond runs are really challenging. It must have been an amazing adventure with your dad. Do you have any other special activities you like to do with your family?",
+                    "sentence": "family ski trips is very fun, but yeah there are others",
                     "turn": "user",
-                    "topic": "goodbye",
-                    "intent": "ask-preference",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.6541816592216492,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.8944276571273804,
+                    "topic": "family ski trips",
+                    "intent": "give-opinion",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.900814414024353,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.8358967304229736,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:29:17",
+                    "timestamp": "2024-07-11 15:18:40",
                     "slots": []
                 },
                 {
-                    "idx": 18,
-                    "prompt": "That's so cool! Anyway, I have to go recharge soon, so let's chat again later. Have a great day!",
-                    "sentence": "bye",
+                    "idx": 44,
+                    "prompt": "That's awesome! It sounds like you have a lot of fun with your family. What's another favorite activity you love doing with them?",
+                    "sentence": "I just really like spending time with them",
                     "turn": "user",
-                    "topic": "goodbye",
-                    "intent": "ask-preference",
-                    "emotion_label": "surprise",
-                    "emotion_score": 0.6541816592216492,
+                    "topic": "family ski trips",
+                    "intent": "give-opinion",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.900814414024353,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.8944276571273804,
+                    "sentiment_score": 0.8358967304229736,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:29:17",
+                    "timestamp": "2024-07-11 15:18:40",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:29:17",
+            "timestamp": "2024-07-11 15:18:40",
             "slots": [],
             "show": true
         },
         {
             "id": 19,
-            "name": "robot: goodbye",
+            "name": "robot: family ski trips",
             "turn": "robot",
-            "topic": "goodbye",
-            "n": 5.25,
+            "topic": "family ski trips",
+            "n": 5.75,
             "interactions": [
                 {
-                    "idx": 17,
-                    "prompt": "I actually have to go on adventure right now, so I have to say goodbye",
-                    "sentence": "That's so cool! Anyway, I have to go recharge soon, so let's chat again later. Have a great day!",
+                    "idx": 45,
+                    "prompt": "family ski trips is very fun, but yeah there are others",
+                    "sentence": "That's awesome! It sounds like you have a lot of fun with your family. What's another favorite activity you love doing with them?",
                     "turn": "robot",
-                    "topic": "goodbye",
-                    "intent": "ask-preference",
+                    "topic": "family ski trips",
+                    "intent": "ask-about-favorite-activity",
                     "emotion_label": "joy",
-                    "emotion_score": 0.5973013043403625,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.9038628339767456,
+                    "emotion_score": 0.9443573355674744,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9845917820930481,
                     "last_interaction": false,
-                    "timestamp": "2024-07-11 16:27:21",
+                    "timestamp": "2024-07-11 15:18:42",
+                    "slots": []
+                },
+                {
+                    "idx": 45,
+                    "prompt": "I just really like spending time with them",
+                    "sentence": "That's awesome! Are there any specific activities you like to do when spending time with them?",
+                    "turn": "robot",
+                    "topic": "family ski trips",
+                    "intent": "ask-about-favorite-activity",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9443573355674744,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9845917820930481,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:18:42",
                     "slots": []
                 }
             ],
-            "timestamp": "2024-07-11 16:27:21",
+            "timestamp": "2024-07-11 15:18:42",
+            "slots": [],
+            "show": true
+        },
+        {
+            "id": 20,
+            "name": "user: goodbye",
+            "turn": "user",
+            "topic": "goodbye",
+            "n": 5.75,
+            "interactions": [
+                {
+                    "idx": 46,
+                    "prompt": "That's awesome! Are there any specific activities you like to do when spending time with them?",
+                    "sentence": "I don't know, but I actually have to go to sleep now",
+                    "turn": "user",
+                    "topic": "goodbye",
+                    "intent": "farewell",
+                    "emotion_label": "surprise",
+                    "emotion_score": 0.5892351269721985,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.9000611901283264,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:19:33",
+                    "slots": []
+                },
+                {
+                    "idx": 48,
+                    "prompt": "No problem at all! Sweet dreams and have a fantastic rest. I can't wait to chat with you again soon. Goodnight!",
+                    "sentence": "bye",
+                    "turn": "user",
+                    "topic": "goodbye",
+                    "intent": "command",
+                    "emotion_label": "neutral",
+                    "emotion_score": 0.5494765043258667,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.96490877866745,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:19:39",
+                    "slots": []
+                }
+            ],
+            "timestamp": "2024-07-11 15:19:39",
+            "slots": [],
+            "show": true
+        },
+        {
+            "id": 21,
+            "name": "robot: goodbye",
+            "turn": "robot",
+            "topic": "goodbye",
+            "n": 5.5,
+            "interactions": [
+                {
+                    "idx": 47,
+                    "prompt": "I don't know, but I actually have to go to sleep now",
+                    "sentence": "No problem at all! Sweet dreams and have a fantastic rest. I can't wait to chat with you again soon. Goodnight!",
+                    "turn": "robot",
+                    "topic": "goodbye",
+                    "intent": "farewell",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.9464290142059326,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9819761514663696,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:19:37",
+                    "slots": []
+                },
+                {
+                    "idx": 49,
+                    "prompt": "bye",
+                    "sentence": "Goodnight! Sleep tight and have a wonderful day tomorrow. See you next time!",
+                    "turn": "robot",
+                    "topic": "goodbye",
+                    "intent": "farewell",
+                    "emotion_label": "joy",
+                    "emotion_score": 0.6080877184867859,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.9833259582519531,
+                    "last_interaction": false,
+                    "timestamp": "2024-07-11 15:19:40",
+                    "slots": []
+                }
+            ],
+            "timestamp": "2024-07-11 15:19:40",
             "slots": [],
             "show": true
         }
@@ -888,490 +1107,627 @@
     "links": {
         "robot": [
             {
-                "name": "robot: school -> user: test",
+                "name": "robot: greeting -> user: hockey",
                 "source": 0,
-                "sourceName": "robot: school",
+                "sourceName": "robot: greeting",
                 "target": 2,
-                "targetName": "user: test",
+                "targetName": "user: hockey",
                 "value": 1,
-                "timestamp": "2024-07-11 16:21:44",
+                "timestamp": "2024-07-11 15:11:57",
                 "responseIDs": [
                     {
                         "idx": 2,
-                        "time": "2024-07-11 16:21:44"
+                        "time": "2024-07-11 15:11:57"
                     }
                 ]
             },
             {
-                "name": "robot: test -> user: test",
+                "name": "robot: hockey -> user: hockey",
                 "source": 3,
-                "sourceName": "robot: test",
+                "sourceName": "robot: hockey",
                 "target": 2,
-                "targetName": "user: test",
-                "value": 1,
-                "timestamp": "2024-07-11 16:22:15",
-                "responseIDs": [
-                    {
-                        "idx": 4,
-                        "time": "2024-07-11 16:22:15"
-                    }
-                ]
-            },
-            {
-                "name": "robot: test -> user: history",
-                "source": 3,
-                "sourceName": "robot: test",
-                "target": 4,
-                "targetName": "user: history",
-                "value": 1,
-                "timestamp": "2024-07-11 16:22:15",
-                "responseIDs": [
-                    {
-                        "idx": 4,
-                        "time": "2024-07-11 16:22:15"
-                    }
-                ]
-            },
-            {
-                "name": "robot: history -> user: history",
-                "source": 5,
-                "sourceName": "robot: history",
-                "target": 4,
-                "targetName": "user: history",
-                "value": 1,
-                "timestamp": "2024-07-11 16:23:49",
-                "responseIDs": [
-                    {
-                        "idx": 6,
-                        "time": "2024-07-11 16:23:49"
-                    }
-                ]
-            },
-            {
-                "name": "robot: history -> user: ancient Egypt",
-                "source": 5,
-                "sourceName": "robot: history",
-                "target": 6,
-                "targetName": "user: ancient Egypt",
-                "value": 1,
-                "timestamp": "2024-07-11 16:23:49",
-                "responseIDs": [
-                    {
-                        "idx": 6,
-                        "time": "2024-07-11 16:23:49"
-                    }
-                ]
-            },
-            {
-                "name": "robot: ancient Egypt -> user: ancient Egypt",
-                "source": 7,
-                "sourceName": "robot: ancient Egypt",
-                "target": 6,
-                "targetName": "user: ancient Egypt",
+                "targetName": "user: hockey",
                 "value": 2,
-                "timestamp": "2024-07-11 16:25:20",
+                "timestamp": "2024-07-11 15:13:32",
+                "responseIDs": [
+                    {
+                        "idx": 4,
+                        "time": "2024-07-11 15:12:14"
+                    },
+                    {
+                        "idx": 12,
+                        "time": "2024-07-11 15:13:32"
+                    }
+                ]
+            },
+            {
+                "name": "robot: hockey -> user: goalkeeping",
+                "source": 3,
+                "sourceName": "robot: hockey",
+                "target": 4,
+                "targetName": "user: goalkeeping",
+                "value": 1,
+                "timestamp": "2024-07-11 15:12:24",
+                "responseIDs": [
+                    {
+                        "idx": 6,
+                        "time": "2024-07-11 15:12:24"
+                    }
+                ]
+            },
+            {
+                "name": "robot: goalkeeping -> user: goalkeeping",
+                "source": 5,
+                "sourceName": "robot: goalkeeping",
+                "target": 4,
+                "targetName": "user: goalkeeping",
+                "value": 2,
+                "timestamp": "2024-07-11 15:13:05",
                 "responseIDs": [
                     {
                         "idx": 8,
-                        "time": "2024-07-11 16:24:32"
+                        "time": "2024-07-11 15:12:44"
                     },
                     {
                         "idx": 10,
-                        "time": "2024-07-11 16:25:20"
+                        "time": "2024-07-11 15:13:05"
                     }
                 ]
             },
             {
-                "name": "robot: pyramid -> user: ancient Egypt",
-                "source": 8,
-                "sourceName": "robot: pyramid",
+                "name": "robot: hockey -> user: Canucks",
+                "source": 3,
+                "sourceName": "robot: hockey",
                 "target": 6,
-                "targetName": "user: ancient Egypt",
+                "targetName": "user: Canucks",
                 "value": 1,
-                "timestamp": "2024-07-11 16:25:20",
+                "timestamp": "2024-07-11 15:13:50",
                 "responseIDs": [
                     {
-                        "idx": 10,
-                        "time": "2024-07-11 16:25:20"
+                        "idx": 14,
+                        "time": "2024-07-11 15:13:50"
                     }
                 ]
             },
             {
-                "name": "robot: ancient Egypt -> user: adventures and mysteries",
+                "name": "robot: Canucks -> user: Canucks",
                 "source": 7,
-                "sourceName": "robot: ancient Egypt",
-                "target": 9,
-                "targetName": "user: adventures and mysteries",
-                "value": 1,
-                "timestamp": "2024-07-11 16:26:05",
-                "responseIDs": [
-                    {
-                        "idx": 14,
-                        "time": "2024-07-11 16:26:05"
-                    }
-                ]
-            },
-            {
-                "name": "robot: adventures and mysteries -> user: adventures and mysteries",
-                "source": 10,
-                "sourceName": "robot: adventures and mysteries",
-                "target": 9,
-                "targetName": "user: adventures and mysteries",
-                "value": 1,
-                "timestamp": "2024-07-11 16:26:05",
-                "responseIDs": [
-                    {
-                        "idx": 14,
-                        "time": "2024-07-11 16:26:05"
-                    }
-                ]
-            },
-            {
-                "name": "robot: adventures and mysteries -> user: adventure movies",
-                "source": 10,
-                "sourceName": "robot: adventures and mysteries",
-                "target": 11,
-                "targetName": "user: adventure movies",
-                "value": 1,
-                "timestamp": "2024-07-11 16:27:19",
-                "responseIDs": [
-                    {
-                        "idx": 16,
-                        "time": "2024-07-11 16:27:19"
-                    }
-                ]
-            },
-            {
-                "name": "robot: adventure movies -> user: adventure movies",
-                "source": 12,
-                "sourceName": "robot: adventure movies",
-                "target": 11,
-                "targetName": "user: adventure movies",
-                "value": 1,
-                "timestamp": "2024-07-11 16:27:19",
-                "responseIDs": [
-                    {
-                        "idx": 16,
-                        "time": "2024-07-11 16:27:19"
-                    }
-                ]
-            },
-            {
-                "name": "robot: adventure movies -> user: favorite movie",
-                "source": 12,
-                "sourceName": "robot: adventure movies",
-                "target": 13,
-                "targetName": "user: favorite movie",
-                "value": 1,
-                "timestamp": "2024-07-11 16:29:17",
-                "responseIDs": [
-                    {
-                        "idx": 18,
-                        "time": "2024-07-11 16:29:17"
-                    }
-                ]
-            },
-            {
-                "name": "robot: favorite movie -> user: favorite movie",
-                "source": 14,
-                "sourceName": "robot: favorite movie",
-                "target": 13,
-                "targetName": "user: favorite movie",
+                "sourceName": "robot: Canucks",
+                "target": 6,
+                "targetName": "user: Canucks",
                 "value": 2,
-                "timestamp": "2024-07-11 16:29:17",
+                "timestamp": "2024-07-11 15:14:15",
                 "responseIDs": [
                     {
-                        "idx": 18,
-                        "time": "2024-07-11 16:29:17"
+                        "idx": 16,
+                        "time": "2024-07-11 15:14:03"
                     },
                     {
                         "idx": 18,
-                        "time": "2024-07-11 16:29:17"
+                        "time": "2024-07-11 15:14:15"
                     }
                 ]
             },
             {
-                "name": "robot: Robots movie -> user: favorite movie",
+                "name": "robot: watching with family -> user: watching with family",
+                "source": 8,
+                "sourceName": "robot: watching with family",
+                "target": 9,
+                "targetName": "user: watching with family",
+                "value": 1,
+                "timestamp": "2024-07-11 15:14:32",
+                "responseIDs": [
+                    {
+                        "idx": 20,
+                        "time": "2024-07-11 15:14:32"
+                    }
+                ]
+            },
+            {
+                "name": "robot: watching with family -> user: Canucks",
+                "source": 8,
+                "sourceName": "robot: watching with family",
+                "target": 6,
+                "targetName": "user: Canucks",
+                "value": 1,
+                "timestamp": "2024-07-11 15:14:44",
+                "responseIDs": [
+                    {
+                        "idx": 22,
+                        "time": "2024-07-11 15:14:44"
+                    }
+                ]
+            },
+            {
+                "name": "robot: hockey -> user: gymnastics",
+                "source": 3,
+                "sourceName": "robot: hockey",
+                "target": 10,
+                "targetName": "user: gymnastics",
+                "value": 1,
+                "timestamp": "2024-07-11 15:14:44",
+                "responseIDs": [
+                    {
+                        "idx": 22,
+                        "time": "2024-07-11 15:14:44"
+                    }
+                ]
+            },
+            {
+                "name": "robot: gymnastics -> user: gymnastics",
+                "source": 11,
+                "sourceName": "robot: gymnastics",
+                "target": 10,
+                "targetName": "user: gymnastics",
+                "value": 3,
+                "timestamp": "2024-07-11 15:15:37",
+                "responseIDs": [
+                    {
+                        "idx": 24,
+                        "time": "2024-07-11 15:15:03"
+                    },
+                    {
+                        "idx": 26,
+                        "time": "2024-07-11 15:15:12"
+                    },
+                    {
+                        "idx": 28,
+                        "time": "2024-07-11 15:15:37"
+                    }
+                ]
+            },
+            {
+                "name": "robot: gymnastics -> user: friend activities",
+                "source": 11,
+                "sourceName": "robot: gymnastics",
+                "target": 12,
+                "targetName": "user: friend activities",
+                "value": 1,
+                "timestamp": "2024-07-11 15:16:00",
+                "responseIDs": [
+                    {
+                        "idx": 30,
+                        "time": "2024-07-11 15:16:00"
+                    }
+                ]
+            },
+            {
+                "name": "robot: friend activities -> user: friend activities",
+                "source": 13,
+                "sourceName": "robot: friend activities",
+                "target": 12,
+                "targetName": "user: friend activities",
+                "value": 2,
+                "timestamp": "2024-07-11 15:16:38",
+                "responseIDs": [
+                    {
+                        "idx": 32,
+                        "time": "2024-07-11 15:16:17"
+                    },
+                    {
+                        "idx": 34,
+                        "time": "2024-07-11 15:16:38"
+                    }
+                ]
+            },
+            {
+                "name": "robot: gymnastics -> user: skiing",
+                "source": 11,
+                "sourceName": "robot: gymnastics",
+                "target": 14,
+                "targetName": "user: skiing",
+                "value": 1,
+                "timestamp": "2024-07-11 15:17:02",
+                "responseIDs": [
+                    {
+                        "idx": 36,
+                        "time": "2024-07-11 15:17:02"
+                    }
+                ]
+            },
+            {
+                "name": "robot: skiing -> user: skiing",
                 "source": 15,
-                "sourceName": "robot: Robots movie",
-                "target": 13,
-                "targetName": "user: favorite movie",
-                "value": 1,
-                "timestamp": "2024-07-11 16:27:21",
+                "sourceName": "robot: skiing",
+                "target": 14,
+                "targetName": "user: skiing",
+                "value": 2,
+                "timestamp": "2024-07-11 15:17:54",
                 "responseIDs": [
                     {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
+                        "idx": 38,
+                        "time": "2024-07-11 15:17:16"
+                    },
+                    {
+                        "idx": 42,
+                        "time": "2024-07-11 15:17:54"
                     }
                 ]
             },
             {
-                "name": "robot: favorite movie -> user: Indiana Jones",
-                "source": 14,
-                "sourceName": "robot: favorite movie",
-                "target": 16,
-                "targetName": "user: Indiana Jones",
+                "name": "robot: Big White -> user: Big White",
+                "source": 16,
+                "sourceName": "robot: Big White",
+                "target": 17,
+                "targetName": "user: Big White",
                 "value": 1,
-                "timestamp": "2024-07-11 16:29:17",
+                "timestamp": "2024-07-11 15:17:28",
                 "responseIDs": [
                     {
-                        "idx": 18,
-                        "time": "2024-07-11 16:29:17"
+                        "idx": 40,
+                        "time": "2024-07-11 15:17:28"
                     }
                 ]
             },
             {
-                "name": "robot: Indiana Jones -> user: Indiana Jones",
-                "source": 17,
-                "sourceName": "robot: Indiana Jones",
-                "target": 16,
-                "targetName": "user: Indiana Jones",
+                "name": "robot: Big White -> user: skiing",
+                "source": 16,
+                "sourceName": "robot: Big White",
+                "target": 14,
+                "targetName": "user: skiing",
                 "value": 1,
-                "timestamp": "2024-07-11 16:27:21",
+                "timestamp": "2024-07-11 15:17:28",
                 "responseIDs": [
                     {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
+                        "idx": 40,
+                        "time": "2024-07-11 15:17:28"
                     }
                 ]
             },
             {
-                "name": "robot: Indiana Jones -> user: goodbye",
-                "source": 17,
-                "sourceName": "robot: Indiana Jones",
+                "name": "robot: skiing -> user: family ski trips",
+                "source": 15,
+                "sourceName": "robot: skiing",
                 "target": 18,
+                "targetName": "user: family ski trips",
+                "value": 1,
+                "timestamp": "2024-07-11 15:18:40",
+                "responseIDs": [
+                    {
+                        "idx": 44,
+                        "time": "2024-07-11 15:18:40"
+                    }
+                ]
+            },
+            {
+                "name": "robot: family ski trips -> user: family ski trips",
+                "source": 19,
+                "sourceName": "robot: family ski trips",
+                "target": 18,
+                "targetName": "user: family ski trips",
+                "value": 1,
+                "timestamp": "2024-07-11 15:18:40",
+                "responseIDs": [
+                    {
+                        "idx": 44,
+                        "time": "2024-07-11 15:18:40"
+                    }
+                ]
+            },
+            {
+                "name": "robot: family ski trips -> user: goodbye",
+                "source": 19,
+                "sourceName": "robot: family ski trips",
+                "target": 20,
                 "targetName": "user: goodbye",
                 "value": 1,
-                "timestamp": "2024-07-11 16:29:17",
+                "timestamp": "2024-07-11 15:19:33",
                 "responseIDs": [
                     {
-                        "idx": 18,
-                        "time": "2024-07-11 16:29:17"
+                        "idx": 46,
+                        "time": "2024-07-11 15:19:33"
                     }
                 ]
             },
             {
                 "name": "robot: goodbye -> user: goodbye",
-                "source": 19,
+                "source": 21,
                 "sourceName": "robot: goodbye",
-                "target": 18,
+                "target": 20,
                 "targetName": "user: goodbye",
                 "value": 1,
-                "timestamp": "2024-07-11 16:29:17",
+                "timestamp": "2024-07-11 15:19:39",
                 "responseIDs": [
                     {
-                        "idx": 18,
-                        "time": "2024-07-11 16:29:17"
+                        "idx": 48,
+                        "time": "2024-07-11 15:19:39"
                     }
                 ]
             }
         ],
         "user": [
             {
-                "name": "user: greeting -> robot: school",
+                "name": "user: greeting -> robot: greeting",
                 "source": 1,
                 "sourceName": "user: greeting",
                 "target": 0,
-                "targetName": "robot: school",
+                "targetName": "robot: greeting",
                 "value": 1,
-                "timestamp": "2024-07-11 16:20:47",
+                "timestamp": "2024-07-11 15:11:42",
                 "responseIDs": [
                     {
                         "idx": 1,
-                        "time": "2024-07-11 16:20:47"
+                        "time": "2024-07-11 15:11:42"
                     }
                 ]
             },
             {
-                "name": "user: test -> robot: test",
+                "name": "user: hockey -> robot: hockey",
                 "source": 2,
-                "sourceName": "user: test",
+                "sourceName": "user: hockey",
                 "target": 3,
-                "targetName": "robot: test",
-                "value": 2,
-                "timestamp": "2024-07-11 16:21:46",
-                "responseIDs": [
-                    {
-                        "idx": 3,
-                        "time": "2024-07-11 16:21:46"
-                    },
-                    {
-                        "idx": 3,
-                        "time": "2024-07-11 16:21:46"
-                    }
-                ]
-            },
-            {
-                "name": "user: history -> robot: history",
-                "source": 4,
-                "sourceName": "user: history",
-                "target": 5,
-                "targetName": "robot: history",
-                "value": 2,
-                "timestamp": "2024-07-11 16:22:19",
-                "responseIDs": [
-                    {
-                        "idx": 5,
-                        "time": "2024-07-11 16:22:19"
-                    },
-                    {
-                        "idx": 5,
-                        "time": "2024-07-11 16:22:19"
-                    }
-                ]
-            },
-            {
-                "name": "user: ancient Egypt -> robot: ancient Egypt",
-                "source": 6,
-                "sourceName": "user: ancient Egypt",
-                "target": 7,
-                "targetName": "robot: ancient Egypt",
+                "targetName": "robot: hockey",
                 "value": 3,
-                "timestamp": "2024-07-11 16:25:22",
+                "timestamp": "2024-07-11 15:13:34",
+                "responseIDs": [
+                    {
+                        "idx": 3,
+                        "time": "2024-07-11 15:11:59"
+                    },
+                    {
+                        "idx": 5,
+                        "time": "2024-07-11 15:12:16"
+                    },
+                    {
+                        "idx": 13,
+                        "time": "2024-07-11 15:13:34"
+                    }
+                ]
+            },
+            {
+                "name": "user: goalkeeping -> robot: goalkeeping",
+                "source": 4,
+                "sourceName": "user: goalkeeping",
+                "target": 5,
+                "targetName": "robot: goalkeeping",
+                "value": 2,
+                "timestamp": "2024-07-11 15:12:46",
                 "responseIDs": [
                     {
                         "idx": 7,
-                        "time": "2024-07-11 16:23:51"
+                        "time": "2024-07-11 15:12:27"
                     },
                     {
                         "idx": 9,
-                        "time": "2024-07-11 16:24:35"
-                    },
-                    {
-                        "idx": 11,
-                        "time": "2024-07-11 16:25:22"
+                        "time": "2024-07-11 15:12:46"
                     }
                 ]
             },
             {
-                "name": "user: ancient Egypt -> robot: pyramid",
+                "name": "user: goalkeeping -> robot: hockey",
+                "source": 4,
+                "sourceName": "user: goalkeeping",
+                "target": 3,
+                "targetName": "robot: hockey",
+                "value": 1,
+                "timestamp": "2024-07-11 15:13:08",
+                "responseIDs": [
+                    {
+                        "idx": 11,
+                        "time": "2024-07-11 15:13:08"
+                    }
+                ]
+            },
+            {
+                "name": "user: Canucks -> robot: Canucks",
                 "source": 6,
-                "sourceName": "user: ancient Egypt",
+                "sourceName": "user: Canucks",
+                "target": 7,
+                "targetName": "robot: Canucks",
+                "value": 2,
+                "timestamp": "2024-07-11 15:14:05",
+                "responseIDs": [
+                    {
+                        "idx": 15,
+                        "time": "2024-07-11 15:13:52"
+                    },
+                    {
+                        "idx": 17,
+                        "time": "2024-07-11 15:14:05"
+                    }
+                ]
+            },
+            {
+                "name": "user: Canucks -> robot: watching with family",
+                "source": 6,
+                "sourceName": "user: Canucks",
                 "target": 8,
-                "targetName": "robot: pyramid",
+                "targetName": "robot: watching with family",
                 "value": 1,
-                "timestamp": "2024-07-11 16:25:22",
+                "timestamp": "2024-07-11 15:14:18",
                 "responseIDs": [
                     {
-                        "idx": 11,
-                        "time": "2024-07-11 16:25:22"
+                        "idx": 19,
+                        "time": "2024-07-11 15:14:18"
                     }
                 ]
             },
             {
-                "name": "user: adventures and mysteries -> robot: adventures and mysteries",
+                "name": "user: watching with family -> robot: watching with family",
                 "source": 9,
-                "sourceName": "user: adventures and mysteries",
-                "target": 10,
-                "targetName": "robot: adventures and mysteries",
-                "value": 2,
-                "timestamp": "2024-07-11 16:26:07",
-                "responseIDs": [
-                    {
-                        "idx": 15,
-                        "time": "2024-07-11 16:26:07"
-                    },
-                    {
-                        "idx": 15,
-                        "time": "2024-07-11 16:26:07"
-                    }
-                ]
-            },
-            {
-                "name": "user: adventure movies -> robot: adventure movies",
-                "source": 11,
-                "sourceName": "user: adventure movies",
-                "target": 12,
-                "targetName": "robot: adventure movies",
-                "value": 2,
-                "timestamp": "2024-07-11 16:27:21",
-                "responseIDs": [
-                    {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
-                    },
-                    {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
-                    }
-                ]
-            },
-            {
-                "name": "user: favorite movie -> robot: favorite movie",
-                "source": 13,
-                "sourceName": "user: favorite movie",
-                "target": 14,
-                "targetName": "robot: favorite movie",
-                "value": 3,
-                "timestamp": "2024-07-11 16:27:21",
-                "responseIDs": [
-                    {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
-                    },
-                    {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
-                    },
-                    {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
-                    }
-                ]
-            },
-            {
-                "name": "user: favorite movie -> robot: Robots movie",
-                "source": 13,
-                "sourceName": "user: favorite movie",
-                "target": 15,
-                "targetName": "robot: Robots movie",
+                "sourceName": "user: watching with family",
+                "target": 8,
+                "targetName": "robot: watching with family",
                 "value": 1,
-                "timestamp": "2024-07-11 16:27:21",
+                "timestamp": "2024-07-11 15:14:34",
                 "responseIDs": [
                     {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
+                        "idx": 21,
+                        "time": "2024-07-11 15:14:34"
                     }
                 ]
             },
             {
-                "name": "user: Indiana Jones -> robot: Indiana Jones",
-                "source": 16,
-                "sourceName": "user: Indiana Jones",
-                "target": 17,
-                "targetName": "robot: Indiana Jones",
-                "value": 2,
-                "timestamp": "2024-07-11 16:27:21",
+                "name": "user: Canucks -> robot: hockey",
+                "source": 6,
+                "sourceName": "user: Canucks",
+                "target": 3,
+                "targetName": "robot: hockey",
+                "value": 1,
+                "timestamp": "2024-07-11 15:14:46",
                 "responseIDs": [
                     {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
+                        "idx": 23,
+                        "time": "2024-07-11 15:14:46"
+                    }
+                ]
+            },
+            {
+                "name": "user: gymnastics -> robot: gymnastics",
+                "source": 10,
+                "sourceName": "user: gymnastics",
+                "target": 11,
+                "targetName": "robot: gymnastics",
+                "value": 4,
+                "timestamp": "2024-07-11 15:15:39",
+                "responseIDs": [
+                    {
+                        "idx": 23,
+                        "time": "2024-07-11 15:14:46"
                     },
                     {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
+                        "idx": 25,
+                        "time": "2024-07-11 15:15:04"
+                    },
+                    {
+                        "idx": 27,
+                        "time": "2024-07-11 15:15:14"
+                    },
+                    {
+                        "idx": 29,
+                        "time": "2024-07-11 15:15:39"
+                    }
+                ]
+            },
+            {
+                "name": "user: friend activities -> robot: friend activities",
+                "source": 12,
+                "sourceName": "user: friend activities",
+                "target": 13,
+                "targetName": "robot: friend activities",
+                "value": 2,
+                "timestamp": "2024-07-11 15:16:19",
+                "responseIDs": [
+                    {
+                        "idx": 31,
+                        "time": "2024-07-11 15:16:03"
+                    },
+                    {
+                        "idx": 33,
+                        "time": "2024-07-11 15:16:19"
+                    }
+                ]
+            },
+            {
+                "name": "user: friend activities -> robot: gymnastics",
+                "source": 12,
+                "sourceName": "user: friend activities",
+                "target": 11,
+                "targetName": "robot: gymnastics",
+                "value": 1,
+                "timestamp": "2024-07-11 15:16:40",
+                "responseIDs": [
+                    {
+                        "idx": 35,
+                        "time": "2024-07-11 15:16:40"
+                    }
+                ]
+            },
+            {
+                "name": "user: skiing -> robot: skiing",
+                "source": 14,
+                "sourceName": "user: skiing",
+                "target": 15,
+                "targetName": "robot: skiing",
+                "value": 3,
+                "timestamp": "2024-07-11 15:17:56",
+                "responseIDs": [
+                    {
+                        "idx": 37,
+                        "time": "2024-07-11 15:17:04"
+                    },
+                    {
+                        "idx": 41,
+                        "time": "2024-07-11 15:17:31"
+                    },
+                    {
+                        "idx": 43,
+                        "time": "2024-07-11 15:17:56"
+                    }
+                ]
+            },
+            {
+                "name": "user: skiing -> robot: Big White",
+                "source": 14,
+                "sourceName": "user: skiing",
+                "target": 16,
+                "targetName": "robot: Big White",
+                "value": 1,
+                "timestamp": "2024-07-11 15:17:18",
+                "responseIDs": [
+                    {
+                        "idx": 39,
+                        "time": "2024-07-11 15:17:18"
+                    }
+                ]
+            },
+            {
+                "name": "user: Big White -> robot: Big White",
+                "source": 17,
+                "sourceName": "user: Big White",
+                "target": 16,
+                "targetName": "robot: Big White",
+                "value": 1,
+                "timestamp": "2024-07-11 15:17:18",
+                "responseIDs": [
+                    {
+                        "idx": 39,
+                        "time": "2024-07-11 15:17:18"
+                    }
+                ]
+            },
+            {
+                "name": "user: family ski trips -> robot: family ski trips",
+                "source": 18,
+                "sourceName": "user: family ski trips",
+                "target": 19,
+                "targetName": "robot: family ski trips",
+                "value": 2,
+                "timestamp": "2024-07-11 15:18:42",
+                "responseIDs": [
+                    {
+                        "idx": 45,
+                        "time": "2024-07-11 15:18:42"
+                    },
+                    {
+                        "idx": 45,
+                        "time": "2024-07-11 15:18:42"
                     }
                 ]
             },
             {
                 "name": "user: goodbye -> robot: goodbye",
-                "source": 18,
+                "source": 20,
                 "sourceName": "user: goodbye",
-                "target": 19,
+                "target": 21,
                 "targetName": "robot: goodbye",
-                "value": 1,
-                "timestamp": "2024-07-11 16:27:21",
+                "value": 2,
+                "timestamp": "2024-07-11 15:19:40",
                 "responseIDs": [
                     {
-                        "idx": 17,
-                        "time": "2024-07-11 16:27:21"
+                        "idx": 47,
+                        "time": "2024-07-11 15:19:37"
+                    },
+                    {
+                        "idx": 49,
+                        "time": "2024-07-11 15:19:40"
                     }
                 ]
             }
         ]
     },
     "attributes": {
-        "longest_robot_utterance": 232,
-        "longest_user_utterance": 70
+        "longest_robot_utterance": 228,
+        "longest_user_utterance": 66
     }
 }
