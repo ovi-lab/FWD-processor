@@ -103,7 +103,7 @@ def upload_file(file_data, file_name):
     This function kills any active ROS feed before processing to avoid conflicts with incoming data.
     """
     kill_ros_feed()
-    if file_data:
+    if file_data: 
         save_path, is_json = intercepting_json(file_name)
         with open(save_path, 'wb') as f:
             f.write(file_data)
