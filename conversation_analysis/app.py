@@ -89,12 +89,16 @@ def receive_subscriber_feed(event):
         thread_event.clear()
         thread = None
 
-def intercepting_json(file_name):
-    """
-    Determines the save path and file type based on the extension of the file name provided.
-    """
+def intercepting_file(file_name):
     ext = os.path.splitext(file_name)[-1].lower()
-    return (TRANSCRIPT_FILE_PATH if ext == ".json" else UPLOADED_FILE_PATH, ext == ".json")
+
+    if ext == ".json":
+        return TRANSCRIPT_FILE_PATH, True, False
+
+    if ext == ".txt":
+        return UPLOADED_FILE_PATH, False, True
+
+    return UPLOADED_FILE_PATH, False, False
 
 @socketio.event
 def upload_file(file_data, file_name):
@@ -104,10 +108,10 @@ def upload_file(file_data, file_name):
     """
     kill_ros_feed()
     if file_data: 
-        save_path, is_json = intercepting_json(file_name)
+        save_path, is_json, is_txt = intercepting_file(file_name)
         with open(save_path, 'wb') as f:
             f.write(file_data)
-        process_uploaded_transcript(save_path, is_json)
+        process_uploaded_transcript(save_path, is_json=is_json, is_txt=is_txt)
 
 @socketio.event
 def json_download_request():

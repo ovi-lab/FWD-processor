@@ -1,9 +1,11 @@
 import re
+import requests
 from datetime import datetime, timedelta
 
 from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
-from textblob import TextBlob
+# from textblob import TextBlob
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from transformers import pipeline
 
 
@@ -21,11 +23,13 @@ class RawTranscriptConverter:
     user: I want to learn how AI makes decisions.
     """
 
-    def __init__(self, transcript_date=None, max_topics=10):
+    def __init__(self, transcript_date=None, max_topics=10, ollama_model="llama3.2:1b"):
         self.transcript_date = transcript_date or datetime.now().strftime(
             "%Y-%m-%d %H:%M:%S"
         )
         self.max_topics = max_topics
+        self.ollama_model = ollama_model
+        self.vader = SentimentIntensityAnalyzer()
 
         self.emotion_model = pipeline(
             "text-classification",
@@ -116,16 +120,29 @@ class RawTranscriptConverter:
         return result["label"].lower(), float(result["score"])
 
     def _get_sentiment(self, sentence):
-        polarity = TextBlob(sentence).sentiment.polarity
+        result = self.emotion_model(sentence)[0][0]
+        emotion = result["label"].lower()
 
-        if polarity > 0.1:
+        positive_emotions = {"joy", "surprise"}
+        negative_emotions = {"anger", "disgust", "fear", "sadness"}
+
+        if emotion in positive_emotions:
             label = "positive"
-        elif polarity < -0.1:
+        elif emotion in negative_emotions:
             label = "negative"
         else:
             label = "neutral"
 
-        return label, float(abs(polarity))
+        compound = self.vader.polarity_scores(sentence)["compound"]
+        score = round(abs(compound), 4)
+         # VADER tiebreaker — override neutral if VADER detects strong sentiment
+        if label == "neutral":
+            if compound > 0.5:
+                label = "positive"
+            elif compound < -0.5:
+                label = "negative"
+
+        return label, score
 
     def _assign_topics(self, sentences):
         """
@@ -137,7 +154,7 @@ class RawTranscriptConverter:
         if not sentences:
             return []
 
-    # 1. Group transcript into Q/A pairs: robot + user
+        # 1. Group transcript into Q/A pairs: robot + user
         pairs = []
         pair_indices = []
 
@@ -156,20 +173,21 @@ class RawTranscriptConverter:
         if len(pairs) == 1:
             return [self._make_short_label(pairs[0]) for _ in sentences]
 
-    # 2. Embed Q/A pairs instead of individual utterances
+        # 2. Embed Q/A pairs instead of individual utterances
         embeddings = self.embedding_model.encode(pairs)
 
         segments = []
         current_segment = [0]
 
+        #adjusting similarity_threshold makes the topic classification more or less sensitive to topic shifts. 0.38 is a good starting point for short Q/A pairs, but you may want to adjust it based on your specific transcripts and how granular you want the topics to be.
         similarity_threshold = 0.38
 
-    # 3. Detect topic changes between neighboring Q/A pairs
+        # 3. Detect topic changes between neighboring Q/A pairs
         for pair_idx in range(1, len(pairs)):
             similarity = self._cosine_similarity(
                 embeddings[pair_idx - 1],
                 embeddings[pair_idx]
-        )
+            )
 
             if similarity < similarity_threshold:
                 segments.append(current_segment)
@@ -179,7 +197,7 @@ class RawTranscriptConverter:
 
         segments.append(current_segment)
 
-    # 4. Merge neighboring segments until there are max_topics or fewer
+        # 4. Merge neighboring segments until there are max_topics or fewer
         while len(segments) > self.max_topics:
             smallest_index = min(range(len(segments)), key=lambda idx: len(segments[idx]))
 
@@ -188,11 +206,11 @@ class RawTranscriptConverter:
                 segments.pop(0)
             else:
                 segments[smallest_index - 1] = (
-                segments[smallest_index - 1] + segments[smallest_index]
-            )
-            segments.pop(smallest_index)
+                    segments[smallest_index - 1] + segments[smallest_index]
+                )
+                segments.pop(smallest_index)
 
-    # 5. Assign one label to all utterances in each segment
+        # 5. Assign one label to all utterances in each segment
         topics = ["General"] * len(sentences)
 
         for segment in segments:
@@ -206,7 +224,7 @@ class RawTranscriptConverter:
                     topics[sentence_idx] = label
 
         return topics
-    
+
     def _cosine_similarity(self, vector_a, vector_b):
         dot_product = sum(a * b for a, b in zip(vector_a, vector_b))
         norm_a = sum(a * a for a in vector_a) ** 0.5
@@ -218,8 +236,9 @@ class RawTranscriptConverter:
         return dot_product / (norm_a * norm_b)
 
     def _cluster_topic_labels(self, topic_labels, max_topics=10):
-
-        # --- Takes detailed topic labels and groups them into max 10 high-level categories.
+        """
+        Takes detailed topic labels and groups them into max 10 high-level categories.
+        """
 
         unique_labels = list(set(topic_labels))
 
@@ -234,7 +253,7 @@ class RawTranscriptConverter:
             nr_topics=max_topics,
             min_topic_size=2,
             verbose=False,
-    )
+        )
 
         topic_ids, _ = topic_model.fit_transform(unique_labels)
 
@@ -259,46 +278,63 @@ class RawTranscriptConverter:
         for label, topic_id in zip(unique_labels, topic_ids):
             label_to_high_level[label] = cluster_names.get(
                 topic_id, self._make_short_label(label)
-        )
+            )
 
         return label_to_high_level
 
     def _make_short_label(self, text):
-        """
-        Creates a max-2-word topic label.
-        """
+        sentences = [s.strip() for s in text.split('.') if s.strip()]
+        if len(sentences) > 2:
+            excerpt = sentences[0] + '. ' + sentences[-1]
+        else:
+            excerpt = text
 
+        prompt = (
+            "Read the following conversation excerpt and respond with ONLY a 1 to 2 word "
+            "topic label that captures the most specific theme being discussed. "
+            "No punctuation, no explanation, just 1 or 2 words maximum.\n\n"
+            f"Excerpt: {excerpt}"
+        )
+        try:
+            response = requests.post(
+                "http://localhost:11434/api/generate",
+                json={
+                    "model": self.ollama_model,
+                    "prompt": prompt,
+                    "stream": False,
+                    "options": {
+                        "temperature": 0.2,
+                        "num_predict": 20,
+                    },
+                },
+                timeout=15,
+            )
+            # print(f"[Ollama status] {response.status_code}")
+            # print(f"[Ollama body] {response.text[:300]}")
+            response.raise_for_status()
+            label = response.json().get("response", "").strip()
+    
+            label = label.splitlines()[0].strip(" .,\"'")
+            label = " ".join(label.split()[:4])
+    
+            return label if label else self._keyword_fallback(text)
+    
+        except Exception as e:
+            print(f"[Ollama fallback] {e}")
+            return self._keyword_fallback(text)
+    
+    def _keyword_fallback(self, text):
+        """
+        Keyword-based topic label extraction used as a fallback
+        when Ollama is unavailable.
+        """
         words = re.findall(r"[A-Za-z]+", text)
 
         stopwords = {
-            "the",
-            "and",
-            "or",
-            "but",
-            "with",
-            "about",
-            "that",
-            "this",
-            "what",
-            "when",
-            "where",
-            "why",
-            "how",
-            "you",
-            "your",
-            "they",
-            "them",
-            "are",
-            "was",
-            "were",
-            "can",
-            "could",
-            "would",
-            "should",
-            "like",
-            "really",
-            "just",
-            "something",
+            "the", "and", "or", "but", "with", "about", "that", "this",
+            "what", "when", "where", "why", "how", "you", "your", "they",
+            "them", "are", "was", "were", "can", "could", "would", "should",
+            "like", "really", "just", "something",
         }
 
         meaningful_words = [
@@ -311,4 +347,3 @@ class RawTranscriptConverter:
             return "General"
 
         return " ".join(meaningful_words[:2])
-

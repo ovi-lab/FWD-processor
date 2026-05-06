@@ -2,9 +2,9 @@
     "nodes": [
         {
             "id": 0,
-            "name": "user: Hello Haru",
+            "name": "user: Name",
             "turn": "user",
-            "topic": "Hello Haru",
+            "topic": "Name",
             "n": 5.25,
             "interactions": [
                 {
@@ -12,26 +12,26 @@
                     "prompt": "Hello! I’m Haru. What’s your name?",
                     "sentence": "Hi, I'm Elias.",
                     "turn": "user",
-                    "topic": "Hello Haru",
+                    "topic": "Name",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.8648999929428101,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.0,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:37",
+                    "timestamp": "2026-05-06 16:20:33",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:55:37",
+            "timestamp": "2026-05-06 16:20:33",
             "slots": [],
             "show": true
         },
         {
             "id": 1,
-            "name": "robot: Hello Haru",
+            "name": "robot: Name",
             "turn": "robot",
-            "topic": "Hello Haru",
+            "topic": "Name",
             "n": 5,
             "interactions": [
                 {
@@ -39,25 +39,25 @@
                     "prompt": "Conversation Start",
                     "sentence": "Hello! I’m Haru. What’s your name?",
                     "turn": "robot",
-                    "topic": "Hello Haru",
+                    "topic": "Name",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.44021308422088623,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.0,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:35"
+                    "timestamp": "2026-05-06 16:20:31"
                 }
             ],
-            "timestamp": "2026-05-01 12:55:37",
+            "timestamp": "2026-05-06 16:20:33",
             "slots": [],
             "show": true
         },
         {
             "id": 2,
-            "name": "robot: Nice Meet",
+            "name": "robot: Learning",
             "turn": "robot",
-            "topic": "Nice Meet",
+            "topic": "Learning",
             "n": 6.25,
             "interactions": [
                 {
@@ -65,14 +65,14 @@
                     "prompt": "Hi, I'm Elias.",
                     "sentence": "Nice to meet you, Elias! What have you been working on in AI Club recently?",
                     "turn": "robot",
-                    "topic": "Nice Meet",
+                    "topic": "Learning",
                     "intent": "default-intent",
                     "emotion_label": "joy",
                     "emotion_score": 0.9375237226486206,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.375,
+                    "sentiment_score": 0.4753,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:39",
+                    "timestamp": "2026-05-06 16:20:35",
                     "slots": []
                 },
                 {
@@ -80,14 +80,14 @@
                     "prompt": "We talked about self-driving cars and how they decide what to do in accidents.",
                     "sentence": "That sounds interesting. What did you think about those decisions?",
                     "turn": "robot",
-                    "topic": "Nice Meet",
+                    "topic": "Learning",
                     "intent": "default-intent",
                     "emotion_label": "surprise",
                     "emotion_score": 0.6353363990783691,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.5,
+                    "sentiment_score": 0.4019,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:43",
+                    "timestamp": "2026-05-06 16:20:39",
                     "slots": []
                 },
                 {
@@ -95,26 +95,26 @@
                     "prompt": "I thought it was kind of scary but also cool how AI has to make those choices.",
                     "sentence": "What’s something you would like to learn more about in AI Club?",
                     "turn": "robot",
-                    "topic": "Nice Meet",
+                    "topic": "Learning",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.9271665811538696,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.5,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.3612,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:47",
+                    "timestamp": "2026-05-06 16:20:43",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:55:47",
+            "timestamp": "2026-05-06 16:20:43",
             "slots": [],
             "show": true
         },
         {
             "id": 3,
-            "name": "user: Nice Meet",
+            "name": "user: Learning",
             "turn": "user",
-            "topic": "Nice Meet",
+            "topic": "Learning",
             "n": 6.25,
             "interactions": [
                 {
@@ -122,14 +122,14 @@
                     "prompt": "Nice to meet you, Elias! What have you been working on in AI Club recently?",
                     "sentence": "We talked about self-driving cars and how they decide what to do in accidents.",
                     "turn": "user",
-                    "topic": "Nice Meet",
+                    "topic": "Learning",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.8573932647705078,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.0,
+                    "sentiment_score": 0.3182,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:41",
+                    "timestamp": "2026-05-06 16:20:37",
                     "slots": []
                 },
                 {
@@ -137,14 +137,14 @@
                     "prompt": "That sounds interesting. What did you think about those decisions?",
                     "sentence": "I thought it was kind of scary but also cool how AI has to make those choices.",
                     "turn": "user",
-                    "topic": "Nice Meet",
+                    "topic": "Learning",
                     "intent": "default-intent",
                     "emotion_label": "fear",
                     "emotion_score": 0.9553384184837341,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.15,
+                    "sentiment_label": "negative",
+                    "sentiment_score": 0.1787,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:45",
+                    "timestamp": "2026-05-06 16:20:41",
                     "slots": []
                 },
                 {
@@ -152,26 +152,26 @@
                     "prompt": "What’s something you would like to learn more about in AI Club?",
                     "sentence": "I want to learn how AI actually understands what people say.",
                     "turn": "user",
-                    "topic": "Nice Meet",
+                    "topic": "Learning",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.92296302318573,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.0,
+                    "sentiment_score": 0.0772,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:49",
+                    "timestamp": "2026-05-06 16:20:45",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:55:49",
+            "timestamp": "2026-05-06 16:20:45",
             "slots": [],
             "show": true
         },
         {
             "id": 4,
-            "name": "robot: Great Question",
+            "name": "robot: Ethics",
             "turn": "robot",
-            "topic": "Great Question",
+            "topic": "Ethics",
             "n": 6.75,
             "interactions": [
                 {
@@ -179,14 +179,14 @@
                     "prompt": "I want to learn how AI actually understands what people say.",
                     "sentence": "That’s a great question. What kinds of technology do you use at school?",
                     "turn": "robot",
-                    "topic": "Great Question",
+                    "topic": "Ethics",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.8922895789146423,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.8,
+                    "sentiment_score": 0.6249,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:51",
+                    "timestamp": "2026-05-06 16:20:47",
                     "slots": []
                 },
                 {
@@ -194,14 +194,14 @@
                     "prompt": "We use computers for math and sometimes we do quizzes online.",
                     "sentence": "Do you ever use AI tools outside of school?",
                     "turn": "robot",
-                    "topic": "Great Question",
+                    "topic": "Ethics",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.8391273021697998,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.0,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:55",
+                    "timestamp": "2026-05-06 16:20:51",
                     "slots": []
                 },
                 {
@@ -209,14 +209,14 @@
                     "prompt": "Sometimes I use AI to help me come up with ideas for games.",
                     "sentence": "Have you ever noticed AI giving a wrong answer?",
                     "turn": "robot",
-                    "topic": "Great Question",
+                    "topic": "Ethics",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.47599637508392334,
-                    "sentiment_label": "negative",
-                    "sentiment_score": 0.5,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.1779,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:59",
+                    "timestamp": "2026-05-06 16:20:55",
                     "slots": []
                 },
                 {
@@ -224,26 +224,26 @@
                     "prompt": "Not really, but I think it could happen.",
                     "sentence": "What do you think people should do when using AI?",
                     "turn": "robot",
-                    "topic": "Great Question",
+                    "topic": "Ethics",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.7995848059654236,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.0,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:03",
+                    "timestamp": "2026-05-06 16:20:59",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:03",
+            "timestamp": "2026-05-06 16:20:59",
             "slots": [],
             "show": true
         },
         {
             "id": 5,
-            "name": "user: Great Question",
+            "name": "user: Ethics",
             "turn": "user",
-            "topic": "Great Question",
+            "topic": "Ethics",
             "n": 6.75,
             "interactions": [
                 {
@@ -251,14 +251,14 @@
                     "prompt": "That’s a great question. What kinds of technology do you use at school?",
                     "sentence": "We use computers for math and sometimes we do quizzes online.",
                     "turn": "user",
-                    "topic": "Great Question",
+                    "topic": "Ethics",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.9389612078666687,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.0,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:53",
+                    "timestamp": "2026-05-06 16:20:49",
                     "slots": []
                 },
                 {
@@ -266,14 +266,14 @@
                     "prompt": "Do you ever use AI tools outside of school?",
                     "sentence": "Sometimes I use AI to help me come up with ideas for games.",
                     "turn": "user",
-                    "topic": "Great Question",
+                    "topic": "Ethics",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.6324359774589539,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.0,
+                    "sentiment_score": 0.4019,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:55:57",
+                    "timestamp": "2026-05-06 16:20:53",
                     "slots": []
                 },
                 {
@@ -281,14 +281,14 @@
                     "prompt": "Have you ever noticed AI giving a wrong answer?",
                     "sentence": "Not really, but I think it could happen.",
                     "turn": "user",
-                    "topic": "Great Question",
+                    "topic": "Ethics",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.5199107527732849,
                     "sentiment_label": "neutral",
-                    "sentiment_score": 0.1,
+                    "sentiment_score": 0.0,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:01",
+                    "timestamp": "2026-05-06 16:20:57",
                     "slots": []
                 },
                 {
@@ -296,26 +296,26 @@
                     "prompt": "What do you think people should do when using AI?",
                     "sentence": "I think you should always double-check it just in case.",
                     "turn": "user",
-                    "topic": "Great Question",
+                    "topic": "Ethics",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.9628807902336121,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.0,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:05",
+                    "timestamp": "2026-05-06 16:21:01",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:05",
+            "timestamp": "2026-05-06 16:21:01",
             "slots": [],
             "show": true
         },
         {
             "id": 6,
-            "name": "robot: Very Thoughtful",
+            "name": "robot: Games",
             "turn": "robot",
-            "topic": "Very Thoughtful",
+            "topic": "Games",
             "n": 5.25,
             "interactions": [
                 {
@@ -323,26 +323,26 @@
                     "prompt": "I think you should always double-check it just in case.",
                     "sentence": "That’s very thoughtful. What do you like to do for fun?",
                     "turn": "robot",
-                    "topic": "Very Thoughtful",
+                    "topic": "Games",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.7945773601531982,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.41000000000000003,
+                    "sentiment_score": 0.8268,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:07",
+                    "timestamp": "2026-05-06 16:21:03",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:07",
+            "timestamp": "2026-05-06 16:21:03",
             "slots": [],
             "show": true
         },
         {
             "id": 7,
-            "name": "user: Very Thoughtful",
+            "name": "user: Games",
             "turn": "user",
-            "topic": "Very Thoughtful",
+            "topic": "Games",
             "n": 5.25,
             "interactions": [
                 {
@@ -350,26 +350,26 @@
                     "prompt": "That’s very thoughtful. What do you like to do for fun?",
                     "sentence": "I like playing Roblox and listening to music.",
                     "turn": "user",
-                    "topic": "Very Thoughtful",
+                    "topic": "Games",
                     "intent": "default-intent",
                     "emotion_label": "joy",
                     "emotion_score": 0.9849667549133301,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.0,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.5106,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:09",
+                    "timestamp": "2026-05-06 16:21:05",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:09",
+            "timestamp": "2026-05-06 16:21:05",
             "slots": [],
             "show": true
         },
         {
             "id": 8,
-            "name": "robot: Enjoy Working",
+            "name": "robot: Collaboration",
             "turn": "robot",
-            "topic": "Enjoy Working",
+            "topic": "Collaboration",
             "n": 5.25,
             "interactions": [
                 {
@@ -377,26 +377,26 @@
                     "prompt": "I like playing Roblox and listening to music.",
                     "sentence": "Do you enjoy working in groups or by yourself more?",
                     "turn": "robot",
-                    "topic": "Enjoy Working",
+                    "topic": "Collaboration",
                     "intent": "default-intent",
                     "emotion_label": "joy",
                     "emotion_score": 0.9640822410583496,
                     "sentiment_label": "positive",
-                    "sentiment_score": 0.45,
+                    "sentiment_score": 0.4939,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:11",
+                    "timestamp": "2026-05-06 16:21:07",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:11",
+            "timestamp": "2026-05-06 16:21:07",
             "slots": [],
             "show": true
         },
         {
             "id": 9,
-            "name": "user: Enjoy Working",
+            "name": "user: Collaboration",
             "turn": "user",
-            "topic": "Enjoy Working",
+            "topic": "Collaboration",
             "n": 5.25,
             "interactions": [
                 {
@@ -404,26 +404,26 @@
                     "prompt": "Do you enjoy working in groups or by yourself more?",
                     "sentence": "I like working in groups because you can hear other people’s ideas.",
                     "turn": "user",
-                    "topic": "Enjoy Working",
+                    "topic": "Collaboration",
                     "intent": "default-intent",
                     "emotion_label": "joy",
                     "emotion_score": 0.9722245335578918,
-                    "sentiment_label": "negative",
-                    "sentiment_score": 0.125,
+                    "sentiment_label": "positive",
+                    "sentiment_score": 0.3612,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:13",
+                    "timestamp": "2026-05-06 16:21:09",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:13",
+            "timestamp": "2026-05-06 16:21:09",
             "slots": [],
             "show": true
         },
         {
             "id": 10,
-            "name": "robot: Doesn Work",
+            "name": "robot: Experimentation",
             "turn": "robot",
-            "topic": "Doesn Work",
+            "topic": "Experimentation",
             "n": 5.25,
             "interactions": [
                 {
@@ -431,26 +431,26 @@
                     "prompt": "I like working in groups because you can hear other people’s ideas.",
                     "sentence": "What do you do when something doesn’t work the first time?",
                     "turn": "robot",
-                    "topic": "Doesn Work",
+                    "topic": "Experimentation",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.2706696093082428,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.25,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.0,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:15",
+                    "timestamp": "2026-05-06 16:21:11",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:15",
+            "timestamp": "2026-05-06 16:21:11",
             "slots": [],
             "show": true
         },
         {
             "id": 11,
-            "name": "user: Doesn Work",
+            "name": "user: Experimentation",
             "turn": "user",
-            "topic": "Doesn Work",
+            "topic": "Experimentation",
             "n": 5.25,
             "interactions": [
                 {
@@ -458,26 +458,26 @@
                     "prompt": "What do you do when something doesn’t work the first time?",
                     "sentence": "I just try again and see what I did wrong.",
                     "turn": "user",
-                    "topic": "Doesn Work",
+                    "topic": "Experimentation",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.6193816065788269,
-                    "sentiment_label": "negative",
-                    "sentiment_score": 0.5,
+                    "sentiment_label": "neutral",
+                    "sentiment_score": 0.4767,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:17",
+                    "timestamp": "2026-05-06 16:21:13",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:17",
+            "timestamp": "2026-05-06 16:21:13",
             "slots": [],
             "show": true
         },
         {
             "id": 12,
-            "name": "robot: Think Will",
+            "name": "robot: Control",
             "turn": "robot",
-            "topic": "Think Will",
+            "topic": "Control",
             "n": 5.75,
             "interactions": [
                 {
@@ -485,14 +485,14 @@
                     "prompt": "I just try again and see what I did wrong.",
                     "sentence": "How do you think AI will change in the future?",
                     "turn": "robot",
-                    "topic": "Think Will",
+                    "topic": "Control",
                     "intent": "default-intent",
                     "emotion_label": "neutral",
                     "emotion_score": 0.8680433630943298,
                     "sentiment_label": "neutral",
                     "sentiment_score": 0.0,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:19",
+                    "timestamp": "2026-05-06 16:21:15",
                     "slots": []
                 },
                 {
@@ -500,26 +500,26 @@
                     "prompt": "I think it will get more powerful but also a little scary.",
                     "sentence": "Is there anything about AI that worries you?",
                     "turn": "robot",
-                    "topic": "Think Will",
+                    "topic": "Control",
                     "intent": "default-intent",
                     "emotion_label": "fear",
                     "emotion_score": 0.6128561496734619,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.0,
+                    "sentiment_label": "negative",
+                    "sentiment_score": 0.4215,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:23",
+                    "timestamp": "2026-05-06 16:21:19",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:23",
+            "timestamp": "2026-05-06 16:21:19",
             "slots": [],
             "show": true
         },
         {
             "id": 13,
-            "name": "user: Think Will",
+            "name": "user: Control",
             "turn": "user",
-            "topic": "Think Will",
+            "topic": "Control",
             "n": 5.5,
             "interactions": [
                 {
@@ -527,14 +527,14 @@
                     "prompt": "How do you think AI will change in the future?",
                     "sentence": "I think it will get more powerful but also a little scary.",
                     "turn": "user",
-                    "topic": "Think Will",
+                    "topic": "Control",
                     "intent": "default-intent",
                     "emotion_label": "fear",
                     "emotion_score": 0.9725031852722168,
-                    "sentiment_label": "neutral",
-                    "sentiment_score": 0.02812500000000001,
+                    "sentiment_label": "negative",
+                    "sentiment_score": 0.4242,
                     "last_interaction": false,
-                    "timestamp": "2026-05-01 12:56:21",
+                    "timestamp": "2026-05-06 16:21:17",
                     "slots": []
                 },
                 {
@@ -542,18 +542,18 @@
                     "prompt": "Is there anything about AI that worries you?",
                     "sentence": "Yeah, I worry it could get too strong, but I think we can control it.",
                     "turn": "user",
-                    "topic": "Think Will",
+                    "topic": "Control",
                     "intent": "default-intent",
                     "emotion_label": "fear",
                     "emotion_score": 0.5522408485412598,
-                    "sentiment_label": "positive",
-                    "sentiment_score": 0.43333333333333335,
+                    "sentiment_label": "negative",
+                    "sentiment_score": 0.2023,
                     "last_interaction": true,
-                    "timestamp": "2026-05-01 12:56:25",
+                    "timestamp": "2026-05-06 16:21:21",
                     "slots": []
                 }
             ],
-            "timestamp": "2026-05-01 12:56:25",
+            "timestamp": "2026-05-06 16:21:21",
             "slots": [],
             "show": true
         }
@@ -561,280 +561,280 @@
     "links": {
         "robot": [
             {
-                "name": "robot: Hello Haru -> user: Hello Haru",
+                "name": "robot: Name -> user: Name",
                 "source": 1,
-                "sourceName": "robot: Hello Haru",
+                "sourceName": "robot: Name",
                 "target": 0,
-                "targetName": "user: Hello Haru",
+                "targetName": "user: Name",
                 "value": 1,
-                "timestamp": "2026-05-01 12:55:37",
+                "timestamp": "2026-05-06 16:20:33",
                 "responseIDs": [
                     {
                         "idx": 1,
-                        "time": "2026-05-01 12:55:37"
+                        "time": "2026-05-06 16:20:33"
                     }
                 ]
             },
             {
-                "name": "robot: Nice Meet -> user: Nice Meet",
+                "name": "robot: Learning -> user: Learning",
                 "source": 2,
-                "sourceName": "robot: Nice Meet",
+                "sourceName": "robot: Learning",
                 "target": 3,
-                "targetName": "user: Nice Meet",
+                "targetName": "user: Learning",
                 "value": 3,
-                "timestamp": "2026-05-01 12:55:49",
+                "timestamp": "2026-05-06 16:20:45",
                 "responseIDs": [
                     {
                         "idx": 3,
-                        "time": "2026-05-01 12:55:41"
+                        "time": "2026-05-06 16:20:37"
                     },
                     {
                         "idx": 5,
-                        "time": "2026-05-01 12:55:45"
+                        "time": "2026-05-06 16:20:41"
                     },
                     {
                         "idx": 7,
-                        "time": "2026-05-01 12:55:49"
+                        "time": "2026-05-06 16:20:45"
                     }
                 ]
             },
             {
-                "name": "robot: Great Question -> user: Great Question",
+                "name": "robot: Ethics -> user: Ethics",
                 "source": 4,
-                "sourceName": "robot: Great Question",
+                "sourceName": "robot: Ethics",
                 "target": 5,
-                "targetName": "user: Great Question",
+                "targetName": "user: Ethics",
                 "value": 4,
-                "timestamp": "2026-05-01 12:56:05",
+                "timestamp": "2026-05-06 16:21:01",
                 "responseIDs": [
                     {
                         "idx": 9,
-                        "time": "2026-05-01 12:55:53"
+                        "time": "2026-05-06 16:20:49"
                     },
                     {
                         "idx": 11,
-                        "time": "2026-05-01 12:55:57"
+                        "time": "2026-05-06 16:20:53"
                     },
                     {
                         "idx": 13,
-                        "time": "2026-05-01 12:56:01"
+                        "time": "2026-05-06 16:20:57"
                     },
                     {
                         "idx": 15,
-                        "time": "2026-05-01 12:56:05"
+                        "time": "2026-05-06 16:21:01"
                     }
                 ]
             },
             {
-                "name": "robot: Very Thoughtful -> user: Very Thoughtful",
+                "name": "robot: Games -> user: Games",
                 "source": 6,
-                "sourceName": "robot: Very Thoughtful",
+                "sourceName": "robot: Games",
                 "target": 7,
-                "targetName": "user: Very Thoughtful",
+                "targetName": "user: Games",
                 "value": 1,
-                "timestamp": "2026-05-01 12:56:09",
+                "timestamp": "2026-05-06 16:21:05",
                 "responseIDs": [
                     {
                         "idx": 17,
-                        "time": "2026-05-01 12:56:09"
+                        "time": "2026-05-06 16:21:05"
                     }
                 ]
             },
             {
-                "name": "robot: Enjoy Working -> user: Enjoy Working",
+                "name": "robot: Collaboration -> user: Collaboration",
                 "source": 8,
-                "sourceName": "robot: Enjoy Working",
+                "sourceName": "robot: Collaboration",
                 "target": 9,
-                "targetName": "user: Enjoy Working",
+                "targetName": "user: Collaboration",
                 "value": 1,
-                "timestamp": "2026-05-01 12:56:13",
+                "timestamp": "2026-05-06 16:21:09",
                 "responseIDs": [
                     {
                         "idx": 19,
-                        "time": "2026-05-01 12:56:13"
+                        "time": "2026-05-06 16:21:09"
                     }
                 ]
             },
             {
-                "name": "robot: Doesn Work -> user: Doesn Work",
+                "name": "robot: Experimentation -> user: Experimentation",
                 "source": 10,
-                "sourceName": "robot: Doesn Work",
+                "sourceName": "robot: Experimentation",
                 "target": 11,
-                "targetName": "user: Doesn Work",
+                "targetName": "user: Experimentation",
                 "value": 1,
-                "timestamp": "2026-05-01 12:56:17",
+                "timestamp": "2026-05-06 16:21:13",
                 "responseIDs": [
                     {
                         "idx": 21,
-                        "time": "2026-05-01 12:56:17"
+                        "time": "2026-05-06 16:21:13"
                     }
                 ]
             },
             {
-                "name": "robot: Think Will -> user: Think Will",
+                "name": "robot: Control -> user: Control",
                 "source": 12,
-                "sourceName": "robot: Think Will",
+                "sourceName": "robot: Control",
                 "target": 13,
-                "targetName": "user: Think Will",
+                "targetName": "user: Control",
                 "value": 2,
-                "timestamp": "2026-05-01 12:56:25",
+                "timestamp": "2026-05-06 16:21:21",
                 "responseIDs": [
                     {
                         "idx": 23,
-                        "time": "2026-05-01 12:56:21"
+                        "time": "2026-05-06 16:21:17"
                     },
                     {
                         "idx": 25,
-                        "time": "2026-05-01 12:56:25"
+                        "time": "2026-05-06 16:21:21"
                     }
                 ]
             }
         ],
         "user": [
             {
-                "name": "user: Hello Haru -> robot: Nice Meet",
+                "name": "user: Name -> robot: Learning",
                 "source": 0,
-                "sourceName": "user: Hello Haru",
+                "sourceName": "user: Name",
                 "target": 2,
-                "targetName": "robot: Nice Meet",
+                "targetName": "robot: Learning",
                 "value": 1,
-                "timestamp": "2026-05-01 12:55:39",
+                "timestamp": "2026-05-06 16:20:35",
                 "responseIDs": [
                     {
                         "idx": 2,
-                        "time": "2026-05-01 12:55:39"
+                        "time": "2026-05-06 16:20:35"
                     }
                 ]
             },
             {
-                "name": "user: Nice Meet -> robot: Nice Meet",
+                "name": "user: Learning -> robot: Learning",
                 "source": 3,
-                "sourceName": "user: Nice Meet",
+                "sourceName": "user: Learning",
                 "target": 2,
-                "targetName": "robot: Nice Meet",
+                "targetName": "robot: Learning",
                 "value": 2,
-                "timestamp": "2026-05-01 12:55:47",
+                "timestamp": "2026-05-06 16:20:43",
                 "responseIDs": [
                     {
                         "idx": 4,
-                        "time": "2026-05-01 12:55:43"
+                        "time": "2026-05-06 16:20:39"
                     },
                     {
                         "idx": 6,
-                        "time": "2026-05-01 12:55:47"
+                        "time": "2026-05-06 16:20:43"
                     }
                 ]
             },
             {
-                "name": "user: Nice Meet -> robot: Great Question",
+                "name": "user: Learning -> robot: Ethics",
                 "source": 3,
-                "sourceName": "user: Nice Meet",
+                "sourceName": "user: Learning",
                 "target": 4,
-                "targetName": "robot: Great Question",
+                "targetName": "robot: Ethics",
                 "value": 1,
-                "timestamp": "2026-05-01 12:55:51",
+                "timestamp": "2026-05-06 16:20:47",
                 "responseIDs": [
                     {
                         "idx": 8,
-                        "time": "2026-05-01 12:55:51"
+                        "time": "2026-05-06 16:20:47"
                     }
                 ]
             },
             {
-                "name": "user: Great Question -> robot: Great Question",
+                "name": "user: Ethics -> robot: Ethics",
                 "source": 5,
-                "sourceName": "user: Great Question",
+                "sourceName": "user: Ethics",
                 "target": 4,
-                "targetName": "robot: Great Question",
+                "targetName": "robot: Ethics",
                 "value": 3,
-                "timestamp": "2026-05-01 12:56:03",
+                "timestamp": "2026-05-06 16:20:59",
                 "responseIDs": [
                     {
                         "idx": 10,
-                        "time": "2026-05-01 12:55:55"
+                        "time": "2026-05-06 16:20:51"
                     },
                     {
                         "idx": 12,
-                        "time": "2026-05-01 12:55:59"
+                        "time": "2026-05-06 16:20:55"
                     },
                     {
                         "idx": 14,
-                        "time": "2026-05-01 12:56:03"
+                        "time": "2026-05-06 16:20:59"
                     }
                 ]
             },
             {
-                "name": "user: Great Question -> robot: Very Thoughtful",
+                "name": "user: Ethics -> robot: Games",
                 "source": 5,
-                "sourceName": "user: Great Question",
+                "sourceName": "user: Ethics",
                 "target": 6,
-                "targetName": "robot: Very Thoughtful",
+                "targetName": "robot: Games",
                 "value": 1,
-                "timestamp": "2026-05-01 12:56:07",
+                "timestamp": "2026-05-06 16:21:03",
                 "responseIDs": [
                     {
                         "idx": 16,
-                        "time": "2026-05-01 12:56:07"
+                        "time": "2026-05-06 16:21:03"
                     }
                 ]
             },
             {
-                "name": "user: Very Thoughtful -> robot: Enjoy Working",
+                "name": "user: Games -> robot: Collaboration",
                 "source": 7,
-                "sourceName": "user: Very Thoughtful",
+                "sourceName": "user: Games",
                 "target": 8,
-                "targetName": "robot: Enjoy Working",
+                "targetName": "robot: Collaboration",
                 "value": 1,
-                "timestamp": "2026-05-01 12:56:11",
+                "timestamp": "2026-05-06 16:21:07",
                 "responseIDs": [
                     {
                         "idx": 18,
-                        "time": "2026-05-01 12:56:11"
+                        "time": "2026-05-06 16:21:07"
                     }
                 ]
             },
             {
-                "name": "user: Enjoy Working -> robot: Doesn Work",
+                "name": "user: Collaboration -> robot: Experimentation",
                 "source": 9,
-                "sourceName": "user: Enjoy Working",
+                "sourceName": "user: Collaboration",
                 "target": 10,
-                "targetName": "robot: Doesn Work",
+                "targetName": "robot: Experimentation",
                 "value": 1,
-                "timestamp": "2026-05-01 12:56:15",
+                "timestamp": "2026-05-06 16:21:11",
                 "responseIDs": [
                     {
                         "idx": 20,
-                        "time": "2026-05-01 12:56:15"
+                        "time": "2026-05-06 16:21:11"
                     }
                 ]
             },
             {
-                "name": "user: Doesn Work -> robot: Think Will",
+                "name": "user: Experimentation -> robot: Control",
                 "source": 11,
-                "sourceName": "user: Doesn Work",
+                "sourceName": "user: Experimentation",
                 "target": 12,
-                "targetName": "robot: Think Will",
+                "targetName": "robot: Control",
                 "value": 1,
-                "timestamp": "2026-05-01 12:56:19",
+                "timestamp": "2026-05-06 16:21:15",
                 "responseIDs": [
                     {
                         "idx": 22,
-                        "time": "2026-05-01 12:56:19"
+                        "time": "2026-05-06 16:21:15"
                     }
                 ]
             },
             {
-                "name": "user: Think Will -> robot: Think Will",
+                "name": "user: Control -> robot: Control",
                 "source": 13,
-                "sourceName": "user: Think Will",
+                "sourceName": "user: Control",
                 "target": 12,
-                "targetName": "robot: Think Will",
+                "targetName": "robot: Control",
                 "value": 1,
-                "timestamp": "2026-05-01 12:56:23",
+                "timestamp": "2026-05-06 16:21:19",
                 "responseIDs": [
                     {
                         "idx": 24,
-                        "time": "2026-05-01 12:56:23"
+                        "time": "2026-05-06 16:21:19"
                     }
                 ]
             }

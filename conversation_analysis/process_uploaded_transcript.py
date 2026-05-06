@@ -14,7 +14,7 @@ def process_uploaded_transcript(upload_path, is_json=False, is_txt=False):
     """
 
     if is_txt:
-        converter = RawTranscriptConverter(max_topics=10)
+        converter = RawTranscriptConverter(max_topics=10, ollama_model="llama3.2:1b")
         data = converter.convert_file(upload_path)
         processed_json = process_conversation(data, chat_json_location)
         generate_diagram_from_file(processed_json, diagram_json_location)
