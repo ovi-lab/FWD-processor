@@ -185,14 +185,7 @@ def parse_subscriber_data(self, data):
             sentiment_score = haru["sentiment_results"]["sentiment"]["results"][
                 "best_match"
             ]["score"]
-            sentiment_label = user['sentiment_results']['sentiment']['results']['best_match']['label']
-
-            # sentiment_label = SENTIMENT_MAPPING.get(
-            #     haru["sentiment_results"]["sentiment"]["results"]["best_match"][
-            #         "label"
-            #     ],
-            #     "None",
-            # )
+            sentiment_label = haru['sentiment_results']['sentiment']['results']['best_match']['label']
             self.conversation.append(
                 {
                     "idx": self.index,

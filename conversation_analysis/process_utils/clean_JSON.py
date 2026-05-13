@@ -6,38 +6,9 @@ from datetime import datetime
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
-interaction_key_map = {
-    "Highlighted": "highlighted",
-    "Intent": "intent",
-    "Sentence": "sentence",
-    "Turn": "turn",
-    "app_name": "app_name",
-    "emotion_label": "emotion_label",
-    "emotion_score": "emotion_score",
-    "entity_type_detection": "entity_type_detection",
-    "idx": "idx",
-    "index": "index",
-    "intent_category": "intent_category",
-    "lastinteraction": "last_interaction",
-    "sentiment_label": "sentiment_label",
-    "sentiment_score": "sentiment_score",
-    "timestamp": "timestamp",
-    "topic_name": "topic",
-    "type": "type",
-}
-
 TOPIC_KEY_PATH = os.path.join(current_directory, "ToF-topics/topic-intent-key.json")
 with open(TOPIC_KEY_PATH, "r", encoding="utf8") as topic_file:
     topic_list = json.load(topic_file)
-
-
-def replace_keys(original_dict):
-    """replace the keys from the original data to remove caps and rename for clarity"""
-    new_dict = {}
-    for old_key, new_key in interaction_key_map.items():
-        if old_key in original_dict:
-            new_dict[new_key] = original_dict[old_key]
-    return new_dict
 
 
 def generate_topic(dialog_line_intent, prev_topic):

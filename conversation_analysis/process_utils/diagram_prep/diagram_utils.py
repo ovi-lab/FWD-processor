@@ -124,6 +124,4 @@ def initial_interaction(prompt):
         'sentiment_score': float(prompt['sentiment_score']),
         'last_interaction': bool(prompt['last_interaction']),
         'timestamp': str(prompt["timestamp"]),
-        'turn': prompt['turn'],
-        'sentence': prompt['sentence']
     }

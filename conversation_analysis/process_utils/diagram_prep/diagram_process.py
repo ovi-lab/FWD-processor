@@ -127,7 +127,6 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
             node['show'] = True
             continue
         node["show"] = utils.node_has_links(node, link_turn_section)
-        # node["show"] = Tru            e
 
     # Save the results as a JSON file
     mapped_conversation["attributes"]['longest_robot_utterance'] = r_longest_utterance_length

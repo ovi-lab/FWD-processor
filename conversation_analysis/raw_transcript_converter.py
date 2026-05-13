@@ -2,9 +2,7 @@ import re
 import requests
 from datetime import datetime, timedelta
 
-from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
-# from textblob import TextBlob
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from transformers import pipeline
 
@@ -16,14 +14,19 @@ class RawTranscriptConverter:
 
     Expected transcript format:
 
-    robot: Tell me about something you enjoyed in AI Club.
-    user: I liked learning about AI ethics.
-
-    robot: What would you like to learn next?
-    user: I want to learn how AI makes decisions.
+    {P1}
+    {John}
+    {'robot': 'Tell me about something you enjoyed in AI Club.'}
+    {'user': 'I liked learning about AI ethics.'}
     """
 
-    def __init__(self, transcript_date=None, max_topics=10, ollama_model="llama3.2:1b"):
+    LABEL_OVERRIDES = {
+        "control": "AI Future",
+        "name": "Intro",
+        "talk": "Intro",
+    }
+
+    def __init__(self, transcript_date=None, max_topics=9, ollama_model="llama3.2:1b"):
         self.transcript_date = transcript_date or datetime.now().strftime(
             "%Y-%m-%d %H:%M:%S"
         )
@@ -38,6 +41,33 @@ class RawTranscriptConverter:
         )
 
         self.embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+
+    def extract_metadata(self, file_path):
+        """
+        Reads the top of the transcript file and extracts participant ID and
+        child name from lines like {P1} and {John}.
+        Returns (participant_id, child_name) or (None, None) if not found.
+        """
+        participant_id = None
+        child_name = None
+
+        with open(file_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                match = re.match(r'^\{(\w+)\}$', line)
+                if match:
+                    value = match.group(1)
+                    if value.upper().startswith('P') and value[1:].isdigit():
+                        participant_id = value.upper()
+                    else:
+                        child_name = value
+                # Stop after we have both or hit the transcript content
+                if participant_id and child_name:
+                    break
+                if line.startswith("{'") or line.startswith('{"'):
+                    break
+
+        return participant_id, child_name
 
     def convert_file(self, file_path):
         with open(file_path, "r", encoding="utf-8") as file:
@@ -90,6 +120,86 @@ class RawTranscriptConverter:
 
         return conversation
 
+    def convert_json_transcript(self, json_data):
+        """
+        Parses the Haru JSON format:
+        [{"time": "2026-05-06T18:00:00+00:00", "haru": "...", "user": "..."}, ...]
+
+        Each entry always has a haru utterance; user is optional. When both are
+        present, haru is listed first (as it appears in the conversation), followed
+        by the user response one second later.
+        """
+        entries = []
+        timestamps = []
+
+        for item in json_data:
+            haru_text = item.get("haru", "").strip()
+            user_text = item.get("user", "").strip()
+            time_str = item.get("time", "")
+
+            try:
+                ts = datetime.fromisoformat(time_str)
+                ts_naive = ts.replace(tzinfo=None)
+            except (ValueError, TypeError):
+                ts_naive = datetime.strptime(self.transcript_date, "%Y-%m-%d %H:%M:%S")
+
+            if haru_text:
+                entries.append({"speaker": "haru", "sentence": haru_text})
+                timestamps.append(ts_naive.strftime("%Y-%m-%d %H:%M:%S"))
+
+            if user_text:
+                entries.append({"speaker": "user", "sentence": user_text})
+                timestamps.append((ts_naive + timedelta(seconds=1)).strftime("%Y-%m-%d %H:%M:%S"))
+
+        if not entries:
+            raise ValueError("No transcript entries found in JSON data.")
+
+        sentences = [e["sentence"] for e in entries]
+        topics = self._assign_topics(sentences)
+
+        conversation = []
+        for idx, (entry, timestamp) in enumerate(zip(entries, timestamps)):
+            sentence = entry["sentence"]
+            turn = self._normalize_turn(entry["speaker"])
+            emotion_label, emotion_score = self._get_emotion(sentence)
+            sentiment_label, sentiment_score = self._get_sentiment(sentence)
+
+            conversation.append({
+                "idx": idx,
+                "sentence": sentence,
+                "emotion_label": emotion_label,
+                "emotion_score": emotion_score,
+                "sentiment_label": sentiment_label,
+                "sentiment_score": sentiment_score,
+                "turn": turn,
+                "last_interaction": idx == len(entries) - 1,
+                "highlighted": False,
+                "intent": "default-intent",
+                "intent_category": "default",
+                "timestamp": timestamp,
+                "topic": topics[idx],
+                "type": "text",
+                "slots": [],
+            })
+
+        return conversation
+
+    def extract_metadata_from_json(self, json_data):
+        """
+        Tries to extract the child's name from Haru's closing statement,
+        e.g. "Thank you, Bob! This has been so much fun..."
+        Returns (None, child_name) — participant ID is not in this format.
+        """
+        child_name = None
+        tail = json_data[-5:] if len(json_data) >= 5 else json_data
+        for item in reversed(tail):
+            haru_text = item.get("haru", "")
+            match = re.search(r"[Tt]hank you,\s+([A-Z][a-z]+)!", haru_text)
+            if match:
+                child_name = match.group(1)
+                break
+        return None, child_name
+
     def _parse_labeled_transcript(self, raw_text):
         entries = []
 
@@ -135,7 +245,8 @@ class RawTranscriptConverter:
 
         compound = self.vader.polarity_scores(sentence)["compound"]
         score = round(abs(compound), 4)
-         # VADER tiebreaker — override neutral if VADER detects strong sentiment
+
+        # VADER tiebreaker — override neutral if VADER detects strong sentiment
         if label == "neutral":
             if compound > 0.5:
                 label = "positive"
@@ -179,7 +290,9 @@ class RawTranscriptConverter:
         segments = []
         current_segment = [0]
 
-        #adjusting similarity_threshold makes the topic classification more or less sensitive to topic shifts. 0.38 is a good starting point for short Q/A pairs, but you may want to adjust it based on your specific transcripts and how granular you want the topics to be.
+        # Adjusting similarity_threshold makes the topic classification more or less
+        # sensitive to topic shifts. 0.38 is a good starting point for short Q/A pairs,
+        # but you may want to adjust it based on your specific transcripts.
         similarity_threshold = 0.38
 
         # 3. Detect topic changes between neighboring Q/A pairs
@@ -235,53 +348,6 @@ class RawTranscriptConverter:
 
         return dot_product / (norm_a * norm_b)
 
-    def _cluster_topic_labels(self, topic_labels, max_topics=10):
-        """
-        Takes detailed topic labels and groups them into max 10 high-level categories.
-        """
-
-        unique_labels = list(set(topic_labels))
-
-        if len(unique_labels) <= 1:
-            return {label: "General" for label in unique_labels}
-
-        if len(unique_labels) <= max_topics:
-            return {label: self._make_short_label(label) for label in unique_labels}
-
-        topic_model = BERTopic(
-            embedding_model=self.embedding_model,
-            nr_topics=max_topics,
-            min_topic_size=2,
-            verbose=False,
-        )
-
-        topic_ids, _ = topic_model.fit_transform(unique_labels)
-
-        cluster_names = {}
-
-        for topic_id in set(topic_ids):
-            if topic_id == -1:
-                cluster_names[topic_id] = "General"
-                continue
-
-            topic_words = topic_model.get_topic(topic_id)
-
-            if not topic_words:
-                cluster_names[topic_id] = "General"
-                continue
-
-            top_words = [word for word, _ in topic_words[:2]]
-            cluster_names[topic_id] = self._make_short_label(" ".join(top_words))
-
-        label_to_high_level = {}
-
-        for label, topic_id in zip(unique_labels, topic_ids):
-            label_to_high_level[label] = cluster_names.get(
-                topic_id, self._make_short_label(label)
-            )
-
-        return label_to_high_level
-
     def _make_short_label(self, text):
         sentences = [s.strip() for s in text.split('.') if s.strip()]
         if len(sentences) > 2:
@@ -291,10 +357,13 @@ class RawTranscriptConverter:
 
         prompt = (
             "Read the following conversation excerpt and respond with ONLY a 1 to 2 word "
-            "topic label that captures the most specific theme being discussed. "
+            "high-level theme label. Think about the broad category this conversation belongs to, "
+            "not the specific words used. For example, talking about food, books, or movies "
+            "would all be 'Favourites'. Talking about school or subjects would be 'School'. "
             "No punctuation, no explanation, just 1 or 2 words maximum.\n\n"
             f"Excerpt: {excerpt}"
         )
+
         try:
             response = requests.post(
                 "http://localhost:11434/api/generate",
@@ -309,25 +378,27 @@ class RawTranscriptConverter:
                 },
                 timeout=15,
             )
-            # print(f"[Ollama status] {response.status_code}")
-            # print(f"[Ollama body] {response.text[:300]}")
             response.raise_for_status()
             label = response.json().get("response", "").strip()
-    
+
             label = label.splitlines()[0].strip(" .,\"'")
-            label = " ".join(label.split()[:4])
-    
+            label = " ".join(label.split()[:2])
+
+            # Hard cap — if label is still too long, fall back to first word only
+            if len(label) > 12:
+                label = label.split()[0]
+
+            # Apply label overrides for known bad labels
+            if label.lower() in self.LABEL_OVERRIDES:
+                return self.LABEL_OVERRIDES[label.lower()]
+
             return label if label else self._keyword_fallback(text)
-    
+
         except Exception as e:
             print(f"[Ollama fallback] {e}")
             return self._keyword_fallback(text)
-    
+
     def _keyword_fallback(self, text):
-        """
-        Keyword-based topic label extraction used as a fallback
-        when Ollama is unavailable.
-        """
         words = re.findall(r"[A-Za-z]+", text)
 
         stopwords = {
@@ -346,4 +417,11 @@ class RawTranscriptConverter:
         if not meaningful_words:
             return "General"
 
-        return " ".join(meaningful_words[:2])
+        result = " ".join(meaningful_words[:2])
+
+        # Hard cap — if result is still too long, use first word only
+        if len(result) > 12:
+            result = meaningful_words[0]
+
+        return result
+

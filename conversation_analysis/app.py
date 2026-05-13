@@ -1,12 +1,12 @@
 import os
 from flask import Flask
-from flask_socketio import SocketIO
+from flask_socketio import SocketIO, emit
 import json
 from datetime import datetime
 from threading import Event, Lock
 
 import yaml
-from process_uploaded_transcript import process_uploaded_transcript
+from process_utils.clean_JSON import process_from_json
 from process_utils.diagram_prep.diagram_process import generate_diagram_from_file
 
 
@@ -89,29 +89,54 @@ def receive_subscriber_feed(event):
         thread_event.clear()
         thread = None
 
-def intercepting_file(file_name):
-    ext = os.path.splitext(file_name)[-1].lower()
+def _is_processed_transcript(json_data):
+    """Returns True if the JSON is a processed transcript (has the fields the frontend expects)."""
+    required = {'idx', 'sentence', 'turn', 'slots', 'emotion_label', 'sentiment_label'}
+    return (
+        isinstance(json_data, list)
+        and len(json_data) > 0
+        and isinstance(json_data[0], dict)
+        and required.issubset(json_data[0].keys())
+    )
 
-    if ext == ".json":
-        return TRANSCRIPT_FILE_PATH, True, False
-
-    if ext == ".txt":
-        return UPLOADED_FILE_PATH, False, True
-
-    return UPLOADED_FILE_PATH, False, False
 
 @socketio.event
 def upload_file(file_data, file_name):
     """
-    Handles file uploads from clients, determining the file path and processing the uploaded transcript.
-    This function kills any active ROS feed before processing to avoid conflicts with incoming data.
+    Accepts pre-processed transcript JSON files only.
+    Raw transcript processing is handled separately by process_uploaded_transcript.py.
     """
     kill_ros_feed()
-    if file_data: 
-        save_path, is_json, is_txt = intercepting_file(file_name)
-        with open(save_path, 'wb') as f:
-            f.write(file_data)
-        process_uploaded_transcript(save_path, is_json=is_json, is_txt=is_txt)
+    if not file_data:
+        return
+
+    try:
+        ext = os.path.splitext(file_name)[-1].lower()
+        if ext != '.json':
+            emit('upload-error', 'Only pre-processed .json files are supported here. Use process_uploaded_transcript.py for raw transcripts.')
+            return
+
+        # Decode bytes to string (utf-8-sig strips BOM if present)
+        if isinstance(file_data, (bytes, bytearray)):
+            content = file_data.decode('utf-8-sig')
+        else:
+            content = file_data.lstrip('﻿')
+
+        transcript_data = json.loads(content)
+
+        if not _is_processed_transcript(transcript_data):
+            emit('upload-error', 'This file has not been processed yet. Run process_uploaded_transcript.py first, then upload the file from data/named_outputs/.')
+            return
+
+        with open(TRANSCRIPT_FILE_PATH, 'w', encoding='utf8') as f:
+            json.dump(transcript_data, f, indent=4)
+
+        processed_json = process_from_json(transcript_data, TRANSCRIPT_FILE_PATH)
+        generate_diagram_from_file(processed_json, DIAGRAM_FILE_PATH)
+        emit('upload-success')
+    except Exception as e:
+        print(f'Upload error: {e}')
+        emit('upload-error', str(e))
 
 @socketio.event
 def json_download_request():
@@ -149,39 +174,31 @@ def yaml_download_request():
         print(FileNotFoundError)
 
 @socketio.event
-def transcript_request(retried=0):
+def transcript_request():
     """
-    Responds to client requests for the transcript. It retries up to 2 times if the file is not found,
-    which could be the case if the file is still being processed or needs to be remade.
+    Responds to client requests for the transcript JSON.
+    The file is produced by process_uploaded_transcript.py on the processing machine.
     """
     try:
         with open(TRANSCRIPT_FILE_PATH, 'r', encoding='utf8') as file:
             payload = json.load(file)
-        socketio.emit('transcript_response', payload)
+        emit('transcript_response', payload)
     except FileNotFoundError:
-        if retried < 2:
-            process_uploaded_transcript(UPLOADED_FILE_PATH, False)
-            transcript_request(retried + 1)
-        else:
-            socketio.emit('unable-to-open', TRANSCRIPT_FILE_PATH)
+        emit('unable-to-open', TRANSCRIPT_FILE_PATH)
 
 
 @socketio.event
-def diagram_request(retried=0):
+def diagram_request():
     """
-    Responds to client requests for data needed to generate the diagrams. It retries up to 2 times if the file is not found,
-    which could be the case if the file is still being processed or needs to be remade.
+    Responds to client requests for diagram data.
+    The file is produced by process_uploaded_transcript.py on the processing machine.
     """
     try:
         with open(DIAGRAM_FILE_PATH, 'r', encoding='utf8') as file:
             data = json.load(file)
-        socketio.emit('diagram_response', data)
+        emit('diagram_response', data)
     except FileNotFoundError:
-        if retried < 2:
-            process_uploaded_transcript(UPLOADED_FILE_PATH, False)
-            diagram_request(retried + 1)
-        else:
-            socketio.emit('unable-to-open', DIAGRAM_FILE_PATH)
+        emit('unable-to-open', DIAGRAM_FILE_PATH)
 
 
 

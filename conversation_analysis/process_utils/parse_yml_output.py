@@ -3,43 +3,10 @@ Functions for converting the raw .txt ROS responses
 to a legible JSON file for further processing
 """
 
-from time import time
 from datetime import datetime
 import yaml
 from process_utils.parse_subscriber_data import parse_subscriber_data
 from process_utils.clean_JSON import generate_topic
-
-
-EMOTIONS = ["anger", "disgust", "fear", "joy", "neutral", "sadness", "surprise"]
-GENRE_MAPPING = {
-    "anger": "whiny",
-    "disgust": "whiny",
-    "fear": "serious",
-    "joy": "highnrg",
-    "neutral": "neutral",
-    "sadness": "sad",
-    "surprise": "highnrg",
-}
-SENTIMENT_MAPPING = {
-    "neg": "negative",
-    "neu": "neutral",
-    "pos": "positive",
-}
-
-
-class Timer:
-    def __init__(self) -> None:
-        self._start_time = 0
-        self._stop_time = 0
-
-    def start_timer(self):
-        self._start_time = time()
-
-    def stop_timer(self):
-        self._stop_time = time()
-
-    def duration(self):
-        return self._stop_time - self._start_time
 
 
 class HaruChatObject:
