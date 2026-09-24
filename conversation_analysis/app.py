@@ -26,6 +26,9 @@ thread_event = Event()
 thread_lock = Lock()
 thread = None
 
+# Raw transcripts share one converter (and one transcript/diagram log), so process one at a time.
+processing_lock = Lock()
+
 @socketio.on('connect')
 def handle_connect():
     print('Client connected')
@@ -103,30 +106,35 @@ def _is_processed_transcript(json_data):
 @socketio.event
 def upload_file(file_data, file_name):
     """
-    Accepts pre-processed transcript JSON files only.
-    Raw transcript processing is handled separately by process_uploaded_transcript.py.
+    Accepts either a processed transcript JSON (shown as-is) or a raw Haru JSON
+    transcript, which is run through the full processing pipeline first
+    (emotion, sentiment, local-model topics) and saved to data/named_outputs/.
     """
     kill_ros_feed()
     if not file_data:
+        # Always answer, or the page waits on "Processing..." forever.
+        emit('upload-error', f'"{file_name}" is empty.')
         return
 
     try:
-        ext = os.path.splitext(file_name)[-1].lower()
-        if ext != '.json':
-            emit('upload-error', 'Only pre-processed .json files are supported here. Use process_uploaded_transcript.py for raw transcripts.')
+        # Decide by content, not extension: many transcripts are saved without ".json".
+        # (utf-8-sig strips a BOM if present)
+        try:
+            if isinstance(file_data, (bytes, bytearray)):
+                content = file_data.decode('utf-8-sig')
+            else:
+                content = file_data.lstrip('﻿')
+            transcript_data = json.loads(content)
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            emit('upload-error', f'"{file_name}" is not a JSON transcript.')
             return
-
-        # Decode bytes to string (utf-8-sig strips BOM if present)
-        if isinstance(file_data, (bytes, bytearray)):
-            content = file_data.decode('utf-8-sig')
-        else:
-            content = file_data.lstrip('﻿')
-
-        transcript_data = json.loads(content)
 
         if not _is_processed_transcript(transcript_data):
-            emit('upload-error', 'This file has not been processed yet. Run process_uploaded_transcript.py first, then upload the file from data/named_outputs/.')
+            _process_raw_upload(transcript_data, file_name)
             return
+
+        # Files processed before system markers were filtered may still contain "[START]".
+        transcript_data = _without_system_markers(transcript_data)
 
         with open(TRANSCRIPT_FILE_PATH, 'w', encoding='utf8') as f:
             json.dump(transcript_data, f, indent=4)
@@ -137,6 +145,86 @@ def upload_file(file_data, file_name):
     except Exception as e:
         print(f'Upload error: {e}')
         emit('upload-error', str(e))
+
+def _without_system_markers(processed):
+    """Drops "[START]"-style lines from a processed transcript and renumbers what's left."""
+    from raw_transcript_converter import is_system_marker
+
+    kept = [line for line in processed if not is_system_marker(line.get('sentence', ''))]
+    if len(kept) == len(processed) or not kept:
+        return processed
+    for idx, line in enumerate(kept):
+        line['idx'] = idx
+        line['last_interaction'] = idx == len(kept) - 1
+    return kept
+
+
+def _process_raw_upload(transcript_data, file_name):
+    # Imported here so the server starts fast and view-only use never loads the ML stack.
+    import process_uploaded_transcript as pipeline
+
+    # The name comes from the browser; strip any path parts before using it in output paths.
+    file_name = os.path.basename(file_name)
+    # Files re-uploaded from data/raw_uploads/ carry the "processed_" marker; drop it so
+    # "processed_P3_Surena.json" is still read as P3 / Surena.
+    while file_name.startswith(pipeline.PROCESSED_PREFIX):
+        file_name = file_name[len(pipeline.PROCESSED_PREFIX):]
+
+    if not pipeline._is_haru_json_format(transcript_data):
+        emit('upload-error', 'Unrecognised JSON. Upload a raw Haru transcript '
+                             '([{"time", "haru", "user"}, ...]) or a processed transcript.')
+        return
+
+    if not processing_lock.acquire(blocking=False):
+        emit('upload-error', 'Another transcript is being processed. Try again when it finishes.')
+        return
+
+    try:
+        if pipeline._converter is None:
+            emit('upload-progress', 'Loading models (first upload only)...')
+        converter = pipeline._get_converter()
+
+        if converter.topic_method == 'model' and not _ollama_reachable(converter.ollama_host):
+            emit('upload-progress', f'Warning: topic model not reachable at {converter.ollama_host} '
+                                    '— topics will use keyword labels. Start Ollama and re-upload for model labels.')
+
+        emit('upload-progress', f'Analysing {len(transcript_data)} turns: emotion, sentiment and topics...')
+        _, output_filename = pipeline.process_haru_json(transcript_data, file_name)
+
+        # Keep a copy of the raw upload, marked processed so the batch script skips it.
+        os.makedirs(pipeline.RAW_UPLOADS_DIR, exist_ok=True)
+        raw_copy = os.path.join(pipeline.RAW_UPLOADS_DIR, pipeline.PROCESSED_PREFIX + file_name)
+        with open(raw_copy, 'w', encoding='utf8') as f:
+            json.dump(transcript_data, f, indent=4, ensure_ascii=False)
+
+        emit('upload-progress', f'Saved as {output_filename}')
+        emit('upload-success')
+    finally:
+        processing_lock.release()
+
+
+def _ollama_reachable(host):
+    import requests
+    try:
+        requests.get(f'{host}/api/tags', timeout=2).raise_for_status()
+        return True
+    except Exception:
+        return False
+
+
+def _warm_up_models():
+    """Loads the ML models in the background at startup so the first raw upload is quicker."""
+    try:
+        import process_uploaded_transcript as pipeline
+        converter = pipeline._get_converter()
+        converter.embedding_model
+        print('Processing models loaded.')
+        if converter.topic_method == 'model':
+            converter.warm_up_topic_model()
+            print(f'Topic model {converter.topic_model} loaded in Ollama.')
+    except Exception as e:
+        print(f'Model warm-up skipped: {e}')
+
 
 @socketio.event
 def json_download_request():
@@ -203,5 +291,9 @@ def diagram_request():
 
 
 if __name__ == "__main__":
+    # Set HARU_SKIP_WARMUP=1 on view-only machines to never load the processing models.
+    if os.environ.get('HARU_SKIP_WARMUP') != '1':
+        socketio.start_background_task(_warm_up_models)
+
     # Start the WebSocket server
     socketio.run(app, debug=False, port=6400, use_reloader=False, log_output=False)

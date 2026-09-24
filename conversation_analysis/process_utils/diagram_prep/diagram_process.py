@@ -126,7 +126,11 @@ def generate_diagram_from_file(transcript_data, diagram_json_output):
         if i == 0 or i == len(mapped_nodes)-1:
             node['show'] = True
             continue
-        node["show"] = utils.node_has_links(node, link_turn_section)
+        # Check both speakers' links; a node linked only from the other speaker must still show.
+        node["show"] = (
+            utils.node_has_links(node, mapped_links["robot"])
+            or utils.node_has_links(node, mapped_links["user"])
+        )
 
     # Save the results as a JSON file
     mapped_conversation["attributes"]['longest_robot_utterance'] = r_longest_utterance_length

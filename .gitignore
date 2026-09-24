@@ -11,3 +11,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+# Transcript data (children's conversations): never commit.
+# Only the folder structure is kept, via .gitkeep files, so the backend can write into it.
+data/**
+!data/**/
+!data/**/.gitkeep
