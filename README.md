@@ -13,7 +13,7 @@ To **see** the conversations you also need the web page, **Haru-Chat-Visualizer*
 
 **Requirements** (Windows or Linux):
 
-- Python **3.11+** (3.12 recommended — note Ubuntu 22.04 ships 3.10, which is too old for the pinned packages)
+- Python **3.12** (tested). 3.10 and 3.11 meet the packages' minimum but haven't been tested
 - [Ollama](https://ollama.com)
 - An NVIDIA GPU with ~10GB of memory is recommended for `gemma4:e4b`; everything also runs on the CPU, slowly
 
